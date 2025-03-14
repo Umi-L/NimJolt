@@ -1,1 +1,0 @@
-C:\Users\julia\repos\emsdk\upstream\emscripten\em++.bat  -fno-rtti -fno-exceptions -ffp-model=precise -O3 -flto=thin         -s ALLOW_MEMORY_GROWTH         -sSTACK_SIZE=1048576         -sINITIAL_MEMORY=134217728 @CMakeFiles\01_HelloWorld.dir\objects1.rsp -o ..\bin\01_HelloWorld.js @CMakeFiles\01_HelloWorld.dir\linkLibs.rsp

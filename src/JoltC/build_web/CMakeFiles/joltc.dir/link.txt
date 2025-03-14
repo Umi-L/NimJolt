@@ -1,2 +1,0 @@
-"C:/Users/julia/repos/emsdk/upstream/emscripten/emar.bat" qc lib\libjoltc.a CMakeFiles/joltc.dir/src/joltc.cpp.o CMakeFiles/joltc.dir/src/joltc_assert.cpp.o
-"C:/Users/julia/repos/emsdk/upstream/emscripten/emranlib.bat" lib\libjoltc.a

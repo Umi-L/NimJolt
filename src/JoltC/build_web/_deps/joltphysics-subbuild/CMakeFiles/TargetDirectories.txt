@@ -1,3 +1,0 @@
-C:/Users/julia/Projects/NimJolt/JoltC/build_web/_deps/joltphysics-subbuild/CMakeFiles/joltphysics-populate.dir
-C:/Users/julia/Projects/NimJolt/JoltC/build_web/_deps/joltphysics-subbuild/CMakeFiles/edit_cache.dir
-C:/Users/julia/Projects/NimJolt/JoltC/build_web/_deps/joltphysics-subbuild/CMakeFiles/rebuild_cache.dir
