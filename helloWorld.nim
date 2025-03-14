@@ -3,11 +3,11 @@
 
 import wrapper
 
-{.passL: "./joltLibs/libJolt.a".}
-{.passL: "./joltLibs/libJoltc.a".}
+{.passL: "./JoltC/build_web/lib/libJolt.a".}
+{.passL: "./JoltC/build_web/lib/libJoltc.a".}
 
-# {.passL: "./joltLibs/jolt.lib".}
-# {.passL: "./joltLibs/joltc.lib".}
+# {.passL: "./JoltC/build/lib/Debug/Jolt.lib".}
+# {.passL: "./JoltC/build/lib/Debug/joltc.lib".}
 
 proc traceImpl(message: cstring) {.cdecl.} =
     echo message

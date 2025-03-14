@@ -2,7 +2,7 @@ import futhark
 
 
 importc:
-    path "./joltc/include"
+    path "./JoltC/include"
     outputPath "wrapper.nim"
     "joltc.h"
 

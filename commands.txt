@@ -1,0 +1,8 @@
+# removes optimization so we get an actual link time error
+# wasm-ld: error: --shared-memory is disallowed by joltc.cpp.o because it was not compiled with 'atomics' or 'bulk-memory' features.
+emcmake cmake -DCMAKE_BUILD_TYPE=Debug ..
+
+
+
+# to run webserver
+nimhttpd -H:"Cross-Origin-Opener-Policy: same-origin" -H:"Cross-Origin-Embedder-Policy: require-corp"
