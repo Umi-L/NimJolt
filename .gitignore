@@ -1,1 +1,3 @@
 build/web/*
+samples/*.exe
+samples/build/*

@@ -1,13 +1,14 @@
 import os
 
-# use emscripten
-echo "Using emscripten"
 when defined(emscripten):
     # this doesn't work using currentSourcePath?
     import macros
+    import strutils
 
-    {.passL: getProjectPath() & "/src/libJolt.a".}
-    {.passL: getProjectPath() & "/src/libJoltc.a".}
+    const sourceDir = currentSourcePath.replace("internal.nim", "")
+
+    {.passL: sourceDir & "libJolt.a".}
+    {.passL: sourceDir & "libJoltc.a".}
 else:
     {.passL: currentSourcePath.parentDir() & "/Jolt.lib".}
     {.passL: currentSourcePath.parentDir() & "/joltc.lib".}
