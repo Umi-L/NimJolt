@@ -1,71 +1,42 @@
 # NimJolt
 
-NimJolt provides Nim bindings for the JoltPhysics physics engine. This allows you to use the powerful features of JoltPhysics in your Nim projects.
-
-## Features
-
--   High-performance physics simulation
--   Rigid body dynamics
--   Collision detection
--   ...existing code...
+NimJolt is Nim bindings for the JoltPhysics physics engine. It is based on the JoltC bindings made by [SecondHalfGames](https://github.com/SecondHalfGames/JoltC). The bindings are generated using [Futhark](https://github.com/PMunch/futhark)
 
 ## Installation
 
-To install NimJolt, you can use Nim's package manager, Nimble:
-
-```sh
-nimble install nimjolt
-```
-
 ## Usage
 
-Here is a simple example of how to use NimJolt in your project:
+When building with windows you must include the joltc.dll in the same directory as the executable.
 
-```nim
-import nimjolt
+more examples can be found in the [samples](samples) directory.
 
-# ...existing code...
+you may also need to set extra linker flags to link the library correctly. ie:
 
-# Initialize the physics engine
-let engine = newPhysicsEngine()
-
-# ...existing code...
-
-# Run the simulation
-engine.simulate()
+```nims
+--passL: "-s ALLOW_MEMORY_GROWTH"
+--passL: "-s STACK_SIZE=1048576"
+--passL: "-s INITIAL_MEMORY=134217728"
 ```
 
 ## Building from Scratch
 
-To build NimJolt from scratch, follow these steps:
+To build from scratch you will need to manually recreate the library files. (ie. [Jolt.lib](src/Jolt.lib) [joltc.dll](src/joltc.dll) [joltc.lib](src/joltc.lib) [joltc.pdb](src/joltc.pdb) [libJolt.a](src/libJolt.a) [libjoltc.a](src/libjoltc.a)). You can do this by following the instructions in the JoltC repository. (emscripten requires a few extra steps and changing how the library is built).
 
-1. Clone the repository:
+Emscripten currently only supports single threaded usage. To build the emscripten library you will need to modify the build script to remove -pthread from the compiler flags ie:
 
-    ```sh
-    git clone https://github.com/yourusername/nimjolt.git
-    cd nimjolt
-    ```
-
-2. Install dependencies:
-
-    ```sh
-    # ...existing code...
-    ```
-
-3. Build the project:
-
-    ```sh
-    # ...existing code...
-    ```
-
-4. Run tests:
-    ```sh
-    # ...existing code...
-    ```
+```cmake
+# Set linker flags
+if (NOT ("${CMAKE_SYSTEM_NAME}" STREQUAL "Windows"))
+    if (NOT DEFINED EMSCRIPTEN)
+        message("Setting linker flags (-pthread)")
+        set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pthread")
+    endif()
+endif()
+```
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request.
+Contributions are welcome! Please open an issue or submit a pull request. The library is not tested in linux and is a direct wrapper for the JoltC bindings.
 
 ## License
 

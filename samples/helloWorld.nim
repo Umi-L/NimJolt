@@ -1,7 +1,7 @@
 # Copyright (c) Amer Koleci and Contributors.
 # Distributed under the MIT license. See the LICENSE file in the project root for more information.
 
-import src/NimJolt
+import ../src/NimJolt
 
 proc traceImpl(message: cstring) {.cdecl.} =
     echo message
