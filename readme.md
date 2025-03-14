@@ -1,6 +1,6 @@
 # NimJolt
 
-NimJolt is Nim bindings for the JoltPhysics physics engine. It is based on the JoltC bindings made by [SecondHalfGames](https://github.com/SecondHalfGames/JoltC). The bindings are generated using [Futhark](https://github.com/PMunch/futhark)
+NimJolt is Nim bindings for the JoltPhysics physics engine. It is based on the JoltC bindings made by [Amer Koleci](https://github.com/amerkoleci/joltc). The bindings are generated using [Futhark](https://github.com/PMunch/futhark)
 
 ## Installation
 
