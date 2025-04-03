@@ -26,12 +26,12 @@ setTraceHandler(traceImpl)
 let jobSystem = jobSystemThreadPool_Create(nil)
 
 let objectLayerPairFilterTable = objectLayerPairFilterTable_Create(2)
-objectLayerPairFilterTable_EnableCollision(objectLayerPairFilterTable, NON_MOVING, MOVING)
-objectLayerPairFilterTable_EnableCollision(objectLayerPairFilterTable, MOVING, NON_MOVING)
+objectLayerPairFilterTable.enableCollision(NON_MOVING, MOVING)
+objectLayerPairFilterTable.enableCollision(MOVING, NON_MOVING)
 
 let broadPhaseLayerInterfaceTable = broadPhaseLayerInterfaceTable_Create(2, 2)
-broadPhaseLayerInterfaceTable_MapObjectToBroadPhaseLayer(broadPhaseLayerInterfaceTable, NON_MOVING, BROAD_PHASE_NON_MOVING)
-broadPhaseLayerInterfaceTable_MapObjectToBroadPhaseLayer(broadPhaseLayerInterfaceTable, MOVING, BROAD_PHASE_MOVING)
+broadPhaseLayerInterfaceTable.mapObjectToBroadPhaseLayer(NON_MOVING, BROAD_PHASE_NON_MOVING)
+broadPhaseLayerInterfaceTable.mapObjectToBroadPhaseLayer(MOVING, BROAD_PHASE_MOVING)
 
 let objectVsBroadPhaseLayerFilter = objectVsBroadPhaseLayerFilterTable_Create(broadPhaseLayerInterfaceTable, 2, objectLayerPairFilterTable, 2)
 
@@ -45,7 +45,7 @@ settings.objectLayerPairFilter = objectLayerPairFilterTable
 settings.objectVsBroadPhaseLayerFilter = objectVsBroadPhaseLayerFilter
 
 let system = physicsSystem_Create(addr settings)
-let bodyInterface = physicsSystem_GetBodyInterface(system)
+let bodyInterface = system.getBodyInterface()
 
 # var gravity = Vec3(x: 0.0, y: 9.81, z: 0.0)
 # PhysicsSystem_SetGravity(system, addr gravity)
@@ -68,9 +68,9 @@ block:
     bodyCreationSettings_Destroy(sphereSettings)
 
 let sphereLinearVelocity = Vec3(x: 0.0, y: -5.0, z: 0.0)
-bodyInterface_SetLinearVelocity(bodyInterface, sphereId, addr sphereLinearVelocity)
+bodyInterface.setLinearVelocity(sphereId, addr sphereLinearVelocity)
 
-physicsSystem_OptimizeBroadPhase(system)
+system.optimizeBroadPhase()
 
 
 # init raylib
@@ -89,9 +89,9 @@ proc update() {.cdecl.} =
     var velocity: Vec3
     var floorPosition: RVec3
 
-    bodyInterface_GetCenterOfMassPosition(bodyInterface, sphereId, addr position)
-    bodyInterface_GetCenterOfMassPosition(bodyInterface, floorId, addr floorPosition)
-    bodyInterface_GetLinearVelocity(bodyInterface, sphereId, addr velocity)
+    bodyInterface.getCenterOfMassPosition(sphereId, addr position)
+    bodyInterface.getCenterOfMassPosition(floorId, addr floorPosition)
+    bodyInterface.getLinearVelocity(sphereId, addr velocity)
     echo "Position = (", position.x, ", ", position.y, ", ", position.z, "), Velocity = (", velocity.x, ", ", velocity.y, ", ", velocity.z, ")"
 
 
@@ -113,7 +113,7 @@ proc update() {.cdecl.} =
 
     const cCollisionSteps = 1
 
-    discard physicsSystem_Update(system, getFrameTime(), cCollisionSteps, jobSystem)
+    discard system.update(getFrameTime(), cCollisionSteps, jobSystem)
 
 proc cleanup() {.cdecl.} =
     bodyInterface_RemoveAndDestroyBody(bodyInterface, sphereId)
