@@ -26,12 +26,12 @@ proc main() =
     let jobSystem = jobSystemThreadPool_Create(nil)
 
     let objectLayerPairFilterTable = objectLayerPairFilterTable_Create(2)
-    objectLayerPairFilterTable_EnableCollision(objectLayerPairFilterTable, NON_MOVING, MOVING)
-    objectLayerPairFilterTable_EnableCollision(objectLayerPairFilterTable, MOVING, NON_MOVING)
+    objectLayerPairFilterTable.enableCollision(NON_MOVING, MOVING)
+    objectLayerPairFilterTable.enableCollision(MOVING, NON_MOVING)
 
     let broadPhaseLayerInterfaceTable = broadPhaseLayerInterfaceTable_Create(2, 2)
-    broadPhaseLayerInterfaceTable_MapObjectToBroadPhaseLayer(broadPhaseLayerInterfaceTable, NON_MOVING, BROAD_PHASE_NON_MOVING)
-    broadPhaseLayerInterfaceTable_MapObjectToBroadPhaseLayer(broadPhaseLayerInterfaceTable, MOVING, BROAD_PHASE_MOVING)
+    broadPhaseLayerInterfaceTable.mapObjectToBroadPhaseLayer(NON_MOVING, BROAD_PHASE_NON_MOVING)
+    broadPhaseLayerInterfaceTable.mapObjectToBroadPhaseLayer(MOVING, BROAD_PHASE_MOVING)
 
     let objectVsBroadPhaseLayerFilter = objectVsBroadPhaseLayerFilterTable_Create(broadPhaseLayerInterfaceTable, 2, objectLayerPairFilterTable, 2)
 
@@ -45,7 +45,7 @@ proc main() =
     settings.objectVsBroadPhaseLayerFilter = objectVsBroadPhaseLayerFilter
 
     let system = physicsSystem_Create(addr settings)
-    let bodyInterface = physicsSystem_GetBodyInterface(system)
+    let bodyInterface = system.getBodyInterface()
 
     var floorId: BodyID
     block:
@@ -53,7 +53,7 @@ proc main() =
         let floorShape = boxShape_Create(addr boxHalfExtents, DEFAULT_CONVEX_RADIUS)
         let floorPosition = Vec3(x: 0.0, y: -1.0, z: 0.0)
         let floorSettings = bodyCreationSettings_Create3(cast[ptr Shape](floorShape), addr floorPosition, nil, MotionType_Static, NON_MOVING)
-        floorId = bodyInterface_CreateAndAddBody(bodyInterface, floorSettings, Activation_DontActivate)
+        floorId = bodyInterface.createAndAddBody(floorSettings, Activation_DontActivate)
         bodyCreationSettings_Destroy(floorSettings)
 
     var sphereId: BodyID
@@ -61,11 +61,11 @@ proc main() =
         let sphereShape = sphereShape_Create(50.0)
         let spherePosition = Vec3(x: 0.0, y: 2.0, z: 0.0)
         let sphereSettings = bodyCreationSettings_Create3(cast[ptr Shape](sphereShape), addr spherePosition, nil, MotionType_Dynamic, MOVING)
-        sphereId = bodyInterface_CreateAndAddBody(bodyInterface, sphereSettings, Activation_Activate)
+        sphereId = bodyInterface.createAndAddBody(sphereSettings, Activation_Activate)
         bodyCreationSettings_Destroy(sphereSettings)
 
     let sphereLinearVelocity = Vec3(x: 0.0, y: -5.0, z: 0.0)
-    bodyInterface_SetLinearVelocity(bodyInterface, sphereId, addr sphereLinearVelocity)
+    bodyInterface.setLinearVelocity(sphereId, addr sphereLinearVelocity)
 
     block:
         const
@@ -92,25 +92,25 @@ proc main() =
 
     const cDeltaTime = 1.0 / 60.0
 
-    physicsSystem_OptimizeBroadPhase(system)
+    system.optimizeBroadPhase()
 
     var step = 0
-    while bodyInterface_IsActive(bodyInterface, sphereId):
+    while bodyInterface.isActive(sphereId):
         inc step
 
         var position: RVec3
         var velocity: Vec3
 
-        bodyInterface_GetCenterOfMassPosition(bodyInterface, sphereId, addr position)
-        bodyInterface_GetLinearVelocity(bodyInterface, sphereId, addr velocity)
+        bodyInterface.getCenterOfMassPosition(sphereId, addr position)
+        bodyInterface.getLinearVelocity(sphereId, addr velocity)
         echo "Step ", step, ": Position = (", position.x, ", ", position.y, ", ", position.z, "), Velocity = (", velocity.x, ", ", velocity.y, ", ", velocity.z, ")"
 
         const cCollisionSteps = 1
 
-        discard physicsSystem_Update(system, cDeltaTime, cCollisionSteps, jobSystem)
+        discard system.update(cDeltaTime, cCollisionSteps, jobSystem)
 
-    bodyInterface_RemoveAndDestroyBody(bodyInterface, sphereId)
-    bodyInterface_RemoveAndDestroyBody(bodyInterface, floorId)
+    bodyInterface.removeAndDestroyBody(sphereId)
+    bodyInterface.removeAndDestroyBody(floorId)
 
     jobSystem_Destroy(jobSystem)
     physicsSystem_Destroy(system)

@@ -56,7 +56,7 @@ block:
     let floorShape = boxShape_Create(addr boxHalfExtents, DEFAULT_CONVEX_RADIUS)
     let floorPosition = Vec3(x: 0.0, y: -50.0, z: 0.0)
     let floorSettings = bodyCreationSettings_Create3(cast[ptr Shape](floorShape), addr floorPosition, nil, MotionType_Static, NON_MOVING)
-    floorId = bodyInterface_CreateAndAddBody(bodyInterface, floorSettings, Activation_DontActivate)
+    floorId = bodyInterface.createAndAddBody(floorSettings, Activation_DontActivate)
     bodyCreationSettings_Destroy(floorSettings)
 
 var sphereId: BodyID
@@ -64,7 +64,7 @@ block:
     let sphereShape = sphereShape_Create(10.0)
     let spherePosition = Vec3(x: 0.0, y: 0.0, z: 0.0)
     let sphereSettings = bodyCreationSettings_Create3(cast[ptr Shape](sphereShape), addr spherePosition, nil, MotionType_Dynamic, MOVING)
-    sphereId = bodyInterface_CreateAndAddBody(bodyInterface, sphereSettings, Activation_Activate)
+    sphereId = bodyInterface.createAndAddBody(sphereSettings, Activation_Activate)
     bodyCreationSettings_Destroy(sphereSettings)
 
 let sphereLinearVelocity = Vec3(x: 0.0, y: -5.0, z: 0.0)
@@ -116,8 +116,8 @@ proc update() {.cdecl.} =
     discard system.update(getFrameTime(), cCollisionSteps, jobSystem)
 
 proc cleanup() {.cdecl.} =
-    bodyInterface_RemoveAndDestroyBody(bodyInterface, sphereId)
-    bodyInterface_RemoveAndDestroyBody(bodyInterface, floorId)
+    bodyInterface.removeAndDestroyBody(sphereId)
+    bodyInterface.removeAndDestroyBody(floorId)
 
     jobSystem_Destroy(jobSystem)
     physicsSystem_Destroy(system)

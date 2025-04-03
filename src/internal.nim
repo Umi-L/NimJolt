@@ -10,13 +10,29 @@ const exclusions = @[
     "Inversed"
 ]
 
+const createPostfixes = @[
+    "_Create",
+    "_Create3",
+    "_Init"
+]
+
+const destroyPostfixes = @[
+    "_Destroy"
+]
+
+proc endsWithAny(s: string, suffixes: seq[string]): bool =
+    for suffix in suffixes:
+        if s.endsWith(suffix):
+            return true
+    return false
+
 # Remove the `JPH_` prefix since Nim doesn't struggle as much with collisions as C
 proc renameCb(name: string, kind: string, partof: string, overloading: var bool): string =
     var newName = name
     newName = name.replace("JPH_", "")
 
     if kind == "proc":
-        if not newName.contains("Create") and not newName.contains("Destroy") and newName.contains("_"):
+        if not newName.endsWithAny(createPostfixes) and not newName.endsWithAny(destroyPostfixes) and newName.contains("_"):
             # take everything past last underscore
             let parts = newName.split('_')
             if parts.len > 0:
