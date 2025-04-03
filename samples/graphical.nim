@@ -17,25 +17,25 @@ const
     BROAD_PHASE_MOVING = 1
     BROAD_PHASE_NUM_LAYERS = 2
 
-if not JPH_Init():
+if not init():
     raise newException(Exception, "Failed to initialize Jolt")
 
-JPH_SetTraceHandler(traceImpl)
-# JPH_SetAssertFailureHandler(JPH_AssertFailureFunc handler)
+setTraceHandler(traceImpl)
+# SetAssertFailureHandler(AssertFailureFunc handler)
 
-let jobSystem = JPH_JobSystemThreadPool_Create(nil)
+let jobSystem = jobSystemThreadPool_Create(nil)
 
-let objectLayerPairFilterTable = JPH_ObjectLayerPairFilterTable_Create(2)
-JPH_ObjectLayerPairFilterTable_EnableCollision(objectLayerPairFilterTable, NON_MOVING, MOVING)
-JPH_ObjectLayerPairFilterTable_EnableCollision(objectLayerPairFilterTable, MOVING, NON_MOVING)
+let objectLayerPairFilterTable = objectLayerPairFilterTable_Create(2)
+objectLayerPairFilterTable_EnableCollision(objectLayerPairFilterTable, NON_MOVING, MOVING)
+objectLayerPairFilterTable_EnableCollision(objectLayerPairFilterTable, MOVING, NON_MOVING)
 
-let broadPhaseLayerInterfaceTable = JPH_BroadPhaseLayerInterfaceTable_Create(2, 2)
-JPH_BroadPhaseLayerInterfaceTable_MapObjectToBroadPhaseLayer(broadPhaseLayerInterfaceTable, NON_MOVING, BROAD_PHASE_NON_MOVING)
-JPH_BroadPhaseLayerInterfaceTable_MapObjectToBroadPhaseLayer(broadPhaseLayerInterfaceTable, MOVING, BROAD_PHASE_MOVING)
+let broadPhaseLayerInterfaceTable = broadPhaseLayerInterfaceTable_Create(2, 2)
+broadPhaseLayerInterfaceTable_MapObjectToBroadPhaseLayer(broadPhaseLayerInterfaceTable, NON_MOVING, BROAD_PHASE_NON_MOVING)
+broadPhaseLayerInterfaceTable_MapObjectToBroadPhaseLayer(broadPhaseLayerInterfaceTable, MOVING, BROAD_PHASE_MOVING)
 
-let objectVsBroadPhaseLayerFilter = JPH_ObjectVsBroadPhaseLayerFilterTable_Create(broadPhaseLayerInterfaceTable, 2, objectLayerPairFilterTable, 2)
+let objectVsBroadPhaseLayerFilter = objectVsBroadPhaseLayerFilterTable_Create(broadPhaseLayerInterfaceTable, 2, objectLayerPairFilterTable, 2)
 
-var settings: JPH_PhysicsSystemSettings
+var settings: PhysicsSystemSettings
 settings.maxBodies = 65536
 settings.numBodyMutexes = 0
 settings.maxBodyPairs = 65536
@@ -44,33 +44,33 @@ settings.broadPhaseLayerInterface = broadPhaseLayerInterfaceTable
 settings.objectLayerPairFilter = objectLayerPairFilterTable
 settings.objectVsBroadPhaseLayerFilter = objectVsBroadPhaseLayerFilter
 
-let system = JPH_PhysicsSystem_Create(addr settings)
-let bodyInterface = JPH_PhysicsSystem_GetBodyInterface(system)
+let system = physicsSystem_Create(addr settings)
+let bodyInterface = physicsSystem_GetBodyInterface(system)
 
-# var gravity = JPH_Vec3(x: 0.0, y: 9.81, z: 0.0)
-# JPH_PhysicsSystem_SetGravity(system, addr gravity)
+# var gravity = Vec3(x: 0.0, y: 9.81, z: 0.0)
+# PhysicsSystem_SetGravity(system, addr gravity)
 
-var floorId: JPH_BodyID
+var floorId: BodyID
 block:
-    let boxHalfExtents: JPH_Vec3 = JPH_Vec3(x: 100.0, y: 1.0, z: 100.0)
-    let floorShape = JPH_BoxShape_Create(addr boxHalfExtents, JPH_DEFAULT_CONVEX_RADIUS)
-    let floorPosition = JPH_Vec3(x: 0.0, y: -50.0, z: 0.0)
-    let floorSettings = JPH_BodyCreationSettings_Create3(cast[ptr JPH_Shape](floorShape), addr floorPosition, nil, JPH_MotionType_Static, NON_MOVING)
-    floorId = JPH_BodyInterface_CreateAndAddBody(bodyInterface, floorSettings, JPH_Activation_DontActivate)
-    JPH_BodyCreationSettings_Destroy(floorSettings)
+    let boxHalfExtents: Vec3 = Vec3(x: 100.0, y: 1.0, z: 100.0)
+    let floorShape = boxShape_Create(addr boxHalfExtents, DEFAULT_CONVEX_RADIUS)
+    let floorPosition = Vec3(x: 0.0, y: -50.0, z: 0.0)
+    let floorSettings = bodyCreationSettings_Create3(cast[ptr Shape](floorShape), addr floorPosition, nil, MotionType_Static, NON_MOVING)
+    floorId = bodyInterface_CreateAndAddBody(bodyInterface, floorSettings, Activation_DontActivate)
+    bodyCreationSettings_Destroy(floorSettings)
 
-var sphereId: JPH_BodyID
+var sphereId: BodyID
 block:
-    let sphereShape = JPH_SphereShape_Create(10.0)
-    let spherePosition = JPH_Vec3(x: 0.0, y: 0.0, z: 0.0)
-    let sphereSettings = JPH_BodyCreationSettings_Create3(cast[ptr JPH_Shape](sphereShape), addr spherePosition, nil, JPH_MotionType_Dynamic, MOVING)
-    sphereId = JPH_BodyInterface_CreateAndAddBody(bodyInterface, sphereSettings, JPH_Activation_Activate)
-    JPH_BodyCreationSettings_Destroy(sphereSettings)
+    let sphereShape = sphereShape_Create(10.0)
+    let spherePosition = Vec3(x: 0.0, y: 0.0, z: 0.0)
+    let sphereSettings = bodyCreationSettings_Create3(cast[ptr Shape](sphereShape), addr spherePosition, nil, MotionType_Dynamic, MOVING)
+    sphereId = bodyInterface_CreateAndAddBody(bodyInterface, sphereSettings, Activation_Activate)
+    bodyCreationSettings_Destroy(sphereSettings)
 
-let sphereLinearVelocity = JPH_Vec3(x: 0.0, y: -5.0, z: 0.0)
-JPH_BodyInterface_SetLinearVelocity(bodyInterface, sphereId, addr sphereLinearVelocity)
+let sphereLinearVelocity = Vec3(x: 0.0, y: -5.0, z: 0.0)
+bodyInterface_SetLinearVelocity(bodyInterface, sphereId, addr sphereLinearVelocity)
 
-JPH_PhysicsSystem_OptimizeBroadPhase(system)
+physicsSystem_OptimizeBroadPhase(system)
 
 
 # init raylib
@@ -85,13 +85,13 @@ camera.fovy = 45.0
 camera.projection = Perspective
 
 proc update() {.cdecl.} =
-    var position: JPH_RVec3
-    var velocity: JPH_Vec3
-    var floorPosition: JPH_RVec3
+    var position: RVec3
+    var velocity: Vec3
+    var floorPosition: RVec3
 
-    JPH_BodyInterface_GetCenterOfMassPosition(bodyInterface, sphereId, addr position)
-    JPH_BodyInterface_GetCenterOfMassPosition(bodyInterface, floorId, addr floorPosition)
-    JPH_BodyInterface_GetLinearVelocity(bodyInterface, sphereId, addr velocity)
+    bodyInterface_GetCenterOfMassPosition(bodyInterface, sphereId, addr position)
+    bodyInterface_GetCenterOfMassPosition(bodyInterface, floorId, addr floorPosition)
+    bodyInterface_GetLinearVelocity(bodyInterface, sphereId, addr velocity)
     echo "Position = (", position.x, ", ", position.y, ", ", position.z, "), Velocity = (", velocity.x, ", ", velocity.y, ", ", velocity.z, ")"
 
 
@@ -99,7 +99,7 @@ proc update() {.cdecl.} =
     beginDrawing()
     clearBackground(BLACK)
 
-    drawFPS(10,10)
+    drawFPS(10, 10)
 
     beginMode3D(camera)
 
@@ -113,15 +113,15 @@ proc update() {.cdecl.} =
 
     const cCollisionSteps = 1
 
-    discard JPH_PhysicsSystem_Update(system, getFrameTime(), cCollisionSteps, jobSystem)
+    discard physicsSystem_Update(system, getFrameTime(), cCollisionSteps, jobSystem)
 
 proc cleanup() {.cdecl.} =
-    JPH_BodyInterface_RemoveAndDestroyBody(bodyInterface, sphereId)
-    JPH_BodyInterface_RemoveAndDestroyBody(bodyInterface, floorId)
+    bodyInterface_RemoveAndDestroyBody(bodyInterface, sphereId)
+    bodyInterface_RemoveAndDestroyBody(bodyInterface, floorId)
 
-    JPH_JobSystem_Destroy(jobSystem)
-    JPH_PhysicsSystem_Destroy(system)
-    JPH_Shutdown()
+    jobSystem_Destroy(jobSystem)
+    physicsSystem_Destroy(system)
+    shutdown()
 
 
 when defined(emscripten):

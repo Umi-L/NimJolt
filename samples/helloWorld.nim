@@ -17,25 +17,25 @@ const
     BROAD_PHASE_NUM_LAYERS = 2
 
 proc main() =
-    if not JPH_Init():
+    if not init():
         raise newException(Exception, "Failed to initialize Jolt")
 
-    JPH_SetTraceHandler(traceImpl)
-    # JPH_SetAssertFailureHandler(JPH_AssertFailureFunc handler)
+    setTraceHandler(traceImpl)
+    # SetAssertFailureHandler(AssertFailureFunc handler)
 
-    let jobSystem = JPH_JobSystemThreadPool_Create(nil)
+    let jobSystem = jobSystemThreadPool_Create(nil)
 
-    let objectLayerPairFilterTable = JPH_ObjectLayerPairFilterTable_Create(2)
-    JPH_ObjectLayerPairFilterTable_EnableCollision(objectLayerPairFilterTable, NON_MOVING, MOVING)
-    JPH_ObjectLayerPairFilterTable_EnableCollision(objectLayerPairFilterTable, MOVING, NON_MOVING)
+    let objectLayerPairFilterTable = objectLayerPairFilterTable_Create(2)
+    objectLayerPairFilterTable_EnableCollision(objectLayerPairFilterTable, NON_MOVING, MOVING)
+    objectLayerPairFilterTable_EnableCollision(objectLayerPairFilterTable, MOVING, NON_MOVING)
 
-    let broadPhaseLayerInterfaceTable = JPH_BroadPhaseLayerInterfaceTable_Create(2, 2)
-    JPH_BroadPhaseLayerInterfaceTable_MapObjectToBroadPhaseLayer(broadPhaseLayerInterfaceTable, NON_MOVING, BROAD_PHASE_NON_MOVING)
-    JPH_BroadPhaseLayerInterfaceTable_MapObjectToBroadPhaseLayer(broadPhaseLayerInterfaceTable, MOVING, BROAD_PHASE_MOVING)
+    let broadPhaseLayerInterfaceTable = broadPhaseLayerInterfaceTable_Create(2, 2)
+    broadPhaseLayerInterfaceTable_MapObjectToBroadPhaseLayer(broadPhaseLayerInterfaceTable, NON_MOVING, BROAD_PHASE_NON_MOVING)
+    broadPhaseLayerInterfaceTable_MapObjectToBroadPhaseLayer(broadPhaseLayerInterfaceTable, MOVING, BROAD_PHASE_MOVING)
 
-    let objectVsBroadPhaseLayerFilter = JPH_ObjectVsBroadPhaseLayerFilterTable_Create(broadPhaseLayerInterfaceTable, 2, objectLayerPairFilterTable, 2)
+    let objectVsBroadPhaseLayerFilter = objectVsBroadPhaseLayerFilterTable_Create(broadPhaseLayerInterfaceTable, 2, objectLayerPairFilterTable, 2)
 
-    var settings: JPH_PhysicsSystemSettings
+    var settings: PhysicsSystemSettings
     settings.maxBodies = 65536
     settings.numBodyMutexes = 0
     settings.maxBodyPairs = 65536
@@ -44,28 +44,28 @@ proc main() =
     settings.objectLayerPairFilter = objectLayerPairFilterTable
     settings.objectVsBroadPhaseLayerFilter = objectVsBroadPhaseLayerFilter
 
-    let system = JPH_PhysicsSystem_Create(addr settings)
-    let bodyInterface = JPH_PhysicsSystem_GetBodyInterface(system)
+    let system = physicsSystem_Create(addr settings)
+    let bodyInterface = physicsSystem_GetBodyInterface(system)
 
-    var floorId: JPH_BodyID
+    var floorId: BodyID
     block:
-        let boxHalfExtents: JPH_Vec3 = JPH_Vec3(x: 100.0, y: 1.0, z: 100.0)
-        let floorShape = JPH_BoxShape_Create(addr boxHalfExtents, JPH_DEFAULT_CONVEX_RADIUS)
-        let floorPosition = JPH_Vec3(x: 0.0, y: -1.0, z: 0.0)
-        let floorSettings = JPH_BodyCreationSettings_Create3(cast[ptr JPH_Shape](floorShape), addr floorPosition, nil, JPH_MotionType_Static, NON_MOVING)
-        floorId = JPH_BodyInterface_CreateAndAddBody(bodyInterface, floorSettings, JPH_Activation_DontActivate)
-        JPH_BodyCreationSettings_Destroy(floorSettings)
+        let boxHalfExtents: Vec3 = Vec3(x: 100.0, y: 1.0, z: 100.0)
+        let floorShape = boxShape_Create(addr boxHalfExtents, DEFAULT_CONVEX_RADIUS)
+        let floorPosition = Vec3(x: 0.0, y: -1.0, z: 0.0)
+        let floorSettings = bodyCreationSettings_Create3(cast[ptr Shape](floorShape), addr floorPosition, nil, MotionType_Static, NON_MOVING)
+        floorId = bodyInterface_CreateAndAddBody(bodyInterface, floorSettings, Activation_DontActivate)
+        bodyCreationSettings_Destroy(floorSettings)
 
-    var sphereId: JPH_BodyID
+    var sphereId: BodyID
     block:
-        let sphereShape = JPH_SphereShape_Create(50.0)
-        let spherePosition = JPH_Vec3(x: 0.0, y: 2.0, z: 0.0)
-        let sphereSettings = JPH_BodyCreationSettings_Create3(cast[ptr JPH_Shape](sphereShape), addr spherePosition, nil, JPH_MotionType_Dynamic, MOVING)
-        sphereId = JPH_BodyInterface_CreateAndAddBody(bodyInterface, sphereSettings, JPH_Activation_Activate)
-        JPH_BodyCreationSettings_Destroy(sphereSettings)
+        let sphereShape = sphereShape_Create(50.0)
+        let spherePosition = Vec3(x: 0.0, y: 2.0, z: 0.0)
+        let sphereSettings = bodyCreationSettings_Create3(cast[ptr Shape](sphereShape), addr spherePosition, nil, MotionType_Dynamic, MOVING)
+        sphereId = bodyInterface_CreateAndAddBody(bodyInterface, sphereSettings, Activation_Activate)
+        bodyCreationSettings_Destroy(sphereSettings)
 
-    let sphereLinearVelocity = JPH_Vec3(x: 0.0, y: -5.0, z: 0.0)
-    JPH_BodyInterface_SetLinearVelocity(bodyInterface, sphereId, addr sphereLinearVelocity)
+    let sphereLinearVelocity = Vec3(x: 0.0, y: -5.0, z: 0.0)
+    bodyInterface_SetLinearVelocity(bodyInterface, sphereId, addr sphereLinearVelocity)
 
     block:
         const
@@ -75,46 +75,46 @@ proc main() =
             cCharacterRadiusCrouching = 0.3
             cInnerShapeFraction = 0.9
 
-        let capsuleShape = JPH_CapsuleShape_Create(0.5 * cCharacterHeightStanding, cCharacterRadiusStanding)
-        let position = JPH_Vec3(x: 0, y: 0.5 * cCharacterHeightStanding + cCharacterRadiusStanding, z: 0)
-        let mStandingShape = JPH_RotatedTranslatedShape_Create(addr position, nil, cast[ptr JPH_Shape](capsuleShape))
+        let capsuleShape = capsuleShape_Create(0.5 * cCharacterHeightStanding, cCharacterRadiusStanding)
+        let position = Vec3(x: 0, y: 0.5 * cCharacterHeightStanding + cCharacterRadiusStanding, z: 0)
+        let mStandingShape = rotatedTranslatedShape_Create(addr position, nil, cast[ptr Shape](capsuleShape))
 
-        var characterSettings: JPH_CharacterVirtualSettings
-        JPH_CharacterVirtualSettings_Init(addr characterSettings)
-        characterSettings.base.shape = cast[ptr JPH_Shape](mStandingShape)
-        characterSettings.base.supportingVolume = JPH_Plane(normal: JPH_Vec3(x: 0, y: 1, z: 0), distance: -cCharacterRadiusStanding)
-        const characterVirtualPosition = JPH_RVec3(x: -5.0, y: 0, z: 3.0)
+        var characterSettings: CharacterVirtualSettings
+        characterVirtualSettings_Init(addr characterSettings)
+        characterSettings.base.shape = cast[ptr Shape](mStandingShape)
+        characterSettings.base.supportingVolume = Plane(normal: Vec3(x: 0, y: 1, z: 0), distance: -cCharacterRadiusStanding)
+        const characterVirtualPosition = RVec3(x: -5.0, y: 0, z: 3.0)
 
-        let mAnimatedCharacterVirtual = JPH_CharacterVirtual_Create(addr characterSettings, addr characterVirtualPosition, nil, 0, system)
+        let mAnimatedCharacterVirtual = characterVirtual_Create(addr characterSettings, addr characterVirtualPosition, nil, 0, system)
 
-    var jointSettings: JPH_SixDOFConstraintSettings
-    JPH_SixDOFConstraintSettings_Init(addr jointSettings)
+    var jointSettings: SixDOFConstraintSettings
+    sixDOFConstraintSettings_Init(addr jointSettings)
 
     const cDeltaTime = 1.0 / 60.0
 
-    JPH_PhysicsSystem_OptimizeBroadPhase(system)
+    physicsSystem_OptimizeBroadPhase(system)
 
     var step = 0
-    while JPH_BodyInterface_IsActive(bodyInterface, sphereId):
+    while bodyInterface_IsActive(bodyInterface, sphereId):
         inc step
 
-        var position: JPH_RVec3
-        var velocity: JPH_Vec3
+        var position: RVec3
+        var velocity: Vec3
 
-        JPH_BodyInterface_GetCenterOfMassPosition(bodyInterface, sphereId, addr position)
-        JPH_BodyInterface_GetLinearVelocity(bodyInterface, sphereId, addr velocity)
+        bodyInterface_GetCenterOfMassPosition(bodyInterface, sphereId, addr position)
+        bodyInterface_GetLinearVelocity(bodyInterface, sphereId, addr velocity)
         echo "Step ", step, ": Position = (", position.x, ", ", position.y, ", ", position.z, "), Velocity = (", velocity.x, ", ", velocity.y, ", ", velocity.z, ")"
 
         const cCollisionSteps = 1
 
-        discard JPH_PhysicsSystem_Update(system, cDeltaTime, cCollisionSteps, jobSystem)
+        discard physicsSystem_Update(system, cDeltaTime, cCollisionSteps, jobSystem)
 
-    JPH_BodyInterface_RemoveAndDestroyBody(bodyInterface, sphereId)
-    JPH_BodyInterface_RemoveAndDestroyBody(bodyInterface, floorId)
+    bodyInterface_RemoveAndDestroyBody(bodyInterface, sphereId)
+    bodyInterface_RemoveAndDestroyBody(bodyInterface, floorId)
 
-    JPH_JobSystem_Destroy(jobSystem)
-    JPH_PhysicsSystem_Destroy(system)
-    JPH_Shutdown()
+    jobSystem_Destroy(jobSystem)
+    physicsSystem_Destroy(system)
+    shutdown()
 
 when isMainModule:
     main()
