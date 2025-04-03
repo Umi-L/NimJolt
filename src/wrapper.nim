@@ -10,40 +10,40 @@ when not declared(ownSizeOf):
     newLit(x.getSize)
 
 type
-  enum_PhysicsUpdateError_536871477* {.size: sizeof(cint).} = enum
+  enum_PhysicsUpdateError_536871549* {.size: sizeof(cint).} = enum
     PhysicsUpdateError_None = 0, PhysicsUpdateError_ManifoldCacheFull = 1,
     PhysicsUpdateError_BodyPairCacheFull = 2,
     PhysicsUpdateError_ContactConstraintsFull = 4,
     internal_PhysicsUpdateError_Count = 5,
     internal_PhysicsUpdateError_Force32 = 2147483647
 type
-  enum_BodyType_536871481* {.size: sizeof(cint).} = enum
+  enum_BodyType_536871553* {.size: sizeof(cint).} = enum
     BodyType_Rigid = 0, BodyType_Soft = 1, internal_BodyType_Count = 2,
     internal_BodyType_Force32 = 2147483647
 type
-  enum_MotionType_536871485* {.size: sizeof(cint).} = enum
+  enum_MotionType_536871557* {.size: sizeof(cint).} = enum
     MotionType_Static = 0, MotionType_Kinematic = 1, MotionType_Dynamic = 2,
     internal_MotionType_Count = 3, internal_MotionType_Force32 = 2147483647
 type
-  enum_Activation_536871489* {.size: sizeof(cint).} = enum
+  enum_Activation_536871561* {.size: sizeof(cint).} = enum
     Activation_Activate = 0, Activation_DontActivate = 1,
     internal_Activation_Count = 2, internal_Activation_Force32 = 2147483647
 type
-  enum_ValidateResult_536871493* {.size: sizeof(cint).} = enum
+  enum_ValidateResult_536871565* {.size: sizeof(cint).} = enum
     ValidateResult_AcceptAllContactsForThisBodyPair = 0,
     ValidateResult_AcceptContact = 1, ValidateResult_RejectContact = 2,
     ValidateResult_RejectAllContactsForThisBodyPair = 3,
     internal_ValidateResult_Count = 4,
     internal_ValidateResult_Force32 = 2147483647
 type
-  enum_ShapeType_536871497* {.size: sizeof(cint).} = enum
+  enum_ShapeType_536871569* {.size: sizeof(cint).} = enum
     ShapeType_Convex = 0, ShapeType_Compound = 1, ShapeType_Decorated = 2,
     ShapeType_Mesh = 3, ShapeType_HeightField = 4, ShapeType_SoftBody = 5,
     ShapeType_User1 = 6, ShapeType_User2 = 7, ShapeType_User3 = 8,
     ShapeType_User4 = 9, internal_ShapeType_Count = 10,
     internal_ShapeType_Force32 = 2147483647
 type
-  enum_ShapeSubType_536871501* {.size: sizeof(cint).} = enum
+  enum_ShapeSubType_536871573* {.size: sizeof(cint).} = enum
     ShapeSubType_Sphere = 0, ShapeSubType_Box = 1, ShapeSubType_Triangle = 2,
     ShapeSubType_Capsule = 3, ShapeSubType_TaperedCapsule = 4,
     ShapeSubType_Cylinder = 5, ShapeSubType_ConvexHull = 6,
@@ -53,12 +53,12 @@ type
     ShapeSubType_HeightField = 13, ShapeSubType_SoftBody = 14,
     internal_ShapeSubType_Count = 15, internal_ShapeSubType_Force32 = 2147483647
 type
-  enum_ConstraintType_536871505* {.size: sizeof(cint).} = enum
+  enum_ConstraintType_536871577* {.size: sizeof(cint).} = enum
     ConstraintType_Constraint = 0, ConstraintType_TwoBodyConstraint = 1,
     internal_ConstraintType_Count = 2,
     internal_ConstraintType_Force32 = 2147483647
 type
-  enum_ConstraintSubType_536871509* {.size: sizeof(cint).} = enum
+  enum_ConstraintSubType_536871581* {.size: sizeof(cint).} = enum
     ConstraintSubType_Fixed = 0, ConstraintSubType_Point = 1,
     ConstraintSubType_Hinge = 2, ConstraintSubType_Slider = 3,
     ConstraintSubType_Distance = 4, ConstraintSubType_Cone = 5,
@@ -70,64 +70,64 @@ type
     ConstraintSubType_User4 = 16, internal_ConstraintSubType_Count = 17,
     internal_ConstraintSubType_Force32 = 2147483647
 type
-  enum_ConstraintSpace_536871513* {.size: sizeof(cint).} = enum
+  enum_ConstraintSpace_536871585* {.size: sizeof(cint).} = enum
     ConstraintSpace_LocalToBodyCOM = 0, ConstraintSpace_WorldSpace = 1,
     internal_ConstraintSpace_Count = 2,
     internal_ConstraintSpace_Force32 = 2147483647
 type
-  enum_MotionQuality_536871517* {.size: sizeof(cint).} = enum
+  enum_MotionQuality_536871589* {.size: sizeof(cint).} = enum
     MotionQuality_Discrete = 0, MotionQuality_LinearCast = 1,
     internal_MotionQuality_Count = 2,
     internal_MotionQuality_Force32 = 2147483647
 type
-  enum_OverrideMassProperties_536871521* {.size: sizeof(cint).} = enum
+  enum_OverrideMassProperties_536871593* {.size: sizeof(cint).} = enum
     OverrideMassProperties_CalculateMassAndInertia = 0,
     OverrideMassProperties_CalculateInertia = 1,
     OverrideMassProperties_MassAndInertiaProvided = 2,
     internal_OverrideMassProperties_Count = 3,
     internal_OverrideMassProperties_Force32 = 2147483647
 type
-  enum_AllowedDOFs_536871525* {.size: sizeof(cint).} = enum
+  enum_AllowedDOFs_536871597* {.size: sizeof(cint).} = enum
     AllowedDOFs_TranslationX = 1, AllowedDOFs_TranslationY = 2,
     AllowedDOFs_TranslationZ = 4, AllowedDOFs_RotationX = 8,
     AllowedDOFs_RotationY = 16, AllowedDOFs_RotationZ = 32,
     AllowedDOFs_Plane2D = 35, internal_AllowedDOFs_Count = 36,
     AllowedDOFs_All = 63, internal_AllowedDOFs_Force32 = 2147483647
 type
-  enum_GroundState_536871529* {.size: sizeof(cint).} = enum
+  enum_GroundState_536871601* {.size: sizeof(cint).} = enum
     GroundState_OnGround = 0, GroundState_OnSteepGround = 1,
     GroundState_NotSupported = 2, GroundState_InAir = 3,
     internal_GroundState_Count = 4, internal_GroundState_Force32 = 2147483647
 type
-  enum_BackFaceMode_536871533* {.size: sizeof(cint).} = enum
+  enum_BackFaceMode_536871605* {.size: sizeof(cint).} = enum
     BackFaceMode_IgnoreBackFaces = 0, BackFaceMode_CollideWithBackFaces = 1,
     internal_BackFaceMode_Count = 2, internal_BackFaceMode_Force32 = 2147483647
 type
-  enum_ActiveEdgeMode_536871537* {.size: sizeof(cint).} = enum
+  enum_ActiveEdgeMode_536871609* {.size: sizeof(cint).} = enum
     ActiveEdgeMode_CollideOnlyWithActive = 0, ActiveEdgeMode_CollideWithAll = 1,
     internal_ActiveEdgeMode_Count = 2,
     internal_ActiveEdgeMode_Force32 = 2147483647
 type
-  enum_CollectFacesMode_536871541* {.size: sizeof(cint).} = enum
+  enum_CollectFacesMode_536871613* {.size: sizeof(cint).} = enum
     CollectFacesMode_CollectFaces = 0, CollectFacesMode_NoFaces = 1,
     internal_CollectFacesMode_Count = 2,
     internal_CollectFacesMode_Force32 = 2147483647
 type
-  enum_MotorState_536871545* {.size: sizeof(cint).} = enum
+  enum_MotorState_536871617* {.size: sizeof(cint).} = enum
     MotorState_Off = 0, MotorState_Velocity = 1, MotorState_Position = 2,
     internal_MotorState_Count = 3, internal_MotorState_Force32 = 2147483647
 type
-  enum_CollisionCollectorType_536871556* {.size: sizeof(cint).} = enum
+  enum_CollisionCollectorType_536871628* {.size: sizeof(cint).} = enum
     CollisionCollectorType_AllHit = 0, CollisionCollectorType_AllHitSorted = 1,
     CollisionCollectorType_ClosestHit = 2, CollisionCollectorType_AnyHit = 3,
     internal_CollisionCollectorType_Count = 4,
     internal_CollisionCollectorType_Force32 = 2147483647
 type
-  enum_SwingType_536871560* {.size: sizeof(cint).} = enum
+  enum_SwingType_536871632* {.size: sizeof(cint).} = enum
     SwingType_Cone = 0, SwingType_Pyramid = 1, internal_SwingType_Count = 2,
     internal_SwingType_Force32 = 2147483647
 type
-  enum_SixDOFConstraintAxis_536871564* {.size: sizeof(cint).} = enum
+  enum_SixDOFConstraintAxis_536871636* {.size: sizeof(cint).} = enum
     SixDOFConstraintAxis_TranslationX = 0,
     SixDOFConstraintAxis_TranslationY = 1,
     SixDOFConstraintAxis_TranslationZ = 2, SixDOFConstraintAxis_RotationX = 3,
@@ -136,24 +136,24 @@ type
     internal_SixDOFConstraintAxis_Force32 = 2147483647
 when not declared(internal_SixDOFConstraintAxis_NumTranslation):
   const
-    internal_SixDOFConstraintAxis_NumTranslation* = enum_SixDOFConstraintAxis_536871564.SixDOFConstraintAxis_RotationX
+    internal_SixDOFConstraintAxis_NumTranslation* = enum_SixDOFConstraintAxis_536871636.SixDOFConstraintAxis_RotationX
 else:
   static :
     hint("Declaration of " & "internal_SixDOFConstraintAxis_NumTranslation" &
         " already exists, not redeclaring")
 type
-  enum_SpringMode_536871568* {.size: sizeof(cint).} = enum
+  enum_SpringMode_536871640* {.size: sizeof(cint).} = enum
     SpringMode_FrequencyAndDamping = 0, SpringMode_StiffnessAndDamping = 1,
     internal_SpringMode_Count = 2, internal_SpringMode_Force32 = 2147483647
 type
-  enum_SoftBodyConstraintColor_536871572* {.size: sizeof(cint).} = enum
+  enum_SoftBodyConstraintColor_536871644* {.size: sizeof(cint).} = enum
     SoftBodyConstraintColor_ConstraintType = 0,
     SoftBodyConstraintColor_ConstraintGroup = 1,
     SoftBodyConstraintColor_ConstraintOrder = 2,
     internal_SoftBodyConstraintColor_Count = 3,
     internal_SoftBodyConstraintColor_Force32 = 2147483647
 type
-  enum_BodyManager_ShapeColor_536871576* {.size: sizeof(cint).} = enum
+  enum_BodyManager_ShapeColor_536871648* {.size: sizeof(cint).} = enum
     BodyManager_ShapeColor_InstanceColor = 0,
     BodyManager_ShapeColor_ShapeTypeColor = 1,
     BodyManager_ShapeColor_MotionTypeColor = 2,
@@ -163,17 +163,17 @@ type
     internal_BodyManager_ShapeColor_Count = 6,
     internal_BodyManager_ShapeColor_Force32 = 2147483647
 type
-  enum_DebugRenderer_CastShadow_536871580* {.size: sizeof(cint).} = enum
+  enum_DebugRenderer_CastShadow_536871652* {.size: sizeof(cint).} = enum
     DebugRenderer_CastShadow_On = 0, DebugRenderer_CastShadow_Off = 1,
     internal_DebugRenderer_CastShadow_Count = 2,
     internal_DebugRenderer_CastShadow_Force32 = 2147483647
 type
-  enum_DebugRenderer_DrawMode_536871584* {.size: sizeof(cint).} = enum
+  enum_DebugRenderer_DrawMode_536871656* {.size: sizeof(cint).} = enum
     DebugRenderer_DrawMode_Solid = 0, DebugRenderer_DrawMode_Wireframe = 1,
     internal_DebugRenderer_DrawMode_Count = 2,
     internal_DebugRenderer_DrawMode_Force32 = 2147483647
 type
-  enum_Mesh_Shape_BuildQuality_536871588* {.size: sizeof(cint).} = enum
+  enum_Mesh_Shape_BuildQuality_536871660* {.size: sizeof(cint).} = enum
     Mesh_Shape_BuildQuality_FavorRuntimePerformance = 0,
     Mesh_Shape_BuildQuality_FavorBuildSpeed = 1,
     internal_Mesh_Shape_BuildQuality_Count = 2,
@@ -806,62 +806,62 @@ else:
     hint("Declaration of " & "struct_ContactManifold" &
         " already exists, not redeclaring")
 type
-  BodyID_536871463 = uint32  ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:51:18
-  SubShapeID_536871465 = uint32 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:52:18
-  ObjectLayer_536871467 = uint16 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:53:18
-  BroadPhaseLayer_536871469 = uint8 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:54:18
-  CollisionGroupID_536871471 = uint32 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:55:18
-  CollisionSubGroupID_536871473 = uint32 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:56:18
-  CharacterID_536871475 = uint32 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:57:18
-  PhysicsUpdateError_536871479 = enum_PhysicsUpdateError_536871478 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:67:3
-  BodyType_536871483 = enum_BodyType_536871482 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:75:3
-  MotionType_536871487 = enum_MotionType_536871486 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:84:3
-  Activation_536871491 = enum_Activation_536871490 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:93:3
-  ValidateResult_536871495 = enum_ValidateResult_536871494 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:103:3
-  ShapeType_536871499 = enum_ShapeType_536871498 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:120:3
-  ShapeSubType_536871503 = enum_ShapeSubType_536871502 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:141:3
-  ConstraintType_536871507 = enum_ConstraintType_536871506 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:149:3
-  ConstraintSubType_536871511 = enum_ConstraintSubType_536871510 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:173:3
-  ConstraintSpace_536871515 = enum_ConstraintSpace_536871514 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:181:3
-  MotionQuality_536871519 = enum_MotionQuality_536871518 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:189:3
-  OverrideMassProperties_536871523 = enum_OverrideMassProperties_536871522 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:198:3
-  AllowedDOFs_536871527 = enum_AllowedDOFs_536871526 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:212:3
-  GroundState_536871531 = enum_GroundState_536871530 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:222:3
-  BackFaceMode_536871535 = enum_BackFaceMode_536871534 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:230:3
-  ActiveEdgeMode_536871539 = enum_ActiveEdgeMode_536871538 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:238:3
-  CollectFacesMode_536871543 = enum_CollectFacesMode_536871542 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:246:3
-  MotorState_536871547 = enum_MotorState_536871546 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:255:3
-  CollisionCollectorType_536871558 = enum_CollisionCollectorType_536871557 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:265:3
-  SwingType_536871562 = enum_SwingType_536871561 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:273:3
-  SixDOFConstraintAxis_536871566 = enum_SixDOFConstraintAxis_536871565 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:287:3
-  SpringMode_536871570 = enum_SpringMode_536871569 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:295:3
-  SoftBodyConstraintColor_536871574 = enum_SoftBodyConstraintColor_536871573 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:306:3
-  BodyManager_ShapeColor_536871578 = enum_BodyManager_ShapeColor_536871577 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:319:3
-  DebugRenderer_CastShadow_536871582 = enum_DebugRenderer_CastShadow_536871581 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:327:3
-  DebugRenderer_DrawMode_536871586 = enum_DebugRenderer_DrawMode_536871585 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:335:3
-  Mesh_Shape_BuildQuality_536871590 = enum_Mesh_Shape_BuildQuality_536871589 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:343:3
-  struct_Vec3_536871592 {.pure, inheritable, bycopy.} = object
+  BodyID_536871535 = uint32  ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:51:18
+  SubShapeID_536871537 = uint32 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:52:18
+  ObjectLayer_536871539 = uint16 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:53:18
+  BroadPhaseLayer_536871541 = uint8 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:54:18
+  CollisionGroupID_536871543 = uint32 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:55:18
+  CollisionSubGroupID_536871545 = uint32 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:56:18
+  CharacterID_536871547 = uint32 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:57:18
+  PhysicsUpdateError_536871551 = enum_PhysicsUpdateError_536871550 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:67:3
+  BodyType_536871555 = enum_BodyType_536871554 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:75:3
+  MotionType_536871559 = enum_MotionType_536871558 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:84:3
+  Activation_536871563 = enum_Activation_536871562 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:93:3
+  ValidateResult_536871567 = enum_ValidateResult_536871566 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:103:3
+  ShapeType_536871571 = enum_ShapeType_536871570 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:120:3
+  ShapeSubType_536871575 = enum_ShapeSubType_536871574 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:141:3
+  ConstraintType_536871579 = enum_ConstraintType_536871578 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:149:3
+  ConstraintSubType_536871583 = enum_ConstraintSubType_536871582 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:173:3
+  ConstraintSpace_536871587 = enum_ConstraintSpace_536871586 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:181:3
+  MotionQuality_536871591 = enum_MotionQuality_536871590 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:189:3
+  OverrideMassProperties_536871595 = enum_OverrideMassProperties_536871594 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:198:3
+  AllowedDOFs_536871599 = enum_AllowedDOFs_536871598 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:212:3
+  GroundState_536871603 = enum_GroundState_536871602 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:222:3
+  BackFaceMode_536871607 = enum_BackFaceMode_536871606 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:230:3
+  ActiveEdgeMode_536871611 = enum_ActiveEdgeMode_536871610 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:238:3
+  CollectFacesMode_536871615 = enum_CollectFacesMode_536871614 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:246:3
+  MotorState_536871619 = enum_MotorState_536871618 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:255:3
+  CollisionCollectorType_536871630 = enum_CollisionCollectorType_536871629 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:265:3
+  SwingType_536871634 = enum_SwingType_536871633 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:273:3
+  SixDOFConstraintAxis_536871638 = enum_SixDOFConstraintAxis_536871637 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:287:3
+  SpringMode_536871642 = enum_SpringMode_536871641 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:295:3
+  SoftBodyConstraintColor_536871646 = enum_SoftBodyConstraintColor_536871645 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:306:3
+  BodyManager_ShapeColor_536871650 = enum_BodyManager_ShapeColor_536871649 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:319:3
+  DebugRenderer_CastShadow_536871654 = enum_DebugRenderer_CastShadow_536871653 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:327:3
+  DebugRenderer_DrawMode_536871658 = enum_DebugRenderer_DrawMode_536871657 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:335:3
+  Mesh_Shape_BuildQuality_536871662 = enum_Mesh_Shape_BuildQuality_536871661 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:343:3
+  struct_Vec3_536871664 {.pure, inheritable, bycopy.} = object
     x*: cfloat               ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:345:16
     y*: cfloat
     z*: cfloat
-  Vec3_536871594 = struct_Vec3_536871593 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:349:3
-  struct_Vec4_536871596 {.pure, inheritable, bycopy.} = object
+  Vec3_536871666 = struct_Vec3_536871665 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:349:3
+  struct_Vec4_536871668 {.pure, inheritable, bycopy.} = object
     x*: cfloat               ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:351:16
     y*: cfloat
     z*: cfloat
     w*: cfloat
-  Vec4_536871598 = struct_Vec4_536871597 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:356:3
-  struct_Quat_536871600 {.pure, inheritable, bycopy.} = object
+  Vec4_536871670 = struct_Vec4_536871669 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:356:3
+  struct_Quat_536871672 {.pure, inheritable, bycopy.} = object
     x*: cfloat               ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:358:16
     y*: cfloat
     z*: cfloat
     w*: cfloat
-  Quat_536871602 = struct_Quat_536871601 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:363:3
-  struct_Plane_536871604 {.pure, inheritable, bycopy.} = object
-    normal*: Vec3_536871595  ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:365:16
+  Quat_536871674 = struct_Quat_536871673 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:363:3
+  struct_Plane_536871676 {.pure, inheritable, bycopy.} = object
+    normal*: Vec3_536871667  ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:365:16
     distance*: cfloat
-  Plane_536871606 = struct_Plane_536871605 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:368:3
-  struct_Matrix4x4_536871608 {.pure, inheritable, bycopy.} = object
+  Plane_536871678 = struct_Plane_536871677 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:368:3
+  struct_Matrix4x4_536871680 {.pure, inheritable, bycopy.} = object
     m11*: cfloat             ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:370:16
     m12*: cfloat
     m13*: cfloat
@@ -878,122 +878,122 @@ type
     m42*: cfloat
     m43*: cfloat
     m44*: cfloat
-  Matrix4x4_536871610 = struct_Matrix4x4_536871609 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:375:3
-  RVec3_536871612 = Vec3_536871595 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:391:18
-  RMatrix4x4_536871614 = Matrix4x4_536871611 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:392:23
-  Color_536871616 = uint32   ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:395:18
-  struct_AABox_536871618 {.pure, inheritable, bycopy.} = object
-    min*: Vec3_536871595     ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:397:16
-    max*: Vec3_536871595
-  AABox_536871620 = struct_AABox_536871619 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:400:3
-  struct_Triangle_536871622 {.pure, inheritable, bycopy.} = object
-    v1*: Vec3_536871595      ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:402:16
-    v2*: Vec3_536871595
-    v3*: Vec3_536871595
+  Matrix4x4_536871682 = struct_Matrix4x4_536871681 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:375:3
+  RVec3_536871684 = Vec3_536871667 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:391:18
+  RMatrix4x4_536871686 = Matrix4x4_536871683 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:392:23
+  Color_536871688 = uint32   ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:395:18
+  struct_AABox_536871690 {.pure, inheritable, bycopy.} = object
+    min*: Vec3_536871667     ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:397:16
+    max*: Vec3_536871667
+  AABox_536871692 = struct_AABox_536871691 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:400:3
+  struct_Triangle_536871694 {.pure, inheritable, bycopy.} = object
+    v1*: Vec3_536871667      ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:402:16
+    v2*: Vec3_536871667
+    v3*: Vec3_536871667
     materialIndex*: uint32
-  Triangle_536871624 = struct_Triangle_536871623 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:407:3
-  struct_IndexedTriangleNoMaterial_536871626 {.pure, inheritable, bycopy.} = object
+  Triangle_536871696 = struct_Triangle_536871695 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:407:3
+  struct_IndexedTriangleNoMaterial_536871698 {.pure, inheritable, bycopy.} = object
     i1*: uint32              ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:409:16
     i2*: uint32
     i3*: uint32
-  IndexedTriangleNoMaterial_536871628 = struct_IndexedTriangleNoMaterial_536871627 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:413:3
-  struct_IndexedTriangle_536871630 {.pure, inheritable, bycopy.} = object
+  IndexedTriangleNoMaterial_536871700 = struct_IndexedTriangleNoMaterial_536871699 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:413:3
+  struct_IndexedTriangle_536871702 {.pure, inheritable, bycopy.} = object
     i1*: uint32              ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:415:16
     i2*: uint32
     i3*: uint32
     materialIndex*: uint32
     userData*: uint32
-  IndexedTriangle_536871632 = struct_IndexedTriangle_536871631 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:421:3
-  struct_MassProperties_536871634 {.pure, inheritable, bycopy.} = object
+  IndexedTriangle_536871704 = struct_IndexedTriangle_536871703 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:421:3
+  struct_MassProperties_536871706 {.pure, inheritable, bycopy.} = object
     mass*: cfloat            ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:423:16
-    inertia*: Matrix4x4_536871611
-  MassProperties_536871636 = struct_MassProperties_536871635 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:657:53
-  struct_CollideSettingsBase_536871638 {.pure, inheritable, bycopy.} = object
-    activeEdgeMode*: ActiveEdgeMode_536871540 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:428:16
-    collectFacesMode*: CollectFacesMode_536871544
+    inertia*: Matrix4x4_536871683
+  MassProperties_536871708 = struct_MassProperties_536871707 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:657:53
+  struct_CollideSettingsBase_536871710 {.pure, inheritable, bycopy.} = object
+    activeEdgeMode*: ActiveEdgeMode_536871612 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:428:16
+    collectFacesMode*: CollectFacesMode_536871616
     collisionTolerance*: cfloat
     penetrationTolerance*: cfloat
-    activeEdgeMovementDirection*: Vec3_536871595
-  CollideSettingsBase_536871640 = struct_CollideSettingsBase_536871639 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:443:3
-  struct_CollideShapeSettings_536871642 {.pure, inheritable, bycopy.} = object
-    base*: CollideSettingsBase_536871641 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:446:16
+    activeEdgeMovementDirection*: Vec3_536871667
+  CollideSettingsBase_536871712 = struct_CollideSettingsBase_536871711 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:443:3
+  struct_CollideShapeSettings_536871714 {.pure, inheritable, bycopy.} = object
+    base*: CollideSettingsBase_536871713 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:446:16
     maxSeparationDistance*: cfloat
-    backFaceMode*: BackFaceMode_536871536
-  CollideShapeSettings_536871644 = struct_CollideShapeSettings_536871643 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:453:3
-  struct_ShapeCastSettings_536871646 {.pure, inheritable, bycopy.} = object
-    base*: CollideSettingsBase_536871641 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:457:16
-    backFaceModeTriangles*: BackFaceMode_536871536
-    backFaceModeConvex*: BackFaceMode_536871536
+    backFaceMode*: BackFaceMode_536871608
+  CollideShapeSettings_536871716 = struct_CollideShapeSettings_536871715 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:453:3
+  struct_ShapeCastSettings_536871718 {.pure, inheritable, bycopy.} = object
+    base*: CollideSettingsBase_536871713 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:457:16
+    backFaceModeTriangles*: BackFaceMode_536871608
+    backFaceModeConvex*: BackFaceMode_536871608
     useShrunkenShapeAndConvexRadius*: bool
     returnDeepestPoint*: bool
-  ShapeCastSettings_536871648 = struct_ShapeCastSettings_536871647 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:471:3
-  struct_RayCastSettings_536871650 {.pure, inheritable, bycopy.} = object
-    backFaceModeTriangles*: BackFaceMode_536871536 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:473:16
-    backFaceModeConvex*: BackFaceMode_536871536
+  ShapeCastSettings_536871720 = struct_ShapeCastSettings_536871719 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:471:3
+  struct_RayCastSettings_536871722 {.pure, inheritable, bycopy.} = object
+    backFaceModeTriangles*: BackFaceMode_536871608 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:473:16
+    backFaceModeConvex*: BackFaceMode_536871608
     treatConvexAsSolid*: bool
-  RayCastSettings_536871652 = struct_RayCastSettings_536871651 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:482:3
-  struct_SpringSettings_536871654 {.pure, inheritable, bycopy.} = object
-    mode*: SpringMode_536871571 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:484:16
+  RayCastSettings_536871724 = struct_RayCastSettings_536871723 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:482:3
+  struct_SpringSettings_536871726 {.pure, inheritable, bycopy.} = object
+    mode*: SpringMode_536871643 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:484:16
     frequencyOrStiffness*: cfloat
     damping*: cfloat
-  SpringSettings_536871656 = struct_SpringSettings_536871655 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:488:3
-  struct_MotorSettings_536871658 {.pure, inheritable, bycopy.} = object
-    springSettings*: SpringSettings_536871657 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:490:16
+  SpringSettings_536871728 = struct_SpringSettings_536871727 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:488:3
+  struct_MotorSettings_536871730 {.pure, inheritable, bycopy.} = object
+    springSettings*: SpringSettings_536871729 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:490:16
     minForceLimit*: cfloat
     maxForceLimit*: cfloat
     minTorqueLimit*: cfloat
     maxTorqueLimit*: cfloat
-  MotorSettings_536871660 = struct_MotorSettings_536871659 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:496:3
-  struct_SubShapeIDPair_536871662 {.pure, inheritable, bycopy.} = object
-    Body1ID*: BodyID_536871464 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:498:16
-    subShapeID1*: SubShapeID_536871466
-    Body2ID*: BodyID_536871464
-    subShapeID2*: SubShapeID_536871466
-  SubShapeIDPair_536871664 = struct_SubShapeIDPair_536871663 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:503:3
-  struct_BroadPhaseCastResult_536871666 {.pure, inheritable, bycopy.} = object
-    bodyID*: BodyID_536871464 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:505:16
+  MotorSettings_536871732 = struct_MotorSettings_536871731 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:496:3
+  struct_SubShapeIDPair_536871734 {.pure, inheritable, bycopy.} = object
+    Body1ID*: BodyID_536871536 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:498:16
+    subShapeID1*: SubShapeID_536871538
+    Body2ID*: BodyID_536871536
+    subShapeID2*: SubShapeID_536871538
+  SubShapeIDPair_536871736 = struct_SubShapeIDPair_536871735 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:503:3
+  struct_BroadPhaseCastResult_536871738 {.pure, inheritable, bycopy.} = object
+    bodyID*: BodyID_536871536 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:505:16
     fraction*: cfloat
-  BroadPhaseCastResult_536871668 = struct_BroadPhaseCastResult_536871667 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:508:3
-  struct_RayCastResult_536871670 {.pure, inheritable, bycopy.} = object
-    bodyID*: BodyID_536871464 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:510:16
+  BroadPhaseCastResult_536871740 = struct_BroadPhaseCastResult_536871739 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:508:3
+  struct_RayCastResult_536871742 {.pure, inheritable, bycopy.} = object
+    bodyID*: BodyID_536871536 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:510:16
     fraction*: cfloat
-    subShapeID2*: SubShapeID_536871466
-  RayCastResult_536871672 = struct_RayCastResult_536871671 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:514:3
-  struct_CollidePointResult_536871674 {.pure, inheritable, bycopy.} = object
-    bodyID*: BodyID_536871464 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:516:16
-    subShapeID2*: SubShapeID_536871466
-  CollidePointResult_536871676 = struct_CollidePointResult_536871675 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:519:3
-  struct_CollideShapeResult_536871678 {.pure, inheritable, bycopy.} = object
-    contactPointOn1*: Vec3_536871595 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:521:16
-    contactPointOn2*: Vec3_536871595
-    penetrationAxis*: Vec3_536871595
+    subShapeID2*: SubShapeID_536871538
+  RayCastResult_536871744 = struct_RayCastResult_536871743 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:514:3
+  struct_CollidePointResult_536871746 {.pure, inheritable, bycopy.} = object
+    bodyID*: BodyID_536871536 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:516:16
+    subShapeID2*: SubShapeID_536871538
+  CollidePointResult_536871748 = struct_CollidePointResult_536871747 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:519:3
+  struct_CollideShapeResult_536871750 {.pure, inheritable, bycopy.} = object
+    contactPointOn1*: Vec3_536871667 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:521:16
+    contactPointOn2*: Vec3_536871667
+    penetrationAxis*: Vec3_536871667
     penetrationDepth*: cfloat
-    subShapeID1*: SubShapeID_536871466
-    subShapeID2*: SubShapeID_536871466
-    bodyID2*: BodyID_536871464
+    subShapeID1*: SubShapeID_536871538
+    subShapeID2*: SubShapeID_536871538
+    bodyID2*: BodyID_536871536
     shape1FaceCount*: uint32
-    shape1Faces*: ptr Vec3_536871595
+    shape1Faces*: ptr Vec3_536871667
     shape2FaceCount*: uint32
-    shape2Faces*: ptr Vec3_536871595
-  CollideShapeResult_536871680 = struct_CollideShapeResult_536871679 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:660:53
-  struct_ShapeCastResult_536871682 {.pure, inheritable, bycopy.} = object
-    contactPointOn1*: Vec3_536871595 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:535:16
-    contactPointOn2*: Vec3_536871595
-    penetrationAxis*: Vec3_536871595
+    shape2Faces*: ptr Vec3_536871667
+  CollideShapeResult_536871752 = struct_CollideShapeResult_536871751 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:660:53
+  struct_ShapeCastResult_536871754 {.pure, inheritable, bycopy.} = object
+    contactPointOn1*: Vec3_536871667 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:535:16
+    contactPointOn2*: Vec3_536871667
+    penetrationAxis*: Vec3_536871667
     penetrationDepth*: cfloat
-    subShapeID1*: SubShapeID_536871466
-    subShapeID2*: SubShapeID_536871466
-    bodyID2*: BodyID_536871464
+    subShapeID1*: SubShapeID_536871538
+    subShapeID2*: SubShapeID_536871538
+    bodyID2*: BodyID_536871536
     fraction*: cfloat
     isBackFaceHit*: bool
-  ShapeCastResult_536871684 = struct_ShapeCastResult_536871683 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:545:3
-  struct_DrawSettings_536871686 {.pure, inheritable, bycopy.} = object
+  ShapeCastResult_536871756 = struct_ShapeCastResult_536871755 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:545:3
+  struct_DrawSettings_536871758 {.pure, inheritable, bycopy.} = object
     drawGetSupportFunction*: bool ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:547:16
     drawSupportDirection*: bool
     drawGetSupportingFace*: bool
     drawShape*: bool
     drawShapeWireframe*: bool
-    drawShapeColor*: BodyManager_ShapeColor_536871579
+    drawShapeColor*: BodyManager_ShapeColor_536871651
     drawBoundingBox*: bool
     drawCenterOfMassTransform*: bool
     drawWorldTransform*: bool
@@ -1008,293 +1008,293 @@ type
     drawSoftBodySkinConstraints*: bool
     drawSoftBodyLRAConstraints*: bool
     drawSoftBodyPredictedBounds*: bool
-    drawSoftBodyConstraintColor*: SoftBodyConstraintColor_536871575
-  DrawSettings_536871688 = struct_DrawSettings_536871687 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:569:3
-  struct_SupportingFace_536871690 {.pure, inheritable, bycopy.} = object
+    drawSoftBodyConstraintColor*: SoftBodyConstraintColor_536871647
+  DrawSettings_536871760 = struct_DrawSettings_536871759 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:569:3
+  struct_SupportingFace_536871762 {.pure, inheritable, bycopy.} = object
     count*: uint32           ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:571:16
-    vertices*: array[32'i64, Vec3_536871595]
-  SupportingFace_536871692 = struct_SupportingFace_536871691 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:574:3
-  CastRayResultCallback_536871694 = proc (a0: pointer; a1: ptr RayCastResult_536871673): void {.
+    vertices*: array[32'i64, Vec3_536871667]
+  SupportingFace_536871764 = struct_SupportingFace_536871763 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:574:3
+  CastRayResultCallback_536871766 = proc (a0: pointer; a1: ptr RayCastResult_536871745): void {.
       cdecl.}                ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:576:14
-  RayCastBodyResultCallback_536871696 = proc (a0: pointer;
-      a1: ptr BroadPhaseCastResult_536871669): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:577:14
-  CollideShapeBodyResultCallback_536871698 = proc (a0: pointer; a1: BodyID_536871464): void {.
+  RayCastBodyResultCallback_536871768 = proc (a0: pointer;
+      a1: ptr BroadPhaseCastResult_536871741): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:577:14
+  CollideShapeBodyResultCallback_536871770 = proc (a0: pointer; a1: BodyID_536871536): void {.
       cdecl.}                ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:578:14
-  CollidePointResultCallback_536871700 = proc (a0: pointer;
-      a1: ptr CollidePointResult_536871677): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:579:14
-  CollideShapeResultCallback_536871702 = proc (a0: pointer;
-      a1: ptr CollideShapeResult_536871681): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:580:14
-  CastShapeResultCallback_536871704 = proc (a0: pointer; a1: ptr ShapeCastResult_536871685): void {.
+  CollidePointResultCallback_536871772 = proc (a0: pointer;
+      a1: ptr CollidePointResult_536871749): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:579:14
+  CollideShapeResultCallback_536871774 = proc (a0: pointer;
+      a1: ptr CollideShapeResult_536871753): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:580:14
+  CastShapeResultCallback_536871776 = proc (a0: pointer; a1: ptr ShapeCastResult_536871757): void {.
       cdecl.}                ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:581:14
-  CastRayCollectorCallback_536871706 = proc (a0: pointer; a1: ptr RayCastResult_536871673): cfloat {.
+  CastRayCollectorCallback_536871778 = proc (a0: pointer; a1: ptr RayCastResult_536871745): cfloat {.
       cdecl.}                ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:583:15
-  RayCastBodyCollectorCallback_536871708 = proc (a0: pointer;
-      a1: ptr BroadPhaseCastResult_536871669): cfloat {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:584:15
-  CollideShapeBodyCollectorCallback_536871710 = proc (a0: pointer; a1: BodyID_536871464): cfloat {.
+  RayCastBodyCollectorCallback_536871780 = proc (a0: pointer;
+      a1: ptr BroadPhaseCastResult_536871741): cfloat {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:584:15
+  CollideShapeBodyCollectorCallback_536871782 = proc (a0: pointer; a1: BodyID_536871536): cfloat {.
       cdecl.}                ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:585:15
-  CollidePointCollectorCallback_536871712 = proc (a0: pointer;
-      a1: ptr CollidePointResult_536871677): cfloat {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:586:15
-  CollideShapeCollectorCallback_536871714 = proc (a0: pointer;
-      a1: ptr CollideShapeResult_536871681): cfloat {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:587:15
-  CastShapeCollectorCallback_536871716 = proc (a0: pointer;
-      a1: ptr ShapeCastResult_536871685): cfloat {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:588:15
-  BroadPhaseLayerInterface_536871718 = struct_BroadPhaseLayerInterface ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:590:47
-  ObjectVsBroadPhaseLayerFilter_536871720 = struct_ObjectVsBroadPhaseLayerFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:591:50
-  ObjectLayerPairFilter_536871722 = struct_ObjectLayerPairFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:592:44
-  BroadPhaseLayerFilter_536871724 = struct_BroadPhaseLayerFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:594:53
-  ObjectLayerFilter_536871726 = struct_ObjectLayerFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:595:53
-  BodyFilter_536871728 = struct_BodyFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:596:53
-  ShapeFilter_536871730 = struct_ShapeFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:597:53
-  SimShapeFilter_536871732 = struct_SimShapeFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:599:39
-  PhysicsSystem_536871734 = struct_PhysicsSystem ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:601:53
-  PhysicsMaterial_536871736 = struct_PhysicsMaterial ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:603:40
-  ShapeSettings_536871738 = struct_ShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:606:53
-  ConvexShapeSettings_536871740 = struct_ConvexShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:607:46
-  SphereShapeSettings_536871742 = struct_SphereShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:608:53
-  BoxShapeSettings_536871744 = struct_BoxShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:609:53
-  PlaneShapeSettings_536871746 = struct_PlaneShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:610:53
-  TriangleShapeSettings_536871748 = struct_TriangleShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:611:53
-  CapsuleShapeSettings_536871750 = struct_CapsuleShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:612:53
-  TaperedCapsuleShapeSettings_536871752 = struct_TaperedCapsuleShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:613:53
-  CylinderShapeSettings_536871754 = struct_CylinderShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:614:53
-  TaperedCylinderShapeSettings_536871756 = struct_TaperedCylinderShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:615:53
-  ConvexHullShapeSettings_536871758 = struct_ConvexHullShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:616:53
-  CompoundShapeSettings_536871760 = struct_CompoundShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:617:53
-  StaticCompoundShapeSettings_536871762 = struct_StaticCompoundShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:618:53
-  MutableCompoundShapeSettings_536871764 = struct_MutableCompoundShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:619:53
-  MeshShapeSettings_536871766 = struct_MeshShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:620:53
-  HeightFieldShapeSettings_536871768 = struct_HeightFieldShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:621:53
-  RotatedTranslatedShapeSettings_536871770 = struct_RotatedTranslatedShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:622:53
-  ScaledShapeSettings_536871772 = struct_ScaledShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:623:53
-  OffsetCenterOfMassShapeSettings_536871774 = struct_OffsetCenterOfMassShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:624:53
-  EmptyShapeSettings_536871776 = struct_EmptyShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:625:53
-  Shape_536871778 = struct_Shape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:628:53
-  ConvexShape_536871780 = struct_ConvexShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:629:53
-  SphereShape_536871782 = struct_SphereShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:630:53
-  BoxShape_536871784 = struct_BoxShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:631:53
-  PlaneShape_536871786 = struct_PlaneShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:632:53
-  CapsuleShape_536871788 = struct_CapsuleShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:633:53
-  CylinderShape_536871790 = struct_CylinderShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:634:53
-  TaperedCylinderShape_536871792 = struct_TaperedCylinderShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:635:53
-  TriangleShape_536871794 = struct_TriangleShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:636:41
-  TaperedCapsuleShape_536871796 = struct_TaperedCapsuleShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:637:46
-  ConvexHullShape_536871798 = struct_ConvexHullShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:638:53
-  CompoundShape_536871800 = struct_CompoundShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:639:53
-  StaticCompoundShape_536871802 = struct_StaticCompoundShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:640:53
-  MutableCompoundShape_536871804 = struct_MutableCompoundShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:641:53
-  MeshShape_536871806 = struct_MeshShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:642:53
-  HeightFieldShape_536871808 = struct_HeightFieldShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:643:53
-  DecoratedShape_536871810 = struct_DecoratedShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:644:53
-  RotatedTranslatedShape_536871812 = struct_RotatedTranslatedShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:645:53
-  ScaledShape_536871814 = struct_ScaledShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:646:53
-  OffsetCenterOfMassShape_536871816 = struct_OffsetCenterOfMassShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:647:53
-  EmptyShape_536871818 = struct_EmptyShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:648:53
-  BodyCreationSettings_536871820 = struct_BodyCreationSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:650:53
-  SoftBodyCreationSettings_536871822 = struct_SoftBodyCreationSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:651:53
-  BodyInterface_536871824 = struct_BodyInterface ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:652:53
-  BodyLockInterface_536871826 = struct_BodyLockInterface ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:653:53
-  BroadPhaseQuery_536871828 = struct_BroadPhaseQuery ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:654:53
-  NarrowPhaseQuery_536871830 = struct_NarrowPhaseQuery ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:655:53
-  MotionProperties_536871832 = struct_MotionProperties ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:656:53
-  Body_536871834 = struct_Body ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:658:53
-  ContactListener_536871836 = struct_ContactListener ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:661:53
-  ContactManifold_536871838 = struct_ContactManifold ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:662:53
-  ContactSettings_536871840 = struct_ContactSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:663:53
-  struct_CollisionEstimationResultImpulse_536871842 {.pure, inheritable, bycopy.} = object
+  CollidePointCollectorCallback_536871784 = proc (a0: pointer;
+      a1: ptr CollidePointResult_536871749): cfloat {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:586:15
+  CollideShapeCollectorCallback_536871786 = proc (a0: pointer;
+      a1: ptr CollideShapeResult_536871753): cfloat {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:587:15
+  CastShapeCollectorCallback_536871788 = proc (a0: pointer;
+      a1: ptr ShapeCastResult_536871757): cfloat {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:588:15
+  BroadPhaseLayerInterface_536871790 = struct_BroadPhaseLayerInterface ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:590:47
+  ObjectVsBroadPhaseLayerFilter_536871792 = struct_ObjectVsBroadPhaseLayerFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:591:50
+  ObjectLayerPairFilter_536871794 = struct_ObjectLayerPairFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:592:44
+  BroadPhaseLayerFilter_536871796 = struct_BroadPhaseLayerFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:594:53
+  ObjectLayerFilter_536871798 = struct_ObjectLayerFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:595:53
+  BodyFilter_536871800 = struct_BodyFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:596:53
+  ShapeFilter_536871802 = struct_ShapeFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:597:53
+  SimShapeFilter_536871804 = struct_SimShapeFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:599:39
+  PhysicsSystem_536871806 = struct_PhysicsSystem ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:601:53
+  PhysicsMaterial_536871808 = struct_PhysicsMaterial ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:603:40
+  ShapeSettings_536871810 = struct_ShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:606:53
+  ConvexShapeSettings_536871812 = struct_ConvexShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:607:46
+  SphereShapeSettings_536871814 = struct_SphereShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:608:53
+  BoxShapeSettings_536871816 = struct_BoxShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:609:53
+  PlaneShapeSettings_536871818 = struct_PlaneShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:610:53
+  TriangleShapeSettings_536871820 = struct_TriangleShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:611:53
+  CapsuleShapeSettings_536871822 = struct_CapsuleShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:612:53
+  TaperedCapsuleShapeSettings_536871824 = struct_TaperedCapsuleShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:613:53
+  CylinderShapeSettings_536871826 = struct_CylinderShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:614:53
+  TaperedCylinderShapeSettings_536871828 = struct_TaperedCylinderShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:615:53
+  ConvexHullShapeSettings_536871830 = struct_ConvexHullShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:616:53
+  CompoundShapeSettings_536871832 = struct_CompoundShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:617:53
+  StaticCompoundShapeSettings_536871834 = struct_StaticCompoundShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:618:53
+  MutableCompoundShapeSettings_536871836 = struct_MutableCompoundShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:619:53
+  MeshShapeSettings_536871838 = struct_MeshShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:620:53
+  HeightFieldShapeSettings_536871840 = struct_HeightFieldShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:621:53
+  RotatedTranslatedShapeSettings_536871842 = struct_RotatedTranslatedShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:622:53
+  ScaledShapeSettings_536871844 = struct_ScaledShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:623:53
+  OffsetCenterOfMassShapeSettings_536871846 = struct_OffsetCenterOfMassShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:624:53
+  EmptyShapeSettings_536871848 = struct_EmptyShapeSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:625:53
+  Shape_536871850 = struct_Shape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:628:53
+  ConvexShape_536871852 = struct_ConvexShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:629:53
+  SphereShape_536871854 = struct_SphereShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:630:53
+  BoxShape_536871856 = struct_BoxShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:631:53
+  PlaneShape_536871858 = struct_PlaneShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:632:53
+  CapsuleShape_536871860 = struct_CapsuleShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:633:53
+  CylinderShape_536871862 = struct_CylinderShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:634:53
+  TaperedCylinderShape_536871864 = struct_TaperedCylinderShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:635:53
+  TriangleShape_536871866 = struct_TriangleShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:636:41
+  TaperedCapsuleShape_536871868 = struct_TaperedCapsuleShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:637:46
+  ConvexHullShape_536871870 = struct_ConvexHullShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:638:53
+  CompoundShape_536871872 = struct_CompoundShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:639:53
+  StaticCompoundShape_536871874 = struct_StaticCompoundShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:640:53
+  MutableCompoundShape_536871876 = struct_MutableCompoundShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:641:53
+  MeshShape_536871878 = struct_MeshShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:642:53
+  HeightFieldShape_536871880 = struct_HeightFieldShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:643:53
+  DecoratedShape_536871882 = struct_DecoratedShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:644:53
+  RotatedTranslatedShape_536871884 = struct_RotatedTranslatedShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:645:53
+  ScaledShape_536871886 = struct_ScaledShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:646:53
+  OffsetCenterOfMassShape_536871888 = struct_OffsetCenterOfMassShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:647:53
+  EmptyShape_536871890 = struct_EmptyShape ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:648:53
+  BodyCreationSettings_536871892 = struct_BodyCreationSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:650:53
+  SoftBodyCreationSettings_536871894 = struct_SoftBodyCreationSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:651:53
+  BodyInterface_536871896 = struct_BodyInterface ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:652:53
+  BodyLockInterface_536871898 = struct_BodyLockInterface ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:653:53
+  BroadPhaseQuery_536871900 = struct_BroadPhaseQuery ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:654:53
+  NarrowPhaseQuery_536871902 = struct_NarrowPhaseQuery ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:655:53
+  MotionProperties_536871904 = struct_MotionProperties ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:656:53
+  Body_536871906 = struct_Body ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:658:53
+  ContactListener_536871908 = struct_ContactListener ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:661:53
+  ContactManifold_536871910 = struct_ContactManifold ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:662:53
+  ContactSettings_536871912 = struct_ContactSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:663:53
+  struct_CollisionEstimationResultImpulse_536871914 {.pure, inheritable, bycopy.} = object
     contactImpulse*: cfloat  ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:665:16
     frictionImpulse1*: cfloat
     frictionImpulse2*: cfloat
-  CollisionEstimationResultImpulse_536871844 = struct_CollisionEstimationResultImpulse_536871843 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:669:3
-  struct_CollisionEstimationResult_536871846 {.pure, inheritable, bycopy.} = object
-    linearVelocity1*: Vec3_536871595 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:671:16
-    angularVelocity1*: Vec3_536871595
-    linearVelocity2*: Vec3_536871595
-    angularVelocity2*: Vec3_536871595
-    tangent1*: Vec3_536871595
-    tangent2*: Vec3_536871595
+  CollisionEstimationResultImpulse_536871916 = struct_CollisionEstimationResultImpulse_536871915 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:669:3
+  struct_CollisionEstimationResult_536871918 {.pure, inheritable, bycopy.} = object
+    linearVelocity1*: Vec3_536871667 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:671:16
+    angularVelocity1*: Vec3_536871667
+    linearVelocity2*: Vec3_536871667
+    angularVelocity2*: Vec3_536871667
+    tangent1*: Vec3_536871667
+    tangent2*: Vec3_536871667
     impulseCount*: uint32
-    impulses*: ptr CollisionEstimationResultImpulse_536871845
-  CollisionEstimationResult_536871848 = struct_CollisionEstimationResult_536871847 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:682:3
-  BodyActivationListener_536871850 = struct_BodyActivationListener ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:684:53
-  BodyDrawFilter_536871852 = struct_BodyDrawFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:685:53
-  SharedMutex_536871854 = struct_SharedMutex ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:687:53
-  DebugRenderer_536871856 = struct_DebugRenderer ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:689:53
-  Constraint_536871858 = struct_Constraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:692:53
-  TwoBodyConstraint_536871860 = struct_TwoBodyConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:693:53
-  FixedConstraint_536871862 = struct_FixedConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:694:53
-  DistanceConstraint_536871864 = struct_DistanceConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:695:53
-  PointConstraint_536871866 = struct_PointConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:696:53
-  HingeConstraint_536871868 = struct_HingeConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:697:53
-  SliderConstraint_536871870 = struct_SliderConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:698:53
-  ConeConstraint_536871872 = struct_ConeConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:699:53
-  SwingTwistConstraint_536871874 = struct_SwingTwistConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:700:53
-  SixDOFConstraint_536871876 = struct_SixDOFConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:701:44
-  GearConstraint_536871878 = struct_GearConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:702:42
-  CharacterBase_536871880 = struct_CharacterBase ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:705:38
-  Character_536871882 = struct_Character ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:706:35
-  CharacterVirtual_536871884 = struct_CharacterVirtual ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:707:53
-  CharacterContactListener_536871886 = struct_CharacterContactListener ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:708:47
-  CharacterVsCharacterCollision_536871888 = struct_CharacterVsCharacterCollision ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:709:50
-  Skeleton_536871890 = struct_Skeleton ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:712:35
-  RagdollSettings_536871892 = struct_RagdollSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:713:40
-  Ragdoll_536871894 = struct_Ragdoll ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:714:34
-  struct_ConstraintSettings_536871896 {.pure, inheritable, bycopy.} = object
+    impulses*: ptr CollisionEstimationResultImpulse_536871917
+  CollisionEstimationResult_536871920 = struct_CollisionEstimationResult_536871919 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:682:3
+  BodyActivationListener_536871922 = struct_BodyActivationListener ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:684:53
+  BodyDrawFilter_536871924 = struct_BodyDrawFilter ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:685:53
+  SharedMutex_536871926 = struct_SharedMutex ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:687:53
+  DebugRenderer_536871928 = struct_DebugRenderer ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:689:53
+  Constraint_536871930 = struct_Constraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:692:53
+  TwoBodyConstraint_536871932 = struct_TwoBodyConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:693:53
+  FixedConstraint_536871934 = struct_FixedConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:694:53
+  DistanceConstraint_536871936 = struct_DistanceConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:695:53
+  PointConstraint_536871938 = struct_PointConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:696:53
+  HingeConstraint_536871940 = struct_HingeConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:697:53
+  SliderConstraint_536871942 = struct_SliderConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:698:53
+  ConeConstraint_536871944 = struct_ConeConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:699:53
+  SwingTwistConstraint_536871946 = struct_SwingTwistConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:700:53
+  SixDOFConstraint_536871948 = struct_SixDOFConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:701:44
+  GearConstraint_536871950 = struct_GearConstraint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:702:42
+  CharacterBase_536871952 = struct_CharacterBase ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:705:38
+  Character_536871954 = struct_Character ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:706:35
+  CharacterVirtual_536871956 = struct_CharacterVirtual ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:707:53
+  CharacterContactListener_536871958 = struct_CharacterContactListener ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:708:47
+  CharacterVsCharacterCollision_536871960 = struct_CharacterVsCharacterCollision ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:709:50
+  Skeleton_536871962 = struct_Skeleton ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:712:35
+  RagdollSettings_536871964 = struct_RagdollSettings ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:713:40
+  Ragdoll_536871966 = struct_Ragdoll ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:714:34
+  struct_ConstraintSettings_536871968 {.pure, inheritable, bycopy.} = object
     enabled*: bool           ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:716:16
     constraintPriority*: uint32
     numVelocityStepsOverride*: uint32
     numPositionStepsOverride*: uint32
     drawConstraintSize*: cfloat
     userData*: uint64
-  ConstraintSettings_536871898 = struct_ConstraintSettings_536871897 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:723:3
-  struct_FixedConstraintSettings_536871900 {.pure, inheritable, bycopy.} = object
-    base*: ConstraintSettings_536871899 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:725:16
-    space*: ConstraintSpace_536871516
+  ConstraintSettings_536871970 = struct_ConstraintSettings_536871969 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:723:3
+  struct_FixedConstraintSettings_536871972 {.pure, inheritable, bycopy.} = object
+    base*: ConstraintSettings_536871971 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:725:16
+    space*: ConstraintSpace_536871588
     autoDetectPoint*: bool
-    point1*: RVec3_536871613
-    axisX1*: Vec3_536871595
-    axisY1*: Vec3_536871595
-    point2*: RVec3_536871613
-    axisX2*: Vec3_536871595
-    axisY2*: Vec3_536871595
-  FixedConstraintSettings_536871902 = struct_FixedConstraintSettings_536871901 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:736:3
-  struct_DistanceConstraintSettings_536871904 {.pure, inheritable, bycopy.} = object
-    base*: ConstraintSettings_536871899 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:738:16
-    space*: ConstraintSpace_536871516
-    point1*: RVec3_536871613
-    point2*: RVec3_536871613
+    point1*: RVec3_536871685
+    axisX1*: Vec3_536871667
+    axisY1*: Vec3_536871667
+    point2*: RVec3_536871685
+    axisX2*: Vec3_536871667
+    axisY2*: Vec3_536871667
+  FixedConstraintSettings_536871974 = struct_FixedConstraintSettings_536871973 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:736:3
+  struct_DistanceConstraintSettings_536871976 {.pure, inheritable, bycopy.} = object
+    base*: ConstraintSettings_536871971 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:738:16
+    space*: ConstraintSpace_536871588
+    point1*: RVec3_536871685
+    point2*: RVec3_536871685
     minDistance*: cfloat
     maxDistance*: cfloat
-    limitsSpringSettings*: SpringSettings_536871657
-  DistanceConstraintSettings_536871906 = struct_DistanceConstraintSettings_536871905 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:747:3
-  struct_PointConstraintSettings_536871908 {.pure, inheritable, bycopy.} = object
-    base*: ConstraintSettings_536871899 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:749:16
-    space*: ConstraintSpace_536871516
-    point1*: RVec3_536871613
-    point2*: RVec3_536871613
-  PointConstraintSettings_536871910 = struct_PointConstraintSettings_536871909 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:755:3
-  struct_HingeConstraintSettings_536871912 {.pure, inheritable, bycopy.} = object
-    base*: ConstraintSettings_536871899 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:757:16
-    space*: ConstraintSpace_536871516
-    point1*: RVec3_536871613
-    hingeAxis1*: Vec3_536871595
-    normalAxis1*: Vec3_536871595
-    point2*: RVec3_536871613
-    hingeAxis2*: Vec3_536871595
-    normalAxis2*: Vec3_536871595
+    limitsSpringSettings*: SpringSettings_536871729
+  DistanceConstraintSettings_536871978 = struct_DistanceConstraintSettings_536871977 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:747:3
+  struct_PointConstraintSettings_536871980 {.pure, inheritable, bycopy.} = object
+    base*: ConstraintSettings_536871971 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:749:16
+    space*: ConstraintSpace_536871588
+    point1*: RVec3_536871685
+    point2*: RVec3_536871685
+  PointConstraintSettings_536871982 = struct_PointConstraintSettings_536871981 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:755:3
+  struct_HingeConstraintSettings_536871984 {.pure, inheritable, bycopy.} = object
+    base*: ConstraintSettings_536871971 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:757:16
+    space*: ConstraintSpace_536871588
+    point1*: RVec3_536871685
+    hingeAxis1*: Vec3_536871667
+    normalAxis1*: Vec3_536871667
+    point2*: RVec3_536871685
+    hingeAxis2*: Vec3_536871667
+    normalAxis2*: Vec3_536871667
     limitsMin*: cfloat
     limitsMax*: cfloat
-    limitsSpringSettings*: SpringSettings_536871657
+    limitsSpringSettings*: SpringSettings_536871729
     maxFrictionTorque*: cfloat
-    motorSettings*: MotorSettings_536871661
-  HingeConstraintSettings_536871914 = struct_HingeConstraintSettings_536871913 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:772:3
-  struct_SliderConstraintSettings_536871916 {.pure, inheritable, bycopy.} = object
-    base*: ConstraintSettings_536871899 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:774:16
-    space*: ConstraintSpace_536871516
+    motorSettings*: MotorSettings_536871733
+  HingeConstraintSettings_536871986 = struct_HingeConstraintSettings_536871985 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:772:3
+  struct_SliderConstraintSettings_536871988 {.pure, inheritable, bycopy.} = object
+    base*: ConstraintSettings_536871971 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:774:16
+    space*: ConstraintSpace_536871588
     autoDetectPoint*: bool
-    point1*: RVec3_536871613
-    sliderAxis1*: Vec3_536871595
-    normalAxis1*: Vec3_536871595
-    point2*: RVec3_536871613
-    sliderAxis2*: Vec3_536871595
-    normalAxis2*: Vec3_536871595
+    point1*: RVec3_536871685
+    sliderAxis1*: Vec3_536871667
+    normalAxis1*: Vec3_536871667
+    point2*: RVec3_536871685
+    sliderAxis2*: Vec3_536871667
+    normalAxis2*: Vec3_536871667
     limitsMin*: cfloat
     limitsMax*: cfloat
-    limitsSpringSettings*: SpringSettings_536871657
+    limitsSpringSettings*: SpringSettings_536871729
     maxFrictionForce*: cfloat
-    motorSettings*: MotorSettings_536871661
-  SliderConstraintSettings_536871918 = struct_SliderConstraintSettings_536871917 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:790:3
-  struct_ConeConstraintSettings_536871920 {.pure, inheritable, bycopy.} = object
-    base*: ConstraintSettings_536871899 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:792:16
-    space*: ConstraintSpace_536871516
-    point1*: RVec3_536871613
-    twistAxis1*: Vec3_536871595
-    point2*: RVec3_536871613
-    twistAxis2*: Vec3_536871595
+    motorSettings*: MotorSettings_536871733
+  SliderConstraintSettings_536871990 = struct_SliderConstraintSettings_536871989 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:790:3
+  struct_ConeConstraintSettings_536871992 {.pure, inheritable, bycopy.} = object
+    base*: ConstraintSettings_536871971 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:792:16
+    space*: ConstraintSpace_536871588
+    point1*: RVec3_536871685
+    twistAxis1*: Vec3_536871667
+    point2*: RVec3_536871685
+    twistAxis2*: Vec3_536871667
     halfConeAngle*: cfloat
-  ConeConstraintSettings_536871922 = struct_ConeConstraintSettings_536871921 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:801:3
-  struct_SwingTwistConstraintSettings_536871924 {.pure, inheritable, bycopy.} = object
-    base*: ConstraintSettings_536871899 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:803:16
-    space*: ConstraintSpace_536871516
-    position1*: RVec3_536871613
-    twistAxis1*: Vec3_536871595
-    planeAxis1*: Vec3_536871595
-    position2*: RVec3_536871613
-    twistAxis2*: Vec3_536871595
-    planeAxis2*: Vec3_536871595
-    swingType*: SwingType_536871563
+  ConeConstraintSettings_536871994 = struct_ConeConstraintSettings_536871993 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:801:3
+  struct_SwingTwistConstraintSettings_536871996 {.pure, inheritable, bycopy.} = object
+    base*: ConstraintSettings_536871971 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:803:16
+    space*: ConstraintSpace_536871588
+    position1*: RVec3_536871685
+    twistAxis1*: Vec3_536871667
+    planeAxis1*: Vec3_536871667
+    position2*: RVec3_536871685
+    twistAxis2*: Vec3_536871667
+    planeAxis2*: Vec3_536871667
+    swingType*: SwingType_536871635
     normalHalfConeAngle*: cfloat
     planeHalfConeAngle*: cfloat
     twistMinAngle*: cfloat
     twistMaxAngle*: cfloat
     maxFrictionTorque*: cfloat
-    swingMotorSettings*: MotorSettings_536871661
-    twistMotorSettings*: MotorSettings_536871661
-  SwingTwistConstraintSettings_536871926 = struct_SwingTwistConstraintSettings_536871925 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:821:3
-  struct_SixDOFConstraintSettings_536871928 {.pure, inheritable, bycopy.} = object
-    base*: ConstraintSettings_536871899 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:823:16
-    space*: ConstraintSpace_536871516
-    position1*: RVec3_536871613
-    axisX1*: Vec3_536871595
-    axisY1*: Vec3_536871595
-    position2*: RVec3_536871613
-    axisX2*: Vec3_536871595
-    axisY2*: Vec3_536871595
+    swingMotorSettings*: MotorSettings_536871733
+    twistMotorSettings*: MotorSettings_536871733
+  SwingTwistConstraintSettings_536871998 = struct_SwingTwistConstraintSettings_536871997 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:821:3
+  struct_SixDOFConstraintSettings_536872000 {.pure, inheritable, bycopy.} = object
+    base*: ConstraintSettings_536871971 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:823:16
+    space*: ConstraintSpace_536871588
+    position1*: RVec3_536871685
+    axisX1*: Vec3_536871667
+    axisY1*: Vec3_536871667
+    position2*: RVec3_536871685
+    axisX2*: Vec3_536871667
+    axisY2*: Vec3_536871667
     maxFriction*: array[6'i64, cfloat]
-    swingType*: SwingType_536871563
+    swingType*: SwingType_536871635
     limitMin*: array[6'i64, cfloat]
     limitMax*: array[6'i64, cfloat]
-    limitsSpringSettings*: array[3'i64, SpringSettings_536871657]
-    motorSettings*: array[6'i64, MotorSettings_536871661]
-  SixDOFConstraintSettings_536871930 = struct_SixDOFConstraintSettings_536871929 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:840:3
-  struct_GearConstraintSettings_536871932 {.pure, inheritable, bycopy.} = object
-    base*: ConstraintSettings_536871899 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:842:16
-    space*: ConstraintSpace_536871516
-    hingeAxis1*: Vec3_536871595
-    hingeAxis2*: Vec3_536871595
+    limitsSpringSettings*: array[3'i64, SpringSettings_536871729]
+    motorSettings*: array[6'i64, MotorSettings_536871733]
+  SixDOFConstraintSettings_536872002 = struct_SixDOFConstraintSettings_536872001 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:840:3
+  struct_GearConstraintSettings_536872004 {.pure, inheritable, bycopy.} = object
+    base*: ConstraintSettings_536871971 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:842:16
+    space*: ConstraintSpace_536871588
+    hingeAxis1*: Vec3_536871667
+    hingeAxis2*: Vec3_536871667
     ratio*: cfloat
-  GearConstraintSettings_536871934 = struct_GearConstraintSettings_536871933 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:849:3
-  struct_BodyLockRead_536871936 {.pure, inheritable, bycopy.} = object
-    lockInterface*: ptr BodyLockInterface_536871827 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:851:16
-    mutex*: ptr SharedMutex_536871855
-    body*: ptr Body_536871835
-  BodyLockRead_536871938 = struct_BodyLockRead_536871937 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:855:3
-  struct_BodyLockWrite_536871940 {.pure, inheritable, bycopy.} = object
-    lockInterface*: ptr BodyLockInterface_536871827 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:857:16
-    mutex*: ptr SharedMutex_536871855
-    body*: ptr Body_536871835
-  BodyLockWrite_536871942 = struct_BodyLockWrite_536871941 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:861:3
-  BodyLockMultiRead_536871944 = struct_BodyLockMultiRead ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:863:38
-  BodyLockMultiWrite_536871946 = struct_BodyLockMultiWrite ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:864:39
-  struct_ExtendedUpdateSettings_536871948 {.pure, inheritable, bycopy.} = object
-    stickToFloorStepDown*: Vec3_536871595 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:866:16
-    walkStairsStepUp*: Vec3_536871595
+  GearConstraintSettings_536872006 = struct_GearConstraintSettings_536872005 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:849:3
+  struct_BodyLockRead_536872008 {.pure, inheritable, bycopy.} = object
+    lockInterface*: ptr BodyLockInterface_536871899 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:851:16
+    mutex*: ptr SharedMutex_536871927
+    body*: ptr Body_536871907
+  BodyLockRead_536872010 = struct_BodyLockRead_536872009 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:855:3
+  struct_BodyLockWrite_536872012 {.pure, inheritable, bycopy.} = object
+    lockInterface*: ptr BodyLockInterface_536871899 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:857:16
+    mutex*: ptr SharedMutex_536871927
+    body*: ptr Body_536871907
+  BodyLockWrite_536872014 = struct_BodyLockWrite_536872013 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:861:3
+  BodyLockMultiRead_536872016 = struct_BodyLockMultiRead ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:863:38
+  BodyLockMultiWrite_536872018 = struct_BodyLockMultiWrite ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:864:39
+  struct_ExtendedUpdateSettings_536872020 {.pure, inheritable, bycopy.} = object
+    stickToFloorStepDown*: Vec3_536871667 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:866:16
+    walkStairsStepUp*: Vec3_536871667
     walkStairsMinStepForward*: cfloat
     walkStairsStepForwardTest*: cfloat
     walkStairsCosAngleForwardContact*: cfloat
-    walkStairsStepDownExtra*: Vec3_536871595
-  ExtendedUpdateSettings_536871950 = struct_ExtendedUpdateSettings_536871949 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:873:3
-  struct_CharacterBaseSettings_536871952 {.pure, inheritable, bycopy.} = object
-    up*: Vec3_536871595      ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:875:16
-    supportingVolume*: Plane_536871607
+    walkStairsStepDownExtra*: Vec3_536871667
+  ExtendedUpdateSettings_536872022 = struct_ExtendedUpdateSettings_536872021 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:873:3
+  struct_CharacterBaseSettings_536872024 {.pure, inheritable, bycopy.} = object
+    up*: Vec3_536871667      ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:875:16
+    supportingVolume*: Plane_536871679
     maxSlopeAngle*: cfloat
     enhancedInternalEdgeRemoval*: bool
-    shape*: ptr Shape_536871779
-  CharacterBaseSettings_536871954 = struct_CharacterBaseSettings_536871953 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:881:3
-  struct_CharacterSettings_536871956 {.pure, inheritable, bycopy.} = object
-    base*: CharacterBaseSettings_536871955 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:884:16
-    layer*: ObjectLayer_536871468
+    shape*: ptr Shape_536871851
+  CharacterBaseSettings_536872026 = struct_CharacterBaseSettings_536872025 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:881:3
+  struct_CharacterSettings_536872028 {.pure, inheritable, bycopy.} = object
+    base*: CharacterBaseSettings_536872027 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:884:16
+    layer*: ObjectLayer_536871540
     mass*: cfloat
     friction*: cfloat
     gravityFactor*: cfloat
-    allowedDOFs*: AllowedDOFs_536871528
-  CharacterSettings_536871958 = struct_CharacterSettings_536871957 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:891:3
-  struct_CharacterVirtualSettings_536871960 {.pure, inheritable, bycopy.} = object
-    base*: CharacterBaseSettings_536871955 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:894:16
-    ID*: CharacterID_536871476
+    allowedDOFs*: AllowedDOFs_536871600
+  CharacterSettings_536872030 = struct_CharacterSettings_536872029 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:891:3
+  struct_CharacterVirtualSettings_536872032 {.pure, inheritable, bycopy.} = object
+    base*: CharacterBaseSettings_536872027 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:894:16
+    ID*: CharacterID_536871548
     mass*: cfloat
     maxStrength*: cfloat
-    shapeOffset*: Vec3_536871595
-    backFaceMode*: BackFaceMode_536871536
+    shapeOffset*: Vec3_536871667
+    backFaceMode*: BackFaceMode_536871608
     predictiveContactDistance*: cfloat
     maxCollisionIterations*: uint32
     maxConstraintIterations*: uint32
@@ -1304,66 +1304,66 @@ type
     maxNumHits*: uint32
     hitReductionCosMaxAngle*: cfloat
     penetrationRecoverySpeed*: cfloat
-    innerBodyShape*: ptr Shape_536871779
-    innerBodyIDOverride*: BodyID_536871464
-    innerBodyLayer*: ObjectLayer_536871468
-  CharacterVirtualSettings_536871962 = struct_CharacterVirtualSettings_536871961 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:913:3
-  struct_CharacterContactSettings_536871964 {.pure, inheritable, bycopy.} = object
+    innerBodyShape*: ptr Shape_536871851
+    innerBodyIDOverride*: BodyID_536871536
+    innerBodyLayer*: ObjectLayer_536871540
+  CharacterVirtualSettings_536872034 = struct_CharacterVirtualSettings_536872033 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:913:3
+  struct_CharacterContactSettings_536872036 {.pure, inheritable, bycopy.} = object
     canPushCharacter*: bool  ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:915:16
     canReceiveImpulses*: bool
-  CharacterContactSettings_536871966 = struct_CharacterContactSettings_536871965 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:918:3
-  struct_CharacterVirtualContact_536871968 {.pure, inheritable, bycopy.} = object
+  CharacterContactSettings_536872038 = struct_CharacterContactSettings_536872037 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:918:3
+  struct_CharacterVirtualContact_536872040 {.pure, inheritable, bycopy.} = object
     hash*: uint64            ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:920:16
-    bodyB*: BodyID_536871464
-    characterIDB*: CharacterID_536871476
-    subShapeIDB*: SubShapeID_536871466
-    position*: RVec3_536871613
-    linearVelocity*: Vec3_536871595
-    contactNormal*: Vec3_536871595
-    surfaceNormal*: Vec3_536871595
+    bodyB*: BodyID_536871536
+    characterIDB*: CharacterID_536871548
+    subShapeIDB*: SubShapeID_536871538
+    position*: RVec3_536871685
+    linearVelocity*: Vec3_536871667
+    contactNormal*: Vec3_536871667
+    surfaceNormal*: Vec3_536871667
     distance*: cfloat
     fraction*: cfloat
-    motionTypeB*: MotionType_536871488
+    motionTypeB*: MotionType_536871560
     isSensorB*: bool
-    characterB*: ptr CharacterVirtual_536871885
+    characterB*: ptr CharacterVirtual_536871957
     userData*: uint64
-    material*: ptr PhysicsMaterial_536871737
+    material*: ptr PhysicsMaterial_536871809
     hadCollision*: bool
     wasDiscarded*: bool
     canPushCharacter*: bool
-  CharacterVirtualContact_536871970 = struct_CharacterVirtualContact_536871969 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:939:3
-  TraceFunc_536871972 = proc (a0: cstring): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:941:28
-  AssertFailureFunc_536871974 = proc (a0: cstring; a1: cstring; a2: cstring;
+  CharacterVirtualContact_536872042 = struct_CharacterVirtualContact_536872041 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:939:3
+  TraceFunc_536872044 = proc (a0: cstring): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:941:28
+  AssertFailureFunc_536872046 = proc (a0: cstring; a1: cstring; a2: cstring;
                                       a3: uint32): bool {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:942:28
-  JobFunction_536871976 = proc (a0: pointer): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:944:14
-  QueueJobCallback_536871978 = proc (a0: pointer; a1: JobFunction_536871977;
+  JobFunction_536872048 = proc (a0: pointer): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:944:14
+  QueueJobCallback_536872050 = proc (a0: pointer; a1: JobFunction_536872049;
                                      a2: pointer): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:945:14
-  QueueJobsCallback_536871980 = proc (a0: pointer; a1: JobFunction_536871977;
+  QueueJobsCallback_536872052 = proc (a0: pointer; a1: JobFunction_536872049;
                                       a2: ptr pointer; a3: uint32): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:946:14
-  struct_JobSystemThreadPoolConfig_536871982 {.pure, inheritable, bycopy.} = object
+  struct_JobSystemThreadPoolConfig_536872054 {.pure, inheritable, bycopy.} = object
     maxJobs*: uint32         ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:948:16
     maxBarriers*: uint32
     numThreads*: int32
-  JobSystemThreadPoolConfig_536871984 = struct_JobSystemThreadPoolConfig_536871983 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:952:3
-  struct_JobSystemConfig_536871986 {.pure, inheritable, bycopy.} = object
+  JobSystemThreadPoolConfig_536872056 = struct_JobSystemThreadPoolConfig_536872055 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:952:3
+  struct_JobSystemConfig_536872058 {.pure, inheritable, bycopy.} = object
     context*: pointer        ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:954:16
-    queueJob*: QueueJobCallback_536871979
-    queueJobs*: QueueJobsCallback_536871981
+    queueJob*: QueueJobCallback_536872051
+    queueJobs*: QueueJobsCallback_536872053
     maxConcurrency*: uint32
     maxBarriers*: uint32
-  JobSystemConfig_536871988 = struct_JobSystemConfig_536871987 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:960:3
-  JobSystem_536871990 = struct_JobSystem ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:962:30
-  struct_PhysicsSystemSettings_536871992 {.pure, inheritable, bycopy.} = object
+  JobSystemConfig_536872060 = struct_JobSystemConfig_536872059 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:960:3
+  JobSystem_536872062 = struct_JobSystem ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:962:30
+  struct_PhysicsSystemSettings_536872064 {.pure, inheritable, bycopy.} = object
     maxBodies*: uint32       ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:1005:16
     numBodyMutexes*: uint32
     maxBodyPairs*: uint32
     maxContactConstraints*: uint32
     internal_padding*: uint32
-    broadPhaseLayerInterface*: ptr BroadPhaseLayerInterface_536871719
-    objectLayerPairFilter*: ptr ObjectLayerPairFilter_536871723
-    objectVsBroadPhaseLayerFilter*: ptr ObjectVsBroadPhaseLayerFilter_536871721
-  PhysicsSystemSettings_536871994 = struct_PhysicsSystemSettings_536871993 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:1014:3
-  struct_PhysicsSettings_536871996 {.pure, inheritable, bycopy.} = object
+    broadPhaseLayerInterface*: ptr BroadPhaseLayerInterface_536871791
+    objectLayerPairFilter*: ptr ObjectLayerPairFilter_536871795
+    objectVsBroadPhaseLayerFilter*: ptr ObjectVsBroadPhaseLayerFilter_536871793
+  PhysicsSystemSettings_536872066 = struct_PhysicsSystemSettings_536872065 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:1014:3
+  struct_PhysicsSettings_536872068 {.pure, inheritable, bycopy.} = object
     maxInFlightBodyPairs*: cint ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:1016:16
     stepListenersBatchSize*: cint
     stepListenerBatchesPerJob*: cint
@@ -1390,4556 +1390,4556 @@ type
     useLargeIslandSplitter*: bool
     allowSleeping*: bool
     checkActiveEdges*: bool
-  PhysicsSettings_536871998 = struct_PhysicsSettings_536871997 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:1043:3
-  struct_BroadPhaseLayerFilter_Procs_536872000 {.pure, inheritable, bycopy.} = object
-    ShouldCollide*: proc (a0: pointer; a1: BroadPhaseLayer_536871470): bool {.
+  PhysicsSettings_536872070 = struct_PhysicsSettings_536872069 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:1043:3
+  struct_BroadPhaseLayerFilter_Procs_536872072 {.pure, inheritable, bycopy.} = object
+    ShouldCollide*: proc (a0: pointer; a1: BroadPhaseLayer_536871542): bool {.
         cdecl.}              ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2007:16
-  BroadPhaseLayerFilter_Procs_536872002 = struct_BroadPhaseLayerFilter_Procs_536872001 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2009:3
-  struct_ObjectLayerFilter_Procs_536872004 {.pure, inheritable, bycopy.} = object
-    ShouldCollide*: proc (a0: pointer; a1: ObjectLayer_536871468): bool {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2016:16
-  ObjectLayerFilter_Procs_536872006 = struct_ObjectLayerFilter_Procs_536872005 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2018:3
-  struct_BodyFilter_Procs_536872008 {.pure, inheritable, bycopy.} = object
-    ShouldCollide*: proc (a0: pointer; a1: BodyID_536871464): bool {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2025:16
-    ShouldCollideLocked*: proc (a0: pointer; a1: ptr Body_536871835): bool {.
+  BroadPhaseLayerFilter_Procs_536872074 = struct_BroadPhaseLayerFilter_Procs_536872073 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2009:3
+  struct_ObjectLayerFilter_Procs_536872076 {.pure, inheritable, bycopy.} = object
+    ShouldCollide*: proc (a0: pointer; a1: ObjectLayer_536871540): bool {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2016:16
+  ObjectLayerFilter_Procs_536872078 = struct_ObjectLayerFilter_Procs_536872077 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2018:3
+  struct_BodyFilter_Procs_536872080 {.pure, inheritable, bycopy.} = object
+    ShouldCollide*: proc (a0: pointer; a1: BodyID_536871536): bool {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2025:16
+    ShouldCollideLocked*: proc (a0: pointer; a1: ptr Body_536871907): bool {.
         cdecl.}
-  BodyFilter_Procs_536872010 = struct_BodyFilter_Procs_536872009 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2028:3
-  struct_ShapeFilter_Procs_536872012 {.pure, inheritable, bycopy.} = object
-    ShouldCollide*: proc (a0: pointer; a1: ptr Shape_536871779;
-                          a2: ptr SubShapeID_536871466): bool {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2035:16
-    ShouldCollide2*: proc (a0: pointer; a1: ptr Shape_536871779;
-                           a2: ptr SubShapeID_536871466; a3: ptr Shape_536871779;
-                           a4: ptr SubShapeID_536871466): bool {.cdecl.}
-  ShapeFilter_Procs_536872014 = struct_ShapeFilter_Procs_536872013 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2038:3
-  struct_SimShapeFilter_Procs_536872016 {.pure, inheritable, bycopy.} = object
-    ShouldCollide*: proc (a0: pointer; a1: ptr Body_536871835; a2: ptr Shape_536871779;
-                          a3: ptr SubShapeID_536871466; a4: ptr Body_536871835;
-                          a5: ptr Shape_536871779; a6: ptr SubShapeID_536871466): bool {.
+  BodyFilter_Procs_536872082 = struct_BodyFilter_Procs_536872081 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2028:3
+  struct_ShapeFilter_Procs_536872084 {.pure, inheritable, bycopy.} = object
+    ShouldCollide*: proc (a0: pointer; a1: ptr Shape_536871851;
+                          a2: ptr SubShapeID_536871538): bool {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2035:16
+    ShouldCollide2*: proc (a0: pointer; a1: ptr Shape_536871851;
+                           a2: ptr SubShapeID_536871538; a3: ptr Shape_536871851;
+                           a4: ptr SubShapeID_536871538): bool {.cdecl.}
+  ShapeFilter_Procs_536872086 = struct_ShapeFilter_Procs_536872085 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2038:3
+  struct_SimShapeFilter_Procs_536872088 {.pure, inheritable, bycopy.} = object
+    ShouldCollide*: proc (a0: pointer; a1: ptr Body_536871907; a2: ptr Shape_536871851;
+                          a3: ptr SubShapeID_536871538; a4: ptr Body_536871907;
+                          a5: ptr Shape_536871851; a6: ptr SubShapeID_536871538): bool {.
         cdecl.}              ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2047:16
-  SimShapeFilter_Procs_536872018 = struct_SimShapeFilter_Procs_536872017 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2056:3
-  struct_ContactListener_Procs_536872020 {.pure, inheritable, bycopy.} = object
-    OnContactValidate*: proc (a0: pointer; a1: ptr Body_536871835; a2: ptr Body_536871835;
-                              a3: ptr RVec3_536871613;
-                              a4: ptr CollideShapeResult_536871681): ValidateResult_536871496 {.
+  SimShapeFilter_Procs_536872090 = struct_SimShapeFilter_Procs_536872089 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2056:3
+  struct_ContactListener_Procs_536872092 {.pure, inheritable, bycopy.} = object
+    OnContactValidate*: proc (a0: pointer; a1: ptr Body_536871907; a2: ptr Body_536871907;
+                              a3: ptr RVec3_536871685;
+                              a4: ptr CollideShapeResult_536871753): ValidateResult_536871568 {.
         cdecl.}              ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2063:16
-    OnContactAdded*: proc (a0: pointer; a1: ptr Body_536871835; a2: ptr Body_536871835;
-                           a3: ptr ContactManifold_536871839;
-                           a4: ptr ContactSettings_536871841): void {.cdecl.}
-    OnContactPersisted*: proc (a0: pointer; a1: ptr Body_536871835;
-                               a2: ptr Body_536871835; a3: ptr ContactManifold_536871839;
-                               a4: ptr ContactSettings_536871841): void {.cdecl.}
-    OnContactRemoved*: proc (a0: pointer; a1: ptr SubShapeIDPair_536871665): void {.
+    OnContactAdded*: proc (a0: pointer; a1: ptr Body_536871907; a2: ptr Body_536871907;
+                           a3: ptr ContactManifold_536871911;
+                           a4: ptr ContactSettings_536871913): void {.cdecl.}
+    OnContactPersisted*: proc (a0: pointer; a1: ptr Body_536871907;
+                               a2: ptr Body_536871907; a3: ptr ContactManifold_536871911;
+                               a4: ptr ContactSettings_536871913): void {.cdecl.}
+    OnContactRemoved*: proc (a0: pointer; a1: ptr SubShapeIDPair_536871737): void {.
         cdecl.}
-  ContactListener_Procs_536872022 = struct_ContactListener_Procs_536872021 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2085:3
-  struct_BodyActivationListener_Procs_536872024 {.pure, inheritable, bycopy.} = object
-    OnBodyActivated*: proc (a0: pointer; a1: BodyID_536871464; a2: uint64): void {.
+  ContactListener_Procs_536872094 = struct_ContactListener_Procs_536872093 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2085:3
+  struct_BodyActivationListener_Procs_536872096 {.pure, inheritable, bycopy.} = object
+    OnBodyActivated*: proc (a0: pointer; a1: BodyID_536871536; a2: uint64): void {.
         cdecl.}              ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2092:16
-    OnBodyDeactivated*: proc (a0: pointer; a1: BodyID_536871464; a2: uint64): void {.
+    OnBodyDeactivated*: proc (a0: pointer; a1: BodyID_536871536; a2: uint64): void {.
         cdecl.}
-  BodyActivationListener_Procs_536872026 = struct_BodyActivationListener_Procs_536872025 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2095:3
-  struct_BodyDrawFilter_Procs_536872028 {.pure, inheritable, bycopy.} = object
-    ShouldDraw*: proc (a0: pointer; a1: ptr Body_536871835): bool {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2102:16
-  BodyDrawFilter_Procs_536872030 = struct_BodyDrawFilter_Procs_536872029 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2104:3
-  struct_CharacterContactListener_Procs_536872032 {.pure, inheritable, bycopy.} = object
-    OnAdjustBodyVelocity*: proc (a0: pointer; a1: ptr CharacterVirtual_536871885;
-                                 a2: ptr Body_536871835; a3: ptr Vec3_536871595;
-                                 a4: ptr Vec3_536871595): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2265:16
-    OnContactValidate*: proc (a0: pointer; a1: ptr CharacterVirtual_536871885;
-                              a2: BodyID_536871464; a3: SubShapeID_536871466): bool {.
+  BodyActivationListener_Procs_536872098 = struct_BodyActivationListener_Procs_536872097 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2095:3
+  struct_BodyDrawFilter_Procs_536872100 {.pure, inheritable, bycopy.} = object
+    ShouldDraw*: proc (a0: pointer; a1: ptr Body_536871907): bool {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2102:16
+  BodyDrawFilter_Procs_536872102 = struct_BodyDrawFilter_Procs_536872101 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2104:3
+  struct_CharacterContactListener_Procs_536872104 {.pure, inheritable, bycopy.} = object
+    OnAdjustBodyVelocity*: proc (a0: pointer; a1: ptr CharacterVirtual_536871957;
+                                 a2: ptr Body_536871907; a3: ptr Vec3_536871667;
+                                 a4: ptr Vec3_536871667): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2265:16
+    OnContactValidate*: proc (a0: pointer; a1: ptr CharacterVirtual_536871957;
+                              a2: BodyID_536871536; a3: SubShapeID_536871538): bool {.
         cdecl.}
-    OnCharacterContactValidate*: proc (a0: pointer; a1: ptr CharacterVirtual_536871885;
-                                       a2: ptr CharacterVirtual_536871885;
-                                       a3: SubShapeID_536871466): bool {.cdecl.}
-    OnContactAdded*: proc (a0: pointer; a1: ptr CharacterVirtual_536871885;
-                           a2: BodyID_536871464; a3: SubShapeID_536871466;
-                           a4: ptr RVec3_536871613; a5: ptr Vec3_536871595;
-                           a6: ptr CharacterContactSettings_536871967): void {.
+    OnCharacterContactValidate*: proc (a0: pointer; a1: ptr CharacterVirtual_536871957;
+                                       a2: ptr CharacterVirtual_536871957;
+                                       a3: SubShapeID_536871538): bool {.cdecl.}
+    OnContactAdded*: proc (a0: pointer; a1: ptr CharacterVirtual_536871957;
+                           a2: BodyID_536871536; a3: SubShapeID_536871538;
+                           a4: ptr RVec3_536871685; a5: ptr Vec3_536871667;
+                           a6: ptr CharacterContactSettings_536872039): void {.
         cdecl.}
-    OnContactPersisted*: proc (a0: pointer; a1: ptr CharacterVirtual_536871885;
-                               a2: BodyID_536871464; a3: SubShapeID_536871466;
-                               a4: ptr RVec3_536871613; a5: ptr Vec3_536871595;
-                               a6: ptr CharacterContactSettings_536871967): void {.
+    OnContactPersisted*: proc (a0: pointer; a1: ptr CharacterVirtual_536871957;
+                               a2: BodyID_536871536; a3: SubShapeID_536871538;
+                               a4: ptr RVec3_536871685; a5: ptr Vec3_536871667;
+                               a6: ptr CharacterContactSettings_536872039): void {.
         cdecl.}
-    OnContactRemoved*: proc (a0: pointer; a1: ptr CharacterVirtual_536871885;
-                             a2: BodyID_536871464; a3: SubShapeID_536871466): void {.
+    OnContactRemoved*: proc (a0: pointer; a1: ptr CharacterVirtual_536871957;
+                             a2: BodyID_536871536; a3: SubShapeID_536871538): void {.
         cdecl.}
-    OnCharacterContactAdded*: proc (a0: pointer; a1: ptr CharacterVirtual_536871885;
-                                    a2: ptr CharacterVirtual_536871885;
-                                    a3: SubShapeID_536871466; a4: ptr RVec3_536871613;
-                                    a5: ptr Vec3_536871595;
-                                    a6: ptr CharacterContactSettings_536871967): void {.
+    OnCharacterContactAdded*: proc (a0: pointer; a1: ptr CharacterVirtual_536871957;
+                                    a2: ptr CharacterVirtual_536871957;
+                                    a3: SubShapeID_536871538; a4: ptr RVec3_536871685;
+                                    a5: ptr Vec3_536871667;
+                                    a6: ptr CharacterContactSettings_536872039): void {.
         cdecl.}
-    OnCharacterContactPersisted*: proc (a0: pointer; a1: ptr CharacterVirtual_536871885;
-                                        a2: ptr CharacterVirtual_536871885;
-                                        a3: SubShapeID_536871466; a4: ptr RVec3_536871613;
-                                        a5: ptr Vec3_536871595;
-                                        a6: ptr CharacterContactSettings_536871967): void {.
+    OnCharacterContactPersisted*: proc (a0: pointer; a1: ptr CharacterVirtual_536871957;
+                                        a2: ptr CharacterVirtual_536871957;
+                                        a3: SubShapeID_536871538; a4: ptr RVec3_536871685;
+                                        a5: ptr Vec3_536871667;
+                                        a6: ptr CharacterContactSettings_536872039): void {.
         cdecl.}
-    OnCharacterContactRemoved*: proc (a0: pointer; a1: ptr CharacterVirtual_536871885;
-                                      a2: CharacterID_536871476; a3: SubShapeID_536871466): void {.
+    OnCharacterContactRemoved*: proc (a0: pointer; a1: ptr CharacterVirtual_536871957;
+                                      a2: CharacterID_536871548; a3: SubShapeID_536871538): void {.
         cdecl.}
-    OnContactSolve*: proc (a0: pointer; a1: ptr CharacterVirtual_536871885;
-                           a2: BodyID_536871464; a3: SubShapeID_536871466;
-                           a4: ptr RVec3_536871613; a5: ptr Vec3_536871595;
-                           a6: ptr Vec3_536871595; a7: ptr PhysicsMaterial_536871737;
-                           a8: ptr Vec3_536871595; a9: ptr Vec3_536871595): void {.
+    OnContactSolve*: proc (a0: pointer; a1: ptr CharacterVirtual_536871957;
+                           a2: BodyID_536871536; a3: SubShapeID_536871538;
+                           a4: ptr RVec3_536871685; a5: ptr Vec3_536871667;
+                           a6: ptr Vec3_536871667; a7: ptr PhysicsMaterial_536871809;
+                           a8: ptr Vec3_536871667; a9: ptr Vec3_536871667): void {.
         cdecl.}
-    OnCharacterContactSolve*: proc (a0: pointer; a1: ptr CharacterVirtual_536871885;
-                                    a2: ptr CharacterVirtual_536871885;
-                                    a3: SubShapeID_536871466; a4: ptr RVec3_536871613;
-                                    a5: ptr Vec3_536871595; a6: ptr Vec3_536871595;
-                                    a7: ptr PhysicsMaterial_536871737;
-                                    a8: ptr Vec3_536871595; a9: ptr Vec3_536871595): void {.
+    OnCharacterContactSolve*: proc (a0: pointer; a1: ptr CharacterVirtual_536871957;
+                                    a2: ptr CharacterVirtual_536871957;
+                                    a3: SubShapeID_536871538; a4: ptr RVec3_536871685;
+                                    a5: ptr Vec3_536871667; a6: ptr Vec3_536871667;
+                                    a7: ptr PhysicsMaterial_536871809;
+                                    a8: ptr Vec3_536871667; a9: ptr Vec3_536871667): void {.
         cdecl.}
-  CharacterContactListener_Procs_536872034 = struct_CharacterContactListener_Procs_536872033 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2347:3
-  struct_CharacterVsCharacterCollision_Procs_536872036 {.pure, inheritable,
+  CharacterContactListener_Procs_536872106 = struct_CharacterContactListener_Procs_536872105 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2347:3
+  struct_CharacterVsCharacterCollision_Procs_536872108 {.pure, inheritable,
       bycopy.} = object
-    CollideCharacter*: proc (a0: pointer; a1: ptr CharacterVirtual_536871885;
-                             a2: ptr RMatrix4x4_536871615;
-                             a3: ptr CollideShapeSettings_536871645;
-                             a4: ptr RVec3_536871613): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2354:16
-    CastCharacter*: proc (a0: pointer; a1: ptr CharacterVirtual_536871885;
-                          a2: ptr RMatrix4x4_536871615; a3: ptr Vec3_536871595;
-                          a4: ptr ShapeCastSettings_536871649; a5: ptr RVec3_536871613): void {.
+    CollideCharacter*: proc (a0: pointer; a1: ptr CharacterVirtual_536871957;
+                             a2: ptr RMatrix4x4_536871687;
+                             a3: ptr CollideShapeSettings_536871717;
+                             a4: ptr RVec3_536871685): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2354:16
+    CastCharacter*: proc (a0: pointer; a1: ptr CharacterVirtual_536871957;
+                          a2: ptr RMatrix4x4_536871687; a3: ptr Vec3_536871667;
+                          a4: ptr ShapeCastSettings_536871721; a5: ptr RVec3_536871685): void {.
         cdecl.}
-  CharacterVsCharacterCollision_Procs_536872038 = struct_CharacterVsCharacterCollision_Procs_536872037 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2369:3
-  struct_DebugRenderer_Procs_536872040 {.pure, inheritable, bycopy.} = object
-    DrawLine*: proc (a0: pointer; a1: ptr RVec3_536871613; a2: ptr RVec3_536871613;
-                     a3: Color_536871617): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2403:16
-    DrawTriangle*: proc (a0: pointer; a1: ptr RVec3_536871613; a2: ptr RVec3_536871613;
-                         a3: ptr RVec3_536871613; a4: Color_536871617;
-                         a5: DebugRenderer_CastShadow_536871583): void {.cdecl.}
-    DrawText3D*: proc (a0: pointer; a1: ptr RVec3_536871613; a2: cstring;
-                       a3: Color_536871617; a4: cfloat): void {.cdecl.}
-  DebugRenderer_Procs_536872042 = struct_DebugRenderer_Procs_536872041 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2407:3
-  struct_SkeletonJoint_536872044 {.pure, inheritable, bycopy.} = object
+  CharacterVsCharacterCollision_Procs_536872110 = struct_CharacterVsCharacterCollision_Procs_536872109 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2369:3
+  struct_DebugRenderer_Procs_536872112 {.pure, inheritable, bycopy.} = object
+    DrawLine*: proc (a0: pointer; a1: ptr RVec3_536871685; a2: ptr RVec3_536871685;
+                     a3: Color_536871689): void {.cdecl.} ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2403:16
+    DrawTriangle*: proc (a0: pointer; a1: ptr RVec3_536871685; a2: ptr RVec3_536871685;
+                         a3: ptr RVec3_536871685; a4: Color_536871689;
+                         a5: DebugRenderer_CastShadow_536871655): void {.cdecl.}
+    DrawText3D*: proc (a0: pointer; a1: ptr RVec3_536871685; a2: cstring;
+                       a3: Color_536871689; a4: cfloat): void {.cdecl.}
+  DebugRenderer_Procs_536872114 = struct_DebugRenderer_Procs_536872113 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2407:3
+  struct_SkeletonJoint_536872116 {.pure, inheritable, bycopy.} = object
     name*: cstring           ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2425:16
     parentName*: cstring
     parentJointIndex*: cint
-  SkeletonJoint_536872046 = struct_SkeletonJoint_536872045 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2429:3
-  CharacterBaseSettings_536871955 = (when declared(CharacterBaseSettings):
-    when ownSizeof(CharacterBaseSettings) != ownSizeof(CharacterBaseSettings_536871954):
+  SkeletonJoint_536872118 = struct_SkeletonJoint_536872117 ## Generated based on C:\Users\julia\Projects\NimJolt\src\JoltC\include\joltc.h:2429:3
+  CharacterBaseSettings_536872027 = (when declared(CharacterBaseSettings):
+    when ownSizeof(CharacterBaseSettings) != ownSizeof(CharacterBaseSettings_536872026):
       static :
         warning("Declaration of " & "CharacterBaseSettings" &
             " exists but with different size")
     CharacterBaseSettings
    else:
-    CharacterBaseSettings_536871954)
-  struct_PhysicsSettings_536871997 = (when declared(struct_PhysicsSettings):
-    when ownSizeof(struct_PhysicsSettings) != ownSizeof(struct_PhysicsSettings_536871996):
+    CharacterBaseSettings_536872026)
+  struct_PhysicsSettings_536872069 = (when declared(struct_PhysicsSettings):
+    when ownSizeof(struct_PhysicsSettings) != ownSizeof(struct_PhysicsSettings_536872068):
       static :
         warning("Declaration of " & "struct_PhysicsSettings" &
             " exists but with different size")
     struct_PhysicsSettings
    else:
-    struct_PhysicsSettings_536871996)
-  enum_AllowedDOFs_536871526 = (when declared(enum_AllowedDOFs):
-    when ownSizeof(enum_AllowedDOFs) != ownSizeof(enum_AllowedDOFs_536871525):
+    struct_PhysicsSettings_536872068)
+  enum_AllowedDOFs_536871598 = (when declared(enum_AllowedDOFs):
+    when ownSizeof(enum_AllowedDOFs) != ownSizeof(enum_AllowedDOFs_536871597):
       static :
         warning("Declaration of " & "enum_AllowedDOFs" &
             " exists but with different size")
     enum_AllowedDOFs
    else:
-    enum_AllowedDOFs_536871525)
-  BodyDrawFilter_Procs_536872031 = (when declared(BodyDrawFilter_Procs):
-    when ownSizeof(BodyDrawFilter_Procs) != ownSizeof(BodyDrawFilter_Procs_536872030):
+    enum_AllowedDOFs_536871597)
+  BodyDrawFilter_Procs_536872103 = (when declared(BodyDrawFilter_Procs):
+    when ownSizeof(BodyDrawFilter_Procs) != ownSizeof(BodyDrawFilter_Procs_536872102):
       static :
         warning("Declaration of " & "BodyDrawFilter_Procs" &
             " exists but with different size")
     BodyDrawFilter_Procs
    else:
-    BodyDrawFilter_Procs_536872030)
-  struct_CollideShapeSettings_536871643 = (when declared(
+    BodyDrawFilter_Procs_536872102)
+  struct_CollideShapeSettings_536871715 = (when declared(
       struct_CollideShapeSettings):
     when ownSizeof(struct_CollideShapeSettings) !=
-        ownSizeof(struct_CollideShapeSettings_536871642):
+        ownSizeof(struct_CollideShapeSettings_536871714):
       static :
         warning("Declaration of " & "struct_CollideShapeSettings" &
             " exists but with different size")
     struct_CollideShapeSettings
    else:
-    struct_CollideShapeSettings_536871642)
-  PointConstraint_536871867 = (when declared(PointConstraint):
-    when ownSizeof(PointConstraint) != ownSizeof(PointConstraint_536871866):
+    struct_CollideShapeSettings_536871714)
+  PointConstraint_536871939 = (when declared(PointConstraint):
+    when ownSizeof(PointConstraint) != ownSizeof(PointConstraint_536871938):
       static :
         warning("Declaration of " & "PointConstraint" &
             " exists but with different size")
     PointConstraint
    else:
-    PointConstraint_536871866)
-  struct_AABox_536871619 = (when declared(struct_AABox):
-    when ownSizeof(struct_AABox) != ownSizeof(struct_AABox_536871618):
+    PointConstraint_536871938)
+  struct_AABox_536871691 = (when declared(struct_AABox):
+    when ownSizeof(struct_AABox) != ownSizeof(struct_AABox_536871690):
       static :
         warning("Declaration of " & "struct_AABox" &
             " exists but with different size")
     struct_AABox
    else:
-    struct_AABox_536871618)
-  enum_BackFaceMode_536871534 = (when declared(enum_BackFaceMode):
-    when ownSizeof(enum_BackFaceMode) != ownSizeof(enum_BackFaceMode_536871533):
+    struct_AABox_536871690)
+  enum_BackFaceMode_536871606 = (when declared(enum_BackFaceMode):
+    when ownSizeof(enum_BackFaceMode) != ownSizeof(enum_BackFaceMode_536871605):
       static :
         warning("Declaration of " & "enum_BackFaceMode" &
             " exists but with different size")
     enum_BackFaceMode
    else:
-    enum_BackFaceMode_536871533)
-  CollidePointResult_536871677 = (when declared(CollidePointResult):
-    when ownSizeof(CollidePointResult) != ownSizeof(CollidePointResult_536871676):
+    enum_BackFaceMode_536871605)
+  CollidePointResult_536871749 = (when declared(CollidePointResult):
+    when ownSizeof(CollidePointResult) != ownSizeof(CollidePointResult_536871748):
       static :
         warning("Declaration of " & "CollidePointResult" &
             " exists but with different size")
     CollidePointResult
    else:
-    CollidePointResult_536871676)
-  Body_536871835 = (when declared(Body):
-    when ownSizeof(Body) != ownSizeof(Body_536871834):
+    CollidePointResult_536871748)
+  Body_536871907 = (when declared(Body):
+    when ownSizeof(Body) != ownSizeof(Body_536871906):
       static :
         warning("Declaration of " & "Body" & " exists but with different size")
     Body
    else:
-    Body_536871834)
-  SwingType_536871563 = (when declared(SwingType):
-    when ownSizeof(SwingType) != ownSizeof(SwingType_536871562):
+    Body_536871906)
+  SwingType_536871635 = (when declared(SwingType):
+    when ownSizeof(SwingType) != ownSizeof(SwingType_536871634):
       static :
         warning("Declaration of " & "SwingType" &
             " exists but with different size")
     SwingType
    else:
-    SwingType_536871562)
-  struct_IndexedTriangleNoMaterial_536871627 = (when declared(
+    SwingType_536871634)
+  struct_IndexedTriangleNoMaterial_536871699 = (when declared(
       struct_IndexedTriangleNoMaterial):
     when ownSizeof(struct_IndexedTriangleNoMaterial) !=
-        ownSizeof(struct_IndexedTriangleNoMaterial_536871626):
+        ownSizeof(struct_IndexedTriangleNoMaterial_536871698):
       static :
         warning("Declaration of " & "struct_IndexedTriangleNoMaterial" &
             " exists but with different size")
     struct_IndexedTriangleNoMaterial
    else:
-    struct_IndexedTriangleNoMaterial_536871626)
-  GearConstraintSettings_536871935 = (when declared(GearConstraintSettings):
-    when ownSizeof(GearConstraintSettings) != ownSizeof(GearConstraintSettings_536871934):
+    struct_IndexedTriangleNoMaterial_536871698)
+  GearConstraintSettings_536872007 = (when declared(GearConstraintSettings):
+    when ownSizeof(GearConstraintSettings) != ownSizeof(GearConstraintSettings_536872006):
       static :
         warning("Declaration of " & "GearConstraintSettings" &
             " exists but with different size")
     GearConstraintSettings
    else:
-    GearConstraintSettings_536871934)
-  Shape_536871779 = (when declared(Shape):
-    when ownSizeof(Shape) != ownSizeof(Shape_536871778):
+    GearConstraintSettings_536872006)
+  Shape_536871851 = (when declared(Shape):
+    when ownSizeof(Shape) != ownSizeof(Shape_536871850):
       static :
         warning("Declaration of " & "Shape" & " exists but with different size")
     Shape
    else:
-    Shape_536871778)
-  ContactManifold_536871839 = (when declared(ContactManifold):
-    when ownSizeof(ContactManifold) != ownSizeof(ContactManifold_536871838):
+    Shape_536871850)
+  ContactManifold_536871911 = (when declared(ContactManifold):
+    when ownSizeof(ContactManifold) != ownSizeof(ContactManifold_536871910):
       static :
         warning("Declaration of " & "ContactManifold" &
             " exists but with different size")
     ContactManifold
    else:
-    ContactManifold_536871838)
-  CollideShapeSettings_536871645 = (when declared(CollideShapeSettings):
-    when ownSizeof(CollideShapeSettings) != ownSizeof(CollideShapeSettings_536871644):
+    ContactManifold_536871910)
+  CollideShapeSettings_536871717 = (when declared(CollideShapeSettings):
+    when ownSizeof(CollideShapeSettings) != ownSizeof(CollideShapeSettings_536871716):
       static :
         warning("Declaration of " & "CollideShapeSettings" &
             " exists but with different size")
     CollideShapeSettings
    else:
-    CollideShapeSettings_536871644)
-  BoxShapeSettings_536871745 = (when declared(BoxShapeSettings):
-    when ownSizeof(BoxShapeSettings) != ownSizeof(BoxShapeSettings_536871744):
+    CollideShapeSettings_536871716)
+  BoxShapeSettings_536871817 = (when declared(BoxShapeSettings):
+    when ownSizeof(BoxShapeSettings) != ownSizeof(BoxShapeSettings_536871816):
       static :
         warning("Declaration of " & "BoxShapeSettings" &
             " exists but with different size")
     BoxShapeSettings
    else:
-    BoxShapeSettings_536871744)
-  RMatrix4x4_536871615 = (when declared(RMatrix4x4):
-    when ownSizeof(RMatrix4x4) != ownSizeof(RMatrix4x4_536871614):
+    BoxShapeSettings_536871816)
+  RMatrix4x4_536871687 = (when declared(RMatrix4x4):
+    when ownSizeof(RMatrix4x4) != ownSizeof(RMatrix4x4_536871686):
       static :
         warning("Declaration of " & "RMatrix4x4" &
             " exists but with different size")
     RMatrix4x4
    else:
-    RMatrix4x4_536871614)
-  OffsetCenterOfMassShape_536871817 = (when declared(OffsetCenterOfMassShape):
+    RMatrix4x4_536871686)
+  OffsetCenterOfMassShape_536871889 = (when declared(OffsetCenterOfMassShape):
     when ownSizeof(OffsetCenterOfMassShape) !=
-        ownSizeof(OffsetCenterOfMassShape_536871816):
+        ownSizeof(OffsetCenterOfMassShape_536871888):
       static :
         warning("Declaration of " & "OffsetCenterOfMassShape" &
             " exists but with different size")
     OffsetCenterOfMassShape
    else:
-    OffsetCenterOfMassShape_536871816)
-  BroadPhaseLayerInterface_536871719 = (when declared(BroadPhaseLayerInterface):
+    OffsetCenterOfMassShape_536871888)
+  BroadPhaseLayerInterface_536871791 = (when declared(BroadPhaseLayerInterface):
     when ownSizeof(BroadPhaseLayerInterface) !=
-        ownSizeof(BroadPhaseLayerInterface_536871718):
+        ownSizeof(BroadPhaseLayerInterface_536871790):
       static :
         warning("Declaration of " & "BroadPhaseLayerInterface" &
             " exists but with different size")
     BroadPhaseLayerInterface
    else:
-    BroadPhaseLayerInterface_536871718)
-  CharacterContactListener_Procs_536872035 = (when declared(
+    BroadPhaseLayerInterface_536871790)
+  CharacterContactListener_Procs_536872107 = (when declared(
       CharacterContactListener_Procs):
     when ownSizeof(CharacterContactListener_Procs) !=
-        ownSizeof(CharacterContactListener_Procs_536872034):
+        ownSizeof(CharacterContactListener_Procs_536872106):
       static :
         warning("Declaration of " & "CharacterContactListener_Procs" &
             " exists but with different size")
     CharacterContactListener_Procs
    else:
-    CharacterContactListener_Procs_536872034)
-  DrawSettings_536871689 = (when declared(DrawSettings):
-    when ownSizeof(DrawSettings) != ownSizeof(DrawSettings_536871688):
+    CharacterContactListener_Procs_536872106)
+  DrawSettings_536871761 = (when declared(DrawSettings):
+    when ownSizeof(DrawSettings) != ownSizeof(DrawSettings_536871760):
       static :
         warning("Declaration of " & "DrawSettings" &
             " exists but with different size")
     DrawSettings
    else:
-    DrawSettings_536871688)
-  enum_MotionType_536871486 = (when declared(enum_MotionType):
-    when ownSizeof(enum_MotionType) != ownSizeof(enum_MotionType_536871485):
+    DrawSettings_536871760)
+  enum_MotionType_536871558 = (when declared(enum_MotionType):
+    when ownSizeof(enum_MotionType) != ownSizeof(enum_MotionType_536871557):
       static :
         warning("Declaration of " & "enum_MotionType" &
             " exists but with different size")
     enum_MotionType
    else:
-    enum_MotionType_536871485)
-  BodyManager_ShapeColor_536871579 = (when declared(BodyManager_ShapeColor):
-    when ownSizeof(BodyManager_ShapeColor) != ownSizeof(BodyManager_ShapeColor_536871578):
+    enum_MotionType_536871557)
+  BodyManager_ShapeColor_536871651 = (when declared(BodyManager_ShapeColor):
+    when ownSizeof(BodyManager_ShapeColor) != ownSizeof(BodyManager_ShapeColor_536871650):
       static :
         warning("Declaration of " & "BodyManager_ShapeColor" &
             " exists but with different size")
     BodyManager_ShapeColor
    else:
-    BodyManager_ShapeColor_536871578)
-  MeshShapeSettings_536871767 = (when declared(MeshShapeSettings):
-    when ownSizeof(MeshShapeSettings) != ownSizeof(MeshShapeSettings_536871766):
+    BodyManager_ShapeColor_536871650)
+  MeshShapeSettings_536871839 = (when declared(MeshShapeSettings):
+    when ownSizeof(MeshShapeSettings) != ownSizeof(MeshShapeSettings_536871838):
       static :
         warning("Declaration of " & "MeshShapeSettings" &
             " exists but with different size")
     MeshShapeSettings
    else:
-    MeshShapeSettings_536871766)
-  struct_BodyFilter_Procs_536872009 = (when declared(struct_BodyFilter_Procs):
+    MeshShapeSettings_536871838)
+  struct_BodyFilter_Procs_536872081 = (when declared(struct_BodyFilter_Procs):
     when ownSizeof(struct_BodyFilter_Procs) !=
-        ownSizeof(struct_BodyFilter_Procs_536872008):
+        ownSizeof(struct_BodyFilter_Procs_536872080):
       static :
         warning("Declaration of " & "struct_BodyFilter_Procs" &
             " exists but with different size")
     struct_BodyFilter_Procs
    else:
-    struct_BodyFilter_Procs_536872008)
-  Plane_536871607 = (when declared(Plane):
-    when ownSizeof(Plane) != ownSizeof(Plane_536871606):
+    struct_BodyFilter_Procs_536872080)
+  Plane_536871679 = (when declared(Plane):
+    when ownSizeof(Plane) != ownSizeof(Plane_536871678):
       static :
         warning("Declaration of " & "Plane" & " exists but with different size")
     Plane
    else:
-    Plane_536871606)
-  struct_SupportingFace_536871691 = (when declared(struct_SupportingFace):
-    when ownSizeof(struct_SupportingFace) != ownSizeof(struct_SupportingFace_536871690):
+    Plane_536871678)
+  struct_SupportingFace_536871763 = (when declared(struct_SupportingFace):
+    when ownSizeof(struct_SupportingFace) != ownSizeof(struct_SupportingFace_536871762):
       static :
         warning("Declaration of " & "struct_SupportingFace" &
             " exists but with different size")
     struct_SupportingFace
    else:
-    struct_SupportingFace_536871690)
-  CapsuleShapeSettings_536871751 = (when declared(CapsuleShapeSettings):
-    when ownSizeof(CapsuleShapeSettings) != ownSizeof(CapsuleShapeSettings_536871750):
+    struct_SupportingFace_536871762)
+  CapsuleShapeSettings_536871823 = (when declared(CapsuleShapeSettings):
+    when ownSizeof(CapsuleShapeSettings) != ownSizeof(CapsuleShapeSettings_536871822):
       static :
         warning("Declaration of " & "CapsuleShapeSettings" &
             " exists but with different size")
     CapsuleShapeSettings
    else:
-    CapsuleShapeSettings_536871750)
-  enum_Activation_536871490 = (when declared(enum_Activation):
-    when ownSizeof(enum_Activation) != ownSizeof(enum_Activation_536871489):
+    CapsuleShapeSettings_536871822)
+  enum_Activation_536871562 = (when declared(enum_Activation):
+    when ownSizeof(enum_Activation) != ownSizeof(enum_Activation_536871561):
       static :
         warning("Declaration of " & "enum_Activation" &
             " exists but with different size")
     enum_Activation
    else:
-    enum_Activation_536871489)
-  BodyCreationSettings_536871821 = (when declared(BodyCreationSettings):
-    when ownSizeof(BodyCreationSettings) != ownSizeof(BodyCreationSettings_536871820):
+    enum_Activation_536871561)
+  BodyCreationSettings_536871893 = (when declared(BodyCreationSettings):
+    when ownSizeof(BodyCreationSettings) != ownSizeof(BodyCreationSettings_536871892):
       static :
         warning("Declaration of " & "BodyCreationSettings" &
             " exists but with different size")
     BodyCreationSettings
    else:
-    BodyCreationSettings_536871820)
-  BodyLockRead_536871939 = (when declared(BodyLockRead):
-    when ownSizeof(BodyLockRead) != ownSizeof(BodyLockRead_536871938):
+    BodyCreationSettings_536871892)
+  BodyLockRead_536872011 = (when declared(BodyLockRead):
+    when ownSizeof(BodyLockRead) != ownSizeof(BodyLockRead_536872010):
       static :
         warning("Declaration of " & "BodyLockRead" &
             " exists but with different size")
     BodyLockRead
    else:
-    BodyLockRead_536871938)
-  PhysicsSystemSettings_536871995 = (when declared(PhysicsSystemSettings):
-    when ownSizeof(PhysicsSystemSettings) != ownSizeof(PhysicsSystemSettings_536871994):
+    BodyLockRead_536872010)
+  PhysicsSystemSettings_536872067 = (when declared(PhysicsSystemSettings):
+    when ownSizeof(PhysicsSystemSettings) != ownSizeof(PhysicsSystemSettings_536872066):
       static :
         warning("Declaration of " & "PhysicsSystemSettings" &
             " exists but with different size")
     PhysicsSystemSettings
    else:
-    PhysicsSystemSettings_536871994)
-  CapsuleShape_536871789 = (when declared(CapsuleShape):
-    when ownSizeof(CapsuleShape) != ownSizeof(CapsuleShape_536871788):
+    PhysicsSystemSettings_536872066)
+  CapsuleShape_536871861 = (when declared(CapsuleShape):
+    when ownSizeof(CapsuleShape) != ownSizeof(CapsuleShape_536871860):
       static :
         warning("Declaration of " & "CapsuleShape" &
             " exists but with different size")
     CapsuleShape
    else:
-    CapsuleShape_536871788)
-  SimShapeFilter_Procs_536872019 = (when declared(SimShapeFilter_Procs):
-    when ownSizeof(SimShapeFilter_Procs) != ownSizeof(SimShapeFilter_Procs_536872018):
+    CapsuleShape_536871860)
+  SimShapeFilter_Procs_536872091 = (when declared(SimShapeFilter_Procs):
+    when ownSizeof(SimShapeFilter_Procs) != ownSizeof(SimShapeFilter_Procs_536872090):
       static :
         warning("Declaration of " & "SimShapeFilter_Procs" &
             " exists but with different size")
     SimShapeFilter_Procs
    else:
-    SimShapeFilter_Procs_536872018)
-  ValidateResult_536871496 = (when declared(ValidateResult):
-    when ownSizeof(ValidateResult) != ownSizeof(ValidateResult_536871495):
+    SimShapeFilter_Procs_536872090)
+  ValidateResult_536871568 = (when declared(ValidateResult):
+    when ownSizeof(ValidateResult) != ownSizeof(ValidateResult_536871567):
       static :
         warning("Declaration of " & "ValidateResult" &
             " exists but with different size")
     ValidateResult
    else:
-    ValidateResult_536871495)
-  DebugRenderer_DrawMode_536871587 = (when declared(DebugRenderer_DrawMode):
-    when ownSizeof(DebugRenderer_DrawMode) != ownSizeof(DebugRenderer_DrawMode_536871586):
+    ValidateResult_536871567)
+  DebugRenderer_DrawMode_536871659 = (when declared(DebugRenderer_DrawMode):
+    when ownSizeof(DebugRenderer_DrawMode) != ownSizeof(DebugRenderer_DrawMode_536871658):
       static :
         warning("Declaration of " & "DebugRenderer_DrawMode" &
             " exists but with different size")
     DebugRenderer_DrawMode
    else:
-    DebugRenderer_DrawMode_536871586)
-  struct_SimShapeFilter_Procs_536872017 = (when declared(
+    DebugRenderer_DrawMode_536871658)
+  struct_SimShapeFilter_Procs_536872089 = (when declared(
       struct_SimShapeFilter_Procs):
     when ownSizeof(struct_SimShapeFilter_Procs) !=
-        ownSizeof(struct_SimShapeFilter_Procs_536872016):
+        ownSizeof(struct_SimShapeFilter_Procs_536872088):
       static :
         warning("Declaration of " & "struct_SimShapeFilter_Procs" &
             " exists but with different size")
     struct_SimShapeFilter_Procs
    else:
-    struct_SimShapeFilter_Procs_536872016)
-  struct_ContactListener_Procs_536872021 = (when declared(
+    struct_SimShapeFilter_Procs_536872088)
+  struct_ContactListener_Procs_536872093 = (when declared(
       struct_ContactListener_Procs):
     when ownSizeof(struct_ContactListener_Procs) !=
-        ownSizeof(struct_ContactListener_Procs_536872020):
+        ownSizeof(struct_ContactListener_Procs_536872092):
       static :
         warning("Declaration of " & "struct_ContactListener_Procs" &
             " exists but with different size")
     struct_ContactListener_Procs
    else:
-    struct_ContactListener_Procs_536872020)
-  struct_CharacterBaseSettings_536871953 = (when declared(
+    struct_ContactListener_Procs_536872092)
+  struct_CharacterBaseSettings_536872025 = (when declared(
       struct_CharacterBaseSettings):
     when ownSizeof(struct_CharacterBaseSettings) !=
-        ownSizeof(struct_CharacterBaseSettings_536871952):
+        ownSizeof(struct_CharacterBaseSettings_536872024):
       static :
         warning("Declaration of " & "struct_CharacterBaseSettings" &
             " exists but with different size")
     struct_CharacterBaseSettings
    else:
-    struct_CharacterBaseSettings_536871952)
-  Vec4_536871599 = (when declared(Vec4):
-    when ownSizeof(Vec4) != ownSizeof(Vec4_536871598):
+    struct_CharacterBaseSettings_536872024)
+  Vec4_536871671 = (when declared(Vec4):
+    when ownSizeof(Vec4) != ownSizeof(Vec4_536871670):
       static :
         warning("Declaration of " & "Vec4" & " exists but with different size")
     Vec4
    else:
-    Vec4_536871598)
-  DebugRenderer_536871857 = (when declared(DebugRenderer):
-    when ownSizeof(DebugRenderer) != ownSizeof(DebugRenderer_536871856):
+    Vec4_536871670)
+  DebugRenderer_536871929 = (when declared(DebugRenderer):
+    when ownSizeof(DebugRenderer) != ownSizeof(DebugRenderer_536871928):
       static :
         warning("Declaration of " & "DebugRenderer" &
             " exists but with different size")
     DebugRenderer
    else:
-    DebugRenderer_536871856)
-  enum_MotorState_536871546 = (when declared(enum_MotorState):
-    when ownSizeof(enum_MotorState) != ownSizeof(enum_MotorState_536871545):
+    DebugRenderer_536871928)
+  enum_MotorState_536871618 = (when declared(enum_MotorState):
+    when ownSizeof(enum_MotorState) != ownSizeof(enum_MotorState_536871617):
       static :
         warning("Declaration of " & "enum_MotorState" &
             " exists but with different size")
     enum_MotorState
    else:
-    enum_MotorState_536871545)
-  MutableCompoundShapeSettings_536871765 = (when declared(
+    enum_MotorState_536871617)
+  MutableCompoundShapeSettings_536871837 = (when declared(
       MutableCompoundShapeSettings):
     when ownSizeof(MutableCompoundShapeSettings) !=
-        ownSizeof(MutableCompoundShapeSettings_536871764):
+        ownSizeof(MutableCompoundShapeSettings_536871836):
       static :
         warning("Declaration of " & "MutableCompoundShapeSettings" &
             " exists but with different size")
     MutableCompoundShapeSettings
    else:
-    MutableCompoundShapeSettings_536871764)
-  CollidePointCollectorCallback_536871713 = (when declared(
+    MutableCompoundShapeSettings_536871836)
+  CollidePointCollectorCallback_536871785 = (when declared(
       CollidePointCollectorCallback):
     when ownSizeof(CollidePointCollectorCallback) !=
-        ownSizeof(CollidePointCollectorCallback_536871712):
+        ownSizeof(CollidePointCollectorCallback_536871784):
       static :
         warning("Declaration of " & "CollidePointCollectorCallback" &
             " exists but with different size")
     CollidePointCollectorCallback
    else:
-    CollidePointCollectorCallback_536871712)
-  EmptyShape_536871819 = (when declared(EmptyShape):
-    when ownSizeof(EmptyShape) != ownSizeof(EmptyShape_536871818):
+    CollidePointCollectorCallback_536871784)
+  EmptyShape_536871891 = (when declared(EmptyShape):
+    when ownSizeof(EmptyShape) != ownSizeof(EmptyShape_536871890):
       static :
         warning("Declaration of " & "EmptyShape" &
             " exists but with different size")
     EmptyShape
    else:
-    EmptyShape_536871818)
-  struct_SliderConstraintSettings_536871917 = (when declared(
+    EmptyShape_536871890)
+  struct_SliderConstraintSettings_536871989 = (when declared(
       struct_SliderConstraintSettings):
     when ownSizeof(struct_SliderConstraintSettings) !=
-        ownSizeof(struct_SliderConstraintSettings_536871916):
+        ownSizeof(struct_SliderConstraintSettings_536871988):
       static :
         warning("Declaration of " & "struct_SliderConstraintSettings" &
             " exists but with different size")
     struct_SliderConstraintSettings
    else:
-    struct_SliderConstraintSettings_536871916)
-  BroadPhaseLayerFilter_536871725 = (when declared(BroadPhaseLayerFilter):
-    when ownSizeof(BroadPhaseLayerFilter) != ownSizeof(BroadPhaseLayerFilter_536871724):
+    struct_SliderConstraintSettings_536871988)
+  BroadPhaseLayerFilter_536871797 = (when declared(BroadPhaseLayerFilter):
+    when ownSizeof(BroadPhaseLayerFilter) != ownSizeof(BroadPhaseLayerFilter_536871796):
       static :
         warning("Declaration of " & "BroadPhaseLayerFilter" &
             " exists but with different size")
     BroadPhaseLayerFilter
    else:
-    BroadPhaseLayerFilter_536871724)
-  CastShapeCollectorCallback_536871717 = (when declared(
+    BroadPhaseLayerFilter_536871796)
+  CastShapeCollectorCallback_536871789 = (when declared(
       CastShapeCollectorCallback):
     when ownSizeof(CastShapeCollectorCallback) !=
-        ownSizeof(CastShapeCollectorCallback_536871716):
+        ownSizeof(CastShapeCollectorCallback_536871788):
       static :
         warning("Declaration of " & "CastShapeCollectorCallback" &
             " exists but with different size")
     CastShapeCollectorCallback
    else:
-    CastShapeCollectorCallback_536871716)
-  enum_ConstraintSubType_536871510 = (when declared(enum_ConstraintSubType):
-    when ownSizeof(enum_ConstraintSubType) != ownSizeof(enum_ConstraintSubType_536871509):
+    CastShapeCollectorCallback_536871788)
+  enum_ConstraintSubType_536871582 = (when declared(enum_ConstraintSubType):
+    when ownSizeof(enum_ConstraintSubType) != ownSizeof(enum_ConstraintSubType_536871581):
       static :
         warning("Declaration of " & "enum_ConstraintSubType" &
             " exists but with different size")
     enum_ConstraintSubType
    else:
-    enum_ConstraintSubType_536871509)
-  CharacterSettings_536871959 = (when declared(CharacterSettings):
-    when ownSizeof(CharacterSettings) != ownSizeof(CharacterSettings_536871958):
+    enum_ConstraintSubType_536871581)
+  CharacterSettings_536872031 = (when declared(CharacterSettings):
+    when ownSizeof(CharacterSettings) != ownSizeof(CharacterSettings_536872030):
       static :
         warning("Declaration of " & "CharacterSettings" &
             " exists but with different size")
     CharacterSettings
    else:
-    CharacterSettings_536871958)
-  BroadPhaseLayer_536871470 = (when declared(BroadPhaseLayer):
-    when ownSizeof(BroadPhaseLayer) != ownSizeof(BroadPhaseLayer_536871469):
+    CharacterSettings_536872030)
+  BroadPhaseLayer_536871542 = (when declared(BroadPhaseLayer):
+    when ownSizeof(BroadPhaseLayer) != ownSizeof(BroadPhaseLayer_536871541):
       static :
         warning("Declaration of " & "BroadPhaseLayer" &
             " exists but with different size")
     BroadPhaseLayer
    else:
-    BroadPhaseLayer_536871469)
-  HeightFieldShapeSettings_536871769 = (when declared(HeightFieldShapeSettings):
+    BroadPhaseLayer_536871541)
+  HeightFieldShapeSettings_536871841 = (when declared(HeightFieldShapeSettings):
     when ownSizeof(HeightFieldShapeSettings) !=
-        ownSizeof(HeightFieldShapeSettings_536871768):
+        ownSizeof(HeightFieldShapeSettings_536871840):
       static :
         warning("Declaration of " & "HeightFieldShapeSettings" &
             " exists but with different size")
     HeightFieldShapeSettings
    else:
-    HeightFieldShapeSettings_536871768)
-  struct_ShapeFilter_Procs_536872013 = (when declared(struct_ShapeFilter_Procs):
+    HeightFieldShapeSettings_536871840)
+  struct_ShapeFilter_Procs_536872085 = (when declared(struct_ShapeFilter_Procs):
     when ownSizeof(struct_ShapeFilter_Procs) !=
-        ownSizeof(struct_ShapeFilter_Procs_536872012):
+        ownSizeof(struct_ShapeFilter_Procs_536872084):
       static :
         warning("Declaration of " & "struct_ShapeFilter_Procs" &
             " exists but with different size")
     struct_ShapeFilter_Procs
    else:
-    struct_ShapeFilter_Procs_536872012)
-  CharacterVirtualContact_536871971 = (when declared(CharacterVirtualContact):
+    struct_ShapeFilter_Procs_536872084)
+  CharacterVirtualContact_536872043 = (when declared(CharacterVirtualContact):
     when ownSizeof(CharacterVirtualContact) !=
-        ownSizeof(CharacterVirtualContact_536871970):
+        ownSizeof(CharacterVirtualContact_536872042):
       static :
         warning("Declaration of " & "CharacterVirtualContact" &
             " exists but with different size")
     CharacterVirtualContact
    else:
-    CharacterVirtualContact_536871970)
-  TriangleShapeSettings_536871749 = (when declared(TriangleShapeSettings):
-    when ownSizeof(TriangleShapeSettings) != ownSizeof(TriangleShapeSettings_536871748):
+    CharacterVirtualContact_536872042)
+  TriangleShapeSettings_536871821 = (when declared(TriangleShapeSettings):
+    when ownSizeof(TriangleShapeSettings) != ownSizeof(TriangleShapeSettings_536871820):
       static :
         warning("Declaration of " & "TriangleShapeSettings" &
             " exists but with different size")
     TriangleShapeSettings
    else:
-    TriangleShapeSettings_536871748)
-  ShapeType_536871500 = (when declared(ShapeType):
-    when ownSizeof(ShapeType) != ownSizeof(ShapeType_536871499):
+    TriangleShapeSettings_536871820)
+  ShapeType_536871572 = (when declared(ShapeType):
+    when ownSizeof(ShapeType) != ownSizeof(ShapeType_536871571):
       static :
         warning("Declaration of " & "ShapeType" &
             " exists but with different size")
     ShapeType
    else:
-    ShapeType_536871499)
-  CollisionGroupID_536871472 = (when declared(CollisionGroupID):
-    when ownSizeof(CollisionGroupID) != ownSizeof(CollisionGroupID_536871471):
+    ShapeType_536871571)
+  CollisionGroupID_536871544 = (when declared(CollisionGroupID):
+    when ownSizeof(CollisionGroupID) != ownSizeof(CollisionGroupID_536871543):
       static :
         warning("Declaration of " & "CollisionGroupID" &
             " exists but with different size")
     CollisionGroupID
    else:
-    CollisionGroupID_536871471)
-  struct_CharacterVirtualContact_536871969 = (when declared(
+    CollisionGroupID_536871543)
+  struct_CharacterVirtualContact_536872041 = (when declared(
       struct_CharacterVirtualContact):
     when ownSizeof(struct_CharacterVirtualContact) !=
-        ownSizeof(struct_CharacterVirtualContact_536871968):
+        ownSizeof(struct_CharacterVirtualContact_536872040):
       static :
         warning("Declaration of " & "struct_CharacterVirtualContact" &
             " exists but with different size")
     struct_CharacterVirtualContact
    else:
-    struct_CharacterVirtualContact_536871968)
-  BroadPhaseQuery_536871829 = (when declared(BroadPhaseQuery):
-    when ownSizeof(BroadPhaseQuery) != ownSizeof(BroadPhaseQuery_536871828):
+    struct_CharacterVirtualContact_536872040)
+  BroadPhaseQuery_536871901 = (when declared(BroadPhaseQuery):
+    when ownSizeof(BroadPhaseQuery) != ownSizeof(BroadPhaseQuery_536871900):
       static :
         warning("Declaration of " & "BroadPhaseQuery" &
             " exists but with different size")
     BroadPhaseQuery
    else:
-    BroadPhaseQuery_536871828)
-  struct_CollideShapeResult_536871679 = (when declared(struct_CollideShapeResult):
+    BroadPhaseQuery_536871900)
+  struct_CollideShapeResult_536871751 = (when declared(struct_CollideShapeResult):
     when ownSizeof(struct_CollideShapeResult) !=
-        ownSizeof(struct_CollideShapeResult_536871678):
+        ownSizeof(struct_CollideShapeResult_536871750):
       static :
         warning("Declaration of " & "struct_CollideShapeResult" &
             " exists but with different size")
     struct_CollideShapeResult
    else:
-    struct_CollideShapeResult_536871678)
-  Mesh_Shape_BuildQuality_536871591 = (when declared(Mesh_Shape_BuildQuality):
+    struct_CollideShapeResult_536871750)
+  Mesh_Shape_BuildQuality_536871663 = (when declared(Mesh_Shape_BuildQuality):
     when ownSizeof(Mesh_Shape_BuildQuality) !=
-        ownSizeof(Mesh_Shape_BuildQuality_536871590):
+        ownSizeof(Mesh_Shape_BuildQuality_536871662):
       static :
         warning("Declaration of " & "Mesh_Shape_BuildQuality" &
             " exists but with different size")
     Mesh_Shape_BuildQuality
    else:
-    Mesh_Shape_BuildQuality_536871590)
-  ConeConstraintSettings_536871923 = (when declared(ConeConstraintSettings):
-    when ownSizeof(ConeConstraintSettings) != ownSizeof(ConeConstraintSettings_536871922):
+    Mesh_Shape_BuildQuality_536871662)
+  ConeConstraintSettings_536871995 = (when declared(ConeConstraintSettings):
+    when ownSizeof(ConeConstraintSettings) != ownSizeof(ConeConstraintSettings_536871994):
       static :
         warning("Declaration of " & "ConeConstraintSettings" &
             " exists but with different size")
     ConeConstraintSettings
    else:
-    ConeConstraintSettings_536871922)
-  HingeConstraint_536871869 = (when declared(HingeConstraint):
-    when ownSizeof(HingeConstraint) != ownSizeof(HingeConstraint_536871868):
+    ConeConstraintSettings_536871994)
+  HingeConstraint_536871941 = (when declared(HingeConstraint):
+    when ownSizeof(HingeConstraint) != ownSizeof(HingeConstraint_536871940):
       static :
         warning("Declaration of " & "HingeConstraint" &
             " exists but with different size")
     HingeConstraint
    else:
-    HingeConstraint_536871868)
-  PhysicsSystem_536871735 = (when declared(PhysicsSystem):
-    when ownSizeof(PhysicsSystem) != ownSizeof(PhysicsSystem_536871734):
+    HingeConstraint_536871940)
+  PhysicsSystem_536871807 = (when declared(PhysicsSystem):
+    when ownSizeof(PhysicsSystem) != ownSizeof(PhysicsSystem_536871806):
       static :
         warning("Declaration of " & "PhysicsSystem" &
             " exists but with different size")
     PhysicsSystem
    else:
-    PhysicsSystem_536871734)
-  enum_DebugRenderer_DrawMode_536871585 = (when declared(
+    PhysicsSystem_536871806)
+  enum_DebugRenderer_DrawMode_536871657 = (when declared(
       enum_DebugRenderer_DrawMode):
     when ownSizeof(enum_DebugRenderer_DrawMode) !=
-        ownSizeof(enum_DebugRenderer_DrawMode_536871584):
+        ownSizeof(enum_DebugRenderer_DrawMode_536871656):
       static :
         warning("Declaration of " & "enum_DebugRenderer_DrawMode" &
             " exists but with different size")
     enum_DebugRenderer_DrawMode
    else:
-    enum_DebugRenderer_DrawMode_536871584)
-  CollisionEstimationResult_536871849 = (when declared(CollisionEstimationResult):
+    enum_DebugRenderer_DrawMode_536871656)
+  CollisionEstimationResult_536871921 = (when declared(CollisionEstimationResult):
     when ownSizeof(CollisionEstimationResult) !=
-        ownSizeof(CollisionEstimationResult_536871848):
+        ownSizeof(CollisionEstimationResult_536871920):
       static :
         warning("Declaration of " & "CollisionEstimationResult" &
             " exists but with different size")
     CollisionEstimationResult
    else:
-    CollisionEstimationResult_536871848)
-  BodyActivationListener_Procs_536872027 = (when declared(
+    CollisionEstimationResult_536871920)
+  BodyActivationListener_Procs_536872099 = (when declared(
       BodyActivationListener_Procs):
     when ownSizeof(BodyActivationListener_Procs) !=
-        ownSizeof(BodyActivationListener_Procs_536872026):
+        ownSizeof(BodyActivationListener_Procs_536872098):
       static :
         warning("Declaration of " & "BodyActivationListener_Procs" &
             " exists but with different size")
     BodyActivationListener_Procs
    else:
-    BodyActivationListener_Procs_536872026)
-  SubShapeIDPair_536871665 = (when declared(SubShapeIDPair):
-    when ownSizeof(SubShapeIDPair) != ownSizeof(SubShapeIDPair_536871664):
+    BodyActivationListener_Procs_536872098)
+  SubShapeIDPair_536871737 = (when declared(SubShapeIDPair):
+    when ownSizeof(SubShapeIDPair) != ownSizeof(SubShapeIDPair_536871736):
       static :
         warning("Declaration of " & "SubShapeIDPair" &
             " exists but with different size")
     SubShapeIDPair
    else:
-    SubShapeIDPair_536871664)
-  CastRayResultCallback_536871695 = (when declared(CastRayResultCallback):
-    when ownSizeof(CastRayResultCallback) != ownSizeof(CastRayResultCallback_536871694):
+    SubShapeIDPair_536871736)
+  CastRayResultCallback_536871767 = (when declared(CastRayResultCallback):
+    when ownSizeof(CastRayResultCallback) != ownSizeof(CastRayResultCallback_536871766):
       static :
         warning("Declaration of " & "CastRayResultCallback" &
             " exists but with different size")
     CastRayResultCallback
    else:
-    CastRayResultCallback_536871694)
-  RayCastBodyResultCallback_536871697 = (when declared(RayCastBodyResultCallback):
+    CastRayResultCallback_536871766)
+  RayCastBodyResultCallback_536871769 = (when declared(RayCastBodyResultCallback):
     when ownSizeof(RayCastBodyResultCallback) !=
-        ownSizeof(RayCastBodyResultCallback_536871696):
+        ownSizeof(RayCastBodyResultCallback_536871768):
       static :
         warning("Declaration of " & "RayCastBodyResultCallback" &
             " exists but with different size")
     RayCastBodyResultCallback
    else:
-    RayCastBodyResultCallback_536871696)
-  enum_MotionQuality_536871518 = (when declared(enum_MotionQuality):
-    when ownSizeof(enum_MotionQuality) != ownSizeof(enum_MotionQuality_536871517):
+    RayCastBodyResultCallback_536871768)
+  enum_MotionQuality_536871590 = (when declared(enum_MotionQuality):
+    when ownSizeof(enum_MotionQuality) != ownSizeof(enum_MotionQuality_536871589):
       static :
         warning("Declaration of " & "enum_MotionQuality" &
             " exists but with different size")
     enum_MotionQuality
    else:
-    enum_MotionQuality_536871517)
-  Ragdoll_536871895 = (when declared(Ragdoll):
-    when ownSizeof(Ragdoll) != ownSizeof(Ragdoll_536871894):
+    enum_MotionQuality_536871589)
+  Ragdoll_536871967 = (when declared(Ragdoll):
+    when ownSizeof(Ragdoll) != ownSizeof(Ragdoll_536871966):
       static :
         warning("Declaration of " & "Ragdoll" &
             " exists but with different size")
     Ragdoll
    else:
-    Ragdoll_536871894)
-  BackFaceMode_536871536 = (when declared(BackFaceMode):
-    when ownSizeof(BackFaceMode) != ownSizeof(BackFaceMode_536871535):
+    Ragdoll_536871966)
+  BackFaceMode_536871608 = (when declared(BackFaceMode):
+    when ownSizeof(BackFaceMode) != ownSizeof(BackFaceMode_536871607):
       static :
         warning("Declaration of " & "BackFaceMode" &
             " exists but with different size")
     BackFaceMode
    else:
-    BackFaceMode_536871535)
-  CollisionCollectorType_536871559 = (when declared(CollisionCollectorType):
-    when ownSizeof(CollisionCollectorType) != ownSizeof(CollisionCollectorType_536871558):
+    BackFaceMode_536871607)
+  CollisionCollectorType_536871631 = (when declared(CollisionCollectorType):
+    when ownSizeof(CollisionCollectorType) != ownSizeof(CollisionCollectorType_536871630):
       static :
         warning("Declaration of " & "CollisionCollectorType" &
             " exists but with different size")
     CollisionCollectorType
    else:
-    CollisionCollectorType_536871558)
-  CharacterVsCharacterCollision_536871889 = (when declared(
+    CollisionCollectorType_536871630)
+  CharacterVsCharacterCollision_536871961 = (when declared(
       CharacterVsCharacterCollision):
     when ownSizeof(CharacterVsCharacterCollision) !=
-        ownSizeof(CharacterVsCharacterCollision_536871888):
+        ownSizeof(CharacterVsCharacterCollision_536871960):
       static :
         warning("Declaration of " & "CharacterVsCharacterCollision" &
             " exists but with different size")
     CharacterVsCharacterCollision
    else:
-    CharacterVsCharacterCollision_536871888)
-  SoftBodyConstraintColor_536871575 = (when declared(SoftBodyConstraintColor):
+    CharacterVsCharacterCollision_536871960)
+  SoftBodyConstraintColor_536871647 = (when declared(SoftBodyConstraintColor):
     when ownSizeof(SoftBodyConstraintColor) !=
-        ownSizeof(SoftBodyConstraintColor_536871574):
+        ownSizeof(SoftBodyConstraintColor_536871646):
       static :
         warning("Declaration of " & "SoftBodyConstraintColor" &
             " exists but with different size")
     SoftBodyConstraintColor
    else:
-    SoftBodyConstraintColor_536871574)
-  struct_RayCastSettings_536871651 = (when declared(struct_RayCastSettings):
-    when ownSizeof(struct_RayCastSettings) != ownSizeof(struct_RayCastSettings_536871650):
+    SoftBodyConstraintColor_536871646)
+  struct_RayCastSettings_536871723 = (when declared(struct_RayCastSettings):
+    when ownSizeof(struct_RayCastSettings) != ownSizeof(struct_RayCastSettings_536871722):
       static :
         warning("Declaration of " & "struct_RayCastSettings" &
             " exists but with different size")
     struct_RayCastSettings
    else:
-    struct_RayCastSettings_536871650)
-  SliderConstraintSettings_536871919 = (when declared(SliderConstraintSettings):
+    struct_RayCastSettings_536871722)
+  SliderConstraintSettings_536871991 = (when declared(SliderConstraintSettings):
     when ownSizeof(SliderConstraintSettings) !=
-        ownSizeof(SliderConstraintSettings_536871918):
+        ownSizeof(SliderConstraintSettings_536871990):
       static :
         warning("Declaration of " & "SliderConstraintSettings" &
             " exists but with different size")
     SliderConstraintSettings
    else:
-    SliderConstraintSettings_536871918)
-  CharacterID_536871476 = (when declared(CharacterID):
-    when ownSizeof(CharacterID) != ownSizeof(CharacterID_536871475):
+    SliderConstraintSettings_536871990)
+  CharacterID_536871548 = (when declared(CharacterID):
+    when ownSizeof(CharacterID) != ownSizeof(CharacterID_536871547):
       static :
         warning("Declaration of " & "CharacterID" &
             " exists but with different size")
     CharacterID
    else:
-    CharacterID_536871475)
-  ConvexShape_536871781 = (when declared(ConvexShape):
-    when ownSizeof(ConvexShape) != ownSizeof(ConvexShape_536871780):
+    CharacterID_536871547)
+  ConvexShape_536871853 = (when declared(ConvexShape):
+    when ownSizeof(ConvexShape) != ownSizeof(ConvexShape_536871852):
       static :
         warning("Declaration of " & "ConvexShape" &
             " exists but with different size")
     ConvexShape
    else:
-    ConvexShape_536871780)
-  enum_SwingType_536871561 = (when declared(enum_SwingType):
-    when ownSizeof(enum_SwingType) != ownSizeof(enum_SwingType_536871560):
+    ConvexShape_536871852)
+  enum_SwingType_536871633 = (when declared(enum_SwingType):
+    when ownSizeof(enum_SwingType) != ownSizeof(enum_SwingType_536871632):
       static :
         warning("Declaration of " & "enum_SwingType" &
             " exists but with different size")
     enum_SwingType
    else:
-    enum_SwingType_536871560)
-  MassProperties_536871637 = (when declared(MassProperties):
-    when ownSizeof(MassProperties) != ownSizeof(MassProperties_536871636):
+    enum_SwingType_536871632)
+  MassProperties_536871709 = (when declared(MassProperties):
+    when ownSizeof(MassProperties) != ownSizeof(MassProperties_536871708):
       static :
         warning("Declaration of " & "MassProperties" &
             " exists but with different size")
     MassProperties
    else:
-    MassProperties_536871636)
-  SliderConstraint_536871871 = (when declared(SliderConstraint):
-    when ownSizeof(SliderConstraint) != ownSizeof(SliderConstraint_536871870):
+    MassProperties_536871708)
+  SliderConstraint_536871943 = (when declared(SliderConstraint):
+    when ownSizeof(SliderConstraint) != ownSizeof(SliderConstraint_536871942):
       static :
         warning("Declaration of " & "SliderConstraint" &
             " exists but with different size")
     SliderConstraint
    else:
-    SliderConstraint_536871870)
-  struct_CollisionEstimationResult_536871847 = (when declared(
+    SliderConstraint_536871942)
+  struct_CollisionEstimationResult_536871919 = (when declared(
       struct_CollisionEstimationResult):
     when ownSizeof(struct_CollisionEstimationResult) !=
-        ownSizeof(struct_CollisionEstimationResult_536871846):
+        ownSizeof(struct_CollisionEstimationResult_536871918):
       static :
         warning("Declaration of " & "struct_CollisionEstimationResult" &
             " exists but with different size")
     struct_CollisionEstimationResult
    else:
-    struct_CollisionEstimationResult_536871846)
-  MutableCompoundShape_536871805 = (when declared(MutableCompoundShape):
-    when ownSizeof(MutableCompoundShape) != ownSizeof(MutableCompoundShape_536871804):
+    struct_CollisionEstimationResult_536871918)
+  MutableCompoundShape_536871877 = (when declared(MutableCompoundShape):
+    when ownSizeof(MutableCompoundShape) != ownSizeof(MutableCompoundShape_536871876):
       static :
         warning("Declaration of " & "MutableCompoundShape" &
             " exists but with different size")
     MutableCompoundShape
    else:
-    MutableCompoundShape_536871804)
-  struct_Matrix4x4_536871609 = (when declared(struct_Matrix4x4):
-    when ownSizeof(struct_Matrix4x4) != ownSizeof(struct_Matrix4x4_536871608):
+    MutableCompoundShape_536871876)
+  struct_Matrix4x4_536871681 = (when declared(struct_Matrix4x4):
+    when ownSizeof(struct_Matrix4x4) != ownSizeof(struct_Matrix4x4_536871680):
       static :
         warning("Declaration of " & "struct_Matrix4x4" &
             " exists but with different size")
     struct_Matrix4x4
    else:
-    struct_Matrix4x4_536871608)
-  OffsetCenterOfMassShapeSettings_536871775 = (when declared(
+    struct_Matrix4x4_536871680)
+  OffsetCenterOfMassShapeSettings_536871847 = (when declared(
       OffsetCenterOfMassShapeSettings):
     when ownSizeof(OffsetCenterOfMassShapeSettings) !=
-        ownSizeof(OffsetCenterOfMassShapeSettings_536871774):
+        ownSizeof(OffsetCenterOfMassShapeSettings_536871846):
       static :
         warning("Declaration of " & "OffsetCenterOfMassShapeSettings" &
             " exists but with different size")
     OffsetCenterOfMassShapeSettings
    else:
-    OffsetCenterOfMassShapeSettings_536871774)
-  TriangleShape_536871795 = (when declared(TriangleShape):
-    when ownSizeof(TriangleShape) != ownSizeof(TriangleShape_536871794):
+    OffsetCenterOfMassShapeSettings_536871846)
+  TriangleShape_536871867 = (when declared(TriangleShape):
+    when ownSizeof(TriangleShape) != ownSizeof(TriangleShape_536871866):
       static :
         warning("Declaration of " & "TriangleShape" &
             " exists but with different size")
     TriangleShape
    else:
-    TriangleShape_536871794)
-  MotionProperties_536871833 = (when declared(MotionProperties):
-    when ownSizeof(MotionProperties) != ownSizeof(MotionProperties_536871832):
+    TriangleShape_536871866)
+  MotionProperties_536871905 = (when declared(MotionProperties):
+    when ownSizeof(MotionProperties) != ownSizeof(MotionProperties_536871904):
       static :
         warning("Declaration of " & "MotionProperties" &
             " exists but with different size")
     MotionProperties
    else:
-    MotionProperties_536871832)
-  CastRayCollectorCallback_536871707 = (when declared(CastRayCollectorCallback):
+    MotionProperties_536871904)
+  CastRayCollectorCallback_536871779 = (when declared(CastRayCollectorCallback):
     when ownSizeof(CastRayCollectorCallback) !=
-        ownSizeof(CastRayCollectorCallback_536871706):
+        ownSizeof(CastRayCollectorCallback_536871778):
       static :
         warning("Declaration of " & "CastRayCollectorCallback" &
             " exists but with different size")
     CastRayCollectorCallback
    else:
-    CastRayCollectorCallback_536871706)
-  GearConstraint_536871879 = (when declared(GearConstraint):
-    when ownSizeof(GearConstraint) != ownSizeof(GearConstraint_536871878):
+    CastRayCollectorCallback_536871778)
+  GearConstraint_536871951 = (when declared(GearConstraint):
+    when ownSizeof(GearConstraint) != ownSizeof(GearConstraint_536871950):
       static :
         warning("Declaration of " & "GearConstraint" &
             " exists but with different size")
     GearConstraint
    else:
-    GearConstraint_536871878)
-  SwingTwistConstraintSettings_536871927 = (when declared(
+    GearConstraint_536871950)
+  SwingTwistConstraintSettings_536871999 = (when declared(
       SwingTwistConstraintSettings):
     when ownSizeof(SwingTwistConstraintSettings) !=
-        ownSizeof(SwingTwistConstraintSettings_536871926):
+        ownSizeof(SwingTwistConstraintSettings_536871998):
       static :
         warning("Declaration of " & "SwingTwistConstraintSettings" &
             " exists but with different size")
     SwingTwistConstraintSettings
    else:
-    SwingTwistConstraintSettings_536871926)
-  ContactSettings_536871841 = (when declared(ContactSettings):
-    when ownSizeof(ContactSettings) != ownSizeof(ContactSettings_536871840):
+    SwingTwistConstraintSettings_536871998)
+  ContactSettings_536871913 = (when declared(ContactSettings):
+    when ownSizeof(ContactSettings) != ownSizeof(ContactSettings_536871912):
       static :
         warning("Declaration of " & "ContactSettings" &
             " exists but with different size")
     ContactSettings
    else:
-    ContactSettings_536871840)
-  struct_RayCastResult_536871671 = (when declared(struct_RayCastResult):
-    when ownSizeof(struct_RayCastResult) != ownSizeof(struct_RayCastResult_536871670):
+    ContactSettings_536871912)
+  struct_RayCastResult_536871743 = (when declared(struct_RayCastResult):
+    when ownSizeof(struct_RayCastResult) != ownSizeof(struct_RayCastResult_536871742):
       static :
         warning("Declaration of " & "struct_RayCastResult" &
             " exists but with different size")
     struct_RayCastResult
    else:
-    struct_RayCastResult_536871670)
-  CharacterBase_536871881 = (when declared(CharacterBase):
-    when ownSizeof(CharacterBase) != ownSizeof(CharacterBase_536871880):
+    struct_RayCastResult_536871742)
+  CharacterBase_536871953 = (when declared(CharacterBase):
+    when ownSizeof(CharacterBase) != ownSizeof(CharacterBase_536871952):
       static :
         warning("Declaration of " & "CharacterBase" &
             " exists but with different size")
     CharacterBase
    else:
-    CharacterBase_536871880)
-  HingeConstraintSettings_536871915 = (when declared(HingeConstraintSettings):
+    CharacterBase_536871952)
+  HingeConstraintSettings_536871987 = (when declared(HingeConstraintSettings):
     when ownSizeof(HingeConstraintSettings) !=
-        ownSizeof(HingeConstraintSettings_536871914):
+        ownSizeof(HingeConstraintSettings_536871986):
       static :
         warning("Declaration of " & "HingeConstraintSettings" &
             " exists but with different size")
     HingeConstraintSettings
    else:
-    HingeConstraintSettings_536871914)
-  struct_SixDOFConstraintSettings_536871929 = (when declared(
+    HingeConstraintSettings_536871986)
+  struct_SixDOFConstraintSettings_536872001 = (when declared(
       struct_SixDOFConstraintSettings):
     when ownSizeof(struct_SixDOFConstraintSettings) !=
-        ownSizeof(struct_SixDOFConstraintSettings_536871928):
+        ownSizeof(struct_SixDOFConstraintSettings_536872000):
       static :
         warning("Declaration of " & "struct_SixDOFConstraintSettings" &
             " exists but with different size")
     struct_SixDOFConstraintSettings
    else:
-    struct_SixDOFConstraintSettings_536871928)
-  struct_CharacterContactSettings_536871965 = (when declared(
+    struct_SixDOFConstraintSettings_536872000)
+  struct_CharacterContactSettings_536872037 = (when declared(
       struct_CharacterContactSettings):
     when ownSizeof(struct_CharacterContactSettings) !=
-        ownSizeof(struct_CharacterContactSettings_536871964):
+        ownSizeof(struct_CharacterContactSettings_536872036):
       static :
         warning("Declaration of " & "struct_CharacterContactSettings" &
             " exists but with different size")
     struct_CharacterContactSettings
    else:
-    struct_CharacterContactSettings_536871964)
-  BodyActivationListener_536871851 = (when declared(BodyActivationListener):
-    when ownSizeof(BodyActivationListener) != ownSizeof(BodyActivationListener_536871850):
+    struct_CharacterContactSettings_536872036)
+  BodyActivationListener_536871923 = (when declared(BodyActivationListener):
+    when ownSizeof(BodyActivationListener) != ownSizeof(BodyActivationListener_536871922):
       static :
         warning("Declaration of " & "BodyActivationListener" &
             " exists but with different size")
     BodyActivationListener
    else:
-    BodyActivationListener_536871850)
-  Activation_536871492 = (when declared(Activation):
-    when ownSizeof(Activation) != ownSizeof(Activation_536871491):
+    BodyActivationListener_536871922)
+  Activation_536871564 = (when declared(Activation):
+    when ownSizeof(Activation) != ownSizeof(Activation_536871563):
       static :
         warning("Declaration of " & "Activation" &
             " exists but with different size")
     Activation
    else:
-    Activation_536871491)
-  MeshShape_536871807 = (when declared(MeshShape):
-    when ownSizeof(MeshShape) != ownSizeof(MeshShape_536871806):
+    Activation_536871563)
+  MeshShape_536871879 = (when declared(MeshShape):
+    when ownSizeof(MeshShape) != ownSizeof(MeshShape_536871878):
       static :
         warning("Declaration of " & "MeshShape" &
             " exists but with different size")
     MeshShape
    else:
-    MeshShape_536871806)
-  CharacterContactListener_536871887 = (when declared(CharacterContactListener):
+    MeshShape_536871878)
+  CharacterContactListener_536871959 = (when declared(CharacterContactListener):
     when ownSizeof(CharacterContactListener) !=
-        ownSizeof(CharacterContactListener_536871886):
+        ownSizeof(CharacterContactListener_536871958):
       static :
         warning("Declaration of " & "CharacterContactListener" &
             " exists but with different size")
     CharacterContactListener
    else:
-    CharacterContactListener_536871886)
-  struct_BodyLockRead_536871937 = (when declared(struct_BodyLockRead):
-    when ownSizeof(struct_BodyLockRead) != ownSizeof(struct_BodyLockRead_536871936):
+    CharacterContactListener_536871958)
+  struct_BodyLockRead_536872009 = (when declared(struct_BodyLockRead):
+    when ownSizeof(struct_BodyLockRead) != ownSizeof(struct_BodyLockRead_536872008):
       static :
         warning("Declaration of " & "struct_BodyLockRead" &
             " exists but with different size")
     struct_BodyLockRead
    else:
-    struct_BodyLockRead_536871936)
-  IndexedTriangleNoMaterial_536871629 = (when declared(IndexedTriangleNoMaterial):
+    struct_BodyLockRead_536872008)
+  IndexedTriangleNoMaterial_536871701 = (when declared(IndexedTriangleNoMaterial):
     when ownSizeof(IndexedTriangleNoMaterial) !=
-        ownSizeof(IndexedTriangleNoMaterial_536871628):
+        ownSizeof(IndexedTriangleNoMaterial_536871700):
       static :
         warning("Declaration of " & "IndexedTriangleNoMaterial" &
             " exists but with different size")
     IndexedTriangleNoMaterial
    else:
-    IndexedTriangleNoMaterial_536871628)
-  struct_Vec4_536871597 = (when declared(struct_Vec4):
-    when ownSizeof(struct_Vec4) != ownSizeof(struct_Vec4_536871596):
+    IndexedTriangleNoMaterial_536871700)
+  struct_Vec4_536871669 = (when declared(struct_Vec4):
+    when ownSizeof(struct_Vec4) != ownSizeof(struct_Vec4_536871668):
       static :
         warning("Declaration of " & "struct_Vec4" &
             " exists but with different size")
     struct_Vec4
    else:
-    struct_Vec4_536871596)
-  TwoBodyConstraint_536871861 = (when declared(TwoBodyConstraint):
-    when ownSizeof(TwoBodyConstraint) != ownSizeof(TwoBodyConstraint_536871860):
+    struct_Vec4_536871668)
+  TwoBodyConstraint_536871933 = (when declared(TwoBodyConstraint):
+    when ownSizeof(TwoBodyConstraint) != ownSizeof(TwoBodyConstraint_536871932):
       static :
         warning("Declaration of " & "TwoBodyConstraint" &
             " exists but with different size")
     TwoBodyConstraint
    else:
-    TwoBodyConstraint_536871860)
-  struct_BroadPhaseLayerFilter_Procs_536872001 = (when declared(
+    TwoBodyConstraint_536871932)
+  struct_BroadPhaseLayerFilter_Procs_536872073 = (when declared(
       struct_BroadPhaseLayerFilter_Procs):
     when ownSizeof(struct_BroadPhaseLayerFilter_Procs) !=
-        ownSizeof(struct_BroadPhaseLayerFilter_Procs_536872000):
+        ownSizeof(struct_BroadPhaseLayerFilter_Procs_536872072):
       static :
         warning("Declaration of " & "struct_BroadPhaseLayerFilter_Procs" &
             " exists but with different size")
     struct_BroadPhaseLayerFilter_Procs
    else:
-    struct_BroadPhaseLayerFilter_Procs_536872000)
-  struct_CollideSettingsBase_536871639 = (when declared(
+    struct_BroadPhaseLayerFilter_Procs_536872072)
+  struct_CollideSettingsBase_536871711 = (when declared(
       struct_CollideSettingsBase):
     when ownSizeof(struct_CollideSettingsBase) !=
-        ownSizeof(struct_CollideSettingsBase_536871638):
+        ownSizeof(struct_CollideSettingsBase_536871710):
       static :
         warning("Declaration of " & "struct_CollideSettingsBase" &
             " exists but with different size")
     struct_CollideSettingsBase
    else:
-    struct_CollideSettingsBase_536871638)
-  struct_PhysicsSystemSettings_536871993 = (when declared(
+    struct_CollideSettingsBase_536871710)
+  struct_PhysicsSystemSettings_536872065 = (when declared(
       struct_PhysicsSystemSettings):
     when ownSizeof(struct_PhysicsSystemSettings) !=
-        ownSizeof(struct_PhysicsSystemSettings_536871992):
+        ownSizeof(struct_PhysicsSystemSettings_536872064):
       static :
         warning("Declaration of " & "struct_PhysicsSystemSettings" &
             " exists but with different size")
     struct_PhysicsSystemSettings
    else:
-    struct_PhysicsSystemSettings_536871992)
-  Skeleton_536871891 = (when declared(Skeleton):
-    when ownSizeof(Skeleton) != ownSizeof(Skeleton_536871890):
+    struct_PhysicsSystemSettings_536872064)
+  Skeleton_536871963 = (when declared(Skeleton):
+    when ownSizeof(Skeleton) != ownSizeof(Skeleton_536871962):
       static :
         warning("Declaration of " & "Skeleton" &
             " exists but with different size")
     Skeleton
    else:
-    Skeleton_536871890)
-  MotionType_536871488 = (when declared(MotionType):
-    when ownSizeof(MotionType) != ownSizeof(MotionType_536871487):
+    Skeleton_536871962)
+  MotionType_536871560 = (when declared(MotionType):
+    when ownSizeof(MotionType) != ownSizeof(MotionType_536871559):
       static :
         warning("Declaration of " & "MotionType" &
             " exists but with different size")
     MotionType
    else:
-    MotionType_536871487)
-  struct_ShapeCastResult_536871683 = (when declared(struct_ShapeCastResult):
-    when ownSizeof(struct_ShapeCastResult) != ownSizeof(struct_ShapeCastResult_536871682):
+    MotionType_536871559)
+  struct_ShapeCastResult_536871755 = (when declared(struct_ShapeCastResult):
+    when ownSizeof(struct_ShapeCastResult) != ownSizeof(struct_ShapeCastResult_536871754):
       static :
         warning("Declaration of " & "struct_ShapeCastResult" &
             " exists but with different size")
     struct_ShapeCastResult
    else:
-    struct_ShapeCastResult_536871682)
-  SixDOFConstraintSettings_536871931 = (when declared(SixDOFConstraintSettings):
+    struct_ShapeCastResult_536871754)
+  SixDOFConstraintSettings_536872003 = (when declared(SixDOFConstraintSettings):
     when ownSizeof(SixDOFConstraintSettings) !=
-        ownSizeof(SixDOFConstraintSettings_536871930):
+        ownSizeof(SixDOFConstraintSettings_536872002):
       static :
         warning("Declaration of " & "SixDOFConstraintSettings" &
             " exists but with different size")
     SixDOFConstraintSettings
    else:
-    SixDOFConstraintSettings_536871930)
-  struct_MotorSettings_536871659 = (when declared(struct_MotorSettings):
-    when ownSizeof(struct_MotorSettings) != ownSizeof(struct_MotorSettings_536871658):
+    SixDOFConstraintSettings_536872002)
+  struct_MotorSettings_536871731 = (when declared(struct_MotorSettings):
+    when ownSizeof(struct_MotorSettings) != ownSizeof(struct_MotorSettings_536871730):
       static :
         warning("Declaration of " & "struct_MotorSettings" &
             " exists but with different size")
     struct_MotorSettings
    else:
-    struct_MotorSettings_536871658)
-  ObjectLayerFilter_Procs_536872007 = (when declared(ObjectLayerFilter_Procs):
+    struct_MotorSettings_536871730)
+  ObjectLayerFilter_Procs_536872079 = (when declared(ObjectLayerFilter_Procs):
     when ownSizeof(ObjectLayerFilter_Procs) !=
-        ownSizeof(ObjectLayerFilter_Procs_536872006):
+        ownSizeof(ObjectLayerFilter_Procs_536872078):
       static :
         warning("Declaration of " & "ObjectLayerFilter_Procs" &
             " exists but with different size")
     ObjectLayerFilter_Procs
    else:
-    ObjectLayerFilter_Procs_536872006)
-  BodyFilter_Procs_536872011 = (when declared(BodyFilter_Procs):
-    when ownSizeof(BodyFilter_Procs) != ownSizeof(BodyFilter_Procs_536872010):
+    ObjectLayerFilter_Procs_536872078)
+  BodyFilter_Procs_536872083 = (when declared(BodyFilter_Procs):
+    when ownSizeof(BodyFilter_Procs) != ownSizeof(BodyFilter_Procs_536872082):
       static :
         warning("Declaration of " & "BodyFilter_Procs" &
             " exists but with different size")
     BodyFilter_Procs
    else:
-    BodyFilter_Procs_536872010)
-  SupportingFace_536871693 = (when declared(SupportingFace):
-    when ownSizeof(SupportingFace) != ownSizeof(SupportingFace_536871692):
+    BodyFilter_Procs_536872082)
+  SupportingFace_536871765 = (when declared(SupportingFace):
+    when ownSizeof(SupportingFace) != ownSizeof(SupportingFace_536871764):
       static :
         warning("Declaration of " & "SupportingFace" &
             " exists but with different size")
     SupportingFace
    else:
-    SupportingFace_536871692)
-  ExtendedUpdateSettings_536871951 = (when declared(ExtendedUpdateSettings):
-    when ownSizeof(ExtendedUpdateSettings) != ownSizeof(ExtendedUpdateSettings_536871950):
+    SupportingFace_536871764)
+  ExtendedUpdateSettings_536872023 = (when declared(ExtendedUpdateSettings):
+    when ownSizeof(ExtendedUpdateSettings) != ownSizeof(ExtendedUpdateSettings_536872022):
       static :
         warning("Declaration of " & "ExtendedUpdateSettings" &
             " exists but with different size")
     ExtendedUpdateSettings
    else:
-    ExtendedUpdateSettings_536871950)
-  enum_ValidateResult_536871494 = (when declared(enum_ValidateResult):
-    when ownSizeof(enum_ValidateResult) != ownSizeof(enum_ValidateResult_536871493):
+    ExtendedUpdateSettings_536872022)
+  enum_ValidateResult_536871566 = (when declared(enum_ValidateResult):
+    when ownSizeof(enum_ValidateResult) != ownSizeof(enum_ValidateResult_536871565):
       static :
         warning("Declaration of " & "enum_ValidateResult" &
             " exists but with different size")
     enum_ValidateResult
    else:
-    enum_ValidateResult_536871493)
-  SphereShape_536871783 = (when declared(SphereShape):
-    when ownSizeof(SphereShape) != ownSizeof(SphereShape_536871782):
+    enum_ValidateResult_536871565)
+  SphereShape_536871855 = (when declared(SphereShape):
+    when ownSizeof(SphereShape) != ownSizeof(SphereShape_536871854):
       static :
         warning("Declaration of " & "SphereShape" &
             " exists but with different size")
     SphereShape
    else:
-    SphereShape_536871782)
-  RayCastSettings_536871653 = (when declared(RayCastSettings):
-    when ownSizeof(RayCastSettings) != ownSizeof(RayCastSettings_536871652):
+    SphereShape_536871854)
+  RayCastSettings_536871725 = (when declared(RayCastSettings):
+    when ownSizeof(RayCastSettings) != ownSizeof(RayCastSettings_536871724):
       static :
         warning("Declaration of " & "RayCastSettings" &
             " exists but with different size")
     RayCastSettings
    else:
-    RayCastSettings_536871652)
-  StaticCompoundShapeSettings_536871763 = (when declared(
+    RayCastSettings_536871724)
+  StaticCompoundShapeSettings_536871835 = (when declared(
       StaticCompoundShapeSettings):
     when ownSizeof(StaticCompoundShapeSettings) !=
-        ownSizeof(StaticCompoundShapeSettings_536871762):
+        ownSizeof(StaticCompoundShapeSettings_536871834):
       static :
         warning("Declaration of " & "StaticCompoundShapeSettings" &
             " exists but with different size")
     StaticCompoundShapeSettings
    else:
-    StaticCompoundShapeSettings_536871762)
-  CollidePointResultCallback_536871701 = (when declared(
+    StaticCompoundShapeSettings_536871834)
+  CollidePointResultCallback_536871773 = (when declared(
       CollidePointResultCallback):
     when ownSizeof(CollidePointResultCallback) !=
-        ownSizeof(CollidePointResultCallback_536871700):
+        ownSizeof(CollidePointResultCallback_536871772):
       static :
         warning("Declaration of " & "CollidePointResultCallback" &
             " exists but with different size")
     CollidePointResultCallback
    else:
-    CollidePointResultCallback_536871700)
-  Color_536871617 = (when declared(Color):
-    when ownSizeof(Color) != ownSizeof(Color_536871616):
+    CollidePointResultCallback_536871772)
+  Color_536871689 = (when declared(Color):
+    when ownSizeof(Color) != ownSizeof(Color_536871688):
       static :
         warning("Declaration of " & "Color" & " exists but with different size")
     Color
    else:
-    Color_536871616)
-  SimShapeFilter_536871733 = (when declared(SimShapeFilter):
-    when ownSizeof(SimShapeFilter) != ownSizeof(SimShapeFilter_536871732):
+    Color_536871688)
+  SimShapeFilter_536871805 = (when declared(SimShapeFilter):
+    when ownSizeof(SimShapeFilter) != ownSizeof(SimShapeFilter_536871804):
       static :
         warning("Declaration of " & "SimShapeFilter" &
             " exists but with different size")
     SimShapeFilter
    else:
-    SimShapeFilter_536871732)
-  struct_BodyLockWrite_536871941 = (when declared(struct_BodyLockWrite):
-    when ownSizeof(struct_BodyLockWrite) != ownSizeof(struct_BodyLockWrite_536871940):
+    SimShapeFilter_536871804)
+  struct_BodyLockWrite_536872013 = (when declared(struct_BodyLockWrite):
+    when ownSizeof(struct_BodyLockWrite) != ownSizeof(struct_BodyLockWrite_536872012):
       static :
         warning("Declaration of " & "struct_BodyLockWrite" &
             " exists but with different size")
     struct_BodyLockWrite
    else:
-    struct_BodyLockWrite_536871940)
-  DebugRenderer_CastShadow_536871583 = (when declared(DebugRenderer_CastShadow):
+    struct_BodyLockWrite_536872012)
+  DebugRenderer_CastShadow_536871655 = (when declared(DebugRenderer_CastShadow):
     when ownSizeof(DebugRenderer_CastShadow) !=
-        ownSizeof(DebugRenderer_CastShadow_536871582):
+        ownSizeof(DebugRenderer_CastShadow_536871654):
       static :
         warning("Declaration of " & "DebugRenderer_CastShadow" &
             " exists but with different size")
     DebugRenderer_CastShadow
    else:
-    DebugRenderer_CastShadow_536871582)
-  DebugRenderer_Procs_536872043 = (when declared(DebugRenderer_Procs):
-    when ownSizeof(DebugRenderer_Procs) != ownSizeof(DebugRenderer_Procs_536872042):
+    DebugRenderer_CastShadow_536871654)
+  DebugRenderer_Procs_536872115 = (when declared(DebugRenderer_Procs):
+    when ownSizeof(DebugRenderer_Procs) != ownSizeof(DebugRenderer_Procs_536872114):
       static :
         warning("Declaration of " & "DebugRenderer_Procs" &
             " exists but with different size")
     DebugRenderer_Procs
    else:
-    DebugRenderer_Procs_536872042)
-  struct_CharacterSettings_536871957 = (when declared(struct_CharacterSettings):
+    DebugRenderer_Procs_536872114)
+  struct_CharacterSettings_536872029 = (when declared(struct_CharacterSettings):
     when ownSizeof(struct_CharacterSettings) !=
-        ownSizeof(struct_CharacterSettings_536871956):
+        ownSizeof(struct_CharacterSettings_536872028):
       static :
         warning("Declaration of " & "struct_CharacterSettings" &
             " exists but with different size")
     struct_CharacterSettings
    else:
-    struct_CharacterSettings_536871956)
-  struct_SwingTwistConstraintSettings_536871925 = (when declared(
+    struct_CharacterSettings_536872028)
+  struct_SwingTwistConstraintSettings_536871997 = (when declared(
       struct_SwingTwistConstraintSettings):
     when ownSizeof(struct_SwingTwistConstraintSettings) !=
-        ownSizeof(struct_SwingTwistConstraintSettings_536871924):
+        ownSizeof(struct_SwingTwistConstraintSettings_536871996):
       static :
         warning("Declaration of " & "struct_SwingTwistConstraintSettings" &
             " exists but with different size")
     struct_SwingTwistConstraintSettings
    else:
-    struct_SwingTwistConstraintSettings_536871924)
-  DistanceConstraintSettings_536871907 = (when declared(
+    struct_SwingTwistConstraintSettings_536871996)
+  DistanceConstraintSettings_536871979 = (when declared(
       DistanceConstraintSettings):
     when ownSizeof(DistanceConstraintSettings) !=
-        ownSizeof(DistanceConstraintSettings_536871906):
+        ownSizeof(DistanceConstraintSettings_536871978):
       static :
         warning("Declaration of " & "DistanceConstraintSettings" &
             " exists but with different size")
     DistanceConstraintSettings
    else:
-    DistanceConstraintSettings_536871906)
-  struct_PointConstraintSettings_536871909 = (when declared(
+    DistanceConstraintSettings_536871978)
+  struct_PointConstraintSettings_536871981 = (when declared(
       struct_PointConstraintSettings):
     when ownSizeof(struct_PointConstraintSettings) !=
-        ownSizeof(struct_PointConstraintSettings_536871908):
+        ownSizeof(struct_PointConstraintSettings_536871980):
       static :
         warning("Declaration of " & "struct_PointConstraintSettings" &
             " exists but with different size")
     struct_PointConstraintSettings
    else:
-    struct_PointConstraintSettings_536871908)
-  JobSystemThreadPoolConfig_536871985 = (when declared(JobSystemThreadPoolConfig):
+    struct_PointConstraintSettings_536871980)
+  JobSystemThreadPoolConfig_536872057 = (when declared(JobSystemThreadPoolConfig):
     when ownSizeof(JobSystemThreadPoolConfig) !=
-        ownSizeof(JobSystemThreadPoolConfig_536871984):
+        ownSizeof(JobSystemThreadPoolConfig_536872056):
       static :
         warning("Declaration of " & "JobSystemThreadPoolConfig" &
             " exists but with different size")
     JobSystemThreadPoolConfig
    else:
-    JobSystemThreadPoolConfig_536871984)
-  ShapeFilter_536871731 = (when declared(ShapeFilter):
-    when ownSizeof(ShapeFilter) != ownSizeof(ShapeFilter_536871730):
+    JobSystemThreadPoolConfig_536872056)
+  ShapeFilter_536871803 = (when declared(ShapeFilter):
+    when ownSizeof(ShapeFilter) != ownSizeof(ShapeFilter_536871802):
       static :
         warning("Declaration of " & "ShapeFilter" &
             " exists but with different size")
     ShapeFilter
    else:
-    ShapeFilter_536871730)
-  ContactListener_536871837 = (when declared(ContactListener):
-    when ownSizeof(ContactListener) != ownSizeof(ContactListener_536871836):
+    ShapeFilter_536871802)
+  ContactListener_536871909 = (when declared(ContactListener):
+    when ownSizeof(ContactListener) != ownSizeof(ContactListener_536871908):
       static :
         warning("Declaration of " & "ContactListener" &
             " exists but with different size")
     ContactListener
    else:
-    ContactListener_536871836)
-  ObjectVsBroadPhaseLayerFilter_536871721 = (when declared(
+    ContactListener_536871908)
+  ObjectVsBroadPhaseLayerFilter_536871793 = (when declared(
       ObjectVsBroadPhaseLayerFilter):
     when ownSizeof(ObjectVsBroadPhaseLayerFilter) !=
-        ownSizeof(ObjectVsBroadPhaseLayerFilter_536871720):
+        ownSizeof(ObjectVsBroadPhaseLayerFilter_536871792):
       static :
         warning("Declaration of " & "ObjectVsBroadPhaseLayerFilter" &
             " exists but with different size")
     ObjectVsBroadPhaseLayerFilter
    else:
-    ObjectVsBroadPhaseLayerFilter_536871720)
-  ShapeSettings_536871739 = (when declared(ShapeSettings):
-    when ownSizeof(ShapeSettings) != ownSizeof(ShapeSettings_536871738):
+    ObjectVsBroadPhaseLayerFilter_536871792)
+  ShapeSettings_536871811 = (when declared(ShapeSettings):
+    when ownSizeof(ShapeSettings) != ownSizeof(ShapeSettings_536871810):
       static :
         warning("Declaration of " & "ShapeSettings" &
             " exists but with different size")
     ShapeSettings
    else:
-    ShapeSettings_536871738)
-  FixedConstraintSettings_536871903 = (when declared(FixedConstraintSettings):
+    ShapeSettings_536871810)
+  FixedConstraintSettings_536871975 = (when declared(FixedConstraintSettings):
     when ownSizeof(FixedConstraintSettings) !=
-        ownSizeof(FixedConstraintSettings_536871902):
+        ownSizeof(FixedConstraintSettings_536871974):
       static :
         warning("Declaration of " & "FixedConstraintSettings" &
             " exists but with different size")
     FixedConstraintSettings
    else:
-    FixedConstraintSettings_536871902)
-  PhysicsSettings_536871999 = (when declared(PhysicsSettings):
-    when ownSizeof(PhysicsSettings) != ownSizeof(PhysicsSettings_536871998):
+    FixedConstraintSettings_536871974)
+  PhysicsSettings_536872071 = (when declared(PhysicsSettings):
+    when ownSizeof(PhysicsSettings) != ownSizeof(PhysicsSettings_536872070):
       static :
         warning("Declaration of " & "PhysicsSettings" &
             " exists but with different size")
     PhysicsSettings
    else:
-    PhysicsSettings_536871998)
-  struct_Plane_536871605 = (when declared(struct_Plane):
-    when ownSizeof(struct_Plane) != ownSizeof(struct_Plane_536871604):
+    PhysicsSettings_536872070)
+  struct_Plane_536871677 = (when declared(struct_Plane):
+    when ownSizeof(struct_Plane) != ownSizeof(struct_Plane_536871676):
       static :
         warning("Declaration of " & "struct_Plane" &
             " exists but with different size")
     struct_Plane
    else:
-    struct_Plane_536871604)
-  Constraint_536871859 = (when declared(Constraint):
-    when ownSizeof(Constraint) != ownSizeof(Constraint_536871858):
+    struct_Plane_536871676)
+  Constraint_536871931 = (when declared(Constraint):
+    when ownSizeof(Constraint) != ownSizeof(Constraint_536871930):
       static :
         warning("Declaration of " & "Constraint" &
             " exists but with different size")
     Constraint
    else:
-    Constraint_536871858)
-  BroadPhaseLayerFilter_Procs_536872003 = (when declared(
+    Constraint_536871930)
+  BroadPhaseLayerFilter_Procs_536872075 = (when declared(
       BroadPhaseLayerFilter_Procs):
     when ownSizeof(BroadPhaseLayerFilter_Procs) !=
-        ownSizeof(BroadPhaseLayerFilter_Procs_536872002):
+        ownSizeof(BroadPhaseLayerFilter_Procs_536872074):
       static :
         warning("Declaration of " & "BroadPhaseLayerFilter_Procs" &
             " exists but with different size")
     BroadPhaseLayerFilter_Procs
    else:
-    BroadPhaseLayerFilter_Procs_536872002)
-  AssertFailureFunc_536871975 = (when declared(AssertFailureFunc):
-    when ownSizeof(AssertFailureFunc) != ownSizeof(AssertFailureFunc_536871974):
+    BroadPhaseLayerFilter_Procs_536872074)
+  AssertFailureFunc_536872047 = (when declared(AssertFailureFunc):
+    when ownSizeof(AssertFailureFunc) != ownSizeof(AssertFailureFunc_536872046):
       static :
         warning("Declaration of " & "AssertFailureFunc" &
             " exists but with different size")
     AssertFailureFunc
    else:
-    AssertFailureFunc_536871974)
-  IndexedTriangle_536871633 = (when declared(IndexedTriangle):
-    when ownSizeof(IndexedTriangle) != ownSizeof(IndexedTriangle_536871632):
+    AssertFailureFunc_536872046)
+  IndexedTriangle_536871705 = (when declared(IndexedTriangle):
+    when ownSizeof(IndexedTriangle) != ownSizeof(IndexedTriangle_536871704):
       static :
         warning("Declaration of " & "IndexedTriangle" &
             " exists but with different size")
     IndexedTriangle
    else:
-    IndexedTriangle_536871632)
-  BodyLockMultiWrite_536871947 = (when declared(BodyLockMultiWrite):
-    when ownSizeof(BodyLockMultiWrite) != ownSizeof(BodyLockMultiWrite_536871946):
+    IndexedTriangle_536871704)
+  BodyLockMultiWrite_536872019 = (when declared(BodyLockMultiWrite):
+    when ownSizeof(BodyLockMultiWrite) != ownSizeof(BodyLockMultiWrite_536872018):
       static :
         warning("Declaration of " & "BodyLockMultiWrite" &
             " exists but with different size")
     BodyLockMultiWrite
    else:
-    BodyLockMultiWrite_536871946)
-  CharacterVirtualSettings_536871963 = (when declared(CharacterVirtualSettings):
+    BodyLockMultiWrite_536872018)
+  CharacterVirtualSettings_536872035 = (when declared(CharacterVirtualSettings):
     when ownSizeof(CharacterVirtualSettings) !=
-        ownSizeof(CharacterVirtualSettings_536871962):
+        ownSizeof(CharacterVirtualSettings_536872034):
       static :
         warning("Declaration of " & "CharacterVirtualSettings" &
             " exists but with different size")
     CharacterVirtualSettings
    else:
-    CharacterVirtualSettings_536871962)
-  struct_CharacterContactListener_Procs_536872033 = (when declared(
+    CharacterVirtualSettings_536872034)
+  struct_CharacterContactListener_Procs_536872105 = (when declared(
       struct_CharacterContactListener_Procs):
     when ownSizeof(struct_CharacterContactListener_Procs) !=
-        ownSizeof(struct_CharacterContactListener_Procs_536872032):
+        ownSizeof(struct_CharacterContactListener_Procs_536872104):
       static :
         warning("Declaration of " & "struct_CharacterContactListener_Procs" &
             " exists but with different size")
     struct_CharacterContactListener_Procs
    else:
-    struct_CharacterContactListener_Procs_536872032)
-  enum_CollectFacesMode_536871542 = (when declared(enum_CollectFacesMode):
-    when ownSizeof(enum_CollectFacesMode) != ownSizeof(enum_CollectFacesMode_536871541):
+    struct_CharacterContactListener_Procs_536872104)
+  enum_CollectFacesMode_536871614 = (when declared(enum_CollectFacesMode):
+    when ownSizeof(enum_CollectFacesMode) != ownSizeof(enum_CollectFacesMode_536871613):
       static :
         warning("Declaration of " & "enum_CollectFacesMode" &
             " exists but with different size")
     enum_CollectFacesMode
    else:
-    enum_CollectFacesMode_536871541)
-  struct_FixedConstraintSettings_536871901 = (when declared(
+    enum_CollectFacesMode_536871613)
+  struct_FixedConstraintSettings_536871973 = (when declared(
       struct_FixedConstraintSettings):
     when ownSizeof(struct_FixedConstraintSettings) !=
-        ownSizeof(struct_FixedConstraintSettings_536871900):
+        ownSizeof(struct_FixedConstraintSettings_536871972):
       static :
         warning("Declaration of " & "struct_FixedConstraintSettings" &
             " exists but with different size")
     struct_FixedConstraintSettings
    else:
-    struct_FixedConstraintSettings_536871900)
-  Matrix4x4_536871611 = (when declared(Matrix4x4):
-    when ownSizeof(Matrix4x4) != ownSizeof(Matrix4x4_536871610):
+    struct_FixedConstraintSettings_536871972)
+  Matrix4x4_536871683 = (when declared(Matrix4x4):
+    when ownSizeof(Matrix4x4) != ownSizeof(Matrix4x4_536871682):
       static :
         warning("Declaration of " & "Matrix4x4" &
             " exists but with different size")
     Matrix4x4
    else:
-    Matrix4x4_536871610)
-  SubShapeID_536871466 = (when declared(SubShapeID):
-    when ownSizeof(SubShapeID) != ownSizeof(SubShapeID_536871465):
+    Matrix4x4_536871682)
+  SubShapeID_536871538 = (when declared(SubShapeID):
+    when ownSizeof(SubShapeID) != ownSizeof(SubShapeID_536871537):
       static :
         warning("Declaration of " & "SubShapeID" &
             " exists but with different size")
     SubShapeID
    else:
-    SubShapeID_536871465)
-  enum_DebugRenderer_CastShadow_536871581 = (when declared(
+    SubShapeID_536871537)
+  enum_DebugRenderer_CastShadow_536871653 = (when declared(
       enum_DebugRenderer_CastShadow):
     when ownSizeof(enum_DebugRenderer_CastShadow) !=
-        ownSizeof(enum_DebugRenderer_CastShadow_536871580):
+        ownSizeof(enum_DebugRenderer_CastShadow_536871652):
       static :
         warning("Declaration of " & "enum_DebugRenderer_CastShadow" &
             " exists but with different size")
     enum_DebugRenderer_CastShadow
    else:
-    enum_DebugRenderer_CastShadow_536871580)
-  ObjectLayerPairFilter_536871723 = (when declared(ObjectLayerPairFilter):
-    when ownSizeof(ObjectLayerPairFilter) != ownSizeof(ObjectLayerPairFilter_536871722):
+    enum_DebugRenderer_CastShadow_536871652)
+  ObjectLayerPairFilter_536871795 = (when declared(ObjectLayerPairFilter):
+    when ownSizeof(ObjectLayerPairFilter) != ownSizeof(ObjectLayerPairFilter_536871794):
       static :
         warning("Declaration of " & "ObjectLayerPairFilter" &
             " exists but with different size")
     ObjectLayerPairFilter
    else:
-    ObjectLayerPairFilter_536871722)
-  TaperedCapsuleShapeSettings_536871753 = (when declared(
+    ObjectLayerPairFilter_536871794)
+  TaperedCapsuleShapeSettings_536871825 = (when declared(
       TaperedCapsuleShapeSettings):
     when ownSizeof(TaperedCapsuleShapeSettings) !=
-        ownSizeof(TaperedCapsuleShapeSettings_536871752):
+        ownSizeof(TaperedCapsuleShapeSettings_536871824):
       static :
         warning("Declaration of " & "TaperedCapsuleShapeSettings" &
             " exists but with different size")
     TaperedCapsuleShapeSettings
    else:
-    TaperedCapsuleShapeSettings_536871752)
-  struct_MassProperties_536871635 = (when declared(struct_MassProperties):
-    when ownSizeof(struct_MassProperties) != ownSizeof(struct_MassProperties_536871634):
+    TaperedCapsuleShapeSettings_536871824)
+  struct_MassProperties_536871707 = (when declared(struct_MassProperties):
+    when ownSizeof(struct_MassProperties) != ownSizeof(struct_MassProperties_536871706):
       static :
         warning("Declaration of " & "struct_MassProperties" &
             " exists but with different size")
     struct_MassProperties
    else:
-    struct_MassProperties_536871634)
-  RotatedTranslatedShapeSettings_536871771 = (when declared(
+    struct_MassProperties_536871706)
+  RotatedTranslatedShapeSettings_536871843 = (when declared(
       RotatedTranslatedShapeSettings):
     when ownSizeof(RotatedTranslatedShapeSettings) !=
-        ownSizeof(RotatedTranslatedShapeSettings_536871770):
+        ownSizeof(RotatedTranslatedShapeSettings_536871842):
       static :
         warning("Declaration of " & "RotatedTranslatedShapeSettings" &
             " exists but with different size")
     RotatedTranslatedShapeSettings
    else:
-    RotatedTranslatedShapeSettings_536871770)
-  SwingTwistConstraint_536871875 = (when declared(SwingTwistConstraint):
-    when ownSizeof(SwingTwistConstraint) != ownSizeof(SwingTwistConstraint_536871874):
+    RotatedTranslatedShapeSettings_536871842)
+  SwingTwistConstraint_536871947 = (when declared(SwingTwistConstraint):
+    when ownSizeof(SwingTwistConstraint) != ownSizeof(SwingTwistConstraint_536871946):
       static :
         warning("Declaration of " & "SwingTwistConstraint" &
             " exists but with different size")
     SwingTwistConstraint
    else:
-    SwingTwistConstraint_536871874)
-  PlaneShapeSettings_536871747 = (when declared(PlaneShapeSettings):
-    when ownSizeof(PlaneShapeSettings) != ownSizeof(PlaneShapeSettings_536871746):
+    SwingTwistConstraint_536871946)
+  PlaneShapeSettings_536871819 = (when declared(PlaneShapeSettings):
+    when ownSizeof(PlaneShapeSettings) != ownSizeof(PlaneShapeSettings_536871818):
       static :
         warning("Declaration of " & "PlaneShapeSettings" &
             " exists but with different size")
     PlaneShapeSettings
    else:
-    PlaneShapeSettings_536871746)
-  struct_DebugRenderer_Procs_536872041 = (when declared(
+    PlaneShapeSettings_536871818)
+  struct_DebugRenderer_Procs_536872113 = (when declared(
       struct_DebugRenderer_Procs):
     when ownSizeof(struct_DebugRenderer_Procs) !=
-        ownSizeof(struct_DebugRenderer_Procs_536872040):
+        ownSizeof(struct_DebugRenderer_Procs_536872112):
       static :
         warning("Declaration of " & "struct_DebugRenderer_Procs" &
             " exists but with different size")
     struct_DebugRenderer_Procs
    else:
-    struct_DebugRenderer_Procs_536872040)
-  SoftBodyCreationSettings_536871823 = (when declared(SoftBodyCreationSettings):
+    struct_DebugRenderer_Procs_536872112)
+  SoftBodyCreationSettings_536871895 = (when declared(SoftBodyCreationSettings):
     when ownSizeof(SoftBodyCreationSettings) !=
-        ownSizeof(SoftBodyCreationSettings_536871822):
+        ownSizeof(SoftBodyCreationSettings_536871894):
       static :
         warning("Declaration of " & "SoftBodyCreationSettings" &
             " exists but with different size")
     SoftBodyCreationSettings
    else:
-    SoftBodyCreationSettings_536871822)
-  ObjectLayerFilter_536871727 = (when declared(ObjectLayerFilter):
-    when ownSizeof(ObjectLayerFilter) != ownSizeof(ObjectLayerFilter_536871726):
+    SoftBodyCreationSettings_536871894)
+  ObjectLayerFilter_536871799 = (when declared(ObjectLayerFilter):
+    when ownSizeof(ObjectLayerFilter) != ownSizeof(ObjectLayerFilter_536871798):
       static :
         warning("Declaration of " & "ObjectLayerFilter" &
             " exists but with different size")
     ObjectLayerFilter
    else:
-    ObjectLayerFilter_536871726)
-  TaperedCylinderShapeSettings_536871757 = (when declared(
+    ObjectLayerFilter_536871798)
+  TaperedCylinderShapeSettings_536871829 = (when declared(
       TaperedCylinderShapeSettings):
     when ownSizeof(TaperedCylinderShapeSettings) !=
-        ownSizeof(TaperedCylinderShapeSettings_536871756):
+        ownSizeof(TaperedCylinderShapeSettings_536871828):
       static :
         warning("Declaration of " & "TaperedCylinderShapeSettings" &
             " exists but with different size")
     TaperedCylinderShapeSettings
    else:
-    TaperedCylinderShapeSettings_536871756)
-  MotorState_536871548 = (when declared(MotorState):
-    when ownSizeof(MotorState) != ownSizeof(MotorState_536871547):
+    TaperedCylinderShapeSettings_536871828)
+  MotorState_536871620 = (when declared(MotorState):
+    when ownSizeof(MotorState) != ownSizeof(MotorState_536871619):
       static :
         warning("Declaration of " & "MotorState" &
             " exists but with different size")
     MotorState
    else:
-    MotorState_536871547)
-  CharacterContactSettings_536871967 = (when declared(CharacterContactSettings):
+    MotorState_536871619)
+  CharacterContactSettings_536872039 = (when declared(CharacterContactSettings):
     when ownSizeof(CharacterContactSettings) !=
-        ownSizeof(CharacterContactSettings_536871966):
+        ownSizeof(CharacterContactSettings_536872038):
       static :
         warning("Declaration of " & "CharacterContactSettings" &
             " exists but with different size")
     CharacterContactSettings
    else:
-    CharacterContactSettings_536871966)
-  CollideShapeResult_536871681 = (when declared(CollideShapeResult):
-    when ownSizeof(CollideShapeResult) != ownSizeof(CollideShapeResult_536871680):
+    CharacterContactSettings_536872038)
+  CollideShapeResult_536871753 = (when declared(CollideShapeResult):
+    when ownSizeof(CollideShapeResult) != ownSizeof(CollideShapeResult_536871752):
       static :
         warning("Declaration of " & "CollideShapeResult" &
             " exists but with different size")
     CollideShapeResult
    else:
-    CollideShapeResult_536871680)
-  struct_ExtendedUpdateSettings_536871949 = (when declared(
+    CollideShapeResult_536871752)
+  struct_ExtendedUpdateSettings_536872021 = (when declared(
       struct_ExtendedUpdateSettings):
     when ownSizeof(struct_ExtendedUpdateSettings) !=
-        ownSizeof(struct_ExtendedUpdateSettings_536871948):
+        ownSizeof(struct_ExtendedUpdateSettings_536872020):
       static :
         warning("Declaration of " & "struct_ExtendedUpdateSettings" &
             " exists but with different size")
     struct_ExtendedUpdateSettings
    else:
-    struct_ExtendedUpdateSettings_536871948)
-  struct_JobSystemThreadPoolConfig_536871983 = (when declared(
+    struct_ExtendedUpdateSettings_536872020)
+  struct_JobSystemThreadPoolConfig_536872055 = (when declared(
       struct_JobSystemThreadPoolConfig):
     when ownSizeof(struct_JobSystemThreadPoolConfig) !=
-        ownSizeof(struct_JobSystemThreadPoolConfig_536871982):
+        ownSizeof(struct_JobSystemThreadPoolConfig_536872054):
       static :
         warning("Declaration of " & "struct_JobSystemThreadPoolConfig" &
             " exists but with different size")
     struct_JobSystemThreadPoolConfig
    else:
-    struct_JobSystemThreadPoolConfig_536871982)
-  enum_ConstraintSpace_536871514 = (when declared(enum_ConstraintSpace):
-    when ownSizeof(enum_ConstraintSpace) != ownSizeof(enum_ConstraintSpace_536871513):
+    struct_JobSystemThreadPoolConfig_536872054)
+  enum_ConstraintSpace_536871586 = (when declared(enum_ConstraintSpace):
+    when ownSizeof(enum_ConstraintSpace) != ownSizeof(enum_ConstraintSpace_536871585):
       static :
         warning("Declaration of " & "enum_ConstraintSpace" &
             " exists but with different size")
     enum_ConstraintSpace
    else:
-    enum_ConstraintSpace_536871513)
-  RayCastResult_536871673 = (when declared(RayCastResult):
-    when ownSizeof(RayCastResult) != ownSizeof(RayCastResult_536871672):
+    enum_ConstraintSpace_536871585)
+  RayCastResult_536871745 = (when declared(RayCastResult):
+    when ownSizeof(RayCastResult) != ownSizeof(RayCastResult_536871744):
       static :
         warning("Declaration of " & "RayCastResult" &
             " exists but with different size")
     RayCastResult
    else:
-    RayCastResult_536871672)
-  ScaledShape_536871815 = (when declared(ScaledShape):
-    when ownSizeof(ScaledShape) != ownSizeof(ScaledShape_536871814):
+    RayCastResult_536871744)
+  ScaledShape_536871887 = (when declared(ScaledShape):
+    when ownSizeof(ScaledShape) != ownSizeof(ScaledShape_536871886):
       static :
         warning("Declaration of " & "ScaledShape" &
             " exists but with different size")
     ScaledShape
    else:
-    ScaledShape_536871814)
-  struct_BodyActivationListener_Procs_536872025 = (when declared(
+    ScaledShape_536871886)
+  struct_BodyActivationListener_Procs_536872097 = (when declared(
       struct_BodyActivationListener_Procs):
     when ownSizeof(struct_BodyActivationListener_Procs) !=
-        ownSizeof(struct_BodyActivationListener_Procs_536872024):
+        ownSizeof(struct_BodyActivationListener_Procs_536872096):
       static :
         warning("Declaration of " & "struct_BodyActivationListener_Procs" &
             " exists but with different size")
     struct_BodyActivationListener_Procs
    else:
-    struct_BodyActivationListener_Procs_536872024)
-  enum_GroundState_536871530 = (when declared(enum_GroundState):
-    when ownSizeof(enum_GroundState) != ownSizeof(enum_GroundState_536871529):
+    struct_BodyActivationListener_Procs_536872096)
+  enum_GroundState_536871602 = (when declared(enum_GroundState):
+    when ownSizeof(enum_GroundState) != ownSizeof(enum_GroundState_536871601):
       static :
         warning("Declaration of " & "enum_GroundState" &
             " exists but with different size")
     enum_GroundState
    else:
-    enum_GroundState_536871529)
-  struct_SpringSettings_536871655 = (when declared(struct_SpringSettings):
-    when ownSizeof(struct_SpringSettings) != ownSizeof(struct_SpringSettings_536871654):
+    enum_GroundState_536871601)
+  struct_SpringSettings_536871727 = (when declared(struct_SpringSettings):
+    when ownSizeof(struct_SpringSettings) != ownSizeof(struct_SpringSettings_536871726):
       static :
         warning("Declaration of " & "struct_SpringSettings" &
             " exists but with different size")
     struct_SpringSettings
    else:
-    struct_SpringSettings_536871654)
-  GroundState_536871532 = (when declared(GroundState):
-    when ownSizeof(GroundState) != ownSizeof(GroundState_536871531):
+    struct_SpringSettings_536871726)
+  GroundState_536871604 = (when declared(GroundState):
+    when ownSizeof(GroundState) != ownSizeof(GroundState_536871603):
       static :
         warning("Declaration of " & "GroundState" &
             " exists but with different size")
     GroundState
    else:
-    GroundState_536871531)
-  Quat_536871603 = (when declared(Quat):
-    when ownSizeof(Quat) != ownSizeof(Quat_536871602):
+    GroundState_536871603)
+  Quat_536871675 = (when declared(Quat):
+    when ownSizeof(Quat) != ownSizeof(Quat_536871674):
       static :
         warning("Declaration of " & "Quat" & " exists but with different size")
     Quat
    else:
-    Quat_536871602)
-  enum_BodyManager_ShapeColor_536871577 = (when declared(
+    Quat_536871674)
+  enum_BodyManager_ShapeColor_536871649 = (when declared(
       enum_BodyManager_ShapeColor):
     when ownSizeof(enum_BodyManager_ShapeColor) !=
-        ownSizeof(enum_BodyManager_ShapeColor_536871576):
+        ownSizeof(enum_BodyManager_ShapeColor_536871648):
       static :
         warning("Declaration of " & "enum_BodyManager_ShapeColor" &
             " exists but with different size")
     enum_BodyManager_ShapeColor
    else:
-    enum_BodyManager_ShapeColor_536871576)
-  RotatedTranslatedShape_536871813 = (when declared(RotatedTranslatedShape):
-    when ownSizeof(RotatedTranslatedShape) != ownSizeof(RotatedTranslatedShape_536871812):
+    enum_BodyManager_ShapeColor_536871648)
+  RotatedTranslatedShape_536871885 = (when declared(RotatedTranslatedShape):
+    when ownSizeof(RotatedTranslatedShape) != ownSizeof(RotatedTranslatedShape_536871884):
       static :
         warning("Declaration of " & "RotatedTranslatedShape" &
             " exists but with different size")
     RotatedTranslatedShape
    else:
-    RotatedTranslatedShape_536871812)
-  RagdollSettings_536871893 = (when declared(RagdollSettings):
-    when ownSizeof(RagdollSettings) != ownSizeof(RagdollSettings_536871892):
+    RotatedTranslatedShape_536871884)
+  RagdollSettings_536871965 = (when declared(RagdollSettings):
+    when ownSizeof(RagdollSettings) != ownSizeof(RagdollSettings_536871964):
       static :
         warning("Declaration of " & "RagdollSettings" &
             " exists but with different size")
     RagdollSettings
    else:
-    RagdollSettings_536871892)
-  JobSystemConfig_536871989 = (when declared(JobSystemConfig):
-    when ownSizeof(JobSystemConfig) != ownSizeof(JobSystemConfig_536871988):
+    RagdollSettings_536871964)
+  JobSystemConfig_536872061 = (when declared(JobSystemConfig):
+    when ownSizeof(JobSystemConfig) != ownSizeof(JobSystemConfig_536872060):
       static :
         warning("Declaration of " & "JobSystemConfig" &
             " exists but with different size")
     JobSystemConfig
    else:
-    JobSystemConfig_536871988)
-  enum_Mesh_Shape_BuildQuality_536871589 = (when declared(
+    JobSystemConfig_536872060)
+  enum_Mesh_Shape_BuildQuality_536871661 = (when declared(
       enum_Mesh_Shape_BuildQuality):
     when ownSizeof(enum_Mesh_Shape_BuildQuality) !=
-        ownSizeof(enum_Mesh_Shape_BuildQuality_536871588):
+        ownSizeof(enum_Mesh_Shape_BuildQuality_536871660):
       static :
         warning("Declaration of " & "enum_Mesh_Shape_BuildQuality" &
             " exists but with different size")
     enum_Mesh_Shape_BuildQuality
    else:
-    enum_Mesh_Shape_BuildQuality_536871588)
-  CollideShapeResultCallback_536871703 = (when declared(
+    enum_Mesh_Shape_BuildQuality_536871660)
+  CollideShapeResultCallback_536871775 = (when declared(
       CollideShapeResultCallback):
     when ownSizeof(CollideShapeResultCallback) !=
-        ownSizeof(CollideShapeResultCallback_536871702):
+        ownSizeof(CollideShapeResultCallback_536871774):
       static :
         warning("Declaration of " & "CollideShapeResultCallback" &
             " exists but with different size")
     CollideShapeResultCallback
    else:
-    CollideShapeResultCallback_536871702)
-  QueueJobCallback_536871979 = (when declared(QueueJobCallback):
-    when ownSizeof(QueueJobCallback) != ownSizeof(QueueJobCallback_536871978):
+    CollideShapeResultCallback_536871774)
+  QueueJobCallback_536872051 = (when declared(QueueJobCallback):
+    when ownSizeof(QueueJobCallback) != ownSizeof(QueueJobCallback_536872050):
       static :
         warning("Declaration of " & "QueueJobCallback" &
             " exists but with different size")
     QueueJobCallback
    else:
-    QueueJobCallback_536871978)
-  ShapeFilter_Procs_536872015 = (when declared(ShapeFilter_Procs):
-    when ownSizeof(ShapeFilter_Procs) != ownSizeof(ShapeFilter_Procs_536872014):
+    QueueJobCallback_536872050)
+  ShapeFilter_Procs_536872087 = (when declared(ShapeFilter_Procs):
+    when ownSizeof(ShapeFilter_Procs) != ownSizeof(ShapeFilter_Procs_536872086):
       static :
         warning("Declaration of " & "ShapeFilter_Procs" &
             " exists but with different size")
     ShapeFilter_Procs
    else:
-    ShapeFilter_Procs_536872014)
-  BodyDrawFilter_536871853 = (when declared(BodyDrawFilter):
-    when ownSizeof(BodyDrawFilter) != ownSizeof(BodyDrawFilter_536871852):
+    ShapeFilter_Procs_536872086)
+  BodyDrawFilter_536871925 = (when declared(BodyDrawFilter):
+    when ownSizeof(BodyDrawFilter) != ownSizeof(BodyDrawFilter_536871924):
       static :
         warning("Declaration of " & "BodyDrawFilter" &
             " exists but with different size")
     BodyDrawFilter
    else:
-    BodyDrawFilter_536871852)
-  enum_ConstraintType_536871506 = (when declared(enum_ConstraintType):
-    when ownSizeof(enum_ConstraintType) != ownSizeof(enum_ConstraintType_536871505):
+    BodyDrawFilter_536871924)
+  enum_ConstraintType_536871578 = (when declared(enum_ConstraintType):
+    when ownSizeof(enum_ConstraintType) != ownSizeof(enum_ConstraintType_536871577):
       static :
         warning("Declaration of " & "enum_ConstraintType" &
             " exists but with different size")
     enum_ConstraintType
    else:
-    enum_ConstraintType_536871505)
-  struct_CharacterVsCharacterCollision_Procs_536872037 = (when declared(
+    enum_ConstraintType_536871577)
+  struct_CharacterVsCharacterCollision_Procs_536872109 = (when declared(
       struct_CharacterVsCharacterCollision_Procs):
     when ownSizeof(struct_CharacterVsCharacterCollision_Procs) !=
-        ownSizeof(struct_CharacterVsCharacterCollision_Procs_536872036):
+        ownSizeof(struct_CharacterVsCharacterCollision_Procs_536872108):
       static :
         warning("Declaration of " & "struct_CharacterVsCharacterCollision_Procs" &
             " exists but with different size")
     struct_CharacterVsCharacterCollision_Procs
    else:
-    struct_CharacterVsCharacterCollision_Procs_536872036)
-  CharacterVsCharacterCollision_Procs_536872039 = (when declared(
+    struct_CharacterVsCharacterCollision_Procs_536872108)
+  CharacterVsCharacterCollision_Procs_536872111 = (when declared(
       CharacterVsCharacterCollision_Procs):
     when ownSizeof(CharacterVsCharacterCollision_Procs) !=
-        ownSizeof(CharacterVsCharacterCollision_Procs_536872038):
+        ownSizeof(CharacterVsCharacterCollision_Procs_536872110):
       static :
         warning("Declaration of " & "CharacterVsCharacterCollision_Procs" &
             " exists but with different size")
     CharacterVsCharacterCollision_Procs
    else:
-    CharacterVsCharacterCollision_Procs_536872038)
-  ConstraintSubType_536871512 = (when declared(ConstraintSubType):
-    when ownSizeof(ConstraintSubType) != ownSizeof(ConstraintSubType_536871511):
+    CharacterVsCharacterCollision_Procs_536872110)
+  ConstraintSubType_536871584 = (when declared(ConstraintSubType):
+    when ownSizeof(ConstraintSubType) != ownSizeof(ConstraintSubType_536871583):
       static :
         warning("Declaration of " & "ConstraintSubType" &
             " exists but with different size")
     ConstraintSubType
    else:
-    ConstraintSubType_536871511)
-  HeightFieldShape_536871809 = (when declared(HeightFieldShape):
-    when ownSizeof(HeightFieldShape) != ownSizeof(HeightFieldShape_536871808):
+    ConstraintSubType_536871583)
+  HeightFieldShape_536871881 = (when declared(HeightFieldShape):
+    when ownSizeof(HeightFieldShape) != ownSizeof(HeightFieldShape_536871880):
       static :
         warning("Declaration of " & "HeightFieldShape" &
             " exists but with different size")
     HeightFieldShape
    else:
-    HeightFieldShape_536871808)
-  BodyFilter_536871729 = (when declared(BodyFilter):
-    when ownSizeof(BodyFilter) != ownSizeof(BodyFilter_536871728):
+    HeightFieldShape_536871880)
+  BodyFilter_536871801 = (when declared(BodyFilter):
+    when ownSizeof(BodyFilter) != ownSizeof(BodyFilter_536871800):
       static :
         warning("Declaration of " & "BodyFilter" &
             " exists but with different size")
     BodyFilter
    else:
-    BodyFilter_536871728)
-  BodyID_536871464 = (when declared(BodyID):
-    when ownSizeof(BodyID) != ownSizeof(BodyID_536871463):
+    BodyFilter_536871800)
+  BodyID_536871536 = (when declared(BodyID):
+    when ownSizeof(BodyID) != ownSizeof(BodyID_536871535):
       static :
         warning("Declaration of " & "BodyID" & " exists but with different size")
     BodyID
    else:
-    BodyID_536871463)
-  struct_Quat_536871601 = (when declared(struct_Quat):
-    when ownSizeof(struct_Quat) != ownSizeof(struct_Quat_536871600):
+    BodyID_536871535)
+  struct_Quat_536871673 = (when declared(struct_Quat):
+    when ownSizeof(struct_Quat) != ownSizeof(struct_Quat_536871672):
       static :
         warning("Declaration of " & "struct_Quat" &
             " exists but with different size")
     struct_Quat
    else:
-    struct_Quat_536871600)
-  TraceFunc_536871973 = (when declared(TraceFunc):
-    when ownSizeof(TraceFunc) != ownSizeof(TraceFunc_536871972):
+    struct_Quat_536871672)
+  TraceFunc_536872045 = (when declared(TraceFunc):
+    when ownSizeof(TraceFunc) != ownSizeof(TraceFunc_536872044):
       static :
         warning("Declaration of " & "TraceFunc" &
             " exists but with different size")
     TraceFunc
    else:
-    TraceFunc_536871972)
-  OverrideMassProperties_536871524 = (when declared(OverrideMassProperties):
-    when ownSizeof(OverrideMassProperties) != ownSizeof(OverrideMassProperties_536871523):
+    TraceFunc_536872044)
+  OverrideMassProperties_536871596 = (when declared(OverrideMassProperties):
+    when ownSizeof(OverrideMassProperties) != ownSizeof(OverrideMassProperties_536871595):
       static :
         warning("Declaration of " & "OverrideMassProperties" &
             " exists but with different size")
     OverrideMassProperties
    else:
-    OverrideMassProperties_536871523)
-  SpringMode_536871571 = (when declared(SpringMode):
-    when ownSizeof(SpringMode) != ownSizeof(SpringMode_536871570):
+    OverrideMassProperties_536871595)
+  SpringMode_536871643 = (when declared(SpringMode):
+    when ownSizeof(SpringMode) != ownSizeof(SpringMode_536871642):
       static :
         warning("Declaration of " & "SpringMode" &
             " exists but with different size")
     SpringMode
    else:
-    SpringMode_536871570)
-  CollideShapeBodyCollectorCallback_536871711 = (when declared(
+    SpringMode_536871642)
+  CollideShapeBodyCollectorCallback_536871783 = (when declared(
       CollideShapeBodyCollectorCallback):
     when ownSizeof(CollideShapeBodyCollectorCallback) !=
-        ownSizeof(CollideShapeBodyCollectorCallback_536871710):
+        ownSizeof(CollideShapeBodyCollectorCallback_536871782):
       static :
         warning("Declaration of " & "CollideShapeBodyCollectorCallback" &
             " exists but with different size")
     CollideShapeBodyCollectorCallback
    else:
-    CollideShapeBodyCollectorCallback_536871710)
-  BodyLockMultiRead_536871945 = (when declared(BodyLockMultiRead):
-    when ownSizeof(BodyLockMultiRead) != ownSizeof(BodyLockMultiRead_536871944):
+    CollideShapeBodyCollectorCallback_536871782)
+  BodyLockMultiRead_536872017 = (when declared(BodyLockMultiRead):
+    when ownSizeof(BodyLockMultiRead) != ownSizeof(BodyLockMultiRead_536872016):
       static :
         warning("Declaration of " & "BodyLockMultiRead" &
             " exists but with different size")
     BodyLockMultiRead
    else:
-    BodyLockMultiRead_536871944)
-  QueueJobsCallback_536871981 = (when declared(QueueJobsCallback):
-    when ownSizeof(QueueJobsCallback) != ownSizeof(QueueJobsCallback_536871980):
+    BodyLockMultiRead_536872016)
+  QueueJobsCallback_536872053 = (when declared(QueueJobsCallback):
+    when ownSizeof(QueueJobsCallback) != ownSizeof(QueueJobsCallback_536872052):
       static :
         warning("Declaration of " & "QueueJobsCallback" &
             " exists but with different size")
     QueueJobsCallback
    else:
-    QueueJobsCallback_536871980)
-  struct_JobSystemConfig_536871987 = (when declared(struct_JobSystemConfig):
-    when ownSizeof(struct_JobSystemConfig) != ownSizeof(struct_JobSystemConfig_536871986):
+    QueueJobsCallback_536872052)
+  struct_JobSystemConfig_536872059 = (when declared(struct_JobSystemConfig):
+    when ownSizeof(struct_JobSystemConfig) != ownSizeof(struct_JobSystemConfig_536872058):
       static :
         warning("Declaration of " & "struct_JobSystemConfig" &
             " exists but with different size")
     struct_JobSystemConfig
    else:
-    struct_JobSystemConfig_536871986)
-  DecoratedShape_536871811 = (when declared(DecoratedShape):
-    when ownSizeof(DecoratedShape) != ownSizeof(DecoratedShape_536871810):
+    struct_JobSystemConfig_536872058)
+  DecoratedShape_536871883 = (when declared(DecoratedShape):
+    when ownSizeof(DecoratedShape) != ownSizeof(DecoratedShape_536871882):
       static :
         warning("Declaration of " & "DecoratedShape" &
             " exists but with different size")
     DecoratedShape
    else:
-    DecoratedShape_536871810)
-  SpringSettings_536871657 = (when declared(SpringSettings):
-    when ownSizeof(SpringSettings) != ownSizeof(SpringSettings_536871656):
+    DecoratedShape_536871882)
+  SpringSettings_536871729 = (when declared(SpringSettings):
+    when ownSizeof(SpringSettings) != ownSizeof(SpringSettings_536871728):
       static :
         warning("Declaration of " & "SpringSettings" &
             " exists but with different size")
     SpringSettings
    else:
-    SpringSettings_536871656)
-  BroadPhaseCastResult_536871669 = (when declared(BroadPhaseCastResult):
-    when ownSizeof(BroadPhaseCastResult) != ownSizeof(BroadPhaseCastResult_536871668):
+    SpringSettings_536871728)
+  BroadPhaseCastResult_536871741 = (when declared(BroadPhaseCastResult):
+    when ownSizeof(BroadPhaseCastResult) != ownSizeof(BroadPhaseCastResult_536871740):
       static :
         warning("Declaration of " & "BroadPhaseCastResult" &
             " exists but with different size")
     BroadPhaseCastResult
    else:
-    BroadPhaseCastResult_536871668)
-  CollectFacesMode_536871544 = (when declared(CollectFacesMode):
-    when ownSizeof(CollectFacesMode) != ownSizeof(CollectFacesMode_536871543):
+    BroadPhaseCastResult_536871740)
+  CollectFacesMode_536871616 = (when declared(CollectFacesMode):
+    when ownSizeof(CollectFacesMode) != ownSizeof(CollectFacesMode_536871615):
       static :
         warning("Declaration of " & "CollectFacesMode" &
             " exists but with different size")
     CollectFacesMode
    else:
-    CollectFacesMode_536871543)
-  struct_CollisionEstimationResultImpulse_536871843 = (when declared(
+    CollectFacesMode_536871615)
+  struct_CollisionEstimationResultImpulse_536871915 = (when declared(
       struct_CollisionEstimationResultImpulse):
     when ownSizeof(struct_CollisionEstimationResultImpulse) !=
-        ownSizeof(struct_CollisionEstimationResultImpulse_536871842):
+        ownSizeof(struct_CollisionEstimationResultImpulse_536871914):
       static :
         warning("Declaration of " & "struct_CollisionEstimationResultImpulse" &
             " exists but with different size")
     struct_CollisionEstimationResultImpulse
    else:
-    struct_CollisionEstimationResultImpulse_536871842)
-  CollisionEstimationResultImpulse_536871845 = (when declared(
+    struct_CollisionEstimationResultImpulse_536871914)
+  CollisionEstimationResultImpulse_536871917 = (when declared(
       CollisionEstimationResultImpulse):
     when ownSizeof(CollisionEstimationResultImpulse) !=
-        ownSizeof(CollisionEstimationResultImpulse_536871844):
+        ownSizeof(CollisionEstimationResultImpulse_536871916):
       static :
         warning("Declaration of " & "CollisionEstimationResultImpulse" &
             " exists but with different size")
     CollisionEstimationResultImpulse
    else:
-    CollisionEstimationResultImpulse_536871844)
-  enum_SoftBodyConstraintColor_536871573 = (when declared(
+    CollisionEstimationResultImpulse_536871916)
+  enum_SoftBodyConstraintColor_536871645 = (when declared(
       enum_SoftBodyConstraintColor):
     when ownSizeof(enum_SoftBodyConstraintColor) !=
-        ownSizeof(enum_SoftBodyConstraintColor_536871572):
+        ownSizeof(enum_SoftBodyConstraintColor_536871644):
       static :
         warning("Declaration of " & "enum_SoftBodyConstraintColor" &
             " exists but with different size")
     enum_SoftBodyConstraintColor
    else:
-    enum_SoftBodyConstraintColor_536871572)
-  AllowedDOFs_536871528 = (when declared(AllowedDOFs):
-    when ownSizeof(AllowedDOFs) != ownSizeof(AllowedDOFs_536871527):
+    enum_SoftBodyConstraintColor_536871644)
+  AllowedDOFs_536871600 = (when declared(AllowedDOFs):
+    when ownSizeof(AllowedDOFs) != ownSizeof(AllowedDOFs_536871599):
       static :
         warning("Declaration of " & "AllowedDOFs" &
             " exists but with different size")
     AllowedDOFs
    else:
-    AllowedDOFs_536871527)
-  AABox_536871621 = (when declared(AABox):
-    when ownSizeof(AABox) != ownSizeof(AABox_536871620):
+    AllowedDOFs_536871599)
+  AABox_536871693 = (when declared(AABox):
+    when ownSizeof(AABox) != ownSizeof(AABox_536871692):
       static :
         warning("Declaration of " & "AABox" & " exists but with different size")
     AABox
    else:
-    AABox_536871620)
-  ConstraintSettings_536871899 = (when declared(ConstraintSettings):
-    when ownSizeof(ConstraintSettings) != ownSizeof(ConstraintSettings_536871898):
+    AABox_536871692)
+  ConstraintSettings_536871971 = (when declared(ConstraintSettings):
+    when ownSizeof(ConstraintSettings) != ownSizeof(ConstraintSettings_536871970):
       static :
         warning("Declaration of " & "ConstraintSettings" &
             " exists but with different size")
     ConstraintSettings
    else:
-    ConstraintSettings_536871898)
-  EmptyShapeSettings_536871777 = (when declared(EmptyShapeSettings):
-    when ownSizeof(EmptyShapeSettings) != ownSizeof(EmptyShapeSettings_536871776):
+    ConstraintSettings_536871970)
+  EmptyShapeSettings_536871849 = (when declared(EmptyShapeSettings):
+    when ownSizeof(EmptyShapeSettings) != ownSizeof(EmptyShapeSettings_536871848):
       static :
         warning("Declaration of " & "EmptyShapeSettings" &
             " exists but with different size")
     EmptyShapeSettings
    else:
-    EmptyShapeSettings_536871776)
-  struct_BroadPhaseCastResult_536871667 = (when declared(
+    EmptyShapeSettings_536871848)
+  struct_BroadPhaseCastResult_536871739 = (when declared(
       struct_BroadPhaseCastResult):
     when ownSizeof(struct_BroadPhaseCastResult) !=
-        ownSizeof(struct_BroadPhaseCastResult_536871666):
+        ownSizeof(struct_BroadPhaseCastResult_536871738):
       static :
         warning("Declaration of " & "struct_BroadPhaseCastResult" &
             " exists but with different size")
     struct_BroadPhaseCastResult
    else:
-    struct_BroadPhaseCastResult_536871666)
-  ConstraintSpace_536871516 = (when declared(ConstraintSpace):
-    when ownSizeof(ConstraintSpace) != ownSizeof(ConstraintSpace_536871515):
+    struct_BroadPhaseCastResult_536871738)
+  ConstraintSpace_536871588 = (when declared(ConstraintSpace):
+    when ownSizeof(ConstraintSpace) != ownSizeof(ConstraintSpace_536871587):
       static :
         warning("Declaration of " & "ConstraintSpace" &
             " exists but with different size")
     ConstraintSpace
    else:
-    ConstraintSpace_536871515)
-  struct_DistanceConstraintSettings_536871905 = (when declared(
+    ConstraintSpace_536871587)
+  struct_DistanceConstraintSettings_536871977 = (when declared(
       struct_DistanceConstraintSettings):
     when ownSizeof(struct_DistanceConstraintSettings) !=
-        ownSizeof(struct_DistanceConstraintSettings_536871904):
+        ownSizeof(struct_DistanceConstraintSettings_536871976):
       static :
         warning("Declaration of " & "struct_DistanceConstraintSettings" &
             " exists but with different size")
     struct_DistanceConstraintSettings
    else:
-    struct_DistanceConstraintSettings_536871904)
-  struct_SubShapeIDPair_536871663 = (when declared(struct_SubShapeIDPair):
-    when ownSizeof(struct_SubShapeIDPair) != ownSizeof(struct_SubShapeIDPair_536871662):
+    struct_DistanceConstraintSettings_536871976)
+  struct_SubShapeIDPair_536871735 = (when declared(struct_SubShapeIDPair):
+    when ownSizeof(struct_SubShapeIDPair) != ownSizeof(struct_SubShapeIDPair_536871734):
       static :
         warning("Declaration of " & "struct_SubShapeIDPair" &
             " exists but with different size")
     struct_SubShapeIDPair
    else:
-    struct_SubShapeIDPair_536871662)
-  TaperedCylinderShape_536871793 = (when declared(TaperedCylinderShape):
-    when ownSizeof(TaperedCylinderShape) != ownSizeof(TaperedCylinderShape_536871792):
+    struct_SubShapeIDPair_536871734)
+  TaperedCylinderShape_536871865 = (when declared(TaperedCylinderShape):
+    when ownSizeof(TaperedCylinderShape) != ownSizeof(TaperedCylinderShape_536871864):
       static :
         warning("Declaration of " & "TaperedCylinderShape" &
             " exists but with different size")
     TaperedCylinderShape
    else:
-    TaperedCylinderShape_536871792)
-  struct_ObjectLayerFilter_Procs_536872005 = (when declared(
+    TaperedCylinderShape_536871864)
+  struct_ObjectLayerFilter_Procs_536872077 = (when declared(
       struct_ObjectLayerFilter_Procs):
     when ownSizeof(struct_ObjectLayerFilter_Procs) !=
-        ownSizeof(struct_ObjectLayerFilter_Procs_536872004):
+        ownSizeof(struct_ObjectLayerFilter_Procs_536872076):
       static :
         warning("Declaration of " & "struct_ObjectLayerFilter_Procs" &
             " exists but with different size")
     struct_ObjectLayerFilter_Procs
    else:
-    struct_ObjectLayerFilter_Procs_536872004)
-  BodyInterface_536871825 = (when declared(BodyInterface):
-    when ownSizeof(BodyInterface) != ownSizeof(BodyInterface_536871824):
+    struct_ObjectLayerFilter_Procs_536872076)
+  BodyInterface_536871897 = (when declared(BodyInterface):
+    when ownSizeof(BodyInterface) != ownSizeof(BodyInterface_536871896):
       static :
         warning("Declaration of " & "BodyInterface" &
             " exists but with different size")
     BodyInterface
    else:
-    BodyInterface_536871824)
-  Triangle_536871625 = (when declared(Triangle):
-    when ownSizeof(Triangle) != ownSizeof(Triangle_536871624):
+    BodyInterface_536871896)
+  Triangle_536871697 = (when declared(Triangle):
+    when ownSizeof(Triangle) != ownSizeof(Triangle_536871696):
       static :
         warning("Declaration of " & "Triangle" &
             " exists but with different size")
     Triangle
    else:
-    Triangle_536871624)
-  JobFunction_536871977 = (when declared(JobFunction):
-    when ownSizeof(JobFunction) != ownSizeof(JobFunction_536871976):
+    Triangle_536871696)
+  JobFunction_536872049 = (when declared(JobFunction):
+    when ownSizeof(JobFunction) != ownSizeof(JobFunction_536872048):
       static :
         warning("Declaration of " & "JobFunction" &
             " exists but with different size")
     JobFunction
    else:
-    JobFunction_536871976)
-  struct_CharacterVirtualSettings_536871961 = (when declared(
+    JobFunction_536872048)
+  struct_CharacterVirtualSettings_536872033 = (when declared(
       struct_CharacterVirtualSettings):
     when ownSizeof(struct_CharacterVirtualSettings) !=
-        ownSizeof(struct_CharacterVirtualSettings_536871960):
+        ownSizeof(struct_CharacterVirtualSettings_536872032):
       static :
         warning("Declaration of " & "struct_CharacterVirtualSettings" &
             " exists but with different size")
     struct_CharacterVirtualSettings
    else:
-    struct_CharacterVirtualSettings_536871960)
-  BodyLockInterface_536871827 = (when declared(BodyLockInterface):
-    when ownSizeof(BodyLockInterface) != ownSizeof(BodyLockInterface_536871826):
+    struct_CharacterVirtualSettings_536872032)
+  BodyLockInterface_536871899 = (when declared(BodyLockInterface):
+    when ownSizeof(BodyLockInterface) != ownSizeof(BodyLockInterface_536871898):
       static :
         warning("Declaration of " & "BodyLockInterface" &
             " exists but with different size")
     BodyLockInterface
    else:
-    BodyLockInterface_536871826)
-  NarrowPhaseQuery_536871831 = (when declared(NarrowPhaseQuery):
-    when ownSizeof(NarrowPhaseQuery) != ownSizeof(NarrowPhaseQuery_536871830):
+    BodyLockInterface_536871898)
+  NarrowPhaseQuery_536871903 = (when declared(NarrowPhaseQuery):
+    when ownSizeof(NarrowPhaseQuery) != ownSizeof(NarrowPhaseQuery_536871902):
       static :
         warning("Declaration of " & "NarrowPhaseQuery" &
             " exists but with different size")
     NarrowPhaseQuery
    else:
-    NarrowPhaseQuery_536871830)
-  struct_ConstraintSettings_536871897 = (when declared(struct_ConstraintSettings):
+    NarrowPhaseQuery_536871902)
+  struct_ConstraintSettings_536871969 = (when declared(struct_ConstraintSettings):
     when ownSizeof(struct_ConstraintSettings) !=
-        ownSizeof(struct_ConstraintSettings_536871896):
+        ownSizeof(struct_ConstraintSettings_536871968):
       static :
         warning("Declaration of " & "struct_ConstraintSettings" &
             " exists but with different size")
     struct_ConstraintSettings
    else:
-    struct_ConstraintSettings_536871896)
-  ShapeSubType_536871504 = (when declared(ShapeSubType):
-    when ownSizeof(ShapeSubType) != ownSizeof(ShapeSubType_536871503):
+    struct_ConstraintSettings_536871968)
+  ShapeSubType_536871576 = (when declared(ShapeSubType):
+    when ownSizeof(ShapeSubType) != ownSizeof(ShapeSubType_536871575):
       static :
         warning("Declaration of " & "ShapeSubType" &
             " exists but with different size")
     ShapeSubType
    else:
-    ShapeSubType_536871503)
-  CollideSettingsBase_536871641 = (when declared(CollideSettingsBase):
-    when ownSizeof(CollideSettingsBase) != ownSizeof(CollideSettingsBase_536871640):
+    ShapeSubType_536871575)
+  CollideSettingsBase_536871713 = (when declared(CollideSettingsBase):
+    when ownSizeof(CollideSettingsBase) != ownSizeof(CollideSettingsBase_536871712):
       static :
         warning("Declaration of " & "CollideSettingsBase" &
             " exists but with different size")
     CollideSettingsBase
    else:
-    CollideSettingsBase_536871640)
-  struct_CollidePointResult_536871675 = (when declared(struct_CollidePointResult):
+    CollideSettingsBase_536871712)
+  struct_CollidePointResult_536871747 = (when declared(struct_CollidePointResult):
     when ownSizeof(struct_CollidePointResult) !=
-        ownSizeof(struct_CollidePointResult_536871674):
+        ownSizeof(struct_CollidePointResult_536871746):
       static :
         warning("Declaration of " & "struct_CollidePointResult" &
             " exists but with different size")
     struct_CollidePointResult
    else:
-    struct_CollidePointResult_536871674)
-  enum_BodyType_536871482 = (when declared(enum_BodyType):
-    when ownSizeof(enum_BodyType) != ownSizeof(enum_BodyType_536871481):
+    struct_CollidePointResult_536871746)
+  enum_BodyType_536871554 = (when declared(enum_BodyType):
+    when ownSizeof(enum_BodyType) != ownSizeof(enum_BodyType_536871553):
       static :
         warning("Declaration of " & "enum_BodyType" &
             " exists but with different size")
     enum_BodyType
    else:
-    enum_BodyType_536871481)
-  CylinderShapeSettings_536871755 = (when declared(CylinderShapeSettings):
-    when ownSizeof(CylinderShapeSettings) != ownSizeof(CylinderShapeSettings_536871754):
+    enum_BodyType_536871553)
+  CylinderShapeSettings_536871827 = (when declared(CylinderShapeSettings):
+    when ownSizeof(CylinderShapeSettings) != ownSizeof(CylinderShapeSettings_536871826):
       static :
         warning("Declaration of " & "CylinderShapeSettings" &
             " exists but with different size")
     CylinderShapeSettings
    else:
-    CylinderShapeSettings_536871754)
-  BoxShape_536871785 = (when declared(BoxShape):
-    when ownSizeof(BoxShape) != ownSizeof(BoxShape_536871784):
+    CylinderShapeSettings_536871826)
+  BoxShape_536871857 = (when declared(BoxShape):
+    when ownSizeof(BoxShape) != ownSizeof(BoxShape_536871856):
       static :
         warning("Declaration of " & "BoxShape" &
             " exists but with different size")
     BoxShape
    else:
-    BoxShape_536871784)
-  Vec3_536871595 = (when declared(Vec3):
-    when ownSizeof(Vec3) != ownSizeof(Vec3_536871594):
+    BoxShape_536871856)
+  Vec3_536871667 = (when declared(Vec3):
+    when ownSizeof(Vec3) != ownSizeof(Vec3_536871666):
       static :
         warning("Declaration of " & "Vec3" & " exists but with different size")
     Vec3
    else:
-    Vec3_536871594)
-  TaperedCapsuleShape_536871797 = (when declared(TaperedCapsuleShape):
-    when ownSizeof(TaperedCapsuleShape) != ownSizeof(TaperedCapsuleShape_536871796):
+    Vec3_536871666)
+  TaperedCapsuleShape_536871869 = (when declared(TaperedCapsuleShape):
+    when ownSizeof(TaperedCapsuleShape) != ownSizeof(TaperedCapsuleShape_536871868):
       static :
         warning("Declaration of " & "TaperedCapsuleShape" &
             " exists but with different size")
     TaperedCapsuleShape
    else:
-    TaperedCapsuleShape_536871796)
-  JobSystem_536871991 = (when declared(JobSystem):
-    when ownSizeof(JobSystem) != ownSizeof(JobSystem_536871990):
+    TaperedCapsuleShape_536871868)
+  JobSystem_536872063 = (when declared(JobSystem):
+    when ownSizeof(JobSystem) != ownSizeof(JobSystem_536872062):
       static :
         warning("Declaration of " & "JobSystem" &
             " exists but with different size")
     JobSystem
    else:
-    JobSystem_536871990)
-  ConstraintType_536871508 = (when declared(ConstraintType):
-    when ownSizeof(ConstraintType) != ownSizeof(ConstraintType_536871507):
+    JobSystem_536872062)
+  ConstraintType_536871580 = (when declared(ConstraintType):
+    when ownSizeof(ConstraintType) != ownSizeof(ConstraintType_536871579):
       static :
         warning("Declaration of " & "ConstraintType" &
             " exists but with different size")
     ConstraintType
    else:
-    ConstraintType_536871507)
-  SphereShapeSettings_536871743 = (when declared(SphereShapeSettings):
-    when ownSizeof(SphereShapeSettings) != ownSizeof(SphereShapeSettings_536871742):
+    ConstraintType_536871579)
+  SphereShapeSettings_536871815 = (when declared(SphereShapeSettings):
+    when ownSizeof(SphereShapeSettings) != ownSizeof(SphereShapeSettings_536871814):
       static :
         warning("Declaration of " & "SphereShapeSettings" &
             " exists but with different size")
     SphereShapeSettings
    else:
-    SphereShapeSettings_536871742)
-  enum_PhysicsUpdateError_536871478 = (when declared(enum_PhysicsUpdateError):
+    SphereShapeSettings_536871814)
+  enum_PhysicsUpdateError_536871550 = (when declared(enum_PhysicsUpdateError):
     when ownSizeof(enum_PhysicsUpdateError) !=
-        ownSizeof(enum_PhysicsUpdateError_536871477):
+        ownSizeof(enum_PhysicsUpdateError_536871549):
       static :
         warning("Declaration of " & "enum_PhysicsUpdateError" &
             " exists but with different size")
     enum_PhysicsUpdateError
    else:
-    enum_PhysicsUpdateError_536871477)
-  SharedMutex_536871855 = (when declared(SharedMutex):
-    when ownSizeof(SharedMutex) != ownSizeof(SharedMutex_536871854):
+    enum_PhysicsUpdateError_536871549)
+  SharedMutex_536871927 = (when declared(SharedMutex):
+    when ownSizeof(SharedMutex) != ownSizeof(SharedMutex_536871926):
       static :
         warning("Declaration of " & "SharedMutex" &
             " exists but with different size")
     SharedMutex
    else:
-    SharedMutex_536871854)
-  enum_ShapeType_536871498 = (when declared(enum_ShapeType):
-    when ownSizeof(enum_ShapeType) != ownSizeof(enum_ShapeType_536871497):
+    SharedMutex_536871926)
+  enum_ShapeType_536871570 = (when declared(enum_ShapeType):
+    when ownSizeof(enum_ShapeType) != ownSizeof(enum_ShapeType_536871569):
       static :
         warning("Declaration of " & "enum_ShapeType" &
             " exists but with different size")
     enum_ShapeType
    else:
-    enum_ShapeType_536871497)
-  struct_DrawSettings_536871687 = (when declared(struct_DrawSettings):
-    when ownSizeof(struct_DrawSettings) != ownSizeof(struct_DrawSettings_536871686):
+    enum_ShapeType_536871569)
+  struct_DrawSettings_536871759 = (when declared(struct_DrawSettings):
+    when ownSizeof(struct_DrawSettings) != ownSizeof(struct_DrawSettings_536871758):
       static :
         warning("Declaration of " & "struct_DrawSettings" &
             " exists but with different size")
     struct_DrawSettings
    else:
-    struct_DrawSettings_536871686)
-  enum_ActiveEdgeMode_536871538 = (when declared(enum_ActiveEdgeMode):
-    when ownSizeof(enum_ActiveEdgeMode) != ownSizeof(enum_ActiveEdgeMode_536871537):
+    struct_DrawSettings_536871758)
+  enum_ActiveEdgeMode_536871610 = (when declared(enum_ActiveEdgeMode):
+    when ownSizeof(enum_ActiveEdgeMode) != ownSizeof(enum_ActiveEdgeMode_536871609):
       static :
         warning("Declaration of " & "enum_ActiveEdgeMode" &
             " exists but with different size")
     enum_ActiveEdgeMode
    else:
-    enum_ActiveEdgeMode_536871537)
-  SixDOFConstraint_536871877 = (when declared(SixDOFConstraint):
-    when ownSizeof(SixDOFConstraint) != ownSizeof(SixDOFConstraint_536871876):
+    enum_ActiveEdgeMode_536871609)
+  SixDOFConstraint_536871949 = (when declared(SixDOFConstraint):
+    when ownSizeof(SixDOFConstraint) != ownSizeof(SixDOFConstraint_536871948):
       static :
         warning("Declaration of " & "SixDOFConstraint" &
             " exists but with different size")
     SixDOFConstraint
    else:
-    SixDOFConstraint_536871876)
-  ShapeCastResult_536871685 = (when declared(ShapeCastResult):
-    when ownSizeof(ShapeCastResult) != ownSizeof(ShapeCastResult_536871684):
+    SixDOFConstraint_536871948)
+  ShapeCastResult_536871757 = (when declared(ShapeCastResult):
+    when ownSizeof(ShapeCastResult) != ownSizeof(ShapeCastResult_536871756):
       static :
         warning("Declaration of " & "ShapeCastResult" &
             " exists but with different size")
     ShapeCastResult
    else:
-    ShapeCastResult_536871684)
-  CylinderShape_536871791 = (when declared(CylinderShape):
-    when ownSizeof(CylinderShape) != ownSizeof(CylinderShape_536871790):
+    ShapeCastResult_536871756)
+  CylinderShape_536871863 = (when declared(CylinderShape):
+    when ownSizeof(CylinderShape) != ownSizeof(CylinderShape_536871862):
       static :
         warning("Declaration of " & "CylinderShape" &
             " exists but with different size")
     CylinderShape
    else:
-    CylinderShape_536871790)
-  FixedConstraint_536871863 = (when declared(FixedConstraint):
-    when ownSizeof(FixedConstraint) != ownSizeof(FixedConstraint_536871862):
+    CylinderShape_536871862)
+  FixedConstraint_536871935 = (when declared(FixedConstraint):
+    when ownSizeof(FixedConstraint) != ownSizeof(FixedConstraint_536871934):
       static :
         warning("Declaration of " & "FixedConstraint" &
             " exists but with different size")
     FixedConstraint
    else:
-    FixedConstraint_536871862)
-  PlaneShape_536871787 = (when declared(PlaneShape):
-    when ownSizeof(PlaneShape) != ownSizeof(PlaneShape_536871786):
+    FixedConstraint_536871934)
+  PlaneShape_536871859 = (when declared(PlaneShape):
+    when ownSizeof(PlaneShape) != ownSizeof(PlaneShape_536871858):
       static :
         warning("Declaration of " & "PlaneShape" &
             " exists but with different size")
     PlaneShape
    else:
-    PlaneShape_536871786)
-  PointConstraintSettings_536871911 = (when declared(PointConstraintSettings):
+    PlaneShape_536871858)
+  PointConstraintSettings_536871983 = (when declared(PointConstraintSettings):
     when ownSizeof(PointConstraintSettings) !=
-        ownSizeof(PointConstraintSettings_536871910):
+        ownSizeof(PointConstraintSettings_536871982):
       static :
         warning("Declaration of " & "PointConstraintSettings" &
             " exists but with different size")
     PointConstraintSettings
    else:
-    PointConstraintSettings_536871910)
-  struct_GearConstraintSettings_536871933 = (when declared(
+    PointConstraintSettings_536871982)
+  struct_GearConstraintSettings_536872005 = (when declared(
       struct_GearConstraintSettings):
     when ownSizeof(struct_GearConstraintSettings) !=
-        ownSizeof(struct_GearConstraintSettings_536871932):
+        ownSizeof(struct_GearConstraintSettings_536872004):
       static :
         warning("Declaration of " & "struct_GearConstraintSettings" &
             " exists but with different size")
     struct_GearConstraintSettings
    else:
-    struct_GearConstraintSettings_536871932)
-  struct_Triangle_536871623 = (when declared(struct_Triangle):
-    when ownSizeof(struct_Triangle) != ownSizeof(struct_Triangle_536871622):
+    struct_GearConstraintSettings_536872004)
+  struct_Triangle_536871695 = (when declared(struct_Triangle):
+    when ownSizeof(struct_Triangle) != ownSizeof(struct_Triangle_536871694):
       static :
         warning("Declaration of " & "struct_Triangle" &
             " exists but with different size")
     struct_Triangle
    else:
-    struct_Triangle_536871622)
-  ConvexHullShape_536871799 = (when declared(ConvexHullShape):
-    when ownSizeof(ConvexHullShape) != ownSizeof(ConvexHullShape_536871798):
+    struct_Triangle_536871694)
+  ConvexHullShape_536871871 = (when declared(ConvexHullShape):
+    when ownSizeof(ConvexHullShape) != ownSizeof(ConvexHullShape_536871870):
       static :
         warning("Declaration of " & "ConvexHullShape" &
             " exists but with different size")
     ConvexHullShape
    else:
-    ConvexHullShape_536871798)
-  MotionQuality_536871520 = (when declared(MotionQuality):
-    when ownSizeof(MotionQuality) != ownSizeof(MotionQuality_536871519):
+    ConvexHullShape_536871870)
+  MotionQuality_536871592 = (when declared(MotionQuality):
+    when ownSizeof(MotionQuality) != ownSizeof(MotionQuality_536871591):
       static :
         warning("Declaration of " & "MotionQuality" &
             " exists but with different size")
     MotionQuality
    else:
-    MotionQuality_536871519)
-  SixDOFConstraintAxis_536871567 = (when declared(SixDOFConstraintAxis):
-    when ownSizeof(SixDOFConstraintAxis) != ownSizeof(SixDOFConstraintAxis_536871566):
+    MotionQuality_536871591)
+  SixDOFConstraintAxis_536871639 = (when declared(SixDOFConstraintAxis):
+    when ownSizeof(SixDOFConstraintAxis) != ownSizeof(SixDOFConstraintAxis_536871638):
       static :
         warning("Declaration of " & "SixDOFConstraintAxis" &
             " exists but with different size")
     SixDOFConstraintAxis
    else:
-    SixDOFConstraintAxis_536871566)
-  Character_536871883 = (when declared(Character):
-    when ownSizeof(Character) != ownSizeof(Character_536871882):
+    SixDOFConstraintAxis_536871638)
+  Character_536871955 = (when declared(Character):
+    when ownSizeof(Character) != ownSizeof(Character_536871954):
       static :
         warning("Declaration of " & "Character" &
             " exists but with different size")
     Character
    else:
-    Character_536871882)
-  enum_SixDOFConstraintAxis_536871565 = (when declared(enum_SixDOFConstraintAxis):
+    Character_536871954)
+  enum_SixDOFConstraintAxis_536871637 = (when declared(enum_SixDOFConstraintAxis):
     when ownSizeof(enum_SixDOFConstraintAxis) !=
-        ownSizeof(enum_SixDOFConstraintAxis_536871564):
+        ownSizeof(enum_SixDOFConstraintAxis_536871636):
       static :
         warning("Declaration of " & "enum_SixDOFConstraintAxis" &
             " exists but with different size")
     enum_SixDOFConstraintAxis
    else:
-    enum_SixDOFConstraintAxis_536871564)
-  CompoundShape_536871801 = (when declared(CompoundShape):
-    when ownSizeof(CompoundShape) != ownSizeof(CompoundShape_536871800):
+    enum_SixDOFConstraintAxis_536871636)
+  CompoundShape_536871873 = (when declared(CompoundShape):
+    when ownSizeof(CompoundShape) != ownSizeof(CompoundShape_536871872):
       static :
         warning("Declaration of " & "CompoundShape" &
             " exists but with different size")
     CompoundShape
    else:
-    CompoundShape_536871800)
-  SkeletonJoint_536872047 = (when declared(SkeletonJoint):
-    when ownSizeof(SkeletonJoint) != ownSizeof(SkeletonJoint_536872046):
+    CompoundShape_536871872)
+  SkeletonJoint_536872119 = (when declared(SkeletonJoint):
+    when ownSizeof(SkeletonJoint) != ownSizeof(SkeletonJoint_536872118):
       static :
         warning("Declaration of " & "SkeletonJoint" &
             " exists but with different size")
     SkeletonJoint
    else:
-    SkeletonJoint_536872046)
-  ActiveEdgeMode_536871540 = (when declared(ActiveEdgeMode):
-    when ownSizeof(ActiveEdgeMode) != ownSizeof(ActiveEdgeMode_536871539):
+    SkeletonJoint_536872118)
+  ActiveEdgeMode_536871612 = (when declared(ActiveEdgeMode):
+    when ownSizeof(ActiveEdgeMode) != ownSizeof(ActiveEdgeMode_536871611):
       static :
         warning("Declaration of " & "ActiveEdgeMode" &
             " exists but with different size")
     ActiveEdgeMode
    else:
-    ActiveEdgeMode_536871539)
-  enum_ShapeSubType_536871502 = (when declared(enum_ShapeSubType):
-    when ownSizeof(enum_ShapeSubType) != ownSizeof(enum_ShapeSubType_536871501):
+    ActiveEdgeMode_536871611)
+  enum_ShapeSubType_536871574 = (when declared(enum_ShapeSubType):
+    when ownSizeof(enum_ShapeSubType) != ownSizeof(enum_ShapeSubType_536871573):
       static :
         warning("Declaration of " & "enum_ShapeSubType" &
             " exists but with different size")
     enum_ShapeSubType
    else:
-    enum_ShapeSubType_536871501)
-  StaticCompoundShape_536871803 = (when declared(StaticCompoundShape):
-    when ownSizeof(StaticCompoundShape) != ownSizeof(StaticCompoundShape_536871802):
+    enum_ShapeSubType_536871573)
+  StaticCompoundShape_536871875 = (when declared(StaticCompoundShape):
+    when ownSizeof(StaticCompoundShape) != ownSizeof(StaticCompoundShape_536871874):
       static :
         warning("Declaration of " & "StaticCompoundShape" &
             " exists but with different size")
     StaticCompoundShape
    else:
-    StaticCompoundShape_536871802)
-  RayCastBodyCollectorCallback_536871709 = (when declared(
+    StaticCompoundShape_536871874)
+  RayCastBodyCollectorCallback_536871781 = (when declared(
       RayCastBodyCollectorCallback):
     when ownSizeof(RayCastBodyCollectorCallback) !=
-        ownSizeof(RayCastBodyCollectorCallback_536871708):
+        ownSizeof(RayCastBodyCollectorCallback_536871780):
       static :
         warning("Declaration of " & "RayCastBodyCollectorCallback" &
             " exists but with different size")
     RayCastBodyCollectorCallback
    else:
-    RayCastBodyCollectorCallback_536871708)
-  CollideShapeBodyResultCallback_536871699 = (when declared(
+    RayCastBodyCollectorCallback_536871780)
+  CollideShapeBodyResultCallback_536871771 = (when declared(
       CollideShapeBodyResultCallback):
     when ownSizeof(CollideShapeBodyResultCallback) !=
-        ownSizeof(CollideShapeBodyResultCallback_536871698):
+        ownSizeof(CollideShapeBodyResultCallback_536871770):
       static :
         warning("Declaration of " & "CollideShapeBodyResultCallback" &
             " exists but with different size")
     CollideShapeBodyResultCallback
    else:
-    CollideShapeBodyResultCallback_536871698)
-  ConvexShapeSettings_536871741 = (when declared(ConvexShapeSettings):
-    when ownSizeof(ConvexShapeSettings) != ownSizeof(ConvexShapeSettings_536871740):
+    CollideShapeBodyResultCallback_536871770)
+  ConvexShapeSettings_536871813 = (when declared(ConvexShapeSettings):
+    when ownSizeof(ConvexShapeSettings) != ownSizeof(ConvexShapeSettings_536871812):
       static :
         warning("Declaration of " & "ConvexShapeSettings" &
             " exists but with different size")
     ConvexShapeSettings
    else:
-    ConvexShapeSettings_536871740)
-  enum_CollisionCollectorType_536871557 = (when declared(
+    ConvexShapeSettings_536871812)
+  enum_CollisionCollectorType_536871629 = (when declared(
       enum_CollisionCollectorType):
     when ownSizeof(enum_CollisionCollectorType) !=
-        ownSizeof(enum_CollisionCollectorType_536871556):
+        ownSizeof(enum_CollisionCollectorType_536871628):
       static :
         warning("Declaration of " & "enum_CollisionCollectorType" &
             " exists but with different size")
     enum_CollisionCollectorType
    else:
-    enum_CollisionCollectorType_536871556)
-  enum_OverrideMassProperties_536871522 = (when declared(
+    enum_CollisionCollectorType_536871628)
+  enum_OverrideMassProperties_536871594 = (when declared(
       enum_OverrideMassProperties):
     when ownSizeof(enum_OverrideMassProperties) !=
-        ownSizeof(enum_OverrideMassProperties_536871521):
+        ownSizeof(enum_OverrideMassProperties_536871593):
       static :
         warning("Declaration of " & "enum_OverrideMassProperties" &
             " exists but with different size")
     enum_OverrideMassProperties
    else:
-    enum_OverrideMassProperties_536871521)
-  PhysicsUpdateError_536871480 = (when declared(PhysicsUpdateError):
-    when ownSizeof(PhysicsUpdateError) != ownSizeof(PhysicsUpdateError_536871479):
+    enum_OverrideMassProperties_536871593)
+  PhysicsUpdateError_536871552 = (when declared(PhysicsUpdateError):
+    when ownSizeof(PhysicsUpdateError) != ownSizeof(PhysicsUpdateError_536871551):
       static :
         warning("Declaration of " & "PhysicsUpdateError" &
             " exists but with different size")
     PhysicsUpdateError
    else:
-    PhysicsUpdateError_536871479)
-  struct_Vec3_536871593 = (when declared(struct_Vec3):
-    when ownSizeof(struct_Vec3) != ownSizeof(struct_Vec3_536871592):
+    PhysicsUpdateError_536871551)
+  struct_Vec3_536871665 = (when declared(struct_Vec3):
+    when ownSizeof(struct_Vec3) != ownSizeof(struct_Vec3_536871664):
       static :
         warning("Declaration of " & "struct_Vec3" &
             " exists but with different size")
     struct_Vec3
    else:
-    struct_Vec3_536871592)
-  struct_SkeletonJoint_536872045 = (when declared(struct_SkeletonJoint):
-    when ownSizeof(struct_SkeletonJoint) != ownSizeof(struct_SkeletonJoint_536872044):
+    struct_Vec3_536871664)
+  struct_SkeletonJoint_536872117 = (when declared(struct_SkeletonJoint):
+    when ownSizeof(struct_SkeletonJoint) != ownSizeof(struct_SkeletonJoint_536872116):
       static :
         warning("Declaration of " & "struct_SkeletonJoint" &
             " exists but with different size")
     struct_SkeletonJoint
    else:
-    struct_SkeletonJoint_536872044)
-  struct_ConeConstraintSettings_536871921 = (when declared(
+    struct_SkeletonJoint_536872116)
+  struct_ConeConstraintSettings_536871993 = (when declared(
       struct_ConeConstraintSettings):
     when ownSizeof(struct_ConeConstraintSettings) !=
-        ownSizeof(struct_ConeConstraintSettings_536871920):
+        ownSizeof(struct_ConeConstraintSettings_536871992):
       static :
         warning("Declaration of " & "struct_ConeConstraintSettings" &
             " exists but with different size")
     struct_ConeConstraintSettings
    else:
-    struct_ConeConstraintSettings_536871920)
-  ContactListener_Procs_536872023 = (when declared(ContactListener_Procs):
-    when ownSizeof(ContactListener_Procs) != ownSizeof(ContactListener_Procs_536872022):
+    struct_ConeConstraintSettings_536871992)
+  ContactListener_Procs_536872095 = (when declared(ContactListener_Procs):
+    when ownSizeof(ContactListener_Procs) != ownSizeof(ContactListener_Procs_536872094):
       static :
         warning("Declaration of " & "ContactListener_Procs" &
             " exists but with different size")
     ContactListener_Procs
    else:
-    ContactListener_Procs_536872022)
-  struct_BodyDrawFilter_Procs_536872029 = (when declared(
+    ContactListener_Procs_536872094)
+  struct_BodyDrawFilter_Procs_536872101 = (when declared(
       struct_BodyDrawFilter_Procs):
     when ownSizeof(struct_BodyDrawFilter_Procs) !=
-        ownSizeof(struct_BodyDrawFilter_Procs_536872028):
+        ownSizeof(struct_BodyDrawFilter_Procs_536872100):
       static :
         warning("Declaration of " & "struct_BodyDrawFilter_Procs" &
             " exists but with different size")
     struct_BodyDrawFilter_Procs
    else:
-    struct_BodyDrawFilter_Procs_536872028)
-  ObjectLayer_536871468 = (when declared(ObjectLayer):
-    when ownSizeof(ObjectLayer) != ownSizeof(ObjectLayer_536871467):
+    struct_BodyDrawFilter_Procs_536872100)
+  ObjectLayer_536871540 = (when declared(ObjectLayer):
+    when ownSizeof(ObjectLayer) != ownSizeof(ObjectLayer_536871539):
       static :
         warning("Declaration of " & "ObjectLayer" &
             " exists but with different size")
     ObjectLayer
    else:
-    ObjectLayer_536871467)
-  struct_IndexedTriangle_536871631 = (when declared(struct_IndexedTriangle):
-    when ownSizeof(struct_IndexedTriangle) != ownSizeof(struct_IndexedTriangle_536871630):
+    ObjectLayer_536871539)
+  struct_IndexedTriangle_536871703 = (when declared(struct_IndexedTriangle):
+    when ownSizeof(struct_IndexedTriangle) != ownSizeof(struct_IndexedTriangle_536871702):
       static :
         warning("Declaration of " & "struct_IndexedTriangle" &
             " exists but with different size")
     struct_IndexedTriangle
    else:
-    struct_IndexedTriangle_536871630)
-  ConvexHullShapeSettings_536871759 = (when declared(ConvexHullShapeSettings):
+    struct_IndexedTriangle_536871702)
+  ConvexHullShapeSettings_536871831 = (when declared(ConvexHullShapeSettings):
     when ownSizeof(ConvexHullShapeSettings) !=
-        ownSizeof(ConvexHullShapeSettings_536871758):
+        ownSizeof(ConvexHullShapeSettings_536871830):
       static :
         warning("Declaration of " & "ConvexHullShapeSettings" &
             " exists but with different size")
     ConvexHullShapeSettings
    else:
-    ConvexHullShapeSettings_536871758)
-  ConeConstraint_536871873 = (when declared(ConeConstraint):
-    when ownSizeof(ConeConstraint) != ownSizeof(ConeConstraint_536871872):
+    ConvexHullShapeSettings_536871830)
+  ConeConstraint_536871945 = (when declared(ConeConstraint):
+    when ownSizeof(ConeConstraint) != ownSizeof(ConeConstraint_536871944):
       static :
         warning("Declaration of " & "ConeConstraint" &
             " exists but with different size")
     ConeConstraint
    else:
-    ConeConstraint_536871872)
-  enum_SpringMode_536871569 = (when declared(enum_SpringMode):
-    when ownSizeof(enum_SpringMode) != ownSizeof(enum_SpringMode_536871568):
+    ConeConstraint_536871944)
+  enum_SpringMode_536871641 = (when declared(enum_SpringMode):
+    when ownSizeof(enum_SpringMode) != ownSizeof(enum_SpringMode_536871640):
       static :
         warning("Declaration of " & "enum_SpringMode" &
             " exists but with different size")
     enum_SpringMode
    else:
-    enum_SpringMode_536871568)
-  CollisionSubGroupID_536871474 = (when declared(CollisionSubGroupID):
-    when ownSizeof(CollisionSubGroupID) != ownSizeof(CollisionSubGroupID_536871473):
+    enum_SpringMode_536871640)
+  CollisionSubGroupID_536871546 = (when declared(CollisionSubGroupID):
+    when ownSizeof(CollisionSubGroupID) != ownSizeof(CollisionSubGroupID_536871545):
       static :
         warning("Declaration of " & "CollisionSubGroupID" &
             " exists but with different size")
     CollisionSubGroupID
    else:
-    CollisionSubGroupID_536871473)
-  DistanceConstraint_536871865 = (when declared(DistanceConstraint):
-    when ownSizeof(DistanceConstraint) != ownSizeof(DistanceConstraint_536871864):
+    CollisionSubGroupID_536871545)
+  DistanceConstraint_536871937 = (when declared(DistanceConstraint):
+    when ownSizeof(DistanceConstraint) != ownSizeof(DistanceConstraint_536871936):
       static :
         warning("Declaration of " & "DistanceConstraint" &
             " exists but with different size")
     DistanceConstraint
    else:
-    DistanceConstraint_536871864)
-  struct_HingeConstraintSettings_536871913 = (when declared(
+    DistanceConstraint_536871936)
+  struct_HingeConstraintSettings_536871985 = (when declared(
       struct_HingeConstraintSettings):
     when ownSizeof(struct_HingeConstraintSettings) !=
-        ownSizeof(struct_HingeConstraintSettings_536871912):
+        ownSizeof(struct_HingeConstraintSettings_536871984):
       static :
         warning("Declaration of " & "struct_HingeConstraintSettings" &
             " exists but with different size")
     struct_HingeConstraintSettings
    else:
-    struct_HingeConstraintSettings_536871912)
-  struct_ShapeCastSettings_536871647 = (when declared(struct_ShapeCastSettings):
+    struct_HingeConstraintSettings_536871984)
+  struct_ShapeCastSettings_536871719 = (when declared(struct_ShapeCastSettings):
     when ownSizeof(struct_ShapeCastSettings) !=
-        ownSizeof(struct_ShapeCastSettings_536871646):
+        ownSizeof(struct_ShapeCastSettings_536871718):
       static :
         warning("Declaration of " & "struct_ShapeCastSettings" &
             " exists but with different size")
     struct_ShapeCastSettings
    else:
-    struct_ShapeCastSettings_536871646)
-  CompoundShapeSettings_536871761 = (when declared(CompoundShapeSettings):
-    when ownSizeof(CompoundShapeSettings) != ownSizeof(CompoundShapeSettings_536871760):
+    struct_ShapeCastSettings_536871718)
+  CompoundShapeSettings_536871833 = (when declared(CompoundShapeSettings):
+    when ownSizeof(CompoundShapeSettings) != ownSizeof(CompoundShapeSettings_536871832):
       static :
         warning("Declaration of " & "CompoundShapeSettings" &
             " exists but with different size")
     CompoundShapeSettings
    else:
-    CompoundShapeSettings_536871760)
-  BodyType_536871484 = (when declared(BodyType):
-    when ownSizeof(BodyType) != ownSizeof(BodyType_536871483):
+    CompoundShapeSettings_536871832)
+  BodyType_536871556 = (when declared(BodyType):
+    when ownSizeof(BodyType) != ownSizeof(BodyType_536871555):
       static :
         warning("Declaration of " & "BodyType" &
             " exists but with different size")
     BodyType
    else:
-    BodyType_536871483)
-  RVec3_536871613 = (when declared(RVec3):
-    when ownSizeof(RVec3) != ownSizeof(RVec3_536871612):
+    BodyType_536871555)
+  RVec3_536871685 = (when declared(RVec3):
+    when ownSizeof(RVec3) != ownSizeof(RVec3_536871684):
       static :
         warning("Declaration of " & "RVec3" & " exists but with different size")
     RVec3
    else:
-    RVec3_536871612)
-  CastShapeResultCallback_536871705 = (when declared(CastShapeResultCallback):
+    RVec3_536871684)
+  CastShapeResultCallback_536871777 = (when declared(CastShapeResultCallback):
     when ownSizeof(CastShapeResultCallback) !=
-        ownSizeof(CastShapeResultCallback_536871704):
+        ownSizeof(CastShapeResultCallback_536871776):
       static :
         warning("Declaration of " & "CastShapeResultCallback" &
             " exists but with different size")
     CastShapeResultCallback
    else:
-    CastShapeResultCallback_536871704)
-  ScaledShapeSettings_536871773 = (when declared(ScaledShapeSettings):
-    when ownSizeof(ScaledShapeSettings) != ownSizeof(ScaledShapeSettings_536871772):
+    CastShapeResultCallback_536871776)
+  ScaledShapeSettings_536871845 = (when declared(ScaledShapeSettings):
+    when ownSizeof(ScaledShapeSettings) != ownSizeof(ScaledShapeSettings_536871844):
       static :
         warning("Declaration of " & "ScaledShapeSettings" &
             " exists but with different size")
     ScaledShapeSettings
    else:
-    ScaledShapeSettings_536871772)
-  CollideShapeCollectorCallback_536871715 = (when declared(
+    ScaledShapeSettings_536871844)
+  CollideShapeCollectorCallback_536871787 = (when declared(
       CollideShapeCollectorCallback):
     when ownSizeof(CollideShapeCollectorCallback) !=
-        ownSizeof(CollideShapeCollectorCallback_536871714):
+        ownSizeof(CollideShapeCollectorCallback_536871786):
       static :
         warning("Declaration of " & "CollideShapeCollectorCallback" &
             " exists but with different size")
     CollideShapeCollectorCallback
    else:
-    CollideShapeCollectorCallback_536871714)
-  BodyLockWrite_536871943 = (when declared(BodyLockWrite):
-    when ownSizeof(BodyLockWrite) != ownSizeof(BodyLockWrite_536871942):
+    CollideShapeCollectorCallback_536871786)
+  BodyLockWrite_536872015 = (when declared(BodyLockWrite):
+    when ownSizeof(BodyLockWrite) != ownSizeof(BodyLockWrite_536872014):
       static :
         warning("Declaration of " & "BodyLockWrite" &
             " exists but with different size")
     BodyLockWrite
    else:
-    BodyLockWrite_536871942)
-  ShapeCastSettings_536871649 = (when declared(ShapeCastSettings):
-    when ownSizeof(ShapeCastSettings) != ownSizeof(ShapeCastSettings_536871648):
+    BodyLockWrite_536872014)
+  ShapeCastSettings_536871721 = (when declared(ShapeCastSettings):
+    when ownSizeof(ShapeCastSettings) != ownSizeof(ShapeCastSettings_536871720):
       static :
         warning("Declaration of " & "ShapeCastSettings" &
             " exists but with different size")
     ShapeCastSettings
    else:
-    ShapeCastSettings_536871648)
-  CharacterVirtual_536871885 = (when declared(CharacterVirtual):
-    when ownSizeof(CharacterVirtual) != ownSizeof(CharacterVirtual_536871884):
+    ShapeCastSettings_536871720)
+  CharacterVirtual_536871957 = (when declared(CharacterVirtual):
+    when ownSizeof(CharacterVirtual) != ownSizeof(CharacterVirtual_536871956):
       static :
         warning("Declaration of " & "CharacterVirtual" &
             " exists but with different size")
     CharacterVirtual
    else:
-    CharacterVirtual_536871884)
-  PhysicsMaterial_536871737 = (when declared(PhysicsMaterial):
-    when ownSizeof(PhysicsMaterial) != ownSizeof(PhysicsMaterial_536871736):
+    CharacterVirtual_536871956)
+  PhysicsMaterial_536871809 = (when declared(PhysicsMaterial):
+    when ownSizeof(PhysicsMaterial) != ownSizeof(PhysicsMaterial_536871808):
       static :
         warning("Declaration of " & "PhysicsMaterial" &
             " exists but with different size")
     PhysicsMaterial
    else:
-    PhysicsMaterial_536871736)
-  MotorSettings_536871661 = (when declared(MotorSettings):
-    when ownSizeof(MotorSettings) != ownSizeof(MotorSettings_536871660):
+    PhysicsMaterial_536871808)
+  MotorSettings_536871733 = (when declared(MotorSettings):
+    when ownSizeof(MotorSettings) != ownSizeof(MotorSettings_536871732):
       static :
         warning("Declaration of " & "MotorSettings" &
             " exists but with different size")
     MotorSettings
    else:
-    MotorSettings_536871660)
+    MotorSettings_536871732)
 when not declared(CharacterBaseSettings):
   type
-    CharacterBaseSettings* = CharacterBaseSettings_536871954
+    CharacterBaseSettings* = CharacterBaseSettings_536872026
 else:
   static :
     hint("Declaration of " & "CharacterBaseSettings" &
         " already exists, not redeclaring")
 when not declared(struct_PhysicsSettings):
   type
-    struct_PhysicsSettings* = struct_PhysicsSettings_536871996
+    struct_PhysicsSettings* = struct_PhysicsSettings_536872068
 else:
   static :
     hint("Declaration of " & "struct_PhysicsSettings" &
         " already exists, not redeclaring")
 when not declared(enum_AllowedDOFs):
   type
-    enum_AllowedDOFs* = enum_AllowedDOFs_536871525
+    enum_AllowedDOFs* = enum_AllowedDOFs_536871597
 else:
   static :
     hint("Declaration of " & "enum_AllowedDOFs" &
         " already exists, not redeclaring")
 when not declared(BodyDrawFilter_Procs):
   type
-    BodyDrawFilter_Procs* = BodyDrawFilter_Procs_536872030
+    BodyDrawFilter_Procs* = BodyDrawFilter_Procs_536872102
 else:
   static :
     hint("Declaration of " & "BodyDrawFilter_Procs" &
         " already exists, not redeclaring")
 when not declared(struct_CollideShapeSettings):
   type
-    struct_CollideShapeSettings* = struct_CollideShapeSettings_536871642
+    struct_CollideShapeSettings* = struct_CollideShapeSettings_536871714
 else:
   static :
     hint("Declaration of " & "struct_CollideShapeSettings" &
         " already exists, not redeclaring")
 when not declared(PointConstraint):
   type
-    PointConstraint* = PointConstraint_536871866
+    PointConstraint* = PointConstraint_536871938
 else:
   static :
     hint("Declaration of " & "PointConstraint" &
         " already exists, not redeclaring")
 when not declared(struct_AABox):
   type
-    struct_AABox* = struct_AABox_536871618
+    struct_AABox* = struct_AABox_536871690
 else:
   static :
     hint("Declaration of " & "struct_AABox" & " already exists, not redeclaring")
 when not declared(enum_BackFaceMode):
   type
-    enum_BackFaceMode* = enum_BackFaceMode_536871533
+    enum_BackFaceMode* = enum_BackFaceMode_536871605
 else:
   static :
     hint("Declaration of " & "enum_BackFaceMode" &
         " already exists, not redeclaring")
 when not declared(CollidePointResult):
   type
-    CollidePointResult* = CollidePointResult_536871676
+    CollidePointResult* = CollidePointResult_536871748
 else:
   static :
     hint("Declaration of " & "CollidePointResult" &
         " already exists, not redeclaring")
 when not declared(Body):
   type
-    Body* = Body_536871834
+    Body* = Body_536871906
 else:
   static :
     hint("Declaration of " & "Body" & " already exists, not redeclaring")
 when not declared(SwingType):
   type
-    SwingType* = SwingType_536871562
+    SwingType* = SwingType_536871634
 else:
   static :
     hint("Declaration of " & "SwingType" & " already exists, not redeclaring")
 when not declared(struct_IndexedTriangleNoMaterial):
   type
-    struct_IndexedTriangleNoMaterial* = struct_IndexedTriangleNoMaterial_536871626
+    struct_IndexedTriangleNoMaterial* = struct_IndexedTriangleNoMaterial_536871698
 else:
   static :
     hint("Declaration of " & "struct_IndexedTriangleNoMaterial" &
         " already exists, not redeclaring")
 when not declared(GearConstraintSettings):
   type
-    GearConstraintSettings* = GearConstraintSettings_536871934
+    GearConstraintSettings* = GearConstraintSettings_536872006
 else:
   static :
     hint("Declaration of " & "GearConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(Shape):
   type
-    Shape* = Shape_536871778
+    Shape* = Shape_536871850
 else:
   static :
     hint("Declaration of " & "Shape" & " already exists, not redeclaring")
 when not declared(ContactManifold):
   type
-    ContactManifold* = ContactManifold_536871838
+    ContactManifold* = ContactManifold_536871910
 else:
   static :
     hint("Declaration of " & "ContactManifold" &
         " already exists, not redeclaring")
 when not declared(CollideShapeSettings):
   type
-    CollideShapeSettings* = CollideShapeSettings_536871644
+    CollideShapeSettings* = CollideShapeSettings_536871716
 else:
   static :
     hint("Declaration of " & "CollideShapeSettings" &
         " already exists, not redeclaring")
 when not declared(BoxShapeSettings):
   type
-    BoxShapeSettings* = BoxShapeSettings_536871744
+    BoxShapeSettings* = BoxShapeSettings_536871816
 else:
   static :
     hint("Declaration of " & "BoxShapeSettings" &
         " already exists, not redeclaring")
 when not declared(RMatrix4x4):
   type
-    RMatrix4x4* = RMatrix4x4_536871614
+    RMatrix4x4* = RMatrix4x4_536871686
 else:
   static :
     hint("Declaration of " & "RMatrix4x4" & " already exists, not redeclaring")
 when not declared(OffsetCenterOfMassShape):
   type
-    OffsetCenterOfMassShape* = OffsetCenterOfMassShape_536871816
+    OffsetCenterOfMassShape* = OffsetCenterOfMassShape_536871888
 else:
   static :
     hint("Declaration of " & "OffsetCenterOfMassShape" &
         " already exists, not redeclaring")
 when not declared(BroadPhaseLayerInterface):
   type
-    BroadPhaseLayerInterface* = BroadPhaseLayerInterface_536871718
+    BroadPhaseLayerInterface* = BroadPhaseLayerInterface_536871790
 else:
   static :
     hint("Declaration of " & "BroadPhaseLayerInterface" &
         " already exists, not redeclaring")
 when not declared(CharacterContactListener_Procs):
   type
-    CharacterContactListener_Procs* = CharacterContactListener_Procs_536872034
+    CharacterContactListener_Procs* = CharacterContactListener_Procs_536872106
 else:
   static :
     hint("Declaration of " & "CharacterContactListener_Procs" &
         " already exists, not redeclaring")
 when not declared(DrawSettings):
   type
-    DrawSettings* = DrawSettings_536871688
+    DrawSettings* = DrawSettings_536871760
 else:
   static :
     hint("Declaration of " & "DrawSettings" & " already exists, not redeclaring")
 when not declared(enum_MotionType):
   type
-    enum_MotionType* = enum_MotionType_536871485
+    enum_MotionType* = enum_MotionType_536871557
 else:
   static :
     hint("Declaration of " & "enum_MotionType" &
         " already exists, not redeclaring")
 when not declared(BodyManager_ShapeColor):
   type
-    BodyManager_ShapeColor* = BodyManager_ShapeColor_536871578
+    BodyManager_ShapeColor* = BodyManager_ShapeColor_536871650
 else:
   static :
     hint("Declaration of " & "BodyManager_ShapeColor" &
         " already exists, not redeclaring")
 when not declared(MeshShapeSettings):
   type
-    MeshShapeSettings* = MeshShapeSettings_536871766
+    MeshShapeSettings* = MeshShapeSettings_536871838
 else:
   static :
     hint("Declaration of " & "MeshShapeSettings" &
         " already exists, not redeclaring")
 when not declared(struct_BodyFilter_Procs):
   type
-    struct_BodyFilter_Procs* = struct_BodyFilter_Procs_536872008
+    struct_BodyFilter_Procs* = struct_BodyFilter_Procs_536872080
 else:
   static :
     hint("Declaration of " & "struct_BodyFilter_Procs" &
         " already exists, not redeclaring")
 when not declared(Plane):
   type
-    Plane* = Plane_536871606
+    Plane* = Plane_536871678
 else:
   static :
     hint("Declaration of " & "Plane" & " already exists, not redeclaring")
 when not declared(struct_SupportingFace):
   type
-    struct_SupportingFace* = struct_SupportingFace_536871690
+    struct_SupportingFace* = struct_SupportingFace_536871762
 else:
   static :
     hint("Declaration of " & "struct_SupportingFace" &
         " already exists, not redeclaring")
 when not declared(CapsuleShapeSettings):
   type
-    CapsuleShapeSettings* = CapsuleShapeSettings_536871750
+    CapsuleShapeSettings* = CapsuleShapeSettings_536871822
 else:
   static :
     hint("Declaration of " & "CapsuleShapeSettings" &
         " already exists, not redeclaring")
 when not declared(enum_Activation):
   type
-    enum_Activation* = enum_Activation_536871489
+    enum_Activation* = enum_Activation_536871561
 else:
   static :
     hint("Declaration of " & "enum_Activation" &
         " already exists, not redeclaring")
 when not declared(BodyCreationSettings):
   type
-    BodyCreationSettings* = BodyCreationSettings_536871820
+    BodyCreationSettings* = BodyCreationSettings_536871892
 else:
   static :
     hint("Declaration of " & "BodyCreationSettings" &
         " already exists, not redeclaring")
 when not declared(BodyLockRead):
   type
-    BodyLockRead* = BodyLockRead_536871938
+    BodyLockRead* = BodyLockRead_536872010
 else:
   static :
     hint("Declaration of " & "BodyLockRead" & " already exists, not redeclaring")
 when not declared(PhysicsSystemSettings):
   type
-    PhysicsSystemSettings* = PhysicsSystemSettings_536871994
+    PhysicsSystemSettings* = PhysicsSystemSettings_536872066
 else:
   static :
     hint("Declaration of " & "PhysicsSystemSettings" &
         " already exists, not redeclaring")
 when not declared(CapsuleShape):
   type
-    CapsuleShape* = CapsuleShape_536871788
+    CapsuleShape* = CapsuleShape_536871860
 else:
   static :
     hint("Declaration of " & "CapsuleShape" & " already exists, not redeclaring")
 when not declared(SimShapeFilter_Procs):
   type
-    SimShapeFilter_Procs* = SimShapeFilter_Procs_536872018
+    SimShapeFilter_Procs* = SimShapeFilter_Procs_536872090
 else:
   static :
     hint("Declaration of " & "SimShapeFilter_Procs" &
         " already exists, not redeclaring")
 when not declared(ValidateResult):
   type
-    ValidateResult* = ValidateResult_536871495
+    ValidateResult* = ValidateResult_536871567
 else:
   static :
     hint("Declaration of " & "ValidateResult" &
         " already exists, not redeclaring")
 when not declared(DebugRenderer_DrawMode):
   type
-    DebugRenderer_DrawMode* = DebugRenderer_DrawMode_536871586
+    DebugRenderer_DrawMode* = DebugRenderer_DrawMode_536871658
 else:
   static :
     hint("Declaration of " & "DebugRenderer_DrawMode" &
         " already exists, not redeclaring")
 when not declared(struct_SimShapeFilter_Procs):
   type
-    struct_SimShapeFilter_Procs* = struct_SimShapeFilter_Procs_536872016
+    struct_SimShapeFilter_Procs* = struct_SimShapeFilter_Procs_536872088
 else:
   static :
     hint("Declaration of " & "struct_SimShapeFilter_Procs" &
         " already exists, not redeclaring")
 when not declared(struct_ContactListener_Procs):
   type
-    struct_ContactListener_Procs* = struct_ContactListener_Procs_536872020
+    struct_ContactListener_Procs* = struct_ContactListener_Procs_536872092
 else:
   static :
     hint("Declaration of " & "struct_ContactListener_Procs" &
         " already exists, not redeclaring")
 when not declared(struct_CharacterBaseSettings):
   type
-    struct_CharacterBaseSettings* = struct_CharacterBaseSettings_536871952
+    struct_CharacterBaseSettings* = struct_CharacterBaseSettings_536872024
 else:
   static :
     hint("Declaration of " & "struct_CharacterBaseSettings" &
         " already exists, not redeclaring")
 when not declared(Vec4):
   type
-    Vec4* = Vec4_536871598
+    Vec4* = Vec4_536871670
 else:
   static :
     hint("Declaration of " & "Vec4" & " already exists, not redeclaring")
 when not declared(DebugRenderer):
   type
-    DebugRenderer* = DebugRenderer_536871856
+    DebugRenderer* = DebugRenderer_536871928
 else:
   static :
     hint("Declaration of " & "DebugRenderer" &
         " already exists, not redeclaring")
 when not declared(enum_MotorState):
   type
-    enum_MotorState* = enum_MotorState_536871545
+    enum_MotorState* = enum_MotorState_536871617
 else:
   static :
     hint("Declaration of " & "enum_MotorState" &
         " already exists, not redeclaring")
 when not declared(MutableCompoundShapeSettings):
   type
-    MutableCompoundShapeSettings* = MutableCompoundShapeSettings_536871764
+    MutableCompoundShapeSettings* = MutableCompoundShapeSettings_536871836
 else:
   static :
     hint("Declaration of " & "MutableCompoundShapeSettings" &
         " already exists, not redeclaring")
 when not declared(CollidePointCollectorCallback):
   type
-    CollidePointCollectorCallback* = CollidePointCollectorCallback_536871712
+    CollidePointCollectorCallback* = CollidePointCollectorCallback_536871784
 else:
   static :
     hint("Declaration of " & "CollidePointCollectorCallback" &
         " already exists, not redeclaring")
 when not declared(EmptyShape):
   type
-    EmptyShape* = EmptyShape_536871818
+    EmptyShape* = EmptyShape_536871890
 else:
   static :
     hint("Declaration of " & "EmptyShape" & " already exists, not redeclaring")
 when not declared(struct_SliderConstraintSettings):
   type
-    struct_SliderConstraintSettings* = struct_SliderConstraintSettings_536871916
+    struct_SliderConstraintSettings* = struct_SliderConstraintSettings_536871988
 else:
   static :
     hint("Declaration of " & "struct_SliderConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(BroadPhaseLayerFilter):
   type
-    BroadPhaseLayerFilter* = BroadPhaseLayerFilter_536871724
+    BroadPhaseLayerFilter* = BroadPhaseLayerFilter_536871796
 else:
   static :
     hint("Declaration of " & "BroadPhaseLayerFilter" &
         " already exists, not redeclaring")
 when not declared(CastShapeCollectorCallback):
   type
-    CastShapeCollectorCallback* = CastShapeCollectorCallback_536871716
+    CastShapeCollectorCallback* = CastShapeCollectorCallback_536871788
 else:
   static :
     hint("Declaration of " & "CastShapeCollectorCallback" &
         " already exists, not redeclaring")
 when not declared(enum_ConstraintSubType):
   type
-    enum_ConstraintSubType* = enum_ConstraintSubType_536871509
+    enum_ConstraintSubType* = enum_ConstraintSubType_536871581
 else:
   static :
     hint("Declaration of " & "enum_ConstraintSubType" &
         " already exists, not redeclaring")
 when not declared(CharacterSettings):
   type
-    CharacterSettings* = CharacterSettings_536871958
+    CharacterSettings* = CharacterSettings_536872030
 else:
   static :
     hint("Declaration of " & "CharacterSettings" &
         " already exists, not redeclaring")
 when not declared(BroadPhaseLayer):
   type
-    BroadPhaseLayer* = BroadPhaseLayer_536871469
+    BroadPhaseLayer* = BroadPhaseLayer_536871541
 else:
   static :
     hint("Declaration of " & "BroadPhaseLayer" &
         " already exists, not redeclaring")
 when not declared(HeightFieldShapeSettings):
   type
-    HeightFieldShapeSettings* = HeightFieldShapeSettings_536871768
+    HeightFieldShapeSettings* = HeightFieldShapeSettings_536871840
 else:
   static :
     hint("Declaration of " & "HeightFieldShapeSettings" &
         " already exists, not redeclaring")
 when not declared(struct_ShapeFilter_Procs):
   type
-    struct_ShapeFilter_Procs* = struct_ShapeFilter_Procs_536872012
+    struct_ShapeFilter_Procs* = struct_ShapeFilter_Procs_536872084
 else:
   static :
     hint("Declaration of " & "struct_ShapeFilter_Procs" &
         " already exists, not redeclaring")
 when not declared(CharacterVirtualContact):
   type
-    CharacterVirtualContact* = CharacterVirtualContact_536871970
+    CharacterVirtualContact* = CharacterVirtualContact_536872042
 else:
   static :
     hint("Declaration of " & "CharacterVirtualContact" &
         " already exists, not redeclaring")
 when not declared(TriangleShapeSettings):
   type
-    TriangleShapeSettings* = TriangleShapeSettings_536871748
+    TriangleShapeSettings* = TriangleShapeSettings_536871820
 else:
   static :
     hint("Declaration of " & "TriangleShapeSettings" &
         " already exists, not redeclaring")
 when not declared(ShapeType):
   type
-    ShapeType* = ShapeType_536871499
+    ShapeType* = ShapeType_536871571
 else:
   static :
     hint("Declaration of " & "ShapeType" & " already exists, not redeclaring")
 when not declared(CollisionGroupID):
   type
-    CollisionGroupID* = CollisionGroupID_536871471
+    CollisionGroupID* = CollisionGroupID_536871543
 else:
   static :
     hint("Declaration of " & "CollisionGroupID" &
         " already exists, not redeclaring")
 when not declared(struct_CharacterVirtualContact):
   type
-    struct_CharacterVirtualContact* = struct_CharacterVirtualContact_536871968
+    struct_CharacterVirtualContact* = struct_CharacterVirtualContact_536872040
 else:
   static :
     hint("Declaration of " & "struct_CharacterVirtualContact" &
         " already exists, not redeclaring")
 when not declared(BroadPhaseQuery):
   type
-    BroadPhaseQuery* = BroadPhaseQuery_536871828
+    BroadPhaseQuery* = BroadPhaseQuery_536871900
 else:
   static :
     hint("Declaration of " & "BroadPhaseQuery" &
         " already exists, not redeclaring")
 when not declared(struct_CollideShapeResult):
   type
-    struct_CollideShapeResult* = struct_CollideShapeResult_536871678
+    struct_CollideShapeResult* = struct_CollideShapeResult_536871750
 else:
   static :
     hint("Declaration of " & "struct_CollideShapeResult" &
         " already exists, not redeclaring")
 when not declared(Mesh_Shape_BuildQuality):
   type
-    Mesh_Shape_BuildQuality* = Mesh_Shape_BuildQuality_536871590
+    Mesh_Shape_BuildQuality* = Mesh_Shape_BuildQuality_536871662
 else:
   static :
     hint("Declaration of " & "Mesh_Shape_BuildQuality" &
         " already exists, not redeclaring")
 when not declared(ConeConstraintSettings):
   type
-    ConeConstraintSettings* = ConeConstraintSettings_536871922
+    ConeConstraintSettings* = ConeConstraintSettings_536871994
 else:
   static :
     hint("Declaration of " & "ConeConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(HingeConstraint):
   type
-    HingeConstraint* = HingeConstraint_536871868
+    HingeConstraint* = HingeConstraint_536871940
 else:
   static :
     hint("Declaration of " & "HingeConstraint" &
         " already exists, not redeclaring")
 when not declared(PhysicsSystem):
   type
-    PhysicsSystem* = PhysicsSystem_536871734
+    PhysicsSystem* = PhysicsSystem_536871806
 else:
   static :
     hint("Declaration of " & "PhysicsSystem" &
         " already exists, not redeclaring")
 when not declared(enum_DebugRenderer_DrawMode):
   type
-    enum_DebugRenderer_DrawMode* = enum_DebugRenderer_DrawMode_536871584
+    enum_DebugRenderer_DrawMode* = enum_DebugRenderer_DrawMode_536871656
 else:
   static :
     hint("Declaration of " & "enum_DebugRenderer_DrawMode" &
         " already exists, not redeclaring")
 when not declared(CollisionEstimationResult):
   type
-    CollisionEstimationResult* = CollisionEstimationResult_536871848
+    CollisionEstimationResult* = CollisionEstimationResult_536871920
 else:
   static :
     hint("Declaration of " & "CollisionEstimationResult" &
         " already exists, not redeclaring")
 when not declared(BodyActivationListener_Procs):
   type
-    BodyActivationListener_Procs* = BodyActivationListener_Procs_536872026
+    BodyActivationListener_Procs* = BodyActivationListener_Procs_536872098
 else:
   static :
     hint("Declaration of " & "BodyActivationListener_Procs" &
         " already exists, not redeclaring")
 when not declared(SubShapeIDPair):
   type
-    SubShapeIDPair* = SubShapeIDPair_536871664
+    SubShapeIDPair* = SubShapeIDPair_536871736
 else:
   static :
     hint("Declaration of " & "SubShapeIDPair" &
         " already exists, not redeclaring")
 when not declared(CastRayResultCallback):
   type
-    CastRayResultCallback* = CastRayResultCallback_536871694
+    CastRayResultCallback* = CastRayResultCallback_536871766
 else:
   static :
     hint("Declaration of " & "CastRayResultCallback" &
         " already exists, not redeclaring")
 when not declared(RayCastBodyResultCallback):
   type
-    RayCastBodyResultCallback* = RayCastBodyResultCallback_536871696
+    RayCastBodyResultCallback* = RayCastBodyResultCallback_536871768
 else:
   static :
     hint("Declaration of " & "RayCastBodyResultCallback" &
         " already exists, not redeclaring")
 when not declared(enum_MotionQuality):
   type
-    enum_MotionQuality* = enum_MotionQuality_536871517
+    enum_MotionQuality* = enum_MotionQuality_536871589
 else:
   static :
     hint("Declaration of " & "enum_MotionQuality" &
         " already exists, not redeclaring")
 when not declared(Ragdoll):
   type
-    Ragdoll* = Ragdoll_536871894
+    Ragdoll* = Ragdoll_536871966
 else:
   static :
     hint("Declaration of " & "Ragdoll" & " already exists, not redeclaring")
 when not declared(BackFaceMode):
   type
-    BackFaceMode* = BackFaceMode_536871535
+    BackFaceMode* = BackFaceMode_536871607
 else:
   static :
     hint("Declaration of " & "BackFaceMode" & " already exists, not redeclaring")
 when not declared(CollisionCollectorType):
   type
-    CollisionCollectorType* = CollisionCollectorType_536871558
+    CollisionCollectorType* = CollisionCollectorType_536871630
 else:
   static :
     hint("Declaration of " & "CollisionCollectorType" &
         " already exists, not redeclaring")
 when not declared(CharacterVsCharacterCollision):
   type
-    CharacterVsCharacterCollision* = CharacterVsCharacterCollision_536871888
+    CharacterVsCharacterCollision* = CharacterVsCharacterCollision_536871960
 else:
   static :
     hint("Declaration of " & "CharacterVsCharacterCollision" &
         " already exists, not redeclaring")
 when not declared(SoftBodyConstraintColor):
   type
-    SoftBodyConstraintColor* = SoftBodyConstraintColor_536871574
+    SoftBodyConstraintColor* = SoftBodyConstraintColor_536871646
 else:
   static :
     hint("Declaration of " & "SoftBodyConstraintColor" &
         " already exists, not redeclaring")
 when not declared(struct_RayCastSettings):
   type
-    struct_RayCastSettings* = struct_RayCastSettings_536871650
+    struct_RayCastSettings* = struct_RayCastSettings_536871722
 else:
   static :
     hint("Declaration of " & "struct_RayCastSettings" &
         " already exists, not redeclaring")
 when not declared(SliderConstraintSettings):
   type
-    SliderConstraintSettings* = SliderConstraintSettings_536871918
+    SliderConstraintSettings* = SliderConstraintSettings_536871990
 else:
   static :
     hint("Declaration of " & "SliderConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(CharacterID):
   type
-    CharacterID* = CharacterID_536871475
+    CharacterID* = CharacterID_536871547
 else:
   static :
     hint("Declaration of " & "CharacterID" & " already exists, not redeclaring")
 when not declared(ConvexShape):
   type
-    ConvexShape* = ConvexShape_536871780
+    ConvexShape* = ConvexShape_536871852
 else:
   static :
     hint("Declaration of " & "ConvexShape" & " already exists, not redeclaring")
 when not declared(enum_SwingType):
   type
-    enum_SwingType* = enum_SwingType_536871560
+    enum_SwingType* = enum_SwingType_536871632
 else:
   static :
     hint("Declaration of " & "enum_SwingType" &
         " already exists, not redeclaring")
 when not declared(MassProperties):
   type
-    MassProperties* = MassProperties_536871636
+    MassProperties* = MassProperties_536871708
 else:
   static :
     hint("Declaration of " & "MassProperties" &
         " already exists, not redeclaring")
 when not declared(SliderConstraint):
   type
-    SliderConstraint* = SliderConstraint_536871870
+    SliderConstraint* = SliderConstraint_536871942
 else:
   static :
     hint("Declaration of " & "SliderConstraint" &
         " already exists, not redeclaring")
 when not declared(struct_CollisionEstimationResult):
   type
-    struct_CollisionEstimationResult* = struct_CollisionEstimationResult_536871846
+    struct_CollisionEstimationResult* = struct_CollisionEstimationResult_536871918
 else:
   static :
     hint("Declaration of " & "struct_CollisionEstimationResult" &
         " already exists, not redeclaring")
 when not declared(MutableCompoundShape):
   type
-    MutableCompoundShape* = MutableCompoundShape_536871804
+    MutableCompoundShape* = MutableCompoundShape_536871876
 else:
   static :
     hint("Declaration of " & "MutableCompoundShape" &
         " already exists, not redeclaring")
 when not declared(struct_Matrix4x4):
   type
-    struct_Matrix4x4* = struct_Matrix4x4_536871608
+    struct_Matrix4x4* = struct_Matrix4x4_536871680
 else:
   static :
     hint("Declaration of " & "struct_Matrix4x4" &
         " already exists, not redeclaring")
 when not declared(OffsetCenterOfMassShapeSettings):
   type
-    OffsetCenterOfMassShapeSettings* = OffsetCenterOfMassShapeSettings_536871774
+    OffsetCenterOfMassShapeSettings* = OffsetCenterOfMassShapeSettings_536871846
 else:
   static :
     hint("Declaration of " & "OffsetCenterOfMassShapeSettings" &
         " already exists, not redeclaring")
 when not declared(TriangleShape):
   type
-    TriangleShape* = TriangleShape_536871794
+    TriangleShape* = TriangleShape_536871866
 else:
   static :
     hint("Declaration of " & "TriangleShape" &
         " already exists, not redeclaring")
 when not declared(MotionProperties):
   type
-    MotionProperties* = MotionProperties_536871832
+    MotionProperties* = MotionProperties_536871904
 else:
   static :
     hint("Declaration of " & "MotionProperties" &
         " already exists, not redeclaring")
 when not declared(CastRayCollectorCallback):
   type
-    CastRayCollectorCallback* = CastRayCollectorCallback_536871706
+    CastRayCollectorCallback* = CastRayCollectorCallback_536871778
 else:
   static :
     hint("Declaration of " & "CastRayCollectorCallback" &
         " already exists, not redeclaring")
 when not declared(GearConstraint):
   type
-    GearConstraint* = GearConstraint_536871878
+    GearConstraint* = GearConstraint_536871950
 else:
   static :
     hint("Declaration of " & "GearConstraint" &
         " already exists, not redeclaring")
 when not declared(SwingTwistConstraintSettings):
   type
-    SwingTwistConstraintSettings* = SwingTwistConstraintSettings_536871926
+    SwingTwistConstraintSettings* = SwingTwistConstraintSettings_536871998
 else:
   static :
     hint("Declaration of " & "SwingTwistConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(ContactSettings):
   type
-    ContactSettings* = ContactSettings_536871840
+    ContactSettings* = ContactSettings_536871912
 else:
   static :
     hint("Declaration of " & "ContactSettings" &
         " already exists, not redeclaring")
 when not declared(struct_RayCastResult):
   type
-    struct_RayCastResult* = struct_RayCastResult_536871670
+    struct_RayCastResult* = struct_RayCastResult_536871742
 else:
   static :
     hint("Declaration of " & "struct_RayCastResult" &
         " already exists, not redeclaring")
 when not declared(CharacterBase):
   type
-    CharacterBase* = CharacterBase_536871880
+    CharacterBase* = CharacterBase_536871952
 else:
   static :
     hint("Declaration of " & "CharacterBase" &
         " already exists, not redeclaring")
 when not declared(HingeConstraintSettings):
   type
-    HingeConstraintSettings* = HingeConstraintSettings_536871914
+    HingeConstraintSettings* = HingeConstraintSettings_536871986
 else:
   static :
     hint("Declaration of " & "HingeConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(struct_SixDOFConstraintSettings):
   type
-    struct_SixDOFConstraintSettings* = struct_SixDOFConstraintSettings_536871928
+    struct_SixDOFConstraintSettings* = struct_SixDOFConstraintSettings_536872000
 else:
   static :
     hint("Declaration of " & "struct_SixDOFConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(struct_CharacterContactSettings):
   type
-    struct_CharacterContactSettings* = struct_CharacterContactSettings_536871964
+    struct_CharacterContactSettings* = struct_CharacterContactSettings_536872036
 else:
   static :
     hint("Declaration of " & "struct_CharacterContactSettings" &
         " already exists, not redeclaring")
 when not declared(BodyActivationListener):
   type
-    BodyActivationListener* = BodyActivationListener_536871850
+    BodyActivationListener* = BodyActivationListener_536871922
 else:
   static :
     hint("Declaration of " & "BodyActivationListener" &
         " already exists, not redeclaring")
 when not declared(Activation):
   type
-    Activation* = Activation_536871491
+    Activation* = Activation_536871563
 else:
   static :
     hint("Declaration of " & "Activation" & " already exists, not redeclaring")
 when not declared(MeshShape):
   type
-    MeshShape* = MeshShape_536871806
+    MeshShape* = MeshShape_536871878
 else:
   static :
     hint("Declaration of " & "MeshShape" & " already exists, not redeclaring")
 when not declared(CharacterContactListener):
   type
-    CharacterContactListener* = CharacterContactListener_536871886
+    CharacterContactListener* = CharacterContactListener_536871958
 else:
   static :
     hint("Declaration of " & "CharacterContactListener" &
         " already exists, not redeclaring")
 when not declared(struct_BodyLockRead):
   type
-    struct_BodyLockRead* = struct_BodyLockRead_536871936
+    struct_BodyLockRead* = struct_BodyLockRead_536872008
 else:
   static :
     hint("Declaration of " & "struct_BodyLockRead" &
         " already exists, not redeclaring")
 when not declared(IndexedTriangleNoMaterial):
   type
-    IndexedTriangleNoMaterial* = IndexedTriangleNoMaterial_536871628
+    IndexedTriangleNoMaterial* = IndexedTriangleNoMaterial_536871700
 else:
   static :
     hint("Declaration of " & "IndexedTriangleNoMaterial" &
         " already exists, not redeclaring")
 when not declared(struct_Vec4):
   type
-    struct_Vec4* = struct_Vec4_536871596
+    struct_Vec4* = struct_Vec4_536871668
 else:
   static :
     hint("Declaration of " & "struct_Vec4" & " already exists, not redeclaring")
 when not declared(TwoBodyConstraint):
   type
-    TwoBodyConstraint* = TwoBodyConstraint_536871860
+    TwoBodyConstraint* = TwoBodyConstraint_536871932
 else:
   static :
     hint("Declaration of " & "TwoBodyConstraint" &
         " already exists, not redeclaring")
 when not declared(struct_BroadPhaseLayerFilter_Procs):
   type
-    struct_BroadPhaseLayerFilter_Procs* = struct_BroadPhaseLayerFilter_Procs_536872000
+    struct_BroadPhaseLayerFilter_Procs* = struct_BroadPhaseLayerFilter_Procs_536872072
 else:
   static :
     hint("Declaration of " & "struct_BroadPhaseLayerFilter_Procs" &
         " already exists, not redeclaring")
 when not declared(struct_CollideSettingsBase):
   type
-    struct_CollideSettingsBase* = struct_CollideSettingsBase_536871638
+    struct_CollideSettingsBase* = struct_CollideSettingsBase_536871710
 else:
   static :
     hint("Declaration of " & "struct_CollideSettingsBase" &
         " already exists, not redeclaring")
 when not declared(struct_PhysicsSystemSettings):
   type
-    struct_PhysicsSystemSettings* = struct_PhysicsSystemSettings_536871992
+    struct_PhysicsSystemSettings* = struct_PhysicsSystemSettings_536872064
 else:
   static :
     hint("Declaration of " & "struct_PhysicsSystemSettings" &
         " already exists, not redeclaring")
 when not declared(Skeleton):
   type
-    Skeleton* = Skeleton_536871890
+    Skeleton* = Skeleton_536871962
 else:
   static :
     hint("Declaration of " & "Skeleton" & " already exists, not redeclaring")
 when not declared(MotionType):
   type
-    MotionType* = MotionType_536871487
+    MotionType* = MotionType_536871559
 else:
   static :
     hint("Declaration of " & "MotionType" & " already exists, not redeclaring")
 when not declared(struct_ShapeCastResult):
   type
-    struct_ShapeCastResult* = struct_ShapeCastResult_536871682
+    struct_ShapeCastResult* = struct_ShapeCastResult_536871754
 else:
   static :
     hint("Declaration of " & "struct_ShapeCastResult" &
         " already exists, not redeclaring")
 when not declared(SixDOFConstraintSettings):
   type
-    SixDOFConstraintSettings* = SixDOFConstraintSettings_536871930
+    SixDOFConstraintSettings* = SixDOFConstraintSettings_536872002
 else:
   static :
     hint("Declaration of " & "SixDOFConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(struct_MotorSettings):
   type
-    struct_MotorSettings* = struct_MotorSettings_536871658
+    struct_MotorSettings* = struct_MotorSettings_536871730
 else:
   static :
     hint("Declaration of " & "struct_MotorSettings" &
         " already exists, not redeclaring")
 when not declared(ObjectLayerFilter_Procs):
   type
-    ObjectLayerFilter_Procs* = ObjectLayerFilter_Procs_536872006
+    ObjectLayerFilter_Procs* = ObjectLayerFilter_Procs_536872078
 else:
   static :
     hint("Declaration of " & "ObjectLayerFilter_Procs" &
         " already exists, not redeclaring")
 when not declared(BodyFilter_Procs):
   type
-    BodyFilter_Procs* = BodyFilter_Procs_536872010
+    BodyFilter_Procs* = BodyFilter_Procs_536872082
 else:
   static :
     hint("Declaration of " & "BodyFilter_Procs" &
         " already exists, not redeclaring")
 when not declared(SupportingFace):
   type
-    SupportingFace* = SupportingFace_536871692
+    SupportingFace* = SupportingFace_536871764
 else:
   static :
     hint("Declaration of " & "SupportingFace" &
         " already exists, not redeclaring")
 when not declared(ExtendedUpdateSettings):
   type
-    ExtendedUpdateSettings* = ExtendedUpdateSettings_536871950
+    ExtendedUpdateSettings* = ExtendedUpdateSettings_536872022
 else:
   static :
     hint("Declaration of " & "ExtendedUpdateSettings" &
         " already exists, not redeclaring")
 when not declared(enum_ValidateResult):
   type
-    enum_ValidateResult* = enum_ValidateResult_536871493
+    enum_ValidateResult* = enum_ValidateResult_536871565
 else:
   static :
     hint("Declaration of " & "enum_ValidateResult" &
         " already exists, not redeclaring")
 when not declared(SphereShape):
   type
-    SphereShape* = SphereShape_536871782
+    SphereShape* = SphereShape_536871854
 else:
   static :
     hint("Declaration of " & "SphereShape" & " already exists, not redeclaring")
 when not declared(RayCastSettings):
   type
-    RayCastSettings* = RayCastSettings_536871652
+    RayCastSettings* = RayCastSettings_536871724
 else:
   static :
     hint("Declaration of " & "RayCastSettings" &
         " already exists, not redeclaring")
 when not declared(StaticCompoundShapeSettings):
   type
-    StaticCompoundShapeSettings* = StaticCompoundShapeSettings_536871762
+    StaticCompoundShapeSettings* = StaticCompoundShapeSettings_536871834
 else:
   static :
     hint("Declaration of " & "StaticCompoundShapeSettings" &
         " already exists, not redeclaring")
 when not declared(CollidePointResultCallback):
   type
-    CollidePointResultCallback* = CollidePointResultCallback_536871700
+    CollidePointResultCallback* = CollidePointResultCallback_536871772
 else:
   static :
     hint("Declaration of " & "CollidePointResultCallback" &
         " already exists, not redeclaring")
 when not declared(Color):
   type
-    Color* = Color_536871616
+    Color* = Color_536871688
 else:
   static :
     hint("Declaration of " & "Color" & " already exists, not redeclaring")
 when not declared(SimShapeFilter):
   type
-    SimShapeFilter* = SimShapeFilter_536871732
+    SimShapeFilter* = SimShapeFilter_536871804
 else:
   static :
     hint("Declaration of " & "SimShapeFilter" &
         " already exists, not redeclaring")
 when not declared(struct_BodyLockWrite):
   type
-    struct_BodyLockWrite* = struct_BodyLockWrite_536871940
+    struct_BodyLockWrite* = struct_BodyLockWrite_536872012
 else:
   static :
     hint("Declaration of " & "struct_BodyLockWrite" &
         " already exists, not redeclaring")
 when not declared(DebugRenderer_CastShadow):
   type
-    DebugRenderer_CastShadow* = DebugRenderer_CastShadow_536871582
+    DebugRenderer_CastShadow* = DebugRenderer_CastShadow_536871654
 else:
   static :
     hint("Declaration of " & "DebugRenderer_CastShadow" &
         " already exists, not redeclaring")
 when not declared(DebugRenderer_Procs):
   type
-    DebugRenderer_Procs* = DebugRenderer_Procs_536872042
+    DebugRenderer_Procs* = DebugRenderer_Procs_536872114
 else:
   static :
     hint("Declaration of " & "DebugRenderer_Procs" &
         " already exists, not redeclaring")
 when not declared(struct_CharacterSettings):
   type
-    struct_CharacterSettings* = struct_CharacterSettings_536871956
+    struct_CharacterSettings* = struct_CharacterSettings_536872028
 else:
   static :
     hint("Declaration of " & "struct_CharacterSettings" &
         " already exists, not redeclaring")
 when not declared(struct_SwingTwistConstraintSettings):
   type
-    struct_SwingTwistConstraintSettings* = struct_SwingTwistConstraintSettings_536871924
+    struct_SwingTwistConstraintSettings* = struct_SwingTwistConstraintSettings_536871996
 else:
   static :
     hint("Declaration of " & "struct_SwingTwistConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(DistanceConstraintSettings):
   type
-    DistanceConstraintSettings* = DistanceConstraintSettings_536871906
+    DistanceConstraintSettings* = DistanceConstraintSettings_536871978
 else:
   static :
     hint("Declaration of " & "DistanceConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(struct_PointConstraintSettings):
   type
-    struct_PointConstraintSettings* = struct_PointConstraintSettings_536871908
+    struct_PointConstraintSettings* = struct_PointConstraintSettings_536871980
 else:
   static :
     hint("Declaration of " & "struct_PointConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(JobSystemThreadPoolConfig):
   type
-    JobSystemThreadPoolConfig* = JobSystemThreadPoolConfig_536871984
+    JobSystemThreadPoolConfig* = JobSystemThreadPoolConfig_536872056
 else:
   static :
     hint("Declaration of " & "JobSystemThreadPoolConfig" &
         " already exists, not redeclaring")
 when not declared(ShapeFilter):
   type
-    ShapeFilter* = ShapeFilter_536871730
+    ShapeFilter* = ShapeFilter_536871802
 else:
   static :
     hint("Declaration of " & "ShapeFilter" & " already exists, not redeclaring")
 when not declared(ContactListener):
   type
-    ContactListener* = ContactListener_536871836
+    ContactListener* = ContactListener_536871908
 else:
   static :
     hint("Declaration of " & "ContactListener" &
         " already exists, not redeclaring")
 when not declared(ObjectVsBroadPhaseLayerFilter):
   type
-    ObjectVsBroadPhaseLayerFilter* = ObjectVsBroadPhaseLayerFilter_536871720
+    ObjectVsBroadPhaseLayerFilter* = ObjectVsBroadPhaseLayerFilter_536871792
 else:
   static :
     hint("Declaration of " & "ObjectVsBroadPhaseLayerFilter" &
         " already exists, not redeclaring")
 when not declared(ShapeSettings):
   type
-    ShapeSettings* = ShapeSettings_536871738
+    ShapeSettings* = ShapeSettings_536871810
 else:
   static :
     hint("Declaration of " & "ShapeSettings" &
         " already exists, not redeclaring")
 when not declared(FixedConstraintSettings):
   type
-    FixedConstraintSettings* = FixedConstraintSettings_536871902
+    FixedConstraintSettings* = FixedConstraintSettings_536871974
 else:
   static :
     hint("Declaration of " & "FixedConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(PhysicsSettings):
   type
-    PhysicsSettings* = PhysicsSettings_536871998
+    PhysicsSettings* = PhysicsSettings_536872070
 else:
   static :
     hint("Declaration of " & "PhysicsSettings" &
         " already exists, not redeclaring")
 when not declared(struct_Plane):
   type
-    struct_Plane* = struct_Plane_536871604
+    struct_Plane* = struct_Plane_536871676
 else:
   static :
     hint("Declaration of " & "struct_Plane" & " already exists, not redeclaring")
 when not declared(Constraint):
   type
-    Constraint* = Constraint_536871858
+    Constraint* = Constraint_536871930
 else:
   static :
     hint("Declaration of " & "Constraint" & " already exists, not redeclaring")
 when not declared(BroadPhaseLayerFilter_Procs):
   type
-    BroadPhaseLayerFilter_Procs* = BroadPhaseLayerFilter_Procs_536872002
+    BroadPhaseLayerFilter_Procs* = BroadPhaseLayerFilter_Procs_536872074
 else:
   static :
     hint("Declaration of " & "BroadPhaseLayerFilter_Procs" &
         " already exists, not redeclaring")
 when not declared(AssertFailureFunc):
   type
-    AssertFailureFunc* = AssertFailureFunc_536871974
+    AssertFailureFunc* = AssertFailureFunc_536872046
 else:
   static :
     hint("Declaration of " & "AssertFailureFunc" &
         " already exists, not redeclaring")
 when not declared(IndexedTriangle):
   type
-    IndexedTriangle* = IndexedTriangle_536871632
+    IndexedTriangle* = IndexedTriangle_536871704
 else:
   static :
     hint("Declaration of " & "IndexedTriangle" &
         " already exists, not redeclaring")
 when not declared(BodyLockMultiWrite):
   type
-    BodyLockMultiWrite* = BodyLockMultiWrite_536871946
+    BodyLockMultiWrite* = BodyLockMultiWrite_536872018
 else:
   static :
     hint("Declaration of " & "BodyLockMultiWrite" &
         " already exists, not redeclaring")
 when not declared(CharacterVirtualSettings):
   type
-    CharacterVirtualSettings* = CharacterVirtualSettings_536871962
+    CharacterVirtualSettings* = CharacterVirtualSettings_536872034
 else:
   static :
     hint("Declaration of " & "CharacterVirtualSettings" &
         " already exists, not redeclaring")
 when not declared(struct_CharacterContactListener_Procs):
   type
-    struct_CharacterContactListener_Procs* = struct_CharacterContactListener_Procs_536872032
+    struct_CharacterContactListener_Procs* = struct_CharacterContactListener_Procs_536872104
 else:
   static :
     hint("Declaration of " & "struct_CharacterContactListener_Procs" &
         " already exists, not redeclaring")
 when not declared(enum_CollectFacesMode):
   type
-    enum_CollectFacesMode* = enum_CollectFacesMode_536871541
+    enum_CollectFacesMode* = enum_CollectFacesMode_536871613
 else:
   static :
     hint("Declaration of " & "enum_CollectFacesMode" &
         " already exists, not redeclaring")
 when not declared(struct_FixedConstraintSettings):
   type
-    struct_FixedConstraintSettings* = struct_FixedConstraintSettings_536871900
+    struct_FixedConstraintSettings* = struct_FixedConstraintSettings_536871972
 else:
   static :
     hint("Declaration of " & "struct_FixedConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(Matrix4x4):
   type
-    Matrix4x4* = Matrix4x4_536871610
+    Matrix4x4* = Matrix4x4_536871682
 else:
   static :
     hint("Declaration of " & "Matrix4x4" & " already exists, not redeclaring")
 when not declared(SubShapeID):
   type
-    SubShapeID* = SubShapeID_536871465
+    SubShapeID* = SubShapeID_536871537
 else:
   static :
     hint("Declaration of " & "SubShapeID" & " already exists, not redeclaring")
 when not declared(enum_DebugRenderer_CastShadow):
   type
-    enum_DebugRenderer_CastShadow* = enum_DebugRenderer_CastShadow_536871580
+    enum_DebugRenderer_CastShadow* = enum_DebugRenderer_CastShadow_536871652
 else:
   static :
     hint("Declaration of " & "enum_DebugRenderer_CastShadow" &
         " already exists, not redeclaring")
 when not declared(ObjectLayerPairFilter):
   type
-    ObjectLayerPairFilter* = ObjectLayerPairFilter_536871722
+    ObjectLayerPairFilter* = ObjectLayerPairFilter_536871794
 else:
   static :
     hint("Declaration of " & "ObjectLayerPairFilter" &
         " already exists, not redeclaring")
 when not declared(TaperedCapsuleShapeSettings):
   type
-    TaperedCapsuleShapeSettings* = TaperedCapsuleShapeSettings_536871752
+    TaperedCapsuleShapeSettings* = TaperedCapsuleShapeSettings_536871824
 else:
   static :
     hint("Declaration of " & "TaperedCapsuleShapeSettings" &
         " already exists, not redeclaring")
 when not declared(struct_MassProperties):
   type
-    struct_MassProperties* = struct_MassProperties_536871634
+    struct_MassProperties* = struct_MassProperties_536871706
 else:
   static :
     hint("Declaration of " & "struct_MassProperties" &
         " already exists, not redeclaring")
 when not declared(RotatedTranslatedShapeSettings):
   type
-    RotatedTranslatedShapeSettings* = RotatedTranslatedShapeSettings_536871770
+    RotatedTranslatedShapeSettings* = RotatedTranslatedShapeSettings_536871842
 else:
   static :
     hint("Declaration of " & "RotatedTranslatedShapeSettings" &
         " already exists, not redeclaring")
 when not declared(SwingTwistConstraint):
   type
-    SwingTwistConstraint* = SwingTwistConstraint_536871874
+    SwingTwistConstraint* = SwingTwistConstraint_536871946
 else:
   static :
     hint("Declaration of " & "SwingTwistConstraint" &
         " already exists, not redeclaring")
 when not declared(PlaneShapeSettings):
   type
-    PlaneShapeSettings* = PlaneShapeSettings_536871746
+    PlaneShapeSettings* = PlaneShapeSettings_536871818
 else:
   static :
     hint("Declaration of " & "PlaneShapeSettings" &
         " already exists, not redeclaring")
 when not declared(struct_DebugRenderer_Procs):
   type
-    struct_DebugRenderer_Procs* = struct_DebugRenderer_Procs_536872040
+    struct_DebugRenderer_Procs* = struct_DebugRenderer_Procs_536872112
 else:
   static :
     hint("Declaration of " & "struct_DebugRenderer_Procs" &
         " already exists, not redeclaring")
 when not declared(SoftBodyCreationSettings):
   type
-    SoftBodyCreationSettings* = SoftBodyCreationSettings_536871822
+    SoftBodyCreationSettings* = SoftBodyCreationSettings_536871894
 else:
   static :
     hint("Declaration of " & "SoftBodyCreationSettings" &
         " already exists, not redeclaring")
 when not declared(ObjectLayerFilter):
   type
-    ObjectLayerFilter* = ObjectLayerFilter_536871726
+    ObjectLayerFilter* = ObjectLayerFilter_536871798
 else:
   static :
     hint("Declaration of " & "ObjectLayerFilter" &
         " already exists, not redeclaring")
 when not declared(TaperedCylinderShapeSettings):
   type
-    TaperedCylinderShapeSettings* = TaperedCylinderShapeSettings_536871756
+    TaperedCylinderShapeSettings* = TaperedCylinderShapeSettings_536871828
 else:
   static :
     hint("Declaration of " & "TaperedCylinderShapeSettings" &
         " already exists, not redeclaring")
 when not declared(MotorState):
   type
-    MotorState* = MotorState_536871547
+    MotorState* = MotorState_536871619
 else:
   static :
     hint("Declaration of " & "MotorState" & " already exists, not redeclaring")
 when not declared(CharacterContactSettings):
   type
-    CharacterContactSettings* = CharacterContactSettings_536871966
+    CharacterContactSettings* = CharacterContactSettings_536872038
 else:
   static :
     hint("Declaration of " & "CharacterContactSettings" &
         " already exists, not redeclaring")
 when not declared(CollideShapeResult):
   type
-    CollideShapeResult* = CollideShapeResult_536871680
+    CollideShapeResult* = CollideShapeResult_536871752
 else:
   static :
     hint("Declaration of " & "CollideShapeResult" &
         " already exists, not redeclaring")
 when not declared(struct_ExtendedUpdateSettings):
   type
-    struct_ExtendedUpdateSettings* = struct_ExtendedUpdateSettings_536871948
+    struct_ExtendedUpdateSettings* = struct_ExtendedUpdateSettings_536872020
 else:
   static :
     hint("Declaration of " & "struct_ExtendedUpdateSettings" &
         " already exists, not redeclaring")
 when not declared(struct_JobSystemThreadPoolConfig):
   type
-    struct_JobSystemThreadPoolConfig* = struct_JobSystemThreadPoolConfig_536871982
+    struct_JobSystemThreadPoolConfig* = struct_JobSystemThreadPoolConfig_536872054
 else:
   static :
     hint("Declaration of " & "struct_JobSystemThreadPoolConfig" &
         " already exists, not redeclaring")
 when not declared(enum_ConstraintSpace):
   type
-    enum_ConstraintSpace* = enum_ConstraintSpace_536871513
+    enum_ConstraintSpace* = enum_ConstraintSpace_536871585
 else:
   static :
     hint("Declaration of " & "enum_ConstraintSpace" &
         " already exists, not redeclaring")
 when not declared(RayCastResult):
   type
-    RayCastResult* = RayCastResult_536871672
+    RayCastResult* = RayCastResult_536871744
 else:
   static :
     hint("Declaration of " & "RayCastResult" &
         " already exists, not redeclaring")
 when not declared(ScaledShape):
   type
-    ScaledShape* = ScaledShape_536871814
+    ScaledShape* = ScaledShape_536871886
 else:
   static :
     hint("Declaration of " & "ScaledShape" & " already exists, not redeclaring")
 when not declared(struct_BodyActivationListener_Procs):
   type
-    struct_BodyActivationListener_Procs* = struct_BodyActivationListener_Procs_536872024
+    struct_BodyActivationListener_Procs* = struct_BodyActivationListener_Procs_536872096
 else:
   static :
     hint("Declaration of " & "struct_BodyActivationListener_Procs" &
         " already exists, not redeclaring")
 when not declared(enum_GroundState):
   type
-    enum_GroundState* = enum_GroundState_536871529
+    enum_GroundState* = enum_GroundState_536871601
 else:
   static :
     hint("Declaration of " & "enum_GroundState" &
         " already exists, not redeclaring")
 when not declared(struct_SpringSettings):
   type
-    struct_SpringSettings* = struct_SpringSettings_536871654
+    struct_SpringSettings* = struct_SpringSettings_536871726
 else:
   static :
     hint("Declaration of " & "struct_SpringSettings" &
         " already exists, not redeclaring")
 when not declared(GroundState):
   type
-    GroundState* = GroundState_536871531
+    GroundState* = GroundState_536871603
 else:
   static :
     hint("Declaration of " & "GroundState" & " already exists, not redeclaring")
 when not declared(Quat):
   type
-    Quat* = Quat_536871602
+    Quat* = Quat_536871674
 else:
   static :
     hint("Declaration of " & "Quat" & " already exists, not redeclaring")
 when not declared(enum_BodyManager_ShapeColor):
   type
-    enum_BodyManager_ShapeColor* = enum_BodyManager_ShapeColor_536871576
+    enum_BodyManager_ShapeColor* = enum_BodyManager_ShapeColor_536871648
 else:
   static :
     hint("Declaration of " & "enum_BodyManager_ShapeColor" &
         " already exists, not redeclaring")
 when not declared(RotatedTranslatedShape):
   type
-    RotatedTranslatedShape* = RotatedTranslatedShape_536871812
+    RotatedTranslatedShape* = RotatedTranslatedShape_536871884
 else:
   static :
     hint("Declaration of " & "RotatedTranslatedShape" &
         " already exists, not redeclaring")
 when not declared(RagdollSettings):
   type
-    RagdollSettings* = RagdollSettings_536871892
+    RagdollSettings* = RagdollSettings_536871964
 else:
   static :
     hint("Declaration of " & "RagdollSettings" &
         " already exists, not redeclaring")
 when not declared(JobSystemConfig):
   type
-    JobSystemConfig* = JobSystemConfig_536871988
+    JobSystemConfig* = JobSystemConfig_536872060
 else:
   static :
     hint("Declaration of " & "JobSystemConfig" &
         " already exists, not redeclaring")
 when not declared(enum_Mesh_Shape_BuildQuality):
   type
-    enum_Mesh_Shape_BuildQuality* = enum_Mesh_Shape_BuildQuality_536871588
+    enum_Mesh_Shape_BuildQuality* = enum_Mesh_Shape_BuildQuality_536871660
 else:
   static :
     hint("Declaration of " & "enum_Mesh_Shape_BuildQuality" &
         " already exists, not redeclaring")
 when not declared(CollideShapeResultCallback):
   type
-    CollideShapeResultCallback* = CollideShapeResultCallback_536871702
+    CollideShapeResultCallback* = CollideShapeResultCallback_536871774
 else:
   static :
     hint("Declaration of " & "CollideShapeResultCallback" &
         " already exists, not redeclaring")
 when not declared(QueueJobCallback):
   type
-    QueueJobCallback* = QueueJobCallback_536871978
+    QueueJobCallback* = QueueJobCallback_536872050
 else:
   static :
     hint("Declaration of " & "QueueJobCallback" &
         " already exists, not redeclaring")
 when not declared(ShapeFilter_Procs):
   type
-    ShapeFilter_Procs* = ShapeFilter_Procs_536872014
+    ShapeFilter_Procs* = ShapeFilter_Procs_536872086
 else:
   static :
     hint("Declaration of " & "ShapeFilter_Procs" &
         " already exists, not redeclaring")
 when not declared(BodyDrawFilter):
   type
-    BodyDrawFilter* = BodyDrawFilter_536871852
+    BodyDrawFilter* = BodyDrawFilter_536871924
 else:
   static :
     hint("Declaration of " & "BodyDrawFilter" &
         " already exists, not redeclaring")
 when not declared(enum_ConstraintType):
   type
-    enum_ConstraintType* = enum_ConstraintType_536871505
+    enum_ConstraintType* = enum_ConstraintType_536871577
 else:
   static :
     hint("Declaration of " & "enum_ConstraintType" &
         " already exists, not redeclaring")
 when not declared(struct_CharacterVsCharacterCollision_Procs):
   type
-    struct_CharacterVsCharacterCollision_Procs* = struct_CharacterVsCharacterCollision_Procs_536872036
+    struct_CharacterVsCharacterCollision_Procs* = struct_CharacterVsCharacterCollision_Procs_536872108
 else:
   static :
     hint("Declaration of " & "struct_CharacterVsCharacterCollision_Procs" &
         " already exists, not redeclaring")
 when not declared(CharacterVsCharacterCollision_Procs):
   type
-    CharacterVsCharacterCollision_Procs* = CharacterVsCharacterCollision_Procs_536872038
+    CharacterVsCharacterCollision_Procs* = CharacterVsCharacterCollision_Procs_536872110
 else:
   static :
     hint("Declaration of " & "CharacterVsCharacterCollision_Procs" &
         " already exists, not redeclaring")
 when not declared(ConstraintSubType):
   type
-    ConstraintSubType* = ConstraintSubType_536871511
+    ConstraintSubType* = ConstraintSubType_536871583
 else:
   static :
     hint("Declaration of " & "ConstraintSubType" &
         " already exists, not redeclaring")
 when not declared(HeightFieldShape):
   type
-    HeightFieldShape* = HeightFieldShape_536871808
+    HeightFieldShape* = HeightFieldShape_536871880
 else:
   static :
     hint("Declaration of " & "HeightFieldShape" &
         " already exists, not redeclaring")
 when not declared(BodyFilter):
   type
-    BodyFilter* = BodyFilter_536871728
+    BodyFilter* = BodyFilter_536871800
 else:
   static :
     hint("Declaration of " & "BodyFilter" & " already exists, not redeclaring")
 when not declared(BodyID):
   type
-    BodyID* = BodyID_536871463
+    BodyID* = BodyID_536871535
 else:
   static :
     hint("Declaration of " & "BodyID" & " already exists, not redeclaring")
 when not declared(struct_Quat):
   type
-    struct_Quat* = struct_Quat_536871600
+    struct_Quat* = struct_Quat_536871672
 else:
   static :
     hint("Declaration of " & "struct_Quat" & " already exists, not redeclaring")
 when not declared(TraceFunc):
   type
-    TraceFunc* = TraceFunc_536871972
+    TraceFunc* = TraceFunc_536872044
 else:
   static :
     hint("Declaration of " & "TraceFunc" & " already exists, not redeclaring")
 when not declared(OverrideMassProperties):
   type
-    OverrideMassProperties* = OverrideMassProperties_536871523
+    OverrideMassProperties* = OverrideMassProperties_536871595
 else:
   static :
     hint("Declaration of " & "OverrideMassProperties" &
         " already exists, not redeclaring")
 when not declared(SpringMode):
   type
-    SpringMode* = SpringMode_536871570
+    SpringMode* = SpringMode_536871642
 else:
   static :
     hint("Declaration of " & "SpringMode" & " already exists, not redeclaring")
 when not declared(CollideShapeBodyCollectorCallback):
   type
-    CollideShapeBodyCollectorCallback* = CollideShapeBodyCollectorCallback_536871710
+    CollideShapeBodyCollectorCallback* = CollideShapeBodyCollectorCallback_536871782
 else:
   static :
     hint("Declaration of " & "CollideShapeBodyCollectorCallback" &
         " already exists, not redeclaring")
 when not declared(BodyLockMultiRead):
   type
-    BodyLockMultiRead* = BodyLockMultiRead_536871944
+    BodyLockMultiRead* = BodyLockMultiRead_536872016
 else:
   static :
     hint("Declaration of " & "BodyLockMultiRead" &
         " already exists, not redeclaring")
 when not declared(QueueJobsCallback):
   type
-    QueueJobsCallback* = QueueJobsCallback_536871980
+    QueueJobsCallback* = QueueJobsCallback_536872052
 else:
   static :
     hint("Declaration of " & "QueueJobsCallback" &
         " already exists, not redeclaring")
 when not declared(struct_JobSystemConfig):
   type
-    struct_JobSystemConfig* = struct_JobSystemConfig_536871986
+    struct_JobSystemConfig* = struct_JobSystemConfig_536872058
 else:
   static :
     hint("Declaration of " & "struct_JobSystemConfig" &
         " already exists, not redeclaring")
 when not declared(DecoratedShape):
   type
-    DecoratedShape* = DecoratedShape_536871810
+    DecoratedShape* = DecoratedShape_536871882
 else:
   static :
     hint("Declaration of " & "DecoratedShape" &
         " already exists, not redeclaring")
 when not declared(SpringSettings):
   type
-    SpringSettings* = SpringSettings_536871656
+    SpringSettings* = SpringSettings_536871728
 else:
   static :
     hint("Declaration of " & "SpringSettings" &
         " already exists, not redeclaring")
 when not declared(BroadPhaseCastResult):
   type
-    BroadPhaseCastResult* = BroadPhaseCastResult_536871668
+    BroadPhaseCastResult* = BroadPhaseCastResult_536871740
 else:
   static :
     hint("Declaration of " & "BroadPhaseCastResult" &
         " already exists, not redeclaring")
 when not declared(CollectFacesMode):
   type
-    CollectFacesMode* = CollectFacesMode_536871543
+    CollectFacesMode* = CollectFacesMode_536871615
 else:
   static :
     hint("Declaration of " & "CollectFacesMode" &
         " already exists, not redeclaring")
 when not declared(struct_CollisionEstimationResultImpulse):
   type
-    struct_CollisionEstimationResultImpulse* = struct_CollisionEstimationResultImpulse_536871842
+    struct_CollisionEstimationResultImpulse* = struct_CollisionEstimationResultImpulse_536871914
 else:
   static :
     hint("Declaration of " & "struct_CollisionEstimationResultImpulse" &
         " already exists, not redeclaring")
 when not declared(CollisionEstimationResultImpulse):
   type
-    CollisionEstimationResultImpulse* = CollisionEstimationResultImpulse_536871844
+    CollisionEstimationResultImpulse* = CollisionEstimationResultImpulse_536871916
 else:
   static :
     hint("Declaration of " & "CollisionEstimationResultImpulse" &
         " already exists, not redeclaring")
 when not declared(enum_SoftBodyConstraintColor):
   type
-    enum_SoftBodyConstraintColor* = enum_SoftBodyConstraintColor_536871572
+    enum_SoftBodyConstraintColor* = enum_SoftBodyConstraintColor_536871644
 else:
   static :
     hint("Declaration of " & "enum_SoftBodyConstraintColor" &
         " already exists, not redeclaring")
 when not declared(AllowedDOFs):
   type
-    AllowedDOFs* = AllowedDOFs_536871527
+    AllowedDOFs* = AllowedDOFs_536871599
 else:
   static :
     hint("Declaration of " & "AllowedDOFs" & " already exists, not redeclaring")
 when not declared(AABox):
   type
-    AABox* = AABox_536871620
+    AABox* = AABox_536871692
 else:
   static :
     hint("Declaration of " & "AABox" & " already exists, not redeclaring")
 when not declared(ConstraintSettings):
   type
-    ConstraintSettings* = ConstraintSettings_536871898
+    ConstraintSettings* = ConstraintSettings_536871970
 else:
   static :
     hint("Declaration of " & "ConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(EmptyShapeSettings):
   type
-    EmptyShapeSettings* = EmptyShapeSettings_536871776
+    EmptyShapeSettings* = EmptyShapeSettings_536871848
 else:
   static :
     hint("Declaration of " & "EmptyShapeSettings" &
         " already exists, not redeclaring")
 when not declared(struct_BroadPhaseCastResult):
   type
-    struct_BroadPhaseCastResult* = struct_BroadPhaseCastResult_536871666
+    struct_BroadPhaseCastResult* = struct_BroadPhaseCastResult_536871738
 else:
   static :
     hint("Declaration of " & "struct_BroadPhaseCastResult" &
         " already exists, not redeclaring")
 when not declared(ConstraintSpace):
   type
-    ConstraintSpace* = ConstraintSpace_536871515
+    ConstraintSpace* = ConstraintSpace_536871587
 else:
   static :
     hint("Declaration of " & "ConstraintSpace" &
         " already exists, not redeclaring")
 when not declared(struct_DistanceConstraintSettings):
   type
-    struct_DistanceConstraintSettings* = struct_DistanceConstraintSettings_536871904
+    struct_DistanceConstraintSettings* = struct_DistanceConstraintSettings_536871976
 else:
   static :
     hint("Declaration of " & "struct_DistanceConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(struct_SubShapeIDPair):
   type
-    struct_SubShapeIDPair* = struct_SubShapeIDPair_536871662
+    struct_SubShapeIDPair* = struct_SubShapeIDPair_536871734
 else:
   static :
     hint("Declaration of " & "struct_SubShapeIDPair" &
         " already exists, not redeclaring")
 when not declared(TaperedCylinderShape):
   type
-    TaperedCylinderShape* = TaperedCylinderShape_536871792
+    TaperedCylinderShape* = TaperedCylinderShape_536871864
 else:
   static :
     hint("Declaration of " & "TaperedCylinderShape" &
         " already exists, not redeclaring")
 when not declared(struct_ObjectLayerFilter_Procs):
   type
-    struct_ObjectLayerFilter_Procs* = struct_ObjectLayerFilter_Procs_536872004
+    struct_ObjectLayerFilter_Procs* = struct_ObjectLayerFilter_Procs_536872076
 else:
   static :
     hint("Declaration of " & "struct_ObjectLayerFilter_Procs" &
         " already exists, not redeclaring")
 when not declared(BodyInterface):
   type
-    BodyInterface* = BodyInterface_536871824
+    BodyInterface* = BodyInterface_536871896
 else:
   static :
     hint("Declaration of " & "BodyInterface" &
         " already exists, not redeclaring")
 when not declared(Triangle):
   type
-    Triangle* = Triangle_536871624
+    Triangle* = Triangle_536871696
 else:
   static :
     hint("Declaration of " & "Triangle" & " already exists, not redeclaring")
 when not declared(JobFunction):
   type
-    JobFunction* = JobFunction_536871976
+    JobFunction* = JobFunction_536872048
 else:
   static :
     hint("Declaration of " & "JobFunction" & " already exists, not redeclaring")
 when not declared(struct_CharacterVirtualSettings):
   type
-    struct_CharacterVirtualSettings* = struct_CharacterVirtualSettings_536871960
+    struct_CharacterVirtualSettings* = struct_CharacterVirtualSettings_536872032
 else:
   static :
     hint("Declaration of " & "struct_CharacterVirtualSettings" &
         " already exists, not redeclaring")
 when not declared(BodyLockInterface):
   type
-    BodyLockInterface* = BodyLockInterface_536871826
+    BodyLockInterface* = BodyLockInterface_536871898
 else:
   static :
     hint("Declaration of " & "BodyLockInterface" &
         " already exists, not redeclaring")
 when not declared(NarrowPhaseQuery):
   type
-    NarrowPhaseQuery* = NarrowPhaseQuery_536871830
+    NarrowPhaseQuery* = NarrowPhaseQuery_536871902
 else:
   static :
     hint("Declaration of " & "NarrowPhaseQuery" &
         " already exists, not redeclaring")
 when not declared(struct_ConstraintSettings):
   type
-    struct_ConstraintSettings* = struct_ConstraintSettings_536871896
+    struct_ConstraintSettings* = struct_ConstraintSettings_536871968
 else:
   static :
     hint("Declaration of " & "struct_ConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(ShapeSubType):
   type
-    ShapeSubType* = ShapeSubType_536871503
+    ShapeSubType* = ShapeSubType_536871575
 else:
   static :
     hint("Declaration of " & "ShapeSubType" & " already exists, not redeclaring")
 when not declared(CollideSettingsBase):
   type
-    CollideSettingsBase* = CollideSettingsBase_536871640
+    CollideSettingsBase* = CollideSettingsBase_536871712
 else:
   static :
     hint("Declaration of " & "CollideSettingsBase" &
         " already exists, not redeclaring")
 when not declared(struct_CollidePointResult):
   type
-    struct_CollidePointResult* = struct_CollidePointResult_536871674
+    struct_CollidePointResult* = struct_CollidePointResult_536871746
 else:
   static :
     hint("Declaration of " & "struct_CollidePointResult" &
         " already exists, not redeclaring")
 when not declared(enum_BodyType):
   type
-    enum_BodyType* = enum_BodyType_536871481
+    enum_BodyType* = enum_BodyType_536871553
 else:
   static :
     hint("Declaration of " & "enum_BodyType" &
         " already exists, not redeclaring")
 when not declared(CylinderShapeSettings):
   type
-    CylinderShapeSettings* = CylinderShapeSettings_536871754
+    CylinderShapeSettings* = CylinderShapeSettings_536871826
 else:
   static :
     hint("Declaration of " & "CylinderShapeSettings" &
         " already exists, not redeclaring")
 when not declared(BoxShape):
   type
-    BoxShape* = BoxShape_536871784
+    BoxShape* = BoxShape_536871856
 else:
   static :
     hint("Declaration of " & "BoxShape" & " already exists, not redeclaring")
 when not declared(Vec3):
   type
-    Vec3* = Vec3_536871594
+    Vec3* = Vec3_536871666
 else:
   static :
     hint("Declaration of " & "Vec3" & " already exists, not redeclaring")
 when not declared(TaperedCapsuleShape):
   type
-    TaperedCapsuleShape* = TaperedCapsuleShape_536871796
+    TaperedCapsuleShape* = TaperedCapsuleShape_536871868
 else:
   static :
     hint("Declaration of " & "TaperedCapsuleShape" &
         " already exists, not redeclaring")
 when not declared(JobSystem):
   type
-    JobSystem* = JobSystem_536871990
+    JobSystem* = JobSystem_536872062
 else:
   static :
     hint("Declaration of " & "JobSystem" & " already exists, not redeclaring")
 when not declared(ConstraintType):
   type
-    ConstraintType* = ConstraintType_536871507
+    ConstraintType* = ConstraintType_536871579
 else:
   static :
     hint("Declaration of " & "ConstraintType" &
         " already exists, not redeclaring")
 when not declared(SphereShapeSettings):
   type
-    SphereShapeSettings* = SphereShapeSettings_536871742
+    SphereShapeSettings* = SphereShapeSettings_536871814
 else:
   static :
     hint("Declaration of " & "SphereShapeSettings" &
         " already exists, not redeclaring")
 when not declared(enum_PhysicsUpdateError):
   type
-    enum_PhysicsUpdateError* = enum_PhysicsUpdateError_536871477
+    enum_PhysicsUpdateError* = enum_PhysicsUpdateError_536871549
 else:
   static :
     hint("Declaration of " & "enum_PhysicsUpdateError" &
         " already exists, not redeclaring")
 when not declared(SharedMutex):
   type
-    SharedMutex* = SharedMutex_536871854
+    SharedMutex* = SharedMutex_536871926
 else:
   static :
     hint("Declaration of " & "SharedMutex" & " already exists, not redeclaring")
 when not declared(enum_ShapeType):
   type
-    enum_ShapeType* = enum_ShapeType_536871497
+    enum_ShapeType* = enum_ShapeType_536871569
 else:
   static :
     hint("Declaration of " & "enum_ShapeType" &
         " already exists, not redeclaring")
 when not declared(struct_DrawSettings):
   type
-    struct_DrawSettings* = struct_DrawSettings_536871686
+    struct_DrawSettings* = struct_DrawSettings_536871758
 else:
   static :
     hint("Declaration of " & "struct_DrawSettings" &
         " already exists, not redeclaring")
 when not declared(enum_ActiveEdgeMode):
   type
-    enum_ActiveEdgeMode* = enum_ActiveEdgeMode_536871537
+    enum_ActiveEdgeMode* = enum_ActiveEdgeMode_536871609
 else:
   static :
     hint("Declaration of " & "enum_ActiveEdgeMode" &
         " already exists, not redeclaring")
 when not declared(SixDOFConstraint):
   type
-    SixDOFConstraint* = SixDOFConstraint_536871876
+    SixDOFConstraint* = SixDOFConstraint_536871948
 else:
   static :
     hint("Declaration of " & "SixDOFConstraint" &
         " already exists, not redeclaring")
 when not declared(ShapeCastResult):
   type
-    ShapeCastResult* = ShapeCastResult_536871684
+    ShapeCastResult* = ShapeCastResult_536871756
 else:
   static :
     hint("Declaration of " & "ShapeCastResult" &
         " already exists, not redeclaring")
 when not declared(CylinderShape):
   type
-    CylinderShape* = CylinderShape_536871790
+    CylinderShape* = CylinderShape_536871862
 else:
   static :
     hint("Declaration of " & "CylinderShape" &
         " already exists, not redeclaring")
 when not declared(FixedConstraint):
   type
-    FixedConstraint* = FixedConstraint_536871862
+    FixedConstraint* = FixedConstraint_536871934
 else:
   static :
     hint("Declaration of " & "FixedConstraint" &
         " already exists, not redeclaring")
 when not declared(PlaneShape):
   type
-    PlaneShape* = PlaneShape_536871786
+    PlaneShape* = PlaneShape_536871858
 else:
   static :
     hint("Declaration of " & "PlaneShape" & " already exists, not redeclaring")
 when not declared(PointConstraintSettings):
   type
-    PointConstraintSettings* = PointConstraintSettings_536871910
+    PointConstraintSettings* = PointConstraintSettings_536871982
 else:
   static :
     hint("Declaration of " & "PointConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(struct_GearConstraintSettings):
   type
-    struct_GearConstraintSettings* = struct_GearConstraintSettings_536871932
+    struct_GearConstraintSettings* = struct_GearConstraintSettings_536872004
 else:
   static :
     hint("Declaration of " & "struct_GearConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(struct_Triangle):
   type
-    struct_Triangle* = struct_Triangle_536871622
+    struct_Triangle* = struct_Triangle_536871694
 else:
   static :
     hint("Declaration of " & "struct_Triangle" &
         " already exists, not redeclaring")
 when not declared(ConvexHullShape):
   type
-    ConvexHullShape* = ConvexHullShape_536871798
+    ConvexHullShape* = ConvexHullShape_536871870
 else:
   static :
     hint("Declaration of " & "ConvexHullShape" &
         " already exists, not redeclaring")
 when not declared(MotionQuality):
   type
-    MotionQuality* = MotionQuality_536871519
+    MotionQuality* = MotionQuality_536871591
 else:
   static :
     hint("Declaration of " & "MotionQuality" &
         " already exists, not redeclaring")
 when not declared(SixDOFConstraintAxis):
   type
-    SixDOFConstraintAxis* = SixDOFConstraintAxis_536871566
+    SixDOFConstraintAxis* = SixDOFConstraintAxis_536871638
 else:
   static :
     hint("Declaration of " & "SixDOFConstraintAxis" &
         " already exists, not redeclaring")
 when not declared(Character):
   type
-    Character* = Character_536871882
+    Character* = Character_536871954
 else:
   static :
     hint("Declaration of " & "Character" & " already exists, not redeclaring")
 when not declared(enum_SixDOFConstraintAxis):
   type
-    enum_SixDOFConstraintAxis* = enum_SixDOFConstraintAxis_536871564
+    enum_SixDOFConstraintAxis* = enum_SixDOFConstraintAxis_536871636
 else:
   static :
     hint("Declaration of " & "enum_SixDOFConstraintAxis" &
         " already exists, not redeclaring")
 when not declared(CompoundShape):
   type
-    CompoundShape* = CompoundShape_536871800
+    CompoundShape* = CompoundShape_536871872
 else:
   static :
     hint("Declaration of " & "CompoundShape" &
         " already exists, not redeclaring")
 when not declared(SkeletonJoint):
   type
-    SkeletonJoint* = SkeletonJoint_536872046
+    SkeletonJoint* = SkeletonJoint_536872118
 else:
   static :
     hint("Declaration of " & "SkeletonJoint" &
         " already exists, not redeclaring")
 when not declared(ActiveEdgeMode):
   type
-    ActiveEdgeMode* = ActiveEdgeMode_536871539
+    ActiveEdgeMode* = ActiveEdgeMode_536871611
 else:
   static :
     hint("Declaration of " & "ActiveEdgeMode" &
         " already exists, not redeclaring")
 when not declared(enum_ShapeSubType):
   type
-    enum_ShapeSubType* = enum_ShapeSubType_536871501
+    enum_ShapeSubType* = enum_ShapeSubType_536871573
 else:
   static :
     hint("Declaration of " & "enum_ShapeSubType" &
         " already exists, not redeclaring")
 when not declared(StaticCompoundShape):
   type
-    StaticCompoundShape* = StaticCompoundShape_536871802
+    StaticCompoundShape* = StaticCompoundShape_536871874
 else:
   static :
     hint("Declaration of " & "StaticCompoundShape" &
         " already exists, not redeclaring")
 when not declared(RayCastBodyCollectorCallback):
   type
-    RayCastBodyCollectorCallback* = RayCastBodyCollectorCallback_536871708
+    RayCastBodyCollectorCallback* = RayCastBodyCollectorCallback_536871780
 else:
   static :
     hint("Declaration of " & "RayCastBodyCollectorCallback" &
         " already exists, not redeclaring")
 when not declared(CollideShapeBodyResultCallback):
   type
-    CollideShapeBodyResultCallback* = CollideShapeBodyResultCallback_536871698
+    CollideShapeBodyResultCallback* = CollideShapeBodyResultCallback_536871770
 else:
   static :
     hint("Declaration of " & "CollideShapeBodyResultCallback" &
         " already exists, not redeclaring")
 when not declared(ConvexShapeSettings):
   type
-    ConvexShapeSettings* = ConvexShapeSettings_536871740
+    ConvexShapeSettings* = ConvexShapeSettings_536871812
 else:
   static :
     hint("Declaration of " & "ConvexShapeSettings" &
         " already exists, not redeclaring")
 when not declared(enum_CollisionCollectorType):
   type
-    enum_CollisionCollectorType* = enum_CollisionCollectorType_536871556
+    enum_CollisionCollectorType* = enum_CollisionCollectorType_536871628
 else:
   static :
     hint("Declaration of " & "enum_CollisionCollectorType" &
         " already exists, not redeclaring")
 when not declared(enum_OverrideMassProperties):
   type
-    enum_OverrideMassProperties* = enum_OverrideMassProperties_536871521
+    enum_OverrideMassProperties* = enum_OverrideMassProperties_536871593
 else:
   static :
     hint("Declaration of " & "enum_OverrideMassProperties" &
         " already exists, not redeclaring")
 when not declared(PhysicsUpdateError):
   type
-    PhysicsUpdateError* = PhysicsUpdateError_536871479
+    PhysicsUpdateError* = PhysicsUpdateError_536871551
 else:
   static :
     hint("Declaration of " & "PhysicsUpdateError" &
         " already exists, not redeclaring")
 when not declared(struct_Vec3):
   type
-    struct_Vec3* = struct_Vec3_536871592
+    struct_Vec3* = struct_Vec3_536871664
 else:
   static :
     hint("Declaration of " & "struct_Vec3" & " already exists, not redeclaring")
 when not declared(struct_SkeletonJoint):
   type
-    struct_SkeletonJoint* = struct_SkeletonJoint_536872044
+    struct_SkeletonJoint* = struct_SkeletonJoint_536872116
 else:
   static :
     hint("Declaration of " & "struct_SkeletonJoint" &
         " already exists, not redeclaring")
 when not declared(struct_ConeConstraintSettings):
   type
-    struct_ConeConstraintSettings* = struct_ConeConstraintSettings_536871920
+    struct_ConeConstraintSettings* = struct_ConeConstraintSettings_536871992
 else:
   static :
     hint("Declaration of " & "struct_ConeConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(ContactListener_Procs):
   type
-    ContactListener_Procs* = ContactListener_Procs_536872022
+    ContactListener_Procs* = ContactListener_Procs_536872094
 else:
   static :
     hint("Declaration of " & "ContactListener_Procs" &
         " already exists, not redeclaring")
 when not declared(struct_BodyDrawFilter_Procs):
   type
-    struct_BodyDrawFilter_Procs* = struct_BodyDrawFilter_Procs_536872028
+    struct_BodyDrawFilter_Procs* = struct_BodyDrawFilter_Procs_536872100
 else:
   static :
     hint("Declaration of " & "struct_BodyDrawFilter_Procs" &
         " already exists, not redeclaring")
 when not declared(ObjectLayer):
   type
-    ObjectLayer* = ObjectLayer_536871467
+    ObjectLayer* = ObjectLayer_536871539
 else:
   static :
     hint("Declaration of " & "ObjectLayer" & " already exists, not redeclaring")
 when not declared(struct_IndexedTriangle):
   type
-    struct_IndexedTriangle* = struct_IndexedTriangle_536871630
+    struct_IndexedTriangle* = struct_IndexedTriangle_536871702
 else:
   static :
     hint("Declaration of " & "struct_IndexedTriangle" &
         " already exists, not redeclaring")
 when not declared(ConvexHullShapeSettings):
   type
-    ConvexHullShapeSettings* = ConvexHullShapeSettings_536871758
+    ConvexHullShapeSettings* = ConvexHullShapeSettings_536871830
 else:
   static :
     hint("Declaration of " & "ConvexHullShapeSettings" &
         " already exists, not redeclaring")
 when not declared(ConeConstraint):
   type
-    ConeConstraint* = ConeConstraint_536871872
+    ConeConstraint* = ConeConstraint_536871944
 else:
   static :
     hint("Declaration of " & "ConeConstraint" &
         " already exists, not redeclaring")
 when not declared(enum_SpringMode):
   type
-    enum_SpringMode* = enum_SpringMode_536871568
+    enum_SpringMode* = enum_SpringMode_536871640
 else:
   static :
     hint("Declaration of " & "enum_SpringMode" &
         " already exists, not redeclaring")
 when not declared(CollisionSubGroupID):
   type
-    CollisionSubGroupID* = CollisionSubGroupID_536871473
+    CollisionSubGroupID* = CollisionSubGroupID_536871545
 else:
   static :
     hint("Declaration of " & "CollisionSubGroupID" &
         " already exists, not redeclaring")
 when not declared(DistanceConstraint):
   type
-    DistanceConstraint* = DistanceConstraint_536871864
+    DistanceConstraint* = DistanceConstraint_536871936
 else:
   static :
     hint("Declaration of " & "DistanceConstraint" &
         " already exists, not redeclaring")
 when not declared(struct_HingeConstraintSettings):
   type
-    struct_HingeConstraintSettings* = struct_HingeConstraintSettings_536871912
+    struct_HingeConstraintSettings* = struct_HingeConstraintSettings_536871984
 else:
   static :
     hint("Declaration of " & "struct_HingeConstraintSettings" &
         " already exists, not redeclaring")
 when not declared(struct_ShapeCastSettings):
   type
-    struct_ShapeCastSettings* = struct_ShapeCastSettings_536871646
+    struct_ShapeCastSettings* = struct_ShapeCastSettings_536871718
 else:
   static :
     hint("Declaration of " & "struct_ShapeCastSettings" &
         " already exists, not redeclaring")
 when not declared(CompoundShapeSettings):
   type
-    CompoundShapeSettings* = CompoundShapeSettings_536871760
+    CompoundShapeSettings* = CompoundShapeSettings_536871832
 else:
   static :
     hint("Declaration of " & "CompoundShapeSettings" &
         " already exists, not redeclaring")
 when not declared(BodyType):
   type
-    BodyType* = BodyType_536871483
+    BodyType* = BodyType_536871555
 else:
   static :
     hint("Declaration of " & "BodyType" & " already exists, not redeclaring")
 when not declared(RVec3):
   type
-    RVec3* = RVec3_536871612
+    RVec3* = RVec3_536871684
 else:
   static :
     hint("Declaration of " & "RVec3" & " already exists, not redeclaring")
 when not declared(CastShapeResultCallback):
   type
-    CastShapeResultCallback* = CastShapeResultCallback_536871704
+    CastShapeResultCallback* = CastShapeResultCallback_536871776
 else:
   static :
     hint("Declaration of " & "CastShapeResultCallback" &
         " already exists, not redeclaring")
 when not declared(ScaledShapeSettings):
   type
-    ScaledShapeSettings* = ScaledShapeSettings_536871772
+    ScaledShapeSettings* = ScaledShapeSettings_536871844
 else:
   static :
     hint("Declaration of " & "ScaledShapeSettings" &
         " already exists, not redeclaring")
 when not declared(CollideShapeCollectorCallback):
   type
-    CollideShapeCollectorCallback* = CollideShapeCollectorCallback_536871714
+    CollideShapeCollectorCallback* = CollideShapeCollectorCallback_536871786
 else:
   static :
     hint("Declaration of " & "CollideShapeCollectorCallback" &
         " already exists, not redeclaring")
 when not declared(BodyLockWrite):
   type
-    BodyLockWrite* = BodyLockWrite_536871942
+    BodyLockWrite* = BodyLockWrite_536872014
 else:
   static :
     hint("Declaration of " & "BodyLockWrite" &
         " already exists, not redeclaring")
 when not declared(ShapeCastSettings):
   type
-    ShapeCastSettings* = ShapeCastSettings_536871648
+    ShapeCastSettings* = ShapeCastSettings_536871720
 else:
   static :
     hint("Declaration of " & "ShapeCastSettings" &
         " already exists, not redeclaring")
 when not declared(CharacterVirtual):
   type
-    CharacterVirtual* = CharacterVirtual_536871884
+    CharacterVirtual* = CharacterVirtual_536871956
 else:
   static :
     hint("Declaration of " & "CharacterVirtual" &
         " already exists, not redeclaring")
 when not declared(PhysicsMaterial):
   type
-    PhysicsMaterial* = PhysicsMaterial_536871736
+    PhysicsMaterial* = PhysicsMaterial_536871808
 else:
   static :
     hint("Declaration of " & "PhysicsMaterial" &
         " already exists, not redeclaring")
 when not declared(MotorSettings):
   type
-    MotorSettings* = MotorSettings_536871660
+    MotorSettings* = MotorSettings_536871732
 else:
   static :
     hint("Declaration of " & "MotorSettings" &
@@ -6028,22 +6028,12 @@ else:
   static :
     hint("Declaration of " & "MAX_PHYSICS_BARRIERS" &
         " already exists, not redeclaring")
-when not declared(jobSystemThreadPool_Create):
-  proc jobSystemThreadPool_Create*(config: ptr JobSystemThreadPoolConfig_536871985): ptr JobSystem_536871991 {.
-      cdecl, importc: "JPH_JobSystemThreadPool_Create".}
-else:
-  static :
-    hint("Declaration of " & "jobSystemThreadPool_Create" &
-        " already exists, not redeclaring")
-when not declared(jobSystemCallback_Create):
-  proc jobSystemCallback_Create*(config: ptr JobSystemConfig_536871989): ptr JobSystem_536871991 {.
-      cdecl, importc: "JPH_JobSystemCallback_Create".}
-else:
-  static :
-    hint("Declaration of " & "jobSystemCallback_Create" &
-        " already exists, not redeclaring")
+proc initJobSystemThreadPool*(config: ptr JobSystemThreadPoolConfig_536872057): ptr JobSystem_536872063 {.
+    cdecl, importc: "JPH_JobSystemThreadPool_Create".}
+proc initJobSystemCallback*(config: ptr JobSystemConfig_536872061): ptr JobSystem_536872063 {.
+    cdecl, importc: "JPH_JobSystemCallback_Create".}
 when not declared(jobSystem_Destroy):
-  proc jobSystem_Destroy*(jobSystem: ptr JobSystem_536871991): void {.cdecl,
+  proc jobSystem_Destroy*(jobSystem: ptr JobSystem_536872063): void {.cdecl,
       importc: "JPH_JobSystem_Destroy".}
 else:
   static :
@@ -6060,2853 +6050,2535 @@ else:
   static :
     hint("Declaration of " & "shutdown" & " already exists, not redeclaring")
 when not declared(setTraceHandler):
-  proc setTraceHandler*(handler: TraceFunc_536871973): void {.cdecl,
+  proc setTraceHandler*(handler: TraceFunc_536872045): void {.cdecl,
       importc: "JPH_SetTraceHandler".}
 else:
   static :
     hint("Declaration of " & "setTraceHandler" &
         " already exists, not redeclaring")
 when not declared(setAssertFailureHandler):
-  proc setAssertFailureHandler*(handler: AssertFailureFunc_536871975): void {.
+  proc setAssertFailureHandler*(handler: AssertFailureFunc_536872047): void {.
       cdecl, importc: "JPH_SetAssertFailureHandler".}
 else:
   static :
     hint("Declaration of " & "setAssertFailureHandler" &
         " already exists, not redeclaring")
-proc freeMembers*(result: ptr CollideShapeResult_536871681): void {.cdecl,
+proc freeMembers*(result: ptr CollideShapeResult_536871753): void {.cdecl,
     importc: "JPH_CollideShapeResult_FreeMembers".}
-proc freeMembers*(result: ptr CollisionEstimationResult_536871849): void {.
+proc freeMembers*(result: ptr CollisionEstimationResult_536871921): void {.
     cdecl, importc: "JPH_CollisionEstimationResult_FreeMembers".}
-when not declared(broadPhaseLayerInterfaceMask_Create):
-  proc broadPhaseLayerInterfaceMask_Create*(numBroadPhaseLayers: uint32): ptr BroadPhaseLayerInterface_536871719 {.
-      cdecl, importc: "JPH_BroadPhaseLayerInterfaceMask_Create".}
-else:
-  static :
-    hint("Declaration of " & "broadPhaseLayerInterfaceMask_Create" &
-        " already exists, not redeclaring")
-proc configureLayer*(bpInterface: ptr BroadPhaseLayerInterface_536871719;
-                     broadPhaseLayer: BroadPhaseLayer_536871470;
+proc initBroadPhaseLayerInterfaceMask*(numBroadPhaseLayers: uint32): ptr BroadPhaseLayerInterface_536871791 {.
+    cdecl, importc: "JPH_BroadPhaseLayerInterfaceMask_Create".}
+proc configureLayer*(bpInterface: ptr BroadPhaseLayerInterface_536871791;
+                     broadPhaseLayer: BroadPhaseLayer_536871542;
                      groupsToInclude: uint32; groupsToExclude: uint32): void {.
     cdecl, importc: "JPH_BroadPhaseLayerInterfaceMask_ConfigureLayer".}
-when not declared(broadPhaseLayerInterfaceTable_Create):
-  proc broadPhaseLayerInterfaceTable_Create*(numObjectLayers: uint32;
-      numBroadPhaseLayers: uint32): ptr BroadPhaseLayerInterface_536871719 {.
-      cdecl, importc: "JPH_BroadPhaseLayerInterfaceTable_Create".}
-else:
-  static :
-    hint("Declaration of " & "broadPhaseLayerInterfaceTable_Create" &
-        " already exists, not redeclaring")
-proc mapObjectToBroadPhaseLayer*(bpInterface: ptr BroadPhaseLayerInterface_536871719;
-                                 objectLayer: ObjectLayer_536871468;
-                                 broadPhaseLayer: BroadPhaseLayer_536871470): void {.
+proc initBroadPhaseLayerInterfaceTable*(numObjectLayers: uint32;
+                                        numBroadPhaseLayers: uint32): ptr BroadPhaseLayerInterface_536871791 {.
+    cdecl, importc: "JPH_BroadPhaseLayerInterfaceTable_Create".}
+proc mapObjectToBroadPhaseLayer*(bpInterface: ptr BroadPhaseLayerInterface_536871791;
+                                 objectLayer: ObjectLayer_536871540;
+                                 broadPhaseLayer: BroadPhaseLayer_536871542): void {.
     cdecl,
     importc: "JPH_BroadPhaseLayerInterfaceTable_MapObjectToBroadPhaseLayer".}
-when not declared(objectLayerPairFilterMask_Create):
-  proc objectLayerPairFilterMask_Create*(): ptr ObjectLayerPairFilter_536871723 {.
-      cdecl, importc: "JPH_ObjectLayerPairFilterMask_Create".}
-else:
-  static :
-    hint("Declaration of " & "objectLayerPairFilterMask_Create" &
-        " already exists, not redeclaring")
-proc getObjectLayer*(group: uint32; mask: uint32): ObjectLayer_536871468 {.
+proc initObjectLayerPairFilterMask*(): ptr ObjectLayerPairFilter_536871795 {.
+    cdecl, importc: "JPH_ObjectLayerPairFilterMask_Create".}
+proc getObjectLayer*(group: uint32; mask: uint32): ObjectLayer_536871540 {.
     cdecl, importc: "JPH_ObjectLayerPairFilterMask_GetObjectLayer".}
-proc getGroup*(layer: ObjectLayer_536871468): uint32 {.cdecl,
+proc getGroup*(layer: ObjectLayer_536871540): uint32 {.cdecl,
     importc: "JPH_ObjectLayerPairFilterMask_GetGroup".}
-proc getMask*(layer: ObjectLayer_536871468): uint32 {.cdecl,
+proc getMask*(layer: ObjectLayer_536871540): uint32 {.cdecl,
     importc: "JPH_ObjectLayerPairFilterMask_GetMask".}
-when not declared(objectLayerPairFilterTable_Create):
-  proc objectLayerPairFilterTable_Create*(numObjectLayers: uint32): ptr ObjectLayerPairFilter_536871723 {.
-      cdecl, importc: "JPH_ObjectLayerPairFilterTable_Create".}
-else:
-  static :
-    hint("Declaration of " & "objectLayerPairFilterTable_Create" &
-        " already exists, not redeclaring")
-proc disableCollision*(objectFilter: ptr ObjectLayerPairFilter_536871723;
-                       layer1: ObjectLayer_536871468; layer2: ObjectLayer_536871468): void {.
+proc initObjectLayerPairFilterTable*(numObjectLayers: uint32): ptr ObjectLayerPairFilter_536871795 {.
+    cdecl, importc: "JPH_ObjectLayerPairFilterTable_Create".}
+proc disableCollision*(objectFilter: ptr ObjectLayerPairFilter_536871795;
+                       layer1: ObjectLayer_536871540; layer2: ObjectLayer_536871540): void {.
     cdecl, importc: "JPH_ObjectLayerPairFilterTable_DisableCollision".}
-proc enableCollision*(objectFilter: ptr ObjectLayerPairFilter_536871723;
-                      layer1: ObjectLayer_536871468; layer2: ObjectLayer_536871468): void {.
+proc enableCollision*(objectFilter: ptr ObjectLayerPairFilter_536871795;
+                      layer1: ObjectLayer_536871540; layer2: ObjectLayer_536871540): void {.
     cdecl, importc: "JPH_ObjectLayerPairFilterTable_EnableCollision".}
-proc shouldCollide*(objectFilter: ptr ObjectLayerPairFilter_536871723;
-                    layer1: ObjectLayer_536871468; layer2: ObjectLayer_536871468): bool {.
+proc shouldCollide*(objectFilter: ptr ObjectLayerPairFilter_536871795;
+                    layer1: ObjectLayer_536871540; layer2: ObjectLayer_536871540): bool {.
     cdecl, importc: "JPH_ObjectLayerPairFilterTable_ShouldCollide".}
-when not declared(objectVsBroadPhaseLayerFilterMask_Create):
-  proc objectVsBroadPhaseLayerFilterMask_Create*(
-      broadPhaseLayerInterface: ptr BroadPhaseLayerInterface_536871719): ptr ObjectVsBroadPhaseLayerFilter_536871721 {.
-      cdecl, importc: "JPH_ObjectVsBroadPhaseLayerFilterMask_Create".}
-else:
-  static :
-    hint("Declaration of " & "objectVsBroadPhaseLayerFilterMask_Create" &
-        " already exists, not redeclaring")
-when not declared(objectVsBroadPhaseLayerFilterTable_Create):
-  proc objectVsBroadPhaseLayerFilterTable_Create*(
-      broadPhaseLayerInterface: ptr BroadPhaseLayerInterface_536871719;
-      numBroadPhaseLayers: uint32;
-      objectLayerPairFilter: ptr ObjectLayerPairFilter_536871723;
-      numObjectLayers: uint32): ptr ObjectVsBroadPhaseLayerFilter_536871721 {.
-      cdecl, importc: "JPH_ObjectVsBroadPhaseLayerFilterTable_Create".}
-else:
-  static :
-    hint("Declaration of " & "objectVsBroadPhaseLayerFilterTable_Create" &
-        " already exists, not redeclaring")
-proc initDefault*(settings: ptr DrawSettings_536871689): void {.cdecl,
+proc initObjectVsBroadPhaseLayerFilterMask*(
+    broadPhaseLayerInterface: ptr BroadPhaseLayerInterface_536871791): ptr ObjectVsBroadPhaseLayerFilter_536871793 {.
+    cdecl, importc: "JPH_ObjectVsBroadPhaseLayerFilterMask_Create".}
+proc initObjectVsBroadPhaseLayerFilterTable*(
+    broadPhaseLayerInterface: ptr BroadPhaseLayerInterface_536871791;
+    numBroadPhaseLayers: uint32;
+    objectLayerPairFilter: ptr ObjectLayerPairFilter_536871795;
+    numObjectLayers: uint32): ptr ObjectVsBroadPhaseLayerFilter_536871793 {.
+    cdecl, importc: "JPH_ObjectVsBroadPhaseLayerFilterTable_Create".}
+proc initDefault*(settings: ptr DrawSettings_536871761): void {.cdecl,
     importc: "JPH_DrawSettings_InitDefault".}
-when not declared(physicsSystem_Create):
-  proc physicsSystem_Create*(settings: ptr PhysicsSystemSettings_536871995): ptr PhysicsSystem_536871735 {.
-      cdecl, importc: "JPH_PhysicsSystem_Create".}
-else:
-  static :
-    hint("Declaration of " & "physicsSystem_Create" &
-        " already exists, not redeclaring")
+proc initPhysicsSystem*(settings: ptr PhysicsSystemSettings_536872067): ptr PhysicsSystem_536871807 {.
+    cdecl, importc: "JPH_PhysicsSystem_Create".}
 when not declared(physicsSystem_Destroy):
-  proc physicsSystem_Destroy*(system: ptr PhysicsSystem_536871735): void {.
+  proc physicsSystem_Destroy*(system: ptr PhysicsSystem_536871807): void {.
       cdecl, importc: "JPH_PhysicsSystem_Destroy".}
 else:
   static :
     hint("Declaration of " & "physicsSystem_Destroy" &
         " already exists, not redeclaring")
-proc setPhysicsSettings*(system: ptr PhysicsSystem_536871735;
-                         settings: ptr PhysicsSettings_536871999): void {.cdecl,
+proc setPhysicsSettings*(system: ptr PhysicsSystem_536871807;
+                         settings: ptr PhysicsSettings_536872071): void {.cdecl,
     importc: "JPH_PhysicsSystem_SetPhysicsSettings".}
-proc getPhysicsSettings*(system: ptr PhysicsSystem_536871735;
-                         result: ptr PhysicsSettings_536871999): void {.cdecl,
+proc getPhysicsSettings*(system: ptr PhysicsSystem_536871807;
+                         result: ptr PhysicsSettings_536872071): void {.cdecl,
     importc: "JPH_PhysicsSystem_GetPhysicsSettings".}
-proc optimizeBroadPhase*(system: ptr PhysicsSystem_536871735): void {.cdecl,
+proc optimizeBroadPhase*(system: ptr PhysicsSystem_536871807): void {.cdecl,
     importc: "JPH_PhysicsSystem_OptimizeBroadPhase".}
-proc update*(system: ptr PhysicsSystem_536871735; deltaTime: cfloat;
-             collisionSteps: cint; jobSystem: ptr JobSystem_536871991): PhysicsUpdateError_536871480 {.
+proc update*(system: ptr PhysicsSystem_536871807; deltaTime: cfloat;
+             collisionSteps: cint; jobSystem: ptr JobSystem_536872063): PhysicsUpdateError_536871552 {.
     cdecl, importc: "JPH_PhysicsSystem_Update".}
-proc getBodyInterface*(system: ptr PhysicsSystem_536871735): ptr BodyInterface_536871825 {.
+proc getBodyInterface*(system: ptr PhysicsSystem_536871807): ptr BodyInterface_536871897 {.
     cdecl, importc: "JPH_PhysicsSystem_GetBodyInterface".}
-proc getBodyInterfaceNoLock*(system: ptr PhysicsSystem_536871735): ptr BodyInterface_536871825 {.
+proc getBodyInterfaceNoLock*(system: ptr PhysicsSystem_536871807): ptr BodyInterface_536871897 {.
     cdecl, importc: "JPH_PhysicsSystem_GetBodyInterfaceNoLock".}
-proc getBodyLockInterface*(system: ptr PhysicsSystem_536871735): ptr BodyLockInterface_536871827 {.
+proc getBodyLockInterface*(system: ptr PhysicsSystem_536871807): ptr BodyLockInterface_536871899 {.
     cdecl, importc: "JPH_PhysicsSystem_GetBodyLockInterface".}
-proc getBodyLockInterfaceNoLock*(system: ptr PhysicsSystem_536871735): ptr BodyLockInterface_536871827 {.
+proc getBodyLockInterfaceNoLock*(system: ptr PhysicsSystem_536871807): ptr BodyLockInterface_536871899 {.
     cdecl, importc: "JPH_PhysicsSystem_GetBodyLockInterfaceNoLock".}
-proc getBroadPhaseQuery*(system: ptr PhysicsSystem_536871735): ptr BroadPhaseQuery_536871829 {.
+proc getBroadPhaseQuery*(system: ptr PhysicsSystem_536871807): ptr BroadPhaseQuery_536871901 {.
     cdecl, importc: "JPH_PhysicsSystem_GetBroadPhaseQuery".}
-proc getNarrowPhaseQuery*(system: ptr PhysicsSystem_536871735): ptr NarrowPhaseQuery_536871831 {.
+proc getNarrowPhaseQuery*(system: ptr PhysicsSystem_536871807): ptr NarrowPhaseQuery_536871903 {.
     cdecl, importc: "JPH_PhysicsSystem_GetNarrowPhaseQuery".}
-proc getNarrowPhaseQueryNoLock*(system: ptr PhysicsSystem_536871735): ptr NarrowPhaseQuery_536871831 {.
+proc getNarrowPhaseQueryNoLock*(system: ptr PhysicsSystem_536871807): ptr NarrowPhaseQuery_536871903 {.
     cdecl, importc: "JPH_PhysicsSystem_GetNarrowPhaseQueryNoLock".}
-proc setContactListener*(system: ptr PhysicsSystem_536871735;
-                         listener: ptr ContactListener_536871837): void {.cdecl,
+proc setContactListener*(system: ptr PhysicsSystem_536871807;
+                         listener: ptr ContactListener_536871909): void {.cdecl,
     importc: "JPH_PhysicsSystem_SetContactListener".}
-proc setBodyActivationListener*(system: ptr PhysicsSystem_536871735;
-                                listener: ptr BodyActivationListener_536871851): void {.
+proc setBodyActivationListener*(system: ptr PhysicsSystem_536871807;
+                                listener: ptr BodyActivationListener_536871923): void {.
     cdecl, importc: "JPH_PhysicsSystem_SetBodyActivationListener".}
-proc setSimShapeFilter*(system: ptr PhysicsSystem_536871735;
-                        filter: ptr SimShapeFilter_536871733): void {.cdecl,
+proc setSimShapeFilter*(system: ptr PhysicsSystem_536871807;
+                        filter: ptr SimShapeFilter_536871805): void {.cdecl,
     importc: "JPH_PhysicsSystem_SetSimShapeFilter".}
-proc wereBodiesInContact*(system: ptr PhysicsSystem_536871735; body1: BodyID_536871464;
-                          body2: BodyID_536871464): bool {.cdecl,
+proc wereBodiesInContact*(system: ptr PhysicsSystem_536871807; body1: BodyID_536871536;
+                          body2: BodyID_536871536): bool {.cdecl,
     importc: "JPH_PhysicsSystem_WereBodiesInContact".}
-proc getNumBodies*(system: ptr PhysicsSystem_536871735): uint32 {.cdecl,
+proc getNumBodies*(system: ptr PhysicsSystem_536871807): uint32 {.cdecl,
     importc: "JPH_PhysicsSystem_GetNumBodies".}
-proc getNumActiveBodies*(system: ptr PhysicsSystem_536871735; type_arg: BodyType_536871484): uint32 {.
+proc getNumActiveBodies*(system: ptr PhysicsSystem_536871807; type_arg: BodyType_536871556): uint32 {.
     cdecl, importc: "JPH_PhysicsSystem_GetNumActiveBodies".}
-proc getMaxBodies*(system: ptr PhysicsSystem_536871735): uint32 {.cdecl,
+proc getMaxBodies*(system: ptr PhysicsSystem_536871807): uint32 {.cdecl,
     importc: "JPH_PhysicsSystem_GetMaxBodies".}
-proc getNumConstraints*(system: ptr PhysicsSystem_536871735): uint32 {.cdecl,
+proc getNumConstraints*(system: ptr PhysicsSystem_536871807): uint32 {.cdecl,
     importc: "JPH_PhysicsSystem_GetNumConstraints".}
-proc setGravity*(system: ptr PhysicsSystem_536871735; value: ptr Vec3_536871595): void {.
+proc setGravity*(system: ptr PhysicsSystem_536871807; value: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_PhysicsSystem_SetGravity".}
-proc getGravity*(system: ptr PhysicsSystem_536871735; result: ptr Vec3_536871595): void {.
+proc getGravity*(system: ptr PhysicsSystem_536871807; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_PhysicsSystem_GetGravity".}
-proc addConstraint*(system: ptr PhysicsSystem_536871735;
-                    constraint: ptr Constraint_536871859): void {.cdecl,
+proc addConstraint*(system: ptr PhysicsSystem_536871807;
+                    constraint: ptr Constraint_536871931): void {.cdecl,
     importc: "JPH_PhysicsSystem_AddConstraint".}
-proc removeConstraint*(system: ptr PhysicsSystem_536871735;
-                       constraint: ptr Constraint_536871859): void {.cdecl,
+proc removeConstraint*(system: ptr PhysicsSystem_536871807;
+                       constraint: ptr Constraint_536871931): void {.cdecl,
     importc: "JPH_PhysicsSystem_RemoveConstraint".}
-proc addConstraints*(system: ptr PhysicsSystem_536871735;
-                     constraints: ptr ptr Constraint_536871859; count: uint32): void {.
+proc addConstraints*(system: ptr PhysicsSystem_536871807;
+                     constraints: ptr ptr Constraint_536871931; count: uint32): void {.
     cdecl, importc: "JPH_PhysicsSystem_AddConstraints".}
-proc removeConstraints*(system: ptr PhysicsSystem_536871735;
-                        constraints: ptr ptr Constraint_536871859; count: uint32): void {.
+proc removeConstraints*(system: ptr PhysicsSystem_536871807;
+                        constraints: ptr ptr Constraint_536871931; count: uint32): void {.
     cdecl, importc: "JPH_PhysicsSystem_RemoveConstraints".}
-proc getBodies*(system: ptr PhysicsSystem_536871735; ids: ptr BodyID_536871464;
+proc getBodies*(system: ptr PhysicsSystem_536871807; ids: ptr BodyID_536871536;
                 count: uint32): void {.cdecl,
                                        importc: "JPH_PhysicsSystem_GetBodies".}
-proc getConstraints*(system: ptr PhysicsSystem_536871735;
-                     constraints: ptr ptr Constraint_536871859; count: uint32): void {.
+proc getConstraints*(system: ptr PhysicsSystem_536871807;
+                     constraints: ptr ptr Constraint_536871931; count: uint32): void {.
     cdecl, importc: "JPH_PhysicsSystem_GetConstraints".}
-proc drawBodies*(system: ptr PhysicsSystem_536871735;
-                 settings: ptr DrawSettings_536871689;
-                 renderer: ptr DebugRenderer_536871857;
-                 bodyFilter: ptr BodyDrawFilter_536871853): void {.cdecl,
+proc drawBodies*(system: ptr PhysicsSystem_536871807;
+                 settings: ptr DrawSettings_536871761;
+                 renderer: ptr DebugRenderer_536871929;
+                 bodyFilter: ptr BodyDrawFilter_536871925): void {.cdecl,
     importc: "JPH_PhysicsSystem_DrawBodies".}
-proc drawConstraints*(system: ptr PhysicsSystem_536871735;
-                      renderer: ptr DebugRenderer_536871857): void {.cdecl,
+proc drawConstraints*(system: ptr PhysicsSystem_536871807;
+                      renderer: ptr DebugRenderer_536871929): void {.cdecl,
     importc: "JPH_PhysicsSystem_DrawConstraints".}
-proc drawConstraintLimits*(system: ptr PhysicsSystem_536871735;
-                           renderer: ptr DebugRenderer_536871857): void {.cdecl,
+proc drawConstraintLimits*(system: ptr PhysicsSystem_536871807;
+                           renderer: ptr DebugRenderer_536871929): void {.cdecl,
     importc: "JPH_PhysicsSystem_DrawConstraintLimits".}
-proc drawConstraintReferenceFrame*(system: ptr PhysicsSystem_536871735;
-                                   renderer: ptr DebugRenderer_536871857): void {.
+proc drawConstraintReferenceFrame*(system: ptr PhysicsSystem_536871807;
+                                   renderer: ptr DebugRenderer_536871929): void {.
     cdecl, importc: "JPH_PhysicsSystem_DrawConstraintReferenceFrame".}
-proc fromTo*(from_arg: ptr Vec3_536871595; to: ptr Vec3_536871595;
-             quat: ptr Quat_536871603): void {.cdecl,
+proc fromTo*(from_arg: ptr Vec3_536871667; to: ptr Vec3_536871667;
+             quat: ptr Quat_536871675): void {.cdecl,
     importc: "JPH_Quaternion_FromTo".}
-proc getAxisAngle*(quat: ptr Quat_536871603; outAxis: ptr Vec3_536871595;
+proc getAxisAngle*(quat: ptr Quat_536871675; outAxis: ptr Vec3_536871667;
                    outAngle: ptr cfloat): void {.cdecl,
     importc: "JPH_Quat_GetAxisAngle".}
-proc getEulerAngles*(quat: ptr Quat_536871603; result: ptr Vec3_536871595): void {.
+proc getEulerAngles*(quat: ptr Quat_536871675; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Quat_GetEulerAngles".}
-proc rotateAxisX*(quat: ptr Quat_536871603; result: ptr Vec3_536871595): void {.
+proc rotateAxisX*(quat: ptr Quat_536871675; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Quat_RotateAxisX".}
-proc rotateAxisY*(quat: ptr Quat_536871603; result: ptr Vec3_536871595): void {.
+proc rotateAxisY*(quat: ptr Quat_536871675; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Quat_RotateAxisY".}
-proc rotateAxisZ*(quat: ptr Quat_536871603; result: ptr Vec3_536871595): void {.
+proc rotateAxisZ*(quat: ptr Quat_536871675; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Quat_RotateAxisZ".}
 when not declared(inversed):
-  proc inversed*(quat: ptr Quat_536871603; result: ptr Quat_536871603): void {.
+  proc inversed*(quat: ptr Quat_536871675; result: ptr Quat_536871675): void {.
       cdecl, importc: "JPH_Quat_Inversed".}
 else:
   static :
     hint("Declaration of " & "inversed" & " already exists, not redeclaring")
-proc getPerpendicular*(quat: ptr Quat_536871603; result: ptr Quat_536871603): void {.
+proc getPerpendicular*(quat: ptr Quat_536871675; result: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_Quat_GetPerpendicular".}
-proc getRotationAngle*(quat: ptr Quat_536871603; axis: ptr Vec3_536871595): cfloat {.
+proc getRotationAngle*(quat: ptr Quat_536871675; axis: ptr Vec3_536871667): cfloat {.
     cdecl, importc: "JPH_Quat_GetRotationAngle".}
-proc fromEulerAngles*(angles: ptr Vec3_536871595; result: ptr Quat_536871603): void {.
+proc fromEulerAngles*(angles: ptr Vec3_536871667; result: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_Quat_FromEulerAngles".}
-proc add*(q1: ptr Quat_536871603; q2: ptr Quat_536871603; result: ptr Quat_536871603): void {.
+proc add*(q1: ptr Quat_536871675; q2: ptr Quat_536871675; result: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_Quat_Add".}
-proc subtract*(q1: ptr Quat_536871603; q2: ptr Quat_536871603; result: ptr Quat_536871603): void {.
+proc subtract*(q1: ptr Quat_536871675; q2: ptr Quat_536871675; result: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_Quat_Subtract".}
-proc multiply*(q1: ptr Quat_536871603; q2: ptr Quat_536871603; result: ptr Quat_536871603): void {.
+proc multiply*(q1: ptr Quat_536871675; q2: ptr Quat_536871675; result: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_Quat_Multiply".}
-proc multiplyScalar*(q: ptr Quat_536871603; scalar: cfloat; result: ptr Quat_536871603): void {.
+proc multiplyScalar*(q: ptr Quat_536871675; scalar: cfloat; result: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_Quat_MultiplyScalar".}
-proc divide*(q1: ptr Quat_536871603; q2: ptr Quat_536871603; result: ptr Quat_536871603): void {.
+proc divide*(q1: ptr Quat_536871675; q2: ptr Quat_536871675; result: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_Quat_Divide".}
-proc dot*(q1: ptr Quat_536871603; q2: ptr Quat_536871603; result: ptr cfloat): void {.
+proc dot*(q1: ptr Quat_536871675; q2: ptr Quat_536871675; result: ptr cfloat): void {.
     cdecl, importc: "JPH_Quat_Dot".}
-proc conjugated*(quat: ptr Quat_536871603; result: ptr Quat_536871603): void {.
+proc conjugated*(quat: ptr Quat_536871675; result: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_Quat_Conjugated".}
-proc getTwist*(quat: ptr Quat_536871603; axis: ptr Vec3_536871595;
-               result: ptr Quat_536871603): void {.cdecl,
+proc getTwist*(quat: ptr Quat_536871675; axis: ptr Vec3_536871667;
+               result: ptr Quat_536871675): void {.cdecl,
     importc: "JPH_Quat_GetTwist".}
-proc getSwingTwist*(quat: ptr Quat_536871603; outSwing: ptr Quat_536871603;
-                    outTwist: ptr Quat_536871603): void {.cdecl,
+proc getSwingTwist*(quat: ptr Quat_536871675; outSwing: ptr Quat_536871675;
+                    outTwist: ptr Quat_536871675): void {.cdecl,
     importc: "JPH_Quat_GetSwingTwist".}
-proc lERP*(from_arg: ptr Quat_536871603; to: ptr Quat_536871603;
-           fraction: cfloat; result: ptr Quat_536871603): void {.cdecl,
+proc lERP*(from_arg: ptr Quat_536871675; to: ptr Quat_536871675;
+           fraction: cfloat; result: ptr Quat_536871675): void {.cdecl,
     importc: "JPH_Quat_LERP".}
-proc sLERP*(from_arg: ptr Quat_536871603; to: ptr Quat_536871603;
-            fraction: cfloat; result: ptr Quat_536871603): void {.cdecl,
+proc sLERP*(from_arg: ptr Quat_536871675; to: ptr Quat_536871675;
+            fraction: cfloat; result: ptr Quat_536871675): void {.cdecl,
     importc: "JPH_Quat_SLERP".}
-proc rotate*(quat: ptr Quat_536871603; vec: ptr Vec3_536871595; result: ptr Vec3_536871595): void {.
+proc rotate*(quat: ptr Quat_536871675; vec: ptr Vec3_536871667; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Quat_Rotate".}
-proc inverseRotate*(quat: ptr Quat_536871603; vec: ptr Vec3_536871595;
-                    result: ptr Vec3_536871595): void {.cdecl,
+proc inverseRotate*(quat: ptr Quat_536871675; vec: ptr Vec3_536871667;
+                    result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_Quat_InverseRotate".}
-proc isClose*(v1: ptr Vec3_536871595; v2: ptr Vec3_536871595; maxDistSq: cfloat): bool {.
+proc isClose*(v1: ptr Vec3_536871667; v2: ptr Vec3_536871667; maxDistSq: cfloat): bool {.
     cdecl, importc: "JPH_Vec3_IsClose".}
-proc isNearZero*(v: ptr Vec3_536871595; maxDistSq: cfloat): bool {.cdecl,
+proc isNearZero*(v: ptr Vec3_536871667; maxDistSq: cfloat): bool {.cdecl,
     importc: "JPH_Vec3_IsNearZero".}
-proc isNormalized*(v: ptr Vec3_536871595; tolerance: cfloat): bool {.cdecl,
+proc isNormalized*(v: ptr Vec3_536871667; tolerance: cfloat): bool {.cdecl,
     importc: "JPH_Vec3_IsNormalized".}
-proc isNaN*(v: ptr Vec3_536871595): bool {.cdecl, importc: "JPH_Vec3_IsNaN".}
-proc negate*(v: ptr Vec3_536871595; result: ptr Vec3_536871595): void {.cdecl,
+proc isNaN*(v: ptr Vec3_536871667): bool {.cdecl, importc: "JPH_Vec3_IsNaN".}
+proc negate*(v: ptr Vec3_536871667; result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_Vec3_Negate".}
-proc normalized*(v: ptr Vec3_536871595; result: ptr Vec3_536871595): void {.
+proc normalized*(v: ptr Vec3_536871667; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Vec3_Normalized".}
-proc cross*(v1: ptr Vec3_536871595; v2: ptr Vec3_536871595; result: ptr Vec3_536871595): void {.
+proc cross*(v1: ptr Vec3_536871667; v2: ptr Vec3_536871667; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Vec3_Cross".}
-proc abs*(v: ptr Vec3_536871595; result: ptr Vec3_536871595): void {.cdecl,
+proc abs*(v: ptr Vec3_536871667; result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_Vec3_Abs".}
-proc length*(v: ptr Vec3_536871595): cfloat {.cdecl, importc: "JPH_Vec3_Length".}
-proc lengthSquared*(v: ptr Vec3_536871595): cfloat {.cdecl,
+proc length*(v: ptr Vec3_536871667): cfloat {.cdecl, importc: "JPH_Vec3_Length".}
+proc lengthSquared*(v: ptr Vec3_536871667): cfloat {.cdecl,
     importc: "JPH_Vec3_LengthSquared".}
-proc dotProduct*(v1: ptr Vec3_536871595; v2: ptr Vec3_536871595;
+proc dotProduct*(v1: ptr Vec3_536871667; v2: ptr Vec3_536871667;
                  result: ptr cfloat): void {.cdecl,
     importc: "JPH_Vec3_DotProduct".}
-proc normalize*(v: ptr Vec3_536871595; result: ptr Vec3_536871595): void {.
+proc normalize*(v: ptr Vec3_536871667; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Vec3_Normalize".}
-proc add*(v1: ptr Vec3_536871595; v2: ptr Vec3_536871595; result: ptr Vec3_536871595): void {.
+proc add*(v1: ptr Vec3_536871667; v2: ptr Vec3_536871667; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Vec3_Add".}
-proc subtract*(v1: ptr Vec3_536871595; v2: ptr Vec3_536871595; result: ptr Vec3_536871595): void {.
+proc subtract*(v1: ptr Vec3_536871667; v2: ptr Vec3_536871667; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Vec3_Subtract".}
-proc multiply*(v1: ptr Vec3_536871595; v2: ptr Vec3_536871595; result: ptr Vec3_536871595): void {.
+proc multiply*(v1: ptr Vec3_536871667; v2: ptr Vec3_536871667; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Vec3_Multiply".}
-proc multiplyScalar*(v: ptr Vec3_536871595; scalar: cfloat; result: ptr Vec3_536871595): void {.
+proc multiplyScalar*(v: ptr Vec3_536871667; scalar: cfloat; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Vec3_MultiplyScalar".}
-proc divide*(v1: ptr Vec3_536871595; v2: ptr Vec3_536871595; result: ptr Vec3_536871595): void {.
+proc divide*(v1: ptr Vec3_536871667; v2: ptr Vec3_536871667; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Vec3_Divide".}
-proc divideScalar*(v: ptr Vec3_536871595; scalar: cfloat; result: ptr Vec3_536871595): void {.
+proc divideScalar*(v: ptr Vec3_536871667; scalar: cfloat; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Vec3_DivideScalar".}
-proc add*(m1: ptr Matrix4x4_536871611; m2: ptr Matrix4x4_536871611;
-          result: ptr Matrix4x4_536871611): void {.cdecl,
+proc add*(m1: ptr Matrix4x4_536871683; m2: ptr Matrix4x4_536871683;
+          result: ptr Matrix4x4_536871683): void {.cdecl,
     importc: "JPH_Matrix4x4_Add".}
-proc subtract*(m1: ptr Matrix4x4_536871611; m2: ptr Matrix4x4_536871611;
-               result: ptr Matrix4x4_536871611): void {.cdecl,
+proc subtract*(m1: ptr Matrix4x4_536871683; m2: ptr Matrix4x4_536871683;
+               result: ptr Matrix4x4_536871683): void {.cdecl,
     importc: "JPH_Matrix4x4_Subtract".}
-proc multiply*(m1: ptr Matrix4x4_536871611; m2: ptr Matrix4x4_536871611;
-               result: ptr Matrix4x4_536871611): void {.cdecl,
+proc multiply*(m1: ptr Matrix4x4_536871683; m2: ptr Matrix4x4_536871683;
+               result: ptr Matrix4x4_536871683): void {.cdecl,
     importc: "JPH_Matrix4x4_Multiply".}
-proc multiplyScalar*(m: ptr Matrix4x4_536871611; scalar: cfloat;
-                     result: ptr Matrix4x4_536871611): void {.cdecl,
+proc multiplyScalar*(m: ptr Matrix4x4_536871683; scalar: cfloat;
+                     result: ptr Matrix4x4_536871683): void {.cdecl,
     importc: "JPH_Matrix4x4_MultiplyScalar".}
 when not declared(zero):
-  proc zero*(result: ptr Matrix4x4_536871611): void {.cdecl,
+  proc zero*(result: ptr Matrix4x4_536871683): void {.cdecl,
       importc: "JPH_Matrix4x4_Zero".}
 else:
   static :
     hint("Declaration of " & "zero" & " already exists, not redeclaring")
 when not declared(identity):
-  proc identity*(result: ptr Matrix4x4_536871611): void {.cdecl,
+  proc identity*(result: ptr Matrix4x4_536871683): void {.cdecl,
       importc: "JPH_Matrix4x4_Identity".}
 else:
   static :
     hint("Declaration of " & "identity" & " already exists, not redeclaring")
 when not declared(rotation):
-  proc rotation*(result: ptr Matrix4x4_536871611; rotation: ptr Quat_536871603): void {.
+  proc rotation*(result: ptr Matrix4x4_536871683; rotation: ptr Quat_536871675): void {.
       cdecl, importc: "JPH_Matrix4x4_Rotation".}
 else:
   static :
     hint("Declaration of " & "rotation" & " already exists, not redeclaring")
 when not declared(translation):
-  proc translation*(result: ptr Matrix4x4_536871611; translation: ptr Vec3_536871595): void {.
+  proc translation*(result: ptr Matrix4x4_536871683; translation: ptr Vec3_536871667): void {.
       cdecl, importc: "JPH_Matrix4x4_Translation".}
 else:
   static :
     hint("Declaration of " & "translation" & " already exists, not redeclaring")
 when not declared(rotationTranslation):
-  proc rotationTranslation*(result: ptr Matrix4x4_536871611; rotation: ptr Quat_536871603;
-                            translation: ptr Vec3_536871595): void {.cdecl,
+  proc rotationTranslation*(result: ptr Matrix4x4_536871683; rotation: ptr Quat_536871675;
+                            translation: ptr Vec3_536871667): void {.cdecl,
       importc: "JPH_Matrix4x4_RotationTranslation".}
 else:
   static :
     hint("Declaration of " & "rotationTranslation" &
         " already exists, not redeclaring")
 when not declared(inverseRotationTranslation):
-  proc inverseRotationTranslation*(result: ptr Matrix4x4_536871611;
-                                   rotation: ptr Quat_536871603;
-                                   translation: ptr Vec3_536871595): void {.
+  proc inverseRotationTranslation*(result: ptr Matrix4x4_536871683;
+                                   rotation: ptr Quat_536871675;
+                                   translation: ptr Vec3_536871667): void {.
       cdecl, importc: "JPH_Matrix4x4_InverseRotationTranslation".}
 else:
   static :
     hint("Declaration of " & "inverseRotationTranslation" &
         " already exists, not redeclaring")
 when not declared(scale):
-  proc scale*(result: ptr Matrix4x4_536871611; scale: ptr Vec3_536871595): void {.
+  proc scale*(result: ptr Matrix4x4_536871683; scale: ptr Vec3_536871667): void {.
       cdecl, importc: "JPH_Matrix4x4_Scale".}
 else:
   static :
     hint("Declaration of " & "scale" & " already exists, not redeclaring")
 when not declared(inversed_proc):
-  proc inversed_proc*(m: ptr Matrix4x4_536871611; result: ptr Matrix4x4_536871611): void {.
+  proc inversed_proc*(m: ptr Matrix4x4_536871683; result: ptr Matrix4x4_536871683): void {.
       cdecl, importc: "JPH_Matrix4x4_Inversed".}
 else:
   static :
     hint("Declaration of " & "inversed_proc" &
         " already exists, not redeclaring")
-proc transposed*(m: ptr Matrix4x4_536871611; result: ptr Matrix4x4_536871611): void {.
+proc transposed*(m: ptr Matrix4x4_536871683; result: ptr Matrix4x4_536871683): void {.
     cdecl, importc: "JPH_Matrix4x4_Transposed".}
 when not declared(zero_proc):
-  proc zero_proc*(result: ptr RMatrix4x4_536871615): void {.cdecl,
+  proc zero_proc*(result: ptr RMatrix4x4_536871687): void {.cdecl,
       importc: "JPH_RMatrix4x4_Zero".}
 else:
   static :
     hint("Declaration of " & "zero_proc" & " already exists, not redeclaring")
 when not declared(identity_proc):
-  proc identity_proc*(result: ptr RMatrix4x4_536871615): void {.cdecl,
+  proc identity_proc*(result: ptr RMatrix4x4_536871687): void {.cdecl,
       importc: "JPH_RMatrix4x4_Identity".}
 else:
   static :
     hint("Declaration of " & "identity_proc" &
         " already exists, not redeclaring")
 when not declared(rotation):
-  proc rotation*(result: ptr RMatrix4x4_536871615; rotation: ptr Quat_536871603): void {.
+  proc rotation*(result: ptr RMatrix4x4_536871687; rotation: ptr Quat_536871675): void {.
       cdecl, importc: "JPH_RMatrix4x4_Rotation".}
 else:
   static :
     hint("Declaration of " & "rotation" & " already exists, not redeclaring")
 when not declared(translation):
-  proc translation*(result: ptr RMatrix4x4_536871615; translation: ptr RVec3_536871613): void {.
+  proc translation*(result: ptr RMatrix4x4_536871687; translation: ptr RVec3_536871685): void {.
       cdecl, importc: "JPH_RMatrix4x4_Translation".}
 else:
   static :
     hint("Declaration of " & "translation" & " already exists, not redeclaring")
 when not declared(rotationTranslation_proc):
-  proc rotationTranslation_proc*(result: ptr RMatrix4x4_536871615;
-                                 rotation: ptr Quat_536871603;
-                                 translation: ptr RVec3_536871613): void {.
+  proc rotationTranslation_proc*(result: ptr RMatrix4x4_536871687;
+                                 rotation: ptr Quat_536871675;
+                                 translation: ptr RVec3_536871685): void {.
       cdecl, importc: "JPH_RMatrix4x4_RotationTranslation".}
 else:
   static :
     hint("Declaration of " & "rotationTranslation_proc" &
         " already exists, not redeclaring")
 when not declared(inverseRotationTranslation_proc):
-  proc inverseRotationTranslation_proc*(result: ptr RMatrix4x4_536871615;
-                                        rotation: ptr Quat_536871603;
-                                        translation: ptr RVec3_536871613): void {.
+  proc inverseRotationTranslation_proc*(result: ptr RMatrix4x4_536871687;
+                                        rotation: ptr Quat_536871675;
+                                        translation: ptr RVec3_536871685): void {.
       cdecl, importc: "JPH_RMatrix4x4_InverseRotationTranslation".}
 else:
   static :
     hint("Declaration of " & "inverseRotationTranslation_proc" &
         " already exists, not redeclaring")
 when not declared(scale):
-  proc scale*(result: ptr RMatrix4x4_536871615; scale: ptr Vec3_536871595): void {.
+  proc scale*(result: ptr RMatrix4x4_536871687; scale: ptr Vec3_536871667): void {.
       cdecl, importc: "JPH_RMatrix4x4_Scale".}
 else:
   static :
     hint("Declaration of " & "scale" & " already exists, not redeclaring")
 when not declared(inversed_proc_325EC3AA):
-  proc inversed_proc_325EC3AA*(m: ptr RMatrix4x4_536871615;
-                               result: ptr RMatrix4x4_536871615): void {.cdecl,
+  proc inversed_proc_325EC3AA*(m: ptr RMatrix4x4_536871687;
+                               result: ptr RMatrix4x4_536871687): void {.cdecl,
       importc: "JPH_RMatrix4x4_Inversed".}
 else:
   static :
     hint("Declaration of " & "inversed_proc_325EC3AA" &
         " already exists, not redeclaring")
-proc getAxisX*(matrix: ptr Matrix4x4_536871611; result: ptr Vec3_536871595): void {.
+proc getAxisX*(matrix: ptr Matrix4x4_536871683; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Matrix4x4_GetAxisX".}
-proc getAxisY*(matrix: ptr Matrix4x4_536871611; result: ptr Vec3_536871595): void {.
+proc getAxisY*(matrix: ptr Matrix4x4_536871683; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Matrix4x4_GetAxisY".}
-proc getAxisZ*(matrix: ptr Matrix4x4_536871611; result: ptr Vec3_536871595): void {.
+proc getAxisZ*(matrix: ptr Matrix4x4_536871683; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Matrix4x4_GetAxisZ".}
-proc getTranslation*(matrix: ptr Matrix4x4_536871611; result: ptr Vec3_536871595): void {.
+proc getTranslation*(matrix: ptr Matrix4x4_536871683; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Matrix4x4_GetTranslation".}
-proc getQuaternion*(matrix: ptr Matrix4x4_536871611; result: ptr Quat_536871603): void {.
+proc getQuaternion*(matrix: ptr Matrix4x4_536871683; result: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_Matrix4x4_GetQuaternion".}
-when not declared(physicsMaterial_Create):
-  proc physicsMaterial_Create*(name: cstring; color: uint32): ptr PhysicsMaterial_536871737 {.
-      cdecl, importc: "JPH_PhysicsMaterial_Create".}
-else:
-  static :
-    hint("Declaration of " & "physicsMaterial_Create" &
-        " already exists, not redeclaring")
+proc initPhysicsMaterial*(name: cstring; color: uint32): ptr PhysicsMaterial_536871809 {.
+    cdecl, importc: "JPH_PhysicsMaterial_Create".}
 when not declared(physicsMaterial_Destroy):
-  proc physicsMaterial_Destroy*(material: ptr PhysicsMaterial_536871737): void {.
+  proc physicsMaterial_Destroy*(material: ptr PhysicsMaterial_536871809): void {.
       cdecl, importc: "JPH_PhysicsMaterial_Destroy".}
 else:
   static :
     hint("Declaration of " & "physicsMaterial_Destroy" &
         " already exists, not redeclaring")
-proc getDebugName*(material: ptr PhysicsMaterial_536871737): cstring {.cdecl,
+proc getDebugName*(material: ptr PhysicsMaterial_536871809): cstring {.cdecl,
     importc: "JPH_PhysicsMaterial_GetDebugName".}
-proc getDebugColor*(material: ptr PhysicsMaterial_536871737): uint32 {.cdecl,
+proc getDebugColor*(material: ptr PhysicsMaterial_536871809): uint32 {.cdecl,
     importc: "JPH_PhysicsMaterial_GetDebugColor".}
 when not declared(shapeSettings_Destroy):
-  proc shapeSettings_Destroy*(settings: ptr ShapeSettings_536871739): void {.
+  proc shapeSettings_Destroy*(settings: ptr ShapeSettings_536871811): void {.
       cdecl, importc: "JPH_ShapeSettings_Destroy".}
 else:
   static :
     hint("Declaration of " & "shapeSettings_Destroy" &
         " already exists, not redeclaring")
-proc getUserData*(settings: ptr ShapeSettings_536871739): uint64 {.cdecl,
+proc getUserData*(settings: ptr ShapeSettings_536871811): uint64 {.cdecl,
     importc: "JPH_ShapeSettings_GetUserData".}
-proc setUserData*(settings: ptr ShapeSettings_536871739; userData: uint64): void {.
+proc setUserData*(settings: ptr ShapeSettings_536871811; userData: uint64): void {.
     cdecl, importc: "JPH_ShapeSettings_SetUserData".}
 when not declared(shape_Destroy):
-  proc shape_Destroy*(shape: ptr Shape_536871779): void {.cdecl,
+  proc shape_Destroy*(shape: ptr Shape_536871851): void {.cdecl,
       importc: "JPH_Shape_Destroy".}
 else:
   static :
     hint("Declaration of " & "shape_Destroy" &
         " already exists, not redeclaring")
-proc getType*(shape: ptr Shape_536871779): ShapeType_536871500 {.cdecl,
+proc getType*(shape: ptr Shape_536871851): ShapeType_536871572 {.cdecl,
     importc: "JPH_Shape_GetType".}
-proc getSubType*(shape: ptr Shape_536871779): ShapeSubType_536871504 {.cdecl,
+proc getSubType*(shape: ptr Shape_536871851): ShapeSubType_536871576 {.cdecl,
     importc: "JPH_Shape_GetSubType".}
-proc getUserData*(shape: ptr Shape_536871779): uint64 {.cdecl,
+proc getUserData*(shape: ptr Shape_536871851): uint64 {.cdecl,
     importc: "JPH_Shape_GetUserData".}
-proc setUserData*(shape: ptr Shape_536871779; userData: uint64): void {.cdecl,
+proc setUserData*(shape: ptr Shape_536871851; userData: uint64): void {.cdecl,
     importc: "JPH_Shape_SetUserData".}
-proc mustBeStatic*(shape: ptr Shape_536871779): bool {.cdecl,
+proc mustBeStatic*(shape: ptr Shape_536871851): bool {.cdecl,
     importc: "JPH_Shape_MustBeStatic".}
-proc getCenterOfMass*(shape: ptr Shape_536871779; result: ptr Vec3_536871595): void {.
+proc getCenterOfMass*(shape: ptr Shape_536871851; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Shape_GetCenterOfMass".}
-proc getLocalBounds*(shape: ptr Shape_536871779; result: ptr AABox_536871621): void {.
+proc getLocalBounds*(shape: ptr Shape_536871851; result: ptr AABox_536871693): void {.
     cdecl, importc: "JPH_Shape_GetLocalBounds".}
-proc getSubShapeIDBitsRecursive*(shape: ptr Shape_536871779): uint32 {.cdecl,
+proc getSubShapeIDBitsRecursive*(shape: ptr Shape_536871851): uint32 {.cdecl,
     importc: "JPH_Shape_GetSubShapeIDBitsRecursive".}
-proc getWorldSpaceBounds*(shape: ptr Shape_536871779;
-                          centerOfMassTransform: ptr RMatrix4x4_536871615;
-                          scale: ptr Vec3_536871595; result: ptr AABox_536871621): void {.
+proc getWorldSpaceBounds*(shape: ptr Shape_536871851;
+                          centerOfMassTransform: ptr RMatrix4x4_536871687;
+                          scale: ptr Vec3_536871667; result: ptr AABox_536871693): void {.
     cdecl, importc: "JPH_Shape_GetWorldSpaceBounds".}
-proc getInnerRadius*(shape: ptr Shape_536871779): cfloat {.cdecl,
+proc getInnerRadius*(shape: ptr Shape_536871851): cfloat {.cdecl,
     importc: "JPH_Shape_GetInnerRadius".}
-proc getMassProperties*(shape: ptr Shape_536871779; result: ptr MassProperties_536871637): void {.
+proc getMassProperties*(shape: ptr Shape_536871851; result: ptr MassProperties_536871709): void {.
     cdecl, importc: "JPH_Shape_GetMassProperties".}
-proc getLeafShape*(shape: ptr Shape_536871779; subShapeID: SubShapeID_536871466;
-                   remainder: ptr SubShapeID_536871466): ptr Shape_536871779 {.
+proc getLeafShape*(shape: ptr Shape_536871851; subShapeID: SubShapeID_536871538;
+                   remainder: ptr SubShapeID_536871538): ptr Shape_536871851 {.
     cdecl, importc: "JPH_Shape_GetLeafShape".}
-proc getMaterial*(shape: ptr Shape_536871779; subShapeID: SubShapeID_536871466): ptr PhysicsMaterial_536871737 {.
+proc getMaterial*(shape: ptr Shape_536871851; subShapeID: SubShapeID_536871538): ptr PhysicsMaterial_536871809 {.
     cdecl, importc: "JPH_Shape_GetMaterial".}
-proc getSurfaceNormal*(shape: ptr Shape_536871779; subShapeID: SubShapeID_536871466;
-                       localPosition: ptr Vec3_536871595; normal: ptr Vec3_536871595): void {.
+proc getSurfaceNormal*(shape: ptr Shape_536871851; subShapeID: SubShapeID_536871538;
+                       localPosition: ptr Vec3_536871667; normal: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Shape_GetSurfaceNormal".}
-proc getSupportingFace*(shape: ptr Shape_536871779; subShapeID: SubShapeID_536871466;
-                        direction: ptr Vec3_536871595; scale: ptr Vec3_536871595;
-                        centerOfMassTransform: ptr Matrix4x4_536871611;
-                        outVertices: ptr SupportingFace_536871693): void {.
+proc getSupportingFace*(shape: ptr Shape_536871851; subShapeID: SubShapeID_536871538;
+                        direction: ptr Vec3_536871667; scale: ptr Vec3_536871667;
+                        centerOfMassTransform: ptr Matrix4x4_536871683;
+                        outVertices: ptr SupportingFace_536871765): void {.
     cdecl, importc: "JPH_Shape_GetSupportingFace".}
-proc getVolume*(shape: ptr Shape_536871779): cfloat {.cdecl,
+proc getVolume*(shape: ptr Shape_536871851): cfloat {.cdecl,
     importc: "JPH_Shape_GetVolume".}
-proc isValidScale*(shape: ptr Shape_536871779; scale: ptr Vec3_536871595): bool {.
+proc isValidScale*(shape: ptr Shape_536871851; scale: ptr Vec3_536871667): bool {.
     cdecl, importc: "JPH_Shape_IsValidScale".}
-proc makeScaleValid*(shape: ptr Shape_536871779; scale: ptr Vec3_536871595;
-                     result: ptr Vec3_536871595): void {.cdecl,
+proc makeScaleValid*(shape: ptr Shape_536871851; scale: ptr Vec3_536871667;
+                     result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_Shape_MakeScaleValid".}
-proc scaleShape*(shape: ptr Shape_536871779; scale: ptr Vec3_536871595): ptr Shape_536871779 {.
+proc scaleShape*(shape: ptr Shape_536871851; scale: ptr Vec3_536871667): ptr Shape_536871851 {.
     cdecl, importc: "JPH_Shape_ScaleShape".}
-proc castRay*(shape: ptr Shape_536871779; origin: ptr Vec3_536871595;
-              direction: ptr Vec3_536871595; hit: ptr RayCastResult_536871673): bool {.
+proc castRay*(shape: ptr Shape_536871851; origin: ptr Vec3_536871667;
+              direction: ptr Vec3_536871667; hit: ptr RayCastResult_536871745): bool {.
     cdecl, importc: "JPH_Shape_CastRay".}
-proc castRay2*(shape: ptr Shape_536871779; origin: ptr Vec3_536871595;
-               direction: ptr Vec3_536871595;
-               rayCastSettings: ptr RayCastSettings_536871653;
-               collectorType: CollisionCollectorType_536871559;
-               callback: CastRayResultCallback_536871695; userData: pointer;
-               shapeFilter: ptr ShapeFilter_536871731): bool {.cdecl,
+proc castRay2*(shape: ptr Shape_536871851; origin: ptr Vec3_536871667;
+               direction: ptr Vec3_536871667;
+               rayCastSettings: ptr RayCastSettings_536871725;
+               collectorType: CollisionCollectorType_536871631;
+               callback: CastRayResultCallback_536871767; userData: pointer;
+               shapeFilter: ptr ShapeFilter_536871803): bool {.cdecl,
     importc: "JPH_Shape_CastRay2".}
-proc collidePoint*(shape: ptr Shape_536871779; point: ptr Vec3_536871595;
-                   shapeFilter: ptr ShapeFilter_536871731): bool {.cdecl,
+proc collidePoint*(shape: ptr Shape_536871851; point: ptr Vec3_536871667;
+                   shapeFilter: ptr ShapeFilter_536871803): bool {.cdecl,
     importc: "JPH_Shape_CollidePoint".}
-proc collidePoint2*(shape: ptr Shape_536871779; point: ptr Vec3_536871595;
-                    collectorType: CollisionCollectorType_536871559;
-                    callback: CollidePointResultCallback_536871701;
-                    userData: pointer; shapeFilter: ptr ShapeFilter_536871731): bool {.
+proc collidePoint2*(shape: ptr Shape_536871851; point: ptr Vec3_536871667;
+                    collectorType: CollisionCollectorType_536871631;
+                    callback: CollidePointResultCallback_536871773;
+                    userData: pointer; shapeFilter: ptr ShapeFilter_536871803): bool {.
     cdecl, importc: "JPH_Shape_CollidePoint2".}
-proc getDensity*(shape: ptr ConvexShapeSettings_536871741): cfloat {.cdecl,
+proc getDensity*(shape: ptr ConvexShapeSettings_536871813): cfloat {.cdecl,
     importc: "JPH_ConvexShapeSettings_GetDensity".}
-proc setDensity*(shape: ptr ConvexShapeSettings_536871741; value: cfloat): void {.
+proc setDensity*(shape: ptr ConvexShapeSettings_536871813; value: cfloat): void {.
     cdecl, importc: "JPH_ConvexShapeSettings_SetDensity".}
-proc getDensity*(shape: ptr ConvexShape_536871781): cfloat {.cdecl,
+proc getDensity*(shape: ptr ConvexShape_536871853): cfloat {.cdecl,
     importc: "JPH_ConvexShape_GetDensity".}
-proc setDensity*(shape: ptr ConvexShape_536871781; inDensity: cfloat): void {.
+proc setDensity*(shape: ptr ConvexShape_536871853; inDensity: cfloat): void {.
     cdecl, importc: "JPH_ConvexShape_SetDensity".}
-when not declared(boxShapeSettings_Create):
-  proc boxShapeSettings_Create*(halfExtent: ptr Vec3_536871595;
-                                convexRadius: cfloat): ptr BoxShapeSettings_536871745 {.
-      cdecl, importc: "JPH_BoxShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "boxShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc createShape*(settings: ptr BoxShapeSettings_536871745): ptr BoxShape_536871785 {.
+proc initBoxShapeSettings*(halfExtent: ptr Vec3_536871667; convexRadius: cfloat): ptr BoxShapeSettings_536871817 {.
+    cdecl, importc: "JPH_BoxShapeSettings_Create".}
+proc createShape*(settings: ptr BoxShapeSettings_536871817): ptr BoxShape_536871857 {.
     cdecl, importc: "JPH_BoxShapeSettings_CreateShape".}
-when not declared(boxShape_Create):
-  proc boxShape_Create*(halfExtent: ptr Vec3_536871595; convexRadius: cfloat): ptr BoxShape_536871785 {.
-      cdecl, importc: "JPH_BoxShape_Create".}
-else:
-  static :
-    hint("Declaration of " & "boxShape_Create" &
-        " already exists, not redeclaring")
-proc getHalfExtent*(shape: ptr BoxShape_536871785; halfExtent: ptr Vec3_536871595): void {.
+proc initBoxShape*(halfExtent: ptr Vec3_536871667; convexRadius: cfloat): ptr BoxShape_536871857 {.
+    cdecl, importc: "JPH_BoxShape_Create".}
+proc getHalfExtent*(shape: ptr BoxShape_536871857; halfExtent: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_BoxShape_GetHalfExtent".}
-proc getConvexRadius*(shape: ptr BoxShape_536871785): cfloat {.cdecl,
+proc getConvexRadius*(shape: ptr BoxShape_536871857): cfloat {.cdecl,
     importc: "JPH_BoxShape_GetConvexRadius".}
-when not declared(sphereShapeSettings_Create):
-  proc sphereShapeSettings_Create*(radius: cfloat): ptr SphereShapeSettings_536871743 {.
-      cdecl, importc: "JPH_SphereShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "sphereShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc createShape*(settings: ptr SphereShapeSettings_536871743): ptr SphereShape_536871783 {.
+proc initSphereShapeSettings*(radius: cfloat): ptr SphereShapeSettings_536871815 {.
+    cdecl, importc: "JPH_SphereShapeSettings_Create".}
+proc createShape*(settings: ptr SphereShapeSettings_536871815): ptr SphereShape_536871855 {.
     cdecl, importc: "JPH_SphereShapeSettings_CreateShape".}
-proc getRadius*(settings: ptr SphereShapeSettings_536871743): cfloat {.cdecl,
+proc getRadius*(settings: ptr SphereShapeSettings_536871815): cfloat {.cdecl,
     importc: "JPH_SphereShapeSettings_GetRadius".}
-proc setRadius*(settings: ptr SphereShapeSettings_536871743; radius: cfloat): void {.
+proc setRadius*(settings: ptr SphereShapeSettings_536871815; radius: cfloat): void {.
     cdecl, importc: "JPH_SphereShapeSettings_SetRadius".}
-when not declared(sphereShape_Create):
-  proc sphereShape_Create*(radius: cfloat): ptr SphereShape_536871783 {.cdecl,
-      importc: "JPH_SphereShape_Create".}
-else:
-  static :
-    hint("Declaration of " & "sphereShape_Create" &
-        " already exists, not redeclaring")
-proc getRadius*(shape: ptr SphereShape_536871783): cfloat {.cdecl,
+proc initSphereShape*(radius: cfloat): ptr SphereShape_536871855 {.cdecl,
+    importc: "JPH_SphereShape_Create".}
+proc getRadius*(shape: ptr SphereShape_536871855): cfloat {.cdecl,
     importc: "JPH_SphereShape_GetRadius".}
-when not declared(planeShapeSettings_Create):
-  proc planeShapeSettings_Create*(plane: ptr Plane_536871607;
-                                  material: ptr PhysicsMaterial_536871737;
-                                  halfExtent: cfloat): ptr PlaneShapeSettings_536871747 {.
-      cdecl, importc: "JPH_PlaneShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "planeShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc createShape*(settings: ptr PlaneShapeSettings_536871747): ptr PlaneShape_536871787 {.
+proc initPlaneShapeSettings*(plane: ptr Plane_536871679;
+                             material: ptr PhysicsMaterial_536871809;
+                             halfExtent: cfloat): ptr PlaneShapeSettings_536871819 {.
+    cdecl, importc: "JPH_PlaneShapeSettings_Create".}
+proc createShape*(settings: ptr PlaneShapeSettings_536871819): ptr PlaneShape_536871859 {.
     cdecl, importc: "JPH_PlaneShapeSettings_CreateShape".}
-when not declared(planeShape_Create):
-  proc planeShape_Create*(plane: ptr Plane_536871607;
-                          material: ptr PhysicsMaterial_536871737;
-                          halfExtent: cfloat): ptr PlaneShape_536871787 {.cdecl,
-      importc: "JPH_PlaneShape_Create".}
-else:
-  static :
-    hint("Declaration of " & "planeShape_Create" &
-        " already exists, not redeclaring")
-proc getPlane*(shape: ptr PlaneShape_536871787; result: ptr Plane_536871607): void {.
+proc initPlaneShape*(plane: ptr Plane_536871679; material: ptr PhysicsMaterial_536871809;
+                     halfExtent: cfloat): ptr PlaneShape_536871859 {.cdecl,
+    importc: "JPH_PlaneShape_Create".}
+proc getPlane*(shape: ptr PlaneShape_536871859; result: ptr Plane_536871679): void {.
     cdecl, importc: "JPH_PlaneShape_GetPlane".}
-proc getHalfExtent*(shape: ptr PlaneShape_536871787): cfloat {.cdecl,
+proc getHalfExtent*(shape: ptr PlaneShape_536871859): cfloat {.cdecl,
     importc: "JPH_PlaneShape_GetHalfExtent".}
-when not declared(triangleShapeSettings_Create):
-  proc triangleShapeSettings_Create*(v1: ptr Vec3_536871595; v2: ptr Vec3_536871595;
-                                     v3: ptr Vec3_536871595;
-                                     convexRadius: cfloat): ptr TriangleShapeSettings_536871749 {.
-      cdecl, importc: "JPH_TriangleShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "triangleShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc createShape*(settings: ptr TriangleShapeSettings_536871749): ptr TriangleShape_536871795 {.
+proc initTriangleShapeSettings*(v1: ptr Vec3_536871667; v2: ptr Vec3_536871667;
+                                v3: ptr Vec3_536871667; convexRadius: cfloat): ptr TriangleShapeSettings_536871821 {.
+    cdecl, importc: "JPH_TriangleShapeSettings_Create".}
+proc createShape*(settings: ptr TriangleShapeSettings_536871821): ptr TriangleShape_536871867 {.
     cdecl, importc: "JPH_TriangleShapeSettings_CreateShape".}
-when not declared(triangleShape_Create):
-  proc triangleShape_Create*(v1: ptr Vec3_536871595; v2: ptr Vec3_536871595;
-                             v3: ptr Vec3_536871595; convexRadius: cfloat): ptr TriangleShape_536871795 {.
-      cdecl, importc: "JPH_TriangleShape_Create".}
-else:
-  static :
-    hint("Declaration of " & "triangleShape_Create" &
-        " already exists, not redeclaring")
-proc getConvexRadius*(shape: ptr TriangleShape_536871795): cfloat {.cdecl,
+proc initTriangleShape*(v1: ptr Vec3_536871667; v2: ptr Vec3_536871667;
+                        v3: ptr Vec3_536871667; convexRadius: cfloat): ptr TriangleShape_536871867 {.
+    cdecl, importc: "JPH_TriangleShape_Create".}
+proc getConvexRadius*(shape: ptr TriangleShape_536871867): cfloat {.cdecl,
     importc: "JPH_TriangleShape_GetConvexRadius".}
-proc getVertex1*(shape: ptr TriangleShape_536871795; result: ptr Vec3_536871595): void {.
+proc getVertex1*(shape: ptr TriangleShape_536871867; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_TriangleShape_GetVertex1".}
-proc getVertex2*(shape: ptr TriangleShape_536871795; result: ptr Vec3_536871595): void {.
+proc getVertex2*(shape: ptr TriangleShape_536871867; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_TriangleShape_GetVertex2".}
-proc getVertex3*(shape: ptr TriangleShape_536871795; result: ptr Vec3_536871595): void {.
+proc getVertex3*(shape: ptr TriangleShape_536871867; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_TriangleShape_GetVertex3".}
-when not declared(capsuleShapeSettings_Create):
-  proc capsuleShapeSettings_Create*(halfHeightOfCylinder: cfloat; radius: cfloat): ptr CapsuleShapeSettings_536871751 {.
-      cdecl, importc: "JPH_CapsuleShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "capsuleShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc createShape*(settings: ptr CapsuleShapeSettings_536871751): ptr CapsuleShape_536871789 {.
+proc initCapsuleShapeSettings*(halfHeightOfCylinder: cfloat; radius: cfloat): ptr CapsuleShapeSettings_536871823 {.
+    cdecl, importc: "JPH_CapsuleShapeSettings_Create".}
+proc createShape*(settings: ptr CapsuleShapeSettings_536871823): ptr CapsuleShape_536871861 {.
     cdecl, importc: "JPH_CapsuleShapeSettings_CreateShape".}
-when not declared(capsuleShape_Create):
-  proc capsuleShape_Create*(halfHeightOfCylinder: cfloat; radius: cfloat): ptr CapsuleShape_536871789 {.
-      cdecl, importc: "JPH_CapsuleShape_Create".}
-else:
-  static :
-    hint("Declaration of " & "capsuleShape_Create" &
-        " already exists, not redeclaring")
-proc getRadius*(shape: ptr CapsuleShape_536871789): cfloat {.cdecl,
+proc initCapsuleShape*(halfHeightOfCylinder: cfloat; radius: cfloat): ptr CapsuleShape_536871861 {.
+    cdecl, importc: "JPH_CapsuleShape_Create".}
+proc getRadius*(shape: ptr CapsuleShape_536871861): cfloat {.cdecl,
     importc: "JPH_CapsuleShape_GetRadius".}
-proc getHalfHeightOfCylinder*(shape: ptr CapsuleShape_536871789): cfloat {.
+proc getHalfHeightOfCylinder*(shape: ptr CapsuleShape_536871861): cfloat {.
     cdecl, importc: "JPH_CapsuleShape_GetHalfHeightOfCylinder".}
-when not declared(cylinderShapeSettings_Create):
-  proc cylinderShapeSettings_Create*(halfHeight: cfloat; radius: cfloat;
-                                     convexRadius: cfloat): ptr CylinderShapeSettings_536871755 {.
-      cdecl, importc: "JPH_CylinderShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "cylinderShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc createShape*(settings: ptr CylinderShapeSettings_536871755): ptr CylinderShape_536871791 {.
+proc initCylinderShapeSettings*(halfHeight: cfloat; radius: cfloat;
+                                convexRadius: cfloat): ptr CylinderShapeSettings_536871827 {.
+    cdecl, importc: "JPH_CylinderShapeSettings_Create".}
+proc createShape*(settings: ptr CylinderShapeSettings_536871827): ptr CylinderShape_536871863 {.
     cdecl, importc: "JPH_CylinderShapeSettings_CreateShape".}
-when not declared(cylinderShape_Create):
-  proc cylinderShape_Create*(halfHeight: cfloat; radius: cfloat): ptr CylinderShape_536871791 {.
-      cdecl, importc: "JPH_CylinderShape_Create".}
-else:
-  static :
-    hint("Declaration of " & "cylinderShape_Create" &
-        " already exists, not redeclaring")
-proc getRadius*(shape: ptr CylinderShape_536871791): cfloat {.cdecl,
+proc initCylinderShape*(halfHeight: cfloat; radius: cfloat): ptr CylinderShape_536871863 {.
+    cdecl, importc: "JPH_CylinderShape_Create".}
+proc getRadius*(shape: ptr CylinderShape_536871863): cfloat {.cdecl,
     importc: "JPH_CylinderShape_GetRadius".}
-proc getHalfHeight*(shape: ptr CylinderShape_536871791): cfloat {.cdecl,
+proc getHalfHeight*(shape: ptr CylinderShape_536871863): cfloat {.cdecl,
     importc: "JPH_CylinderShape_GetHalfHeight".}
-when not declared(taperedCylinderShapeSettings_Create):
-  proc taperedCylinderShapeSettings_Create*(halfHeightOfTaperedCylinder: cfloat;
-      topRadius: cfloat; bottomRadius: cfloat; convexRadius: cfloat;
-      material: ptr PhysicsMaterial_536871737): ptr TaperedCylinderShapeSettings_536871757 {.
-      cdecl, importc: "JPH_TaperedCylinderShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "taperedCylinderShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc createShape*(settings: ptr TaperedCylinderShapeSettings_536871757): ptr TaperedCylinderShape_536871793 {.
+proc initTaperedCylinderShapeSettings*(halfHeightOfTaperedCylinder: cfloat;
+                                       topRadius: cfloat; bottomRadius: cfloat;
+                                       convexRadius: cfloat;
+                                       material: ptr PhysicsMaterial_536871809): ptr TaperedCylinderShapeSettings_536871829 {.
+    cdecl, importc: "JPH_TaperedCylinderShapeSettings_Create".}
+proc createShape*(settings: ptr TaperedCylinderShapeSettings_536871829): ptr TaperedCylinderShape_536871865 {.
     cdecl, importc: "JPH_TaperedCylinderShapeSettings_CreateShape".}
-proc getTopRadius*(shape: ptr TaperedCylinderShape_536871793): cfloat {.cdecl,
+proc getTopRadius*(shape: ptr TaperedCylinderShape_536871865): cfloat {.cdecl,
     importc: "JPH_TaperedCylinderShape_GetTopRadius".}
-proc getBottomRadius*(shape: ptr TaperedCylinderShape_536871793): cfloat {.
+proc getBottomRadius*(shape: ptr TaperedCylinderShape_536871865): cfloat {.
     cdecl, importc: "JPH_TaperedCylinderShape_GetBottomRadius".}
-proc getConvexRadius*(shape: ptr TaperedCylinderShape_536871793): cfloat {.
+proc getConvexRadius*(shape: ptr TaperedCylinderShape_536871865): cfloat {.
     cdecl, importc: "JPH_TaperedCylinderShape_GetConvexRadius".}
-proc getHalfHeight*(shape: ptr TaperedCylinderShape_536871793): cfloat {.cdecl,
+proc getHalfHeight*(shape: ptr TaperedCylinderShape_536871865): cfloat {.cdecl,
     importc: "JPH_TaperedCylinderShape_GetHalfHeight".}
-when not declared(convexHullShapeSettings_Create):
-  proc convexHullShapeSettings_Create*(points: ptr Vec3_536871595;
-                                       pointsCount: uint32;
-                                       maxConvexRadius: cfloat): ptr ConvexHullShapeSettings_536871759 {.
-      cdecl, importc: "JPH_ConvexHullShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "convexHullShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc createShape*(settings: ptr ConvexHullShapeSettings_536871759): ptr ConvexHullShape_536871799 {.
+proc initConvexHullShapeSettings*(points: ptr Vec3_536871667;
+                                  pointsCount: uint32; maxConvexRadius: cfloat): ptr ConvexHullShapeSettings_536871831 {.
+    cdecl, importc: "JPH_ConvexHullShapeSettings_Create".}
+proc createShape*(settings: ptr ConvexHullShapeSettings_536871831): ptr ConvexHullShape_536871871 {.
     cdecl, importc: "JPH_ConvexHullShapeSettings_CreateShape".}
-proc getNumPoints*(shape: ptr ConvexHullShape_536871799): uint32 {.cdecl,
+proc getNumPoints*(shape: ptr ConvexHullShape_536871871): uint32 {.cdecl,
     importc: "JPH_ConvexHullShape_GetNumPoints".}
-proc getPoint*(shape: ptr ConvexHullShape_536871799; index: uint32;
-               result: ptr Vec3_536871595): void {.cdecl,
+proc getPoint*(shape: ptr ConvexHullShape_536871871; index: uint32;
+               result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_ConvexHullShape_GetPoint".}
-proc getNumFaces*(shape: ptr ConvexHullShape_536871799): uint32 {.cdecl,
+proc getNumFaces*(shape: ptr ConvexHullShape_536871871): uint32 {.cdecl,
     importc: "JPH_ConvexHullShape_GetNumFaces".}
-proc getNumVerticesInFace*(shape: ptr ConvexHullShape_536871799;
+proc getNumVerticesInFace*(shape: ptr ConvexHullShape_536871871;
                            faceIndex: uint32): uint32 {.cdecl,
     importc: "JPH_ConvexHullShape_GetNumVerticesInFace".}
-proc getFaceVertices*(shape: ptr ConvexHullShape_536871799; faceIndex: uint32;
+proc getFaceVertices*(shape: ptr ConvexHullShape_536871871; faceIndex: uint32;
                       maxVertices: uint32; vertices: ptr uint32): uint32 {.
     cdecl, importc: "JPH_ConvexHullShape_GetFaceVertices".}
-when not declared(meshShapeSettings_Create):
-  proc meshShapeSettings_Create*(triangles: ptr Triangle_536871625;
-                                 triangleCount: uint32): ptr MeshShapeSettings_536871767 {.
-      cdecl, importc: "JPH_MeshShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "meshShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc create2*(vertices: ptr Vec3_536871595; verticesCount: uint32;
-              triangles: ptr IndexedTriangle_536871633; triangleCount: uint32): ptr MeshShapeSettings_536871767 {.
+proc initMeshShapeSettings*(triangles: ptr Triangle_536871697;
+                            triangleCount: uint32): ptr MeshShapeSettings_536871839 {.
+    cdecl, importc: "JPH_MeshShapeSettings_Create".}
+proc initMeshShapeSettings*(vertices: ptr Vec3_536871667; verticesCount: uint32;
+                            triangles: ptr IndexedTriangle_536871705;
+                            triangleCount: uint32): ptr MeshShapeSettings_536871839 {.
     cdecl, importc: "JPH_MeshShapeSettings_Create2".}
-proc getMaxTrianglesPerLeaf*(settings: ptr MeshShapeSettings_536871767): uint32 {.
+proc getMaxTrianglesPerLeaf*(settings: ptr MeshShapeSettings_536871839): uint32 {.
     cdecl, importc: "JPH_MeshShapeSettings_GetMaxTrianglesPerLeaf".}
-proc setMaxTrianglesPerLeaf*(settings: ptr MeshShapeSettings_536871767;
+proc setMaxTrianglesPerLeaf*(settings: ptr MeshShapeSettings_536871839;
                              value: uint32): void {.cdecl,
     importc: "JPH_MeshShapeSettings_SetMaxTrianglesPerLeaf".}
-proc getActiveEdgeCosThresholdAngle*(settings: ptr MeshShapeSettings_536871767): cfloat {.
+proc getActiveEdgeCosThresholdAngle*(settings: ptr MeshShapeSettings_536871839): cfloat {.
     cdecl, importc: "JPH_MeshShapeSettings_GetActiveEdgeCosThresholdAngle".}
-proc setActiveEdgeCosThresholdAngle*(settings: ptr MeshShapeSettings_536871767;
+proc setActiveEdgeCosThresholdAngle*(settings: ptr MeshShapeSettings_536871839;
                                      value: cfloat): void {.cdecl,
     importc: "JPH_MeshShapeSettings_SetActiveEdgeCosThresholdAngle".}
-proc getPerTriangleUserData*(settings: ptr MeshShapeSettings_536871767): bool {.
+proc getPerTriangleUserData*(settings: ptr MeshShapeSettings_536871839): bool {.
     cdecl, importc: "JPH_MeshShapeSettings_GetPerTriangleUserData".}
-proc setPerTriangleUserData*(settings: ptr MeshShapeSettings_536871767;
+proc setPerTriangleUserData*(settings: ptr MeshShapeSettings_536871839;
                              value: bool): void {.cdecl,
     importc: "JPH_MeshShapeSettings_SetPerTriangleUserData".}
-proc getBuildQuality*(settings: ptr MeshShapeSettings_536871767): Mesh_Shape_BuildQuality_536871591 {.
+proc getBuildQuality*(settings: ptr MeshShapeSettings_536871839): Mesh_Shape_BuildQuality_536871663 {.
     cdecl, importc: "JPH_MeshShapeSettings_GetBuildQuality".}
-proc setBuildQuality*(settings: ptr MeshShapeSettings_536871767;
-                      value: Mesh_Shape_BuildQuality_536871591): void {.cdecl,
+proc setBuildQuality*(settings: ptr MeshShapeSettings_536871839;
+                      value: Mesh_Shape_BuildQuality_536871663): void {.cdecl,
     importc: "JPH_MeshShapeSettings_SetBuildQuality".}
-proc sanitize*(settings: ptr MeshShapeSettings_536871767): void {.cdecl,
+proc sanitize*(settings: ptr MeshShapeSettings_536871839): void {.cdecl,
     importc: "JPH_MeshShapeSettings_Sanitize".}
-proc createShape*(settings: ptr MeshShapeSettings_536871767): ptr MeshShape_536871807 {.
+proc createShape*(settings: ptr MeshShapeSettings_536871839): ptr MeshShape_536871879 {.
     cdecl, importc: "JPH_MeshShapeSettings_CreateShape".}
-proc getTriangleUserData*(shape: ptr MeshShape_536871807; id: SubShapeID_536871466): uint32 {.
+proc getTriangleUserData*(shape: ptr MeshShape_536871879; id: SubShapeID_536871538): uint32 {.
     cdecl, importc: "JPH_MeshShape_GetTriangleUserData".}
-when not declared(heightFieldShapeSettings_Create):
-  proc heightFieldShapeSettings_Create*(samples: ptr cfloat; offset: ptr Vec3_536871595;
-                                        scale: ptr Vec3_536871595;
-                                        sampleCount: uint32): ptr HeightFieldShapeSettings_536871769 {.
-      cdecl, importc: "JPH_HeightFieldShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "heightFieldShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc createShape*(settings: ptr HeightFieldShapeSettings_536871769): ptr HeightFieldShape_536871809 {.
+proc initHeightFieldShapeSettings*(samples: ptr cfloat; offset: ptr Vec3_536871667;
+                                   scale: ptr Vec3_536871667;
+                                   sampleCount: uint32): ptr HeightFieldShapeSettings_536871841 {.
+    cdecl, importc: "JPH_HeightFieldShapeSettings_Create".}
+proc createShape*(settings: ptr HeightFieldShapeSettings_536871841): ptr HeightFieldShape_536871881 {.
     cdecl, importc: "JPH_HeightFieldShapeSettings_CreateShape".}
-proc determineMinAndMaxSample*(settings: ptr HeightFieldShapeSettings_536871769;
+proc determineMinAndMaxSample*(settings: ptr HeightFieldShapeSettings_536871841;
                                pOutMinValue: ptr cfloat;
                                pOutMaxValue: ptr cfloat;
                                pOutQuantizationScale: ptr cfloat): void {.cdecl,
     importc: "JPH_HeightFieldShapeSettings_DetermineMinAndMaxSample".}
-proc calculateBitsPerSampleForError*(settings: ptr HeightFieldShapeSettings_536871769;
+proc calculateBitsPerSampleForError*(settings: ptr HeightFieldShapeSettings_536871841;
                                      maxError: cfloat): uint32 {.cdecl,
     importc: "JPH_HeightFieldShapeSettings_CalculateBitsPerSampleForError".}
-proc getSampleCount*(shape: ptr HeightFieldShape_536871809): uint32 {.cdecl,
+proc getSampleCount*(shape: ptr HeightFieldShape_536871881): uint32 {.cdecl,
     importc: "JPH_HeightFieldShape_GetSampleCount".}
-proc getBlockSize*(shape: ptr HeightFieldShape_536871809): uint32 {.cdecl,
+proc getBlockSize*(shape: ptr HeightFieldShape_536871881): uint32 {.cdecl,
     importc: "JPH_HeightFieldShape_GetBlockSize".}
-proc getMaterial*(shape: ptr HeightFieldShape_536871809; x: uint32; y: uint32): ptr PhysicsMaterial_536871737 {.
+proc getMaterial*(shape: ptr HeightFieldShape_536871881; x: uint32; y: uint32): ptr PhysicsMaterial_536871809 {.
     cdecl, importc: "JPH_HeightFieldShape_GetMaterial".}
-proc getPosition*(shape: ptr HeightFieldShape_536871809; x: uint32; y: uint32;
-                  result: ptr Vec3_536871595): void {.cdecl,
+proc getPosition*(shape: ptr HeightFieldShape_536871881; x: uint32; y: uint32;
+                  result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_HeightFieldShape_GetPosition".}
-proc isNoCollision*(shape: ptr HeightFieldShape_536871809; x: uint32; y: uint32): bool {.
+proc isNoCollision*(shape: ptr HeightFieldShape_536871881; x: uint32; y: uint32): bool {.
     cdecl, importc: "JPH_HeightFieldShape_IsNoCollision".}
-proc projectOntoSurface*(shape: ptr HeightFieldShape_536871809;
-                         localPosition: ptr Vec3_536871595;
-                         outSurfacePosition: ptr Vec3_536871595;
-                         outSubShapeID: ptr SubShapeID_536871466): bool {.cdecl,
+proc projectOntoSurface*(shape: ptr HeightFieldShape_536871881;
+                         localPosition: ptr Vec3_536871667;
+                         outSurfacePosition: ptr Vec3_536871667;
+                         outSubShapeID: ptr SubShapeID_536871538): bool {.cdecl,
     importc: "JPH_HeightFieldShape_ProjectOntoSurface".}
-proc getMinHeightValue*(shape: ptr HeightFieldShape_536871809): cfloat {.cdecl,
+proc getMinHeightValue*(shape: ptr HeightFieldShape_536871881): cfloat {.cdecl,
     importc: "JPH_HeightFieldShape_GetMinHeightValue".}
-proc getMaxHeightValue*(shape: ptr HeightFieldShape_536871809): cfloat {.cdecl,
+proc getMaxHeightValue*(shape: ptr HeightFieldShape_536871881): cfloat {.cdecl,
     importc: "JPH_HeightFieldShape_GetMaxHeightValue".}
-when not declared(taperedCapsuleShapeSettings_Create):
-  proc taperedCapsuleShapeSettings_Create*(halfHeightOfTaperedCylinder: cfloat;
-      topRadius: cfloat; bottomRadius: cfloat): ptr TaperedCapsuleShapeSettings_536871753 {.
-      cdecl, importc: "JPH_TaperedCapsuleShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "taperedCapsuleShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc createShape*(settings: ptr TaperedCapsuleShapeSettings_536871753): ptr TaperedCapsuleShape_536871797 {.
+proc initTaperedCapsuleShapeSettings*(halfHeightOfTaperedCylinder: cfloat;
+                                      topRadius: cfloat; bottomRadius: cfloat): ptr TaperedCapsuleShapeSettings_536871825 {.
+    cdecl, importc: "JPH_TaperedCapsuleShapeSettings_Create".}
+proc createShape*(settings: ptr TaperedCapsuleShapeSettings_536871825): ptr TaperedCapsuleShape_536871869 {.
     cdecl, importc: "JPH_TaperedCapsuleShapeSettings_CreateShape".}
-proc getTopRadius*(shape: ptr TaperedCapsuleShape_536871797): cfloat {.cdecl,
+proc getTopRadius*(shape: ptr TaperedCapsuleShape_536871869): cfloat {.cdecl,
     importc: "JPH_TaperedCapsuleShape_GetTopRadius".}
-proc getBottomRadius*(shape: ptr TaperedCapsuleShape_536871797): cfloat {.cdecl,
+proc getBottomRadius*(shape: ptr TaperedCapsuleShape_536871869): cfloat {.cdecl,
     importc: "JPH_TaperedCapsuleShape_GetBottomRadius".}
-proc getHalfHeight*(shape: ptr TaperedCapsuleShape_536871797): cfloat {.cdecl,
+proc getHalfHeight*(shape: ptr TaperedCapsuleShape_536871869): cfloat {.cdecl,
     importc: "JPH_TaperedCapsuleShape_GetHalfHeight".}
-proc addShape*(settings: ptr CompoundShapeSettings_536871761;
-               position: ptr Vec3_536871595; rotation: ptr Quat_536871603;
-               shapeSettings: ptr ShapeSettings_536871739; userData: uint32): void {.
+proc addShape*(settings: ptr CompoundShapeSettings_536871833;
+               position: ptr Vec3_536871667; rotation: ptr Quat_536871675;
+               shapeSettings: ptr ShapeSettings_536871811; userData: uint32): void {.
     cdecl, importc: "JPH_CompoundShapeSettings_AddShape".}
-proc addShape2*(settings: ptr CompoundShapeSettings_536871761;
-                position: ptr Vec3_536871595; rotation: ptr Quat_536871603;
-                shape: ptr Shape_536871779; userData: uint32): void {.cdecl,
+proc addShape2*(settings: ptr CompoundShapeSettings_536871833;
+                position: ptr Vec3_536871667; rotation: ptr Quat_536871675;
+                shape: ptr Shape_536871851; userData: uint32): void {.cdecl,
     importc: "JPH_CompoundShapeSettings_AddShape2".}
-proc getNumSubShapes*(shape: ptr CompoundShape_536871801): uint32 {.cdecl,
+proc getNumSubShapes*(shape: ptr CompoundShape_536871873): uint32 {.cdecl,
     importc: "JPH_CompoundShape_GetNumSubShapes".}
-proc getSubShape*(shape: ptr CompoundShape_536871801; index: uint32;
-                  subShape: ptr ptr Shape_536871779; positionCOM: ptr Vec3_536871595;
-                  rotation: ptr Quat_536871603; userData: ptr uint32): void {.
+proc getSubShape*(shape: ptr CompoundShape_536871873; index: uint32;
+                  subShape: ptr ptr Shape_536871851; positionCOM: ptr Vec3_536871667;
+                  rotation: ptr Quat_536871675; userData: ptr uint32): void {.
     cdecl, importc: "JPH_CompoundShape_GetSubShape".}
-proc getSubShapeIndexFromID*(shape: ptr CompoundShape_536871801; id: SubShapeID_536871466;
-                             remainder: ptr SubShapeID_536871466): uint32 {.
+proc getSubShapeIndexFromID*(shape: ptr CompoundShape_536871873; id: SubShapeID_536871538;
+                             remainder: ptr SubShapeID_536871538): uint32 {.
     cdecl, importc: "JPH_CompoundShape_GetSubShapeIndexFromID".}
-when not declared(staticCompoundShapeSettings_Create):
-  proc staticCompoundShapeSettings_Create*(): ptr StaticCompoundShapeSettings_536871763 {.
-      cdecl, importc: "JPH_StaticCompoundShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "staticCompoundShapeSettings_Create" &
-        " already exists, not redeclaring")
-when not declared(staticCompoundShape_Create):
-  proc staticCompoundShape_Create*(settings: ptr StaticCompoundShapeSettings_536871763): ptr StaticCompoundShape_536871803 {.
-      cdecl, importc: "JPH_StaticCompoundShape_Create".}
-else:
-  static :
-    hint("Declaration of " & "staticCompoundShape_Create" &
-        " already exists, not redeclaring")
-when not declared(mutableCompoundShapeSettings_Create):
-  proc mutableCompoundShapeSettings_Create*(): ptr MutableCompoundShapeSettings_536871765 {.
-      cdecl, importc: "JPH_MutableCompoundShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "mutableCompoundShapeSettings_Create" &
-        " already exists, not redeclaring")
-when not declared(mutableCompoundShape_Create):
-  proc mutableCompoundShape_Create*(settings: ptr MutableCompoundShapeSettings_536871765): ptr MutableCompoundShape_536871805 {.
-      cdecl, importc: "JPH_MutableCompoundShape_Create".}
-else:
-  static :
-    hint("Declaration of " & "mutableCompoundShape_Create" &
-        " already exists, not redeclaring")
-proc addShape*(shape: ptr MutableCompoundShape_536871805; position: ptr Vec3_536871595;
-               rotation: ptr Quat_536871603; child: ptr Shape_536871779;
+proc initStaticCompoundShapeSettings*(): ptr StaticCompoundShapeSettings_536871835 {.
+    cdecl, importc: "JPH_StaticCompoundShapeSettings_Create".}
+proc initStaticCompoundShape*(settings: ptr StaticCompoundShapeSettings_536871835): ptr StaticCompoundShape_536871875 {.
+    cdecl, importc: "JPH_StaticCompoundShape_Create".}
+proc initMutableCompoundShapeSettings*(): ptr MutableCompoundShapeSettings_536871837 {.
+    cdecl, importc: "JPH_MutableCompoundShapeSettings_Create".}
+proc initMutableCompoundShape*(settings: ptr MutableCompoundShapeSettings_536871837): ptr MutableCompoundShape_536871877 {.
+    cdecl, importc: "JPH_MutableCompoundShape_Create".}
+proc addShape*(shape: ptr MutableCompoundShape_536871877; position: ptr Vec3_536871667;
+               rotation: ptr Quat_536871675; child: ptr Shape_536871851;
                userData: uint32; index: uint32): uint32 {.cdecl,
     importc: "JPH_MutableCompoundShape_AddShape".}
-proc removeShape*(shape: ptr MutableCompoundShape_536871805; index: uint32): void {.
+proc removeShape*(shape: ptr MutableCompoundShape_536871877; index: uint32): void {.
     cdecl, importc: "JPH_MutableCompoundShape_RemoveShape".}
-proc modifyShape*(shape: ptr MutableCompoundShape_536871805; index: uint32;
-                  position: ptr Vec3_536871595; rotation: ptr Quat_536871603): void {.
+proc modifyShape*(shape: ptr MutableCompoundShape_536871877; index: uint32;
+                  position: ptr Vec3_536871667; rotation: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_MutableCompoundShape_ModifyShape".}
-proc modifyShape2*(shape: ptr MutableCompoundShape_536871805; index: uint32;
-                   position: ptr Vec3_536871595; rotation: ptr Quat_536871603;
-                   newShape: ptr Shape_536871779): void {.cdecl,
+proc modifyShape2*(shape: ptr MutableCompoundShape_536871877; index: uint32;
+                   position: ptr Vec3_536871667; rotation: ptr Quat_536871675;
+                   newShape: ptr Shape_536871851): void {.cdecl,
     importc: "JPH_MutableCompoundShape_ModifyShape2".}
-proc adjustCenterOfMass*(shape: ptr MutableCompoundShape_536871805): void {.
+proc adjustCenterOfMass*(shape: ptr MutableCompoundShape_536871877): void {.
     cdecl, importc: "JPH_MutableCompoundShape_AdjustCenterOfMass".}
-proc getInnerShape*(shape: ptr DecoratedShape_536871811): ptr Shape_536871779 {.
+proc getInnerShape*(shape: ptr DecoratedShape_536871883): ptr Shape_536871851 {.
     cdecl, importc: "JPH_DecoratedShape_GetInnerShape".}
-when not declared(rotatedTranslatedShapeSettings_Create):
-  proc rotatedTranslatedShapeSettings_Create*(position: ptr Vec3_536871595;
-      rotation: ptr Quat_536871603; shapeSettings: ptr ShapeSettings_536871739): ptr RotatedTranslatedShapeSettings_536871771 {.
-      cdecl, importc: "JPH_RotatedTranslatedShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "rotatedTranslatedShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc create2*(position: ptr Vec3_536871595; rotation: ptr Quat_536871603;
-              shape: ptr Shape_536871779): ptr RotatedTranslatedShapeSettings_536871771 {.
+proc initRotatedTranslatedShapeSettings*(position: ptr Vec3_536871667;
+    rotation: ptr Quat_536871675; shapeSettings: ptr ShapeSettings_536871811): ptr RotatedTranslatedShapeSettings_536871843 {.
+    cdecl, importc: "JPH_RotatedTranslatedShapeSettings_Create".}
+proc initRotatedTranslatedShapeSettings*(position: ptr Vec3_536871667;
+    rotation: ptr Quat_536871675; shape: ptr Shape_536871851): ptr RotatedTranslatedShapeSettings_536871843 {.
     cdecl, importc: "JPH_RotatedTranslatedShapeSettings_Create2".}
-proc createShape*(settings: ptr RotatedTranslatedShapeSettings_536871771): ptr RotatedTranslatedShape_536871813 {.
+proc createShape*(settings: ptr RotatedTranslatedShapeSettings_536871843): ptr RotatedTranslatedShape_536871885 {.
     cdecl, importc: "JPH_RotatedTranslatedShapeSettings_CreateShape".}
-when not declared(rotatedTranslatedShape_Create):
-  proc rotatedTranslatedShape_Create*(position: ptr Vec3_536871595;
-                                      rotation: ptr Quat_536871603;
-                                      shape: ptr Shape_536871779): ptr RotatedTranslatedShape_536871813 {.
-      cdecl, importc: "JPH_RotatedTranslatedShape_Create".}
-else:
-  static :
-    hint("Declaration of " & "rotatedTranslatedShape_Create" &
-        " already exists, not redeclaring")
-proc getPosition*(shape: ptr RotatedTranslatedShape_536871813;
-                  position: ptr Vec3_536871595): void {.cdecl,
+proc initRotatedTranslatedShape*(position: ptr Vec3_536871667;
+                                 rotation: ptr Quat_536871675; shape: ptr Shape_536871851): ptr RotatedTranslatedShape_536871885 {.
+    cdecl, importc: "JPH_RotatedTranslatedShape_Create".}
+proc getPosition*(shape: ptr RotatedTranslatedShape_536871885;
+                  position: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_RotatedTranslatedShape_GetPosition".}
-proc getRotation*(shape: ptr RotatedTranslatedShape_536871813;
-                  rotation: ptr Quat_536871603): void {.cdecl,
+proc getRotation*(shape: ptr RotatedTranslatedShape_536871885;
+                  rotation: ptr Quat_536871675): void {.cdecl,
     importc: "JPH_RotatedTranslatedShape_GetRotation".}
-when not declared(scaledShapeSettings_Create):
-  proc scaledShapeSettings_Create*(shapeSettings: ptr ShapeSettings_536871739;
-                                   scale: ptr Vec3_536871595): ptr ScaledShapeSettings_536871773 {.
-      cdecl, importc: "JPH_ScaledShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "scaledShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc create2*(shape: ptr Shape_536871779; scale: ptr Vec3_536871595): ptr ScaledShapeSettings_536871773 {.
+proc initScaledShapeSettings*(shapeSettings: ptr ShapeSettings_536871811;
+                              scale: ptr Vec3_536871667): ptr ScaledShapeSettings_536871845 {.
+    cdecl, importc: "JPH_ScaledShapeSettings_Create".}
+proc initScaledShapeSettings*(shape: ptr Shape_536871851; scale: ptr Vec3_536871667): ptr ScaledShapeSettings_536871845 {.
     cdecl, importc: "JPH_ScaledShapeSettings_Create2".}
-proc createShape*(settings: ptr ScaledShapeSettings_536871773): ptr ScaledShape_536871815 {.
+proc createShape*(settings: ptr ScaledShapeSettings_536871845): ptr ScaledShape_536871887 {.
     cdecl, importc: "JPH_ScaledShapeSettings_CreateShape".}
-when not declared(scaledShape_Create):
-  proc scaledShape_Create*(shape: ptr Shape_536871779; scale: ptr Vec3_536871595): ptr ScaledShape_536871815 {.
-      cdecl, importc: "JPH_ScaledShape_Create".}
-else:
-  static :
-    hint("Declaration of " & "scaledShape_Create" &
-        " already exists, not redeclaring")
-proc getScale*(shape: ptr ScaledShape_536871815; result: ptr Vec3_536871595): void {.
+proc initScaledShape*(shape: ptr Shape_536871851; scale: ptr Vec3_536871667): ptr ScaledShape_536871887 {.
+    cdecl, importc: "JPH_ScaledShape_Create".}
+proc getScale*(shape: ptr ScaledShape_536871887; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_ScaledShape_GetScale".}
-when not declared(offsetCenterOfMassShapeSettings_Create):
-  proc offsetCenterOfMassShapeSettings_Create*(offset: ptr Vec3_536871595;
-      shapeSettings: ptr ShapeSettings_536871739): ptr OffsetCenterOfMassShapeSettings_536871775 {.
-      cdecl, importc: "JPH_OffsetCenterOfMassShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "offsetCenterOfMassShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc create2*(offset: ptr Vec3_536871595; shape: ptr Shape_536871779): ptr OffsetCenterOfMassShapeSettings_536871775 {.
+proc initOffsetCenterOfMassShapeSettings*(offset: ptr Vec3_536871667;
+    shapeSettings: ptr ShapeSettings_536871811): ptr OffsetCenterOfMassShapeSettings_536871847 {.
+    cdecl, importc: "JPH_OffsetCenterOfMassShapeSettings_Create".}
+proc initOffsetCenterOfMassShapeSettings*(offset: ptr Vec3_536871667;
+    shape: ptr Shape_536871851): ptr OffsetCenterOfMassShapeSettings_536871847 {.
     cdecl, importc: "JPH_OffsetCenterOfMassShapeSettings_Create2".}
-proc createShape*(settings: ptr OffsetCenterOfMassShapeSettings_536871775): ptr OffsetCenterOfMassShape_536871817 {.
+proc createShape*(settings: ptr OffsetCenterOfMassShapeSettings_536871847): ptr OffsetCenterOfMassShape_536871889 {.
     cdecl, importc: "JPH_OffsetCenterOfMassShapeSettings_CreateShape".}
-when not declared(offsetCenterOfMassShape_Create):
-  proc offsetCenterOfMassShape_Create*(offset: ptr Vec3_536871595;
-                                       shape: ptr Shape_536871779): ptr OffsetCenterOfMassShape_536871817 {.
-      cdecl, importc: "JPH_OffsetCenterOfMassShape_Create".}
-else:
-  static :
-    hint("Declaration of " & "offsetCenterOfMassShape_Create" &
-        " already exists, not redeclaring")
-proc getOffset*(shape: ptr OffsetCenterOfMassShape_536871817; result: ptr Vec3_536871595): void {.
+proc initOffsetCenterOfMassShape*(offset: ptr Vec3_536871667; shape: ptr Shape_536871851): ptr OffsetCenterOfMassShape_536871889 {.
+    cdecl, importc: "JPH_OffsetCenterOfMassShape_Create".}
+proc getOffset*(shape: ptr OffsetCenterOfMassShape_536871889; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_OffsetCenterOfMassShape_GetOffset".}
-when not declared(emptyShapeSettings_Create):
-  proc emptyShapeSettings_Create*(centerOfMass: ptr Vec3_536871595): ptr EmptyShapeSettings_536871777 {.
-      cdecl, importc: "JPH_EmptyShapeSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "emptyShapeSettings_Create" &
-        " already exists, not redeclaring")
-proc createShape*(settings: ptr EmptyShapeSettings_536871777): ptr EmptyShape_536871819 {.
+proc initEmptyShapeSettings*(centerOfMass: ptr Vec3_536871667): ptr EmptyShapeSettings_536871849 {.
+    cdecl, importc: "JPH_EmptyShapeSettings_Create".}
+proc createShape*(settings: ptr EmptyShapeSettings_536871849): ptr EmptyShape_536871891 {.
     cdecl, importc: "JPH_EmptyShapeSettings_CreateShape".}
-when not declared(bodyCreationSettings_Create):
-  proc bodyCreationSettings_Create*(): ptr BodyCreationSettings_536871821 {.
-      cdecl, importc: "JPH_BodyCreationSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "bodyCreationSettings_Create" &
-        " already exists, not redeclaring")
-proc create2*(settings: ptr ShapeSettings_536871739; position: ptr RVec3_536871613;
-              rotation: ptr Quat_536871603; motionType: MotionType_536871488;
-              objectLayer: ObjectLayer_536871468): ptr BodyCreationSettings_536871821 {.
+proc initBodyCreationSettings*(): ptr BodyCreationSettings_536871893 {.cdecl,
+    importc: "JPH_BodyCreationSettings_Create".}
+proc initBodyCreationSettings*(settings: ptr ShapeSettings_536871811;
+                               position: ptr RVec3_536871685;
+                               rotation: ptr Quat_536871675;
+                               motionType: MotionType_536871560;
+                               objectLayer: ObjectLayer_536871540): ptr BodyCreationSettings_536871893 {.
     cdecl, importc: "JPH_BodyCreationSettings_Create2".}
-when not declared(bodyCreationSettings_Create3):
-  proc bodyCreationSettings_Create3*(shape: ptr Shape_536871779;
-                                     position: ptr RVec3_536871613;
-                                     rotation: ptr Quat_536871603;
-                                     motionType: MotionType_536871488;
-                                     objectLayer: ObjectLayer_536871468): ptr BodyCreationSettings_536871821 {.
-      cdecl, importc: "JPH_BodyCreationSettings_Create3".}
-else:
-  static :
-    hint("Declaration of " & "bodyCreationSettings_Create3" &
-        " already exists, not redeclaring")
+proc initBodyCreationSettings*(shape: ptr Shape_536871851; position: ptr RVec3_536871685;
+                               rotation: ptr Quat_536871675;
+                               motionType: MotionType_536871560;
+                               objectLayer: ObjectLayer_536871540): ptr BodyCreationSettings_536871893 {.
+    cdecl, importc: "JPH_BodyCreationSettings_Create3".}
 when not declared(bodyCreationSettings_Destroy):
-  proc bodyCreationSettings_Destroy*(settings: ptr BodyCreationSettings_536871821): void {.
+  proc bodyCreationSettings_Destroy*(settings: ptr BodyCreationSettings_536871893): void {.
       cdecl, importc: "JPH_BodyCreationSettings_Destroy".}
 else:
   static :
     hint("Declaration of " & "bodyCreationSettings_Destroy" &
         " already exists, not redeclaring")
-proc getPosition*(settings: ptr BodyCreationSettings_536871821;
-                  result: ptr RVec3_536871613): void {.cdecl,
+proc getPosition*(settings: ptr BodyCreationSettings_536871893;
+                  result: ptr RVec3_536871685): void {.cdecl,
     importc: "JPH_BodyCreationSettings_GetPosition".}
-proc setPosition*(settings: ptr BodyCreationSettings_536871821; value: ptr RVec3_536871613): void {.
+proc setPosition*(settings: ptr BodyCreationSettings_536871893; value: ptr RVec3_536871685): void {.
     cdecl, importc: "JPH_BodyCreationSettings_SetPosition".}
-proc getRotation*(settings: ptr BodyCreationSettings_536871821; result: ptr Quat_536871603): void {.
+proc getRotation*(settings: ptr BodyCreationSettings_536871893; result: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_BodyCreationSettings_GetRotation".}
-proc setRotation*(settings: ptr BodyCreationSettings_536871821; value: ptr Quat_536871603): void {.
+proc setRotation*(settings: ptr BodyCreationSettings_536871893; value: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_BodyCreationSettings_SetRotation".}
-proc getLinearVelocity*(settings: ptr BodyCreationSettings_536871821;
-                        velocity: ptr Vec3_536871595): void {.cdecl,
+proc getLinearVelocity*(settings: ptr BodyCreationSettings_536871893;
+                        velocity: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_BodyCreationSettings_GetLinearVelocity".}
-proc setLinearVelocity*(settings: ptr BodyCreationSettings_536871821;
-                        velocity: ptr Vec3_536871595): void {.cdecl,
+proc setLinearVelocity*(settings: ptr BodyCreationSettings_536871893;
+                        velocity: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetLinearVelocity".}
-proc getAngularVelocity*(settings: ptr BodyCreationSettings_536871821;
-                         velocity: ptr Vec3_536871595): void {.cdecl,
+proc getAngularVelocity*(settings: ptr BodyCreationSettings_536871893;
+                         velocity: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_BodyCreationSettings_GetAngularVelocity".}
-proc setAngularVelocity*(settings: ptr BodyCreationSettings_536871821;
-                         velocity: ptr Vec3_536871595): void {.cdecl,
+proc setAngularVelocity*(settings: ptr BodyCreationSettings_536871893;
+                         velocity: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetAngularVelocity".}
-proc getUserData*(settings: ptr BodyCreationSettings_536871821): uint64 {.cdecl,
+proc getUserData*(settings: ptr BodyCreationSettings_536871893): uint64 {.cdecl,
     importc: "JPH_BodyCreationSettings_GetUserData".}
-proc setUserData*(settings: ptr BodyCreationSettings_536871821; value: uint64): void {.
+proc setUserData*(settings: ptr BodyCreationSettings_536871893; value: uint64): void {.
     cdecl, importc: "JPH_BodyCreationSettings_SetUserData".}
-proc getObjectLayer*(settings: ptr BodyCreationSettings_536871821): ObjectLayer_536871468 {.
+proc getObjectLayer*(settings: ptr BodyCreationSettings_536871893): ObjectLayer_536871540 {.
     cdecl, importc: "JPH_BodyCreationSettings_GetObjectLayer".}
-proc setObjectLayer*(settings: ptr BodyCreationSettings_536871821;
-                     value: ObjectLayer_536871468): void {.cdecl,
+proc setObjectLayer*(settings: ptr BodyCreationSettings_536871893;
+                     value: ObjectLayer_536871540): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetObjectLayer".}
-proc getMotionType*(settings: ptr BodyCreationSettings_536871821): MotionType_536871488 {.
+proc getMotionType*(settings: ptr BodyCreationSettings_536871893): MotionType_536871560 {.
     cdecl, importc: "JPH_BodyCreationSettings_GetMotionType".}
-proc setMotionType*(settings: ptr BodyCreationSettings_536871821;
-                    value: MotionType_536871488): void {.cdecl,
+proc setMotionType*(settings: ptr BodyCreationSettings_536871893;
+                    value: MotionType_536871560): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetMotionType".}
-proc getAllowedDOFs*(settings: ptr BodyCreationSettings_536871821): AllowedDOFs_536871528 {.
+proc getAllowedDOFs*(settings: ptr BodyCreationSettings_536871893): AllowedDOFs_536871600 {.
     cdecl, importc: "JPH_BodyCreationSettings_GetAllowedDOFs".}
-proc setAllowedDOFs*(settings: ptr BodyCreationSettings_536871821;
-                     value: AllowedDOFs_536871528): void {.cdecl,
+proc setAllowedDOFs*(settings: ptr BodyCreationSettings_536871893;
+                     value: AllowedDOFs_536871600): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetAllowedDOFs".}
-proc getAllowDynamicOrKinematic*(settings: ptr BodyCreationSettings_536871821): bool {.
+proc getAllowDynamicOrKinematic*(settings: ptr BodyCreationSettings_536871893): bool {.
     cdecl, importc: "JPH_BodyCreationSettings_GetAllowDynamicOrKinematic".}
-proc setAllowDynamicOrKinematic*(settings: ptr BodyCreationSettings_536871821;
+proc setAllowDynamicOrKinematic*(settings: ptr BodyCreationSettings_536871893;
                                  value: bool): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetAllowDynamicOrKinematic".}
-proc getIsSensor*(settings: ptr BodyCreationSettings_536871821): bool {.cdecl,
+proc getIsSensor*(settings: ptr BodyCreationSettings_536871893): bool {.cdecl,
     importc: "JPH_BodyCreationSettings_GetIsSensor".}
-proc setIsSensor*(settings: ptr BodyCreationSettings_536871821; value: bool): void {.
+proc setIsSensor*(settings: ptr BodyCreationSettings_536871893; value: bool): void {.
     cdecl, importc: "JPH_BodyCreationSettings_SetIsSensor".}
-proc getCollideKinematicVsNonDynamic*(settings: ptr BodyCreationSettings_536871821): bool {.
+proc getCollideKinematicVsNonDynamic*(settings: ptr BodyCreationSettings_536871893): bool {.
     cdecl, importc: "JPH_BodyCreationSettings_GetCollideKinematicVsNonDynamic".}
-proc setCollideKinematicVsNonDynamic*(settings: ptr BodyCreationSettings_536871821;
+proc setCollideKinematicVsNonDynamic*(settings: ptr BodyCreationSettings_536871893;
                                       value: bool): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetCollideKinematicVsNonDynamic".}
-proc getUseManifoldReduction*(settings: ptr BodyCreationSettings_536871821): bool {.
+proc getUseManifoldReduction*(settings: ptr BodyCreationSettings_536871893): bool {.
     cdecl, importc: "JPH_BodyCreationSettings_GetUseManifoldReduction".}
-proc setUseManifoldReduction*(settings: ptr BodyCreationSettings_536871821;
+proc setUseManifoldReduction*(settings: ptr BodyCreationSettings_536871893;
                               value: bool): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetUseManifoldReduction".}
-proc getApplyGyroscopicForce*(settings: ptr BodyCreationSettings_536871821): bool {.
+proc getApplyGyroscopicForce*(settings: ptr BodyCreationSettings_536871893): bool {.
     cdecl, importc: "JPH_BodyCreationSettings_GetApplyGyroscopicForce".}
-proc setApplyGyroscopicForce*(settings: ptr BodyCreationSettings_536871821;
+proc setApplyGyroscopicForce*(settings: ptr BodyCreationSettings_536871893;
                               value: bool): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetApplyGyroscopicForce".}
-proc getMotionQuality*(settings: ptr BodyCreationSettings_536871821): MotionQuality_536871520 {.
+proc getMotionQuality*(settings: ptr BodyCreationSettings_536871893): MotionQuality_536871592 {.
     cdecl, importc: "JPH_BodyCreationSettings_GetMotionQuality".}
-proc setMotionQuality*(settings: ptr BodyCreationSettings_536871821;
-                       value: MotionQuality_536871520): void {.cdecl,
+proc setMotionQuality*(settings: ptr BodyCreationSettings_536871893;
+                       value: MotionQuality_536871592): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetMotionQuality".}
-proc getEnhancedInternalEdgeRemoval*(settings: ptr BodyCreationSettings_536871821): bool {.
+proc getEnhancedInternalEdgeRemoval*(settings: ptr BodyCreationSettings_536871893): bool {.
     cdecl, importc: "JPH_BodyCreationSettings_GetEnhancedInternalEdgeRemoval".}
-proc setEnhancedInternalEdgeRemoval*(settings: ptr BodyCreationSettings_536871821;
+proc setEnhancedInternalEdgeRemoval*(settings: ptr BodyCreationSettings_536871893;
                                      value: bool): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetEnhancedInternalEdgeRemoval".}
-proc getAllowSleeping*(settings: ptr BodyCreationSettings_536871821): bool {.
+proc getAllowSleeping*(settings: ptr BodyCreationSettings_536871893): bool {.
     cdecl, importc: "JPH_BodyCreationSettings_GetAllowSleeping".}
-proc setAllowSleeping*(settings: ptr BodyCreationSettings_536871821; value: bool): void {.
+proc setAllowSleeping*(settings: ptr BodyCreationSettings_536871893; value: bool): void {.
     cdecl, importc: "JPH_BodyCreationSettings_SetAllowSleeping".}
-proc getFriction*(settings: ptr BodyCreationSettings_536871821): cfloat {.cdecl,
+proc getFriction*(settings: ptr BodyCreationSettings_536871893): cfloat {.cdecl,
     importc: "JPH_BodyCreationSettings_GetFriction".}
-proc setFriction*(settings: ptr BodyCreationSettings_536871821; value: cfloat): void {.
+proc setFriction*(settings: ptr BodyCreationSettings_536871893; value: cfloat): void {.
     cdecl, importc: "JPH_BodyCreationSettings_SetFriction".}
-proc getRestitution*(settings: ptr BodyCreationSettings_536871821): cfloat {.
+proc getRestitution*(settings: ptr BodyCreationSettings_536871893): cfloat {.
     cdecl, importc: "JPH_BodyCreationSettings_GetRestitution".}
-proc setRestitution*(settings: ptr BodyCreationSettings_536871821; value: cfloat): void {.
+proc setRestitution*(settings: ptr BodyCreationSettings_536871893; value: cfloat): void {.
     cdecl, importc: "JPH_BodyCreationSettings_SetRestitution".}
-proc getLinearDamping*(settings: ptr BodyCreationSettings_536871821): cfloat {.
+proc getLinearDamping*(settings: ptr BodyCreationSettings_536871893): cfloat {.
     cdecl, importc: "JPH_BodyCreationSettings_GetLinearDamping".}
-proc setLinearDamping*(settings: ptr BodyCreationSettings_536871821;
+proc setLinearDamping*(settings: ptr BodyCreationSettings_536871893;
                        value: cfloat): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetLinearDamping".}
-proc getAngularDamping*(settings: ptr BodyCreationSettings_536871821): cfloat {.
+proc getAngularDamping*(settings: ptr BodyCreationSettings_536871893): cfloat {.
     cdecl, importc: "JPH_BodyCreationSettings_GetAngularDamping".}
-proc setAngularDamping*(settings: ptr BodyCreationSettings_536871821;
+proc setAngularDamping*(settings: ptr BodyCreationSettings_536871893;
                         value: cfloat): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetAngularDamping".}
-proc getMaxLinearVelocity*(settings: ptr BodyCreationSettings_536871821): cfloat {.
+proc getMaxLinearVelocity*(settings: ptr BodyCreationSettings_536871893): cfloat {.
     cdecl, importc: "JPH_BodyCreationSettings_GetMaxLinearVelocity".}
-proc setMaxLinearVelocity*(settings: ptr BodyCreationSettings_536871821;
+proc setMaxLinearVelocity*(settings: ptr BodyCreationSettings_536871893;
                            value: cfloat): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetMaxLinearVelocity".}
-proc getMaxAngularVelocity*(settings: ptr BodyCreationSettings_536871821): cfloat {.
+proc getMaxAngularVelocity*(settings: ptr BodyCreationSettings_536871893): cfloat {.
     cdecl, importc: "JPH_BodyCreationSettings_GetMaxAngularVelocity".}
-proc setMaxAngularVelocity*(settings: ptr BodyCreationSettings_536871821;
+proc setMaxAngularVelocity*(settings: ptr BodyCreationSettings_536871893;
                             value: cfloat): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetMaxAngularVelocity".}
-proc getGravityFactor*(settings: ptr BodyCreationSettings_536871821): cfloat {.
+proc getGravityFactor*(settings: ptr BodyCreationSettings_536871893): cfloat {.
     cdecl, importc: "JPH_BodyCreationSettings_GetGravityFactor".}
-proc setGravityFactor*(settings: ptr BodyCreationSettings_536871821;
+proc setGravityFactor*(settings: ptr BodyCreationSettings_536871893;
                        value: cfloat): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetGravityFactor".}
-proc getNumVelocityStepsOverride*(settings: ptr BodyCreationSettings_536871821): uint32 {.
+proc getNumVelocityStepsOverride*(settings: ptr BodyCreationSettings_536871893): uint32 {.
     cdecl, importc: "JPH_BodyCreationSettings_GetNumVelocityStepsOverride".}
-proc setNumVelocityStepsOverride*(settings: ptr BodyCreationSettings_536871821;
+proc setNumVelocityStepsOverride*(settings: ptr BodyCreationSettings_536871893;
                                   value: uint32): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetNumVelocityStepsOverride".}
-proc getNumPositionStepsOverride*(settings: ptr BodyCreationSettings_536871821): uint32 {.
+proc getNumPositionStepsOverride*(settings: ptr BodyCreationSettings_536871893): uint32 {.
     cdecl, importc: "JPH_BodyCreationSettings_GetNumPositionStepsOverride".}
-proc setNumPositionStepsOverride*(settings: ptr BodyCreationSettings_536871821;
+proc setNumPositionStepsOverride*(settings: ptr BodyCreationSettings_536871893;
                                   value: uint32): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetNumPositionStepsOverride".}
-proc getOverrideMassProperties*(settings: ptr BodyCreationSettings_536871821): OverrideMassProperties_536871524 {.
+proc getOverrideMassProperties*(settings: ptr BodyCreationSettings_536871893): OverrideMassProperties_536871596 {.
     cdecl, importc: "JPH_BodyCreationSettings_GetOverrideMassProperties".}
-proc setOverrideMassProperties*(settings: ptr BodyCreationSettings_536871821;
-                                value: OverrideMassProperties_536871524): void {.
+proc setOverrideMassProperties*(settings: ptr BodyCreationSettings_536871893;
+                                value: OverrideMassProperties_536871596): void {.
     cdecl, importc: "JPH_BodyCreationSettings_SetOverrideMassProperties".}
-proc getInertiaMultiplier*(settings: ptr BodyCreationSettings_536871821): cfloat {.
+proc getInertiaMultiplier*(settings: ptr BodyCreationSettings_536871893): cfloat {.
     cdecl, importc: "JPH_BodyCreationSettings_GetInertiaMultiplier".}
-proc setInertiaMultiplier*(settings: ptr BodyCreationSettings_536871821;
+proc setInertiaMultiplier*(settings: ptr BodyCreationSettings_536871893;
                            value: cfloat): void {.cdecl,
     importc: "JPH_BodyCreationSettings_SetInertiaMultiplier".}
-proc getMassPropertiesOverride*(settings: ptr BodyCreationSettings_536871821;
-                                result: ptr MassProperties_536871637): void {.
+proc getMassPropertiesOverride*(settings: ptr BodyCreationSettings_536871893;
+                                result: ptr MassProperties_536871709): void {.
     cdecl, importc: "JPH_BodyCreationSettings_GetMassPropertiesOverride".}
-proc setMassPropertiesOverride*(settings: ptr BodyCreationSettings_536871821;
-                                massProperties: ptr MassProperties_536871637): void {.
+proc setMassPropertiesOverride*(settings: ptr BodyCreationSettings_536871893;
+                                massProperties: ptr MassProperties_536871709): void {.
     cdecl, importc: "JPH_BodyCreationSettings_SetMassPropertiesOverride".}
-when not declared(softBodyCreationSettings_Create):
-  proc softBodyCreationSettings_Create*(): ptr SoftBodyCreationSettings_536871823 {.
-      cdecl, importc: "JPH_SoftBodyCreationSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "softBodyCreationSettings_Create" &
-        " already exists, not redeclaring")
+proc initSoftBodyCreationSettings*(): ptr SoftBodyCreationSettings_536871895 {.
+    cdecl, importc: "JPH_SoftBodyCreationSettings_Create".}
 when not declared(softBodyCreationSettings_Destroy):
-  proc softBodyCreationSettings_Destroy*(settings: ptr SoftBodyCreationSettings_536871823): void {.
+  proc softBodyCreationSettings_Destroy*(settings: ptr SoftBodyCreationSettings_536871895): void {.
       cdecl, importc: "JPH_SoftBodyCreationSettings_Destroy".}
 else:
   static :
     hint("Declaration of " & "softBodyCreationSettings_Destroy" &
         " already exists, not redeclaring")
 when not declared(constraint_Destroy):
-  proc constraint_Destroy*(constraint: ptr Constraint_536871859): void {.cdecl,
+  proc constraint_Destroy*(constraint: ptr Constraint_536871931): void {.cdecl,
       importc: "JPH_Constraint_Destroy".}
 else:
   static :
     hint("Declaration of " & "constraint_Destroy" &
         " already exists, not redeclaring")
-proc getType*(constraint: ptr Constraint_536871859): ConstraintType_536871508 {.
+proc getType*(constraint: ptr Constraint_536871931): ConstraintType_536871580 {.
     cdecl, importc: "JPH_Constraint_GetType".}
-proc getSubType*(constraint: ptr Constraint_536871859): ConstraintSubType_536871512 {.
+proc getSubType*(constraint: ptr Constraint_536871931): ConstraintSubType_536871584 {.
     cdecl, importc: "JPH_Constraint_GetSubType".}
-proc getConstraintPriority*(constraint: ptr Constraint_536871859): uint32 {.
+proc getConstraintPriority*(constraint: ptr Constraint_536871931): uint32 {.
     cdecl, importc: "JPH_Constraint_GetConstraintPriority".}
-proc setConstraintPriority*(constraint: ptr Constraint_536871859;
+proc setConstraintPriority*(constraint: ptr Constraint_536871931;
                             priority: uint32): void {.cdecl,
     importc: "JPH_Constraint_SetConstraintPriority".}
-proc getNumVelocityStepsOverride*(constraint: ptr Constraint_536871859): uint32 {.
+proc getNumVelocityStepsOverride*(constraint: ptr Constraint_536871931): uint32 {.
     cdecl, importc: "JPH_Constraint_GetNumVelocityStepsOverride".}
-proc setNumVelocityStepsOverride*(constraint: ptr Constraint_536871859;
+proc setNumVelocityStepsOverride*(constraint: ptr Constraint_536871931;
                                   value: uint32): void {.cdecl,
     importc: "JPH_Constraint_SetNumVelocityStepsOverride".}
-proc getNumPositionStepsOverride*(constraint: ptr Constraint_536871859): uint32 {.
+proc getNumPositionStepsOverride*(constraint: ptr Constraint_536871931): uint32 {.
     cdecl, importc: "JPH_Constraint_GetNumPositionStepsOverride".}
-proc setNumPositionStepsOverride*(constraint: ptr Constraint_536871859;
+proc setNumPositionStepsOverride*(constraint: ptr Constraint_536871931;
                                   value: uint32): void {.cdecl,
     importc: "JPH_Constraint_SetNumPositionStepsOverride".}
-proc getEnabled*(constraint: ptr Constraint_536871859): bool {.cdecl,
+proc getEnabled*(constraint: ptr Constraint_536871931): bool {.cdecl,
     importc: "JPH_Constraint_GetEnabled".}
-proc setEnabled*(constraint: ptr Constraint_536871859; enabled: bool): void {.
+proc setEnabled*(constraint: ptr Constraint_536871931; enabled: bool): void {.
     cdecl, importc: "JPH_Constraint_SetEnabled".}
-proc getUserData*(constraint: ptr Constraint_536871859): uint64 {.cdecl,
+proc getUserData*(constraint: ptr Constraint_536871931): uint64 {.cdecl,
     importc: "JPH_Constraint_GetUserData".}
-proc setUserData*(constraint: ptr Constraint_536871859; userData: uint64): void {.
+proc setUserData*(constraint: ptr Constraint_536871931; userData: uint64): void {.
     cdecl, importc: "JPH_Constraint_SetUserData".}
-proc notifyShapeChanged*(constraint: ptr Constraint_536871859; bodyID: BodyID_536871464;
-                         deltaCOM: ptr Vec3_536871595): void {.cdecl,
+proc notifyShapeChanged*(constraint: ptr Constraint_536871931; bodyID: BodyID_536871536;
+                         deltaCOM: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_Constraint_NotifyShapeChanged".}
-proc resetWarmStart*(constraint: ptr Constraint_536871859): void {.cdecl,
+proc resetWarmStart*(constraint: ptr Constraint_536871931): void {.cdecl,
     importc: "JPH_Constraint_ResetWarmStart".}
-proc isActive*(constraint: ptr Constraint_536871859): bool {.cdecl,
+proc isActive*(constraint: ptr Constraint_536871931): bool {.cdecl,
     importc: "JPH_Constraint_IsActive".}
-proc setupVelocityConstraint*(constraint: ptr Constraint_536871859;
+proc setupVelocityConstraint*(constraint: ptr Constraint_536871931;
                               deltaTime: cfloat): void {.cdecl,
     importc: "JPH_Constraint_SetupVelocityConstraint".}
-proc warmStartVelocityConstraint*(constraint: ptr Constraint_536871859;
+proc warmStartVelocityConstraint*(constraint: ptr Constraint_536871931;
                                   warmStartImpulseRatio: cfloat): void {.cdecl,
     importc: "JPH_Constraint_WarmStartVelocityConstraint".}
-proc solveVelocityConstraint*(constraint: ptr Constraint_536871859;
+proc solveVelocityConstraint*(constraint: ptr Constraint_536871931;
                               deltaTime: cfloat): bool {.cdecl,
     importc: "JPH_Constraint_SolveVelocityConstraint".}
-proc solvePositionConstraint*(constraint: ptr Constraint_536871859;
+proc solvePositionConstraint*(constraint: ptr Constraint_536871931;
                               deltaTime: cfloat; baumgarte: cfloat): bool {.
     cdecl, importc: "JPH_Constraint_SolvePositionConstraint".}
-proc getBody1*(constraint: ptr TwoBodyConstraint_536871861): ptr Body_536871835 {.
+proc getBody1*(constraint: ptr TwoBodyConstraint_536871933): ptr Body_536871907 {.
     cdecl, importc: "JPH_TwoBodyConstraint_GetBody1".}
-proc getBody2*(constraint: ptr TwoBodyConstraint_536871861): ptr Body_536871835 {.
+proc getBody2*(constraint: ptr TwoBodyConstraint_536871933): ptr Body_536871907 {.
     cdecl, importc: "JPH_TwoBodyConstraint_GetBody2".}
-proc getConstraintToBody1Matrix*(constraint: ptr TwoBodyConstraint_536871861;
-                                 result: ptr Matrix4x4_536871611): void {.cdecl,
+proc getConstraintToBody1Matrix*(constraint: ptr TwoBodyConstraint_536871933;
+                                 result: ptr Matrix4x4_536871683): void {.cdecl,
     importc: "JPH_TwoBodyConstraint_GetConstraintToBody1Matrix".}
-proc getConstraintToBody2Matrix*(constraint: ptr TwoBodyConstraint_536871861;
-                                 result: ptr Matrix4x4_536871611): void {.cdecl,
+proc getConstraintToBody2Matrix*(constraint: ptr TwoBodyConstraint_536871933;
+                                 result: ptr Matrix4x4_536871683): void {.cdecl,
     importc: "JPH_TwoBodyConstraint_GetConstraintToBody2Matrix".}
 when not declared(fixedConstraintSettings_Init):
-  proc fixedConstraintSettings_Init*(settings: ptr FixedConstraintSettings_536871903): void {.
+  proc fixedConstraintSettings_Init*(settings: ptr FixedConstraintSettings_536871975): void {.
       cdecl, importc: "JPH_FixedConstraintSettings_Init".}
 else:
   static :
     hint("Declaration of " & "fixedConstraintSettings_Init" &
         " already exists, not redeclaring")
-when not declared(fixedConstraint_Create):
-  proc fixedConstraint_Create*(settings: ptr FixedConstraintSettings_536871903;
-                               body1: ptr Body_536871835; body2: ptr Body_536871835): ptr FixedConstraint_536871863 {.
-      cdecl, importc: "JPH_FixedConstraint_Create".}
-else:
-  static :
-    hint("Declaration of " & "fixedConstraint_Create" &
-        " already exists, not redeclaring")
-proc getSettings*(constraint: ptr FixedConstraint_536871863;
-                  settings: ptr FixedConstraintSettings_536871903): void {.
+proc initFixedConstraint*(settings: ptr FixedConstraintSettings_536871975;
+                          body1: ptr Body_536871907; body2: ptr Body_536871907): ptr FixedConstraint_536871935 {.
+    cdecl, importc: "JPH_FixedConstraint_Create".}
+proc getSettings*(constraint: ptr FixedConstraint_536871935;
+                  settings: ptr FixedConstraintSettings_536871975): void {.
     cdecl, importc: "JPH_FixedConstraint_GetSettings".}
-proc getTotalLambdaPosition*(constraint: ptr FixedConstraint_536871863;
-                             result: ptr Vec3_536871595): void {.cdecl,
+proc getTotalLambdaPosition*(constraint: ptr FixedConstraint_536871935;
+                             result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_FixedConstraint_GetTotalLambdaPosition".}
-proc getTotalLambdaRotation*(constraint: ptr FixedConstraint_536871863;
-                             result: ptr Vec3_536871595): void {.cdecl,
+proc getTotalLambdaRotation*(constraint: ptr FixedConstraint_536871935;
+                             result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_FixedConstraint_GetTotalLambdaRotation".}
 when not declared(distanceConstraintSettings_Init):
-  proc distanceConstraintSettings_Init*(settings: ptr DistanceConstraintSettings_536871907): void {.
+  proc distanceConstraintSettings_Init*(settings: ptr DistanceConstraintSettings_536871979): void {.
       cdecl, importc: "JPH_DistanceConstraintSettings_Init".}
 else:
   static :
     hint("Declaration of " & "distanceConstraintSettings_Init" &
         " already exists, not redeclaring")
-when not declared(distanceConstraint_Create):
-  proc distanceConstraint_Create*(settings: ptr DistanceConstraintSettings_536871907;
-                                  body1: ptr Body_536871835; body2: ptr Body_536871835): ptr DistanceConstraint_536871865 {.
-      cdecl, importc: "JPH_DistanceConstraint_Create".}
-else:
-  static :
-    hint("Declaration of " & "distanceConstraint_Create" &
-        " already exists, not redeclaring")
-proc getSettings*(constraint: ptr DistanceConstraint_536871865;
-                  settings: ptr DistanceConstraintSettings_536871907): void {.
+proc initDistanceConstraint*(settings: ptr DistanceConstraintSettings_536871979;
+                             body1: ptr Body_536871907; body2: ptr Body_536871907): ptr DistanceConstraint_536871937 {.
+    cdecl, importc: "JPH_DistanceConstraint_Create".}
+proc getSettings*(constraint: ptr DistanceConstraint_536871937;
+                  settings: ptr DistanceConstraintSettings_536871979): void {.
     cdecl, importc: "JPH_DistanceConstraint_GetSettings".}
-proc setDistance*(constraint: ptr DistanceConstraint_536871865;
+proc setDistance*(constraint: ptr DistanceConstraint_536871937;
                   minDistance: cfloat; maxDistance: cfloat): void {.cdecl,
     importc: "JPH_DistanceConstraint_SetDistance".}
-proc getMinDistance*(constraint: ptr DistanceConstraint_536871865): cfloat {.
+proc getMinDistance*(constraint: ptr DistanceConstraint_536871937): cfloat {.
     cdecl, importc: "JPH_DistanceConstraint_GetMinDistance".}
-proc getMaxDistance*(constraint: ptr DistanceConstraint_536871865): cfloat {.
+proc getMaxDistance*(constraint: ptr DistanceConstraint_536871937): cfloat {.
     cdecl, importc: "JPH_DistanceConstraint_GetMaxDistance".}
-proc getLimitsSpringSettings*(constraint: ptr DistanceConstraint_536871865;
-                              result: ptr SpringSettings_536871657): void {.
+proc getLimitsSpringSettings*(constraint: ptr DistanceConstraint_536871937;
+                              result: ptr SpringSettings_536871729): void {.
     cdecl, importc: "JPH_DistanceConstraint_GetLimitsSpringSettings".}
-proc setLimitsSpringSettings*(constraint: ptr DistanceConstraint_536871865;
-                              settings: ptr SpringSettings_536871657): void {.
+proc setLimitsSpringSettings*(constraint: ptr DistanceConstraint_536871937;
+                              settings: ptr SpringSettings_536871729): void {.
     cdecl, importc: "JPH_DistanceConstraint_SetLimitsSpringSettings".}
-proc getTotalLambdaPosition*(constraint: ptr DistanceConstraint_536871865): cfloat {.
+proc getTotalLambdaPosition*(constraint: ptr DistanceConstraint_536871937): cfloat {.
     cdecl, importc: "JPH_DistanceConstraint_GetTotalLambdaPosition".}
 when not declared(pointConstraintSettings_Init):
-  proc pointConstraintSettings_Init*(settings: ptr PointConstraintSettings_536871911): void {.
+  proc pointConstraintSettings_Init*(settings: ptr PointConstraintSettings_536871983): void {.
       cdecl, importc: "JPH_PointConstraintSettings_Init".}
 else:
   static :
     hint("Declaration of " & "pointConstraintSettings_Init" &
         " already exists, not redeclaring")
-when not declared(pointConstraint_Create):
-  proc pointConstraint_Create*(settings: ptr PointConstraintSettings_536871911;
-                               body1: ptr Body_536871835; body2: ptr Body_536871835): ptr PointConstraint_536871867 {.
-      cdecl, importc: "JPH_PointConstraint_Create".}
-else:
-  static :
-    hint("Declaration of " & "pointConstraint_Create" &
-        " already exists, not redeclaring")
-proc getSettings*(constraint: ptr PointConstraint_536871867;
-                  settings: ptr PointConstraintSettings_536871911): void {.
+proc initPointConstraint*(settings: ptr PointConstraintSettings_536871983;
+                          body1: ptr Body_536871907; body2: ptr Body_536871907): ptr PointConstraint_536871939 {.
+    cdecl, importc: "JPH_PointConstraint_Create".}
+proc getSettings*(constraint: ptr PointConstraint_536871939;
+                  settings: ptr PointConstraintSettings_536871983): void {.
     cdecl, importc: "JPH_PointConstraint_GetSettings".}
-proc setPoint1*(constraint: ptr PointConstraint_536871867;
-                space: ConstraintSpace_536871516; value: ptr RVec3_536871613): void {.
+proc setPoint1*(constraint: ptr PointConstraint_536871939;
+                space: ConstraintSpace_536871588; value: ptr RVec3_536871685): void {.
     cdecl, importc: "JPH_PointConstraint_SetPoint1".}
-proc setPoint2*(constraint: ptr PointConstraint_536871867;
-                space: ConstraintSpace_536871516; value: ptr RVec3_536871613): void {.
+proc setPoint2*(constraint: ptr PointConstraint_536871939;
+                space: ConstraintSpace_536871588; value: ptr RVec3_536871685): void {.
     cdecl, importc: "JPH_PointConstraint_SetPoint2".}
-proc getLocalSpacePoint1*(constraint: ptr PointConstraint_536871867;
-                          result: ptr Vec3_536871595): void {.cdecl,
+proc getLocalSpacePoint1*(constraint: ptr PointConstraint_536871939;
+                          result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_PointConstraint_GetLocalSpacePoint1".}
-proc getLocalSpacePoint2*(constraint: ptr PointConstraint_536871867;
-                          result: ptr Vec3_536871595): void {.cdecl,
+proc getLocalSpacePoint2*(constraint: ptr PointConstraint_536871939;
+                          result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_PointConstraint_GetLocalSpacePoint2".}
-proc getTotalLambdaPosition*(constraint: ptr PointConstraint_536871867;
-                             result: ptr Vec3_536871595): void {.cdecl,
+proc getTotalLambdaPosition*(constraint: ptr PointConstraint_536871939;
+                             result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_PointConstraint_GetTotalLambdaPosition".}
 when not declared(hingeConstraintSettings_Init):
-  proc hingeConstraintSettings_Init*(settings: ptr HingeConstraintSettings_536871915): void {.
+  proc hingeConstraintSettings_Init*(settings: ptr HingeConstraintSettings_536871987): void {.
       cdecl, importc: "JPH_HingeConstraintSettings_Init".}
 else:
   static :
     hint("Declaration of " & "hingeConstraintSettings_Init" &
         " already exists, not redeclaring")
-when not declared(hingeConstraint_Create):
-  proc hingeConstraint_Create*(settings: ptr HingeConstraintSettings_536871915;
-                               body1: ptr Body_536871835; body2: ptr Body_536871835): ptr HingeConstraint_536871869 {.
-      cdecl, importc: "JPH_HingeConstraint_Create".}
-else:
-  static :
-    hint("Declaration of " & "hingeConstraint_Create" &
-        " already exists, not redeclaring")
-proc getSettings*(constraint: ptr HingeConstraint_536871869;
-                  settings: ptr HingeConstraintSettings_536871915): void {.
+proc initHingeConstraint*(settings: ptr HingeConstraintSettings_536871987;
+                          body1: ptr Body_536871907; body2: ptr Body_536871907): ptr HingeConstraint_536871941 {.
+    cdecl, importc: "JPH_HingeConstraint_Create".}
+proc getSettings*(constraint: ptr HingeConstraint_536871941;
+                  settings: ptr HingeConstraintSettings_536871987): void {.
     cdecl, importc: "JPH_HingeConstraint_GetSettings".}
-proc getLocalSpacePoint1*(constraint: ptr HingeConstraint_536871869;
-                          result: ptr Vec3_536871595): void {.cdecl,
+proc getLocalSpacePoint1*(constraint: ptr HingeConstraint_536871941;
+                          result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_HingeConstraint_GetLocalSpacePoint1".}
-proc getLocalSpacePoint2*(constraint: ptr HingeConstraint_536871869;
-                          result: ptr Vec3_536871595): void {.cdecl,
+proc getLocalSpacePoint2*(constraint: ptr HingeConstraint_536871941;
+                          result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_HingeConstraint_GetLocalSpacePoint2".}
-proc getLocalSpaceHingeAxis1*(constraint: ptr HingeConstraint_536871869;
-                              result: ptr Vec3_536871595): void {.cdecl,
+proc getLocalSpaceHingeAxis1*(constraint: ptr HingeConstraint_536871941;
+                              result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_HingeConstraint_GetLocalSpaceHingeAxis1".}
-proc getLocalSpaceHingeAxis2*(constraint: ptr HingeConstraint_536871869;
-                              result: ptr Vec3_536871595): void {.cdecl,
+proc getLocalSpaceHingeAxis2*(constraint: ptr HingeConstraint_536871941;
+                              result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_HingeConstraint_GetLocalSpaceHingeAxis2".}
-proc getLocalSpaceNormalAxis1*(constraint: ptr HingeConstraint_536871869;
-                               result: ptr Vec3_536871595): void {.cdecl,
+proc getLocalSpaceNormalAxis1*(constraint: ptr HingeConstraint_536871941;
+                               result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_HingeConstraint_GetLocalSpaceNormalAxis1".}
-proc getLocalSpaceNormalAxis2*(constraint: ptr HingeConstraint_536871869;
-                               result: ptr Vec3_536871595): void {.cdecl,
+proc getLocalSpaceNormalAxis2*(constraint: ptr HingeConstraint_536871941;
+                               result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_HingeConstraint_GetLocalSpaceNormalAxis2".}
-proc getCurrentAngle*(constraint: ptr HingeConstraint_536871869): cfloat {.
+proc getCurrentAngle*(constraint: ptr HingeConstraint_536871941): cfloat {.
     cdecl, importc: "JPH_HingeConstraint_GetCurrentAngle".}
-proc setMaxFrictionTorque*(constraint: ptr HingeConstraint_536871869;
+proc setMaxFrictionTorque*(constraint: ptr HingeConstraint_536871941;
                            frictionTorque: cfloat): void {.cdecl,
     importc: "JPH_HingeConstraint_SetMaxFrictionTorque".}
-proc getMaxFrictionTorque*(constraint: ptr HingeConstraint_536871869): cfloat {.
+proc getMaxFrictionTorque*(constraint: ptr HingeConstraint_536871941): cfloat {.
     cdecl, importc: "JPH_HingeConstraint_GetMaxFrictionTorque".}
-proc setMotorSettings*(constraint: ptr HingeConstraint_536871869;
-                       settings: ptr MotorSettings_536871661): void {.cdecl,
+proc setMotorSettings*(constraint: ptr HingeConstraint_536871941;
+                       settings: ptr MotorSettings_536871733): void {.cdecl,
     importc: "JPH_HingeConstraint_SetMotorSettings".}
-proc getMotorSettings*(constraint: ptr HingeConstraint_536871869;
-                       result: ptr MotorSettings_536871661): void {.cdecl,
+proc getMotorSettings*(constraint: ptr HingeConstraint_536871941;
+                       result: ptr MotorSettings_536871733): void {.cdecl,
     importc: "JPH_HingeConstraint_GetMotorSettings".}
-proc setMotorState*(constraint: ptr HingeConstraint_536871869; state: MotorState_536871548): void {.
+proc setMotorState*(constraint: ptr HingeConstraint_536871941; state: MotorState_536871620): void {.
     cdecl, importc: "JPH_HingeConstraint_SetMotorState".}
-proc getMotorState*(constraint: ptr HingeConstraint_536871869): MotorState_536871548 {.
+proc getMotorState*(constraint: ptr HingeConstraint_536871941): MotorState_536871620 {.
     cdecl, importc: "JPH_HingeConstraint_GetMotorState".}
-proc setTargetAngularVelocity*(constraint: ptr HingeConstraint_536871869;
+proc setTargetAngularVelocity*(constraint: ptr HingeConstraint_536871941;
                                angularVelocity: cfloat): void {.cdecl,
     importc: "JPH_HingeConstraint_SetTargetAngularVelocity".}
-proc getTargetAngularVelocity*(constraint: ptr HingeConstraint_536871869): cfloat {.
+proc getTargetAngularVelocity*(constraint: ptr HingeConstraint_536871941): cfloat {.
     cdecl, importc: "JPH_HingeConstraint_GetTargetAngularVelocity".}
-proc setTargetAngle*(constraint: ptr HingeConstraint_536871869; angle: cfloat): void {.
+proc setTargetAngle*(constraint: ptr HingeConstraint_536871941; angle: cfloat): void {.
     cdecl, importc: "JPH_HingeConstraint_SetTargetAngle".}
-proc getTargetAngle*(constraint: ptr HingeConstraint_536871869): cfloat {.cdecl,
+proc getTargetAngle*(constraint: ptr HingeConstraint_536871941): cfloat {.cdecl,
     importc: "JPH_HingeConstraint_GetTargetAngle".}
-proc setLimits*(constraint: ptr HingeConstraint_536871869; inLimitsMin: cfloat;
+proc setLimits*(constraint: ptr HingeConstraint_536871941; inLimitsMin: cfloat;
                 inLimitsMax: cfloat): void {.cdecl,
     importc: "JPH_HingeConstraint_SetLimits".}
-proc getLimitsMin*(constraint: ptr HingeConstraint_536871869): cfloat {.cdecl,
+proc getLimitsMin*(constraint: ptr HingeConstraint_536871941): cfloat {.cdecl,
     importc: "JPH_HingeConstraint_GetLimitsMin".}
-proc getLimitsMax*(constraint: ptr HingeConstraint_536871869): cfloat {.cdecl,
+proc getLimitsMax*(constraint: ptr HingeConstraint_536871941): cfloat {.cdecl,
     importc: "JPH_HingeConstraint_GetLimitsMax".}
-proc hasLimits*(constraint: ptr HingeConstraint_536871869): bool {.cdecl,
+proc hasLimits*(constraint: ptr HingeConstraint_536871941): bool {.cdecl,
     importc: "JPH_HingeConstraint_HasLimits".}
-proc getLimitsSpringSettings*(constraint: ptr HingeConstraint_536871869;
-                              result: ptr SpringSettings_536871657): void {.
+proc getLimitsSpringSettings*(constraint: ptr HingeConstraint_536871941;
+                              result: ptr SpringSettings_536871729): void {.
     cdecl, importc: "JPH_HingeConstraint_GetLimitsSpringSettings".}
-proc setLimitsSpringSettings*(constraint: ptr HingeConstraint_536871869;
-                              settings: ptr SpringSettings_536871657): void {.
+proc setLimitsSpringSettings*(constraint: ptr HingeConstraint_536871941;
+                              settings: ptr SpringSettings_536871729): void {.
     cdecl, importc: "JPH_HingeConstraint_SetLimitsSpringSettings".}
-proc getTotalLambdaPosition*(constraint: ptr HingeConstraint_536871869;
-                             result: ptr Vec3_536871595): void {.cdecl,
+proc getTotalLambdaPosition*(constraint: ptr HingeConstraint_536871941;
+                             result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_HingeConstraint_GetTotalLambdaPosition".}
-proc getTotalLambdaRotation*(constraint: ptr HingeConstraint_536871869;
+proc getTotalLambdaRotation*(constraint: ptr HingeConstraint_536871941;
                              rotation: array[2'i64, cfloat]): void {.cdecl,
     importc: "JPH_HingeConstraint_GetTotalLambdaRotation".}
-proc getTotalLambdaRotationLimits*(constraint: ptr HingeConstraint_536871869): cfloat {.
+proc getTotalLambdaRotationLimits*(constraint: ptr HingeConstraint_536871941): cfloat {.
     cdecl, importc: "JPH_HingeConstraint_GetTotalLambdaRotationLimits".}
-proc getTotalLambdaMotor*(constraint: ptr HingeConstraint_536871869): cfloat {.
+proc getTotalLambdaMotor*(constraint: ptr HingeConstraint_536871941): cfloat {.
     cdecl, importc: "JPH_HingeConstraint_GetTotalLambdaMotor".}
 when not declared(sliderConstraintSettings_Init):
-  proc sliderConstraintSettings_Init*(settings: ptr SliderConstraintSettings_536871919): void {.
+  proc sliderConstraintSettings_Init*(settings: ptr SliderConstraintSettings_536871991): void {.
       cdecl, importc: "JPH_SliderConstraintSettings_Init".}
 else:
   static :
     hint("Declaration of " & "sliderConstraintSettings_Init" &
         " already exists, not redeclaring")
-proc setSliderAxis*(settings: ptr SliderConstraintSettings_536871919;
-                    axis: ptr Vec3_536871595): void {.cdecl,
+proc setSliderAxis*(settings: ptr SliderConstraintSettings_536871991;
+                    axis: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_SliderConstraintSettings_SetSliderAxis".}
-when not declared(sliderConstraint_Create):
-  proc sliderConstraint_Create*(settings: ptr SliderConstraintSettings_536871919;
-                                body1: ptr Body_536871835; body2: ptr Body_536871835): ptr SliderConstraint_536871871 {.
-      cdecl, importc: "JPH_SliderConstraint_Create".}
-else:
-  static :
-    hint("Declaration of " & "sliderConstraint_Create" &
-        " already exists, not redeclaring")
-proc getSettings*(constraint: ptr SliderConstraint_536871871;
-                  settings: ptr SliderConstraintSettings_536871919): void {.
+proc initSliderConstraint*(settings: ptr SliderConstraintSettings_536871991;
+                           body1: ptr Body_536871907; body2: ptr Body_536871907): ptr SliderConstraint_536871943 {.
+    cdecl, importc: "JPH_SliderConstraint_Create".}
+proc getSettings*(constraint: ptr SliderConstraint_536871943;
+                  settings: ptr SliderConstraintSettings_536871991): void {.
     cdecl, importc: "JPH_SliderConstraint_GetSettings".}
-proc getCurrentPosition*(constraint: ptr SliderConstraint_536871871): cfloat {.
+proc getCurrentPosition*(constraint: ptr SliderConstraint_536871943): cfloat {.
     cdecl, importc: "JPH_SliderConstraint_GetCurrentPosition".}
-proc setMaxFrictionForce*(constraint: ptr SliderConstraint_536871871;
+proc setMaxFrictionForce*(constraint: ptr SliderConstraint_536871943;
                           frictionForce: cfloat): void {.cdecl,
     importc: "JPH_SliderConstraint_SetMaxFrictionForce".}
-proc getMaxFrictionForce*(constraint: ptr SliderConstraint_536871871): cfloat {.
+proc getMaxFrictionForce*(constraint: ptr SliderConstraint_536871943): cfloat {.
     cdecl, importc: "JPH_SliderConstraint_GetMaxFrictionForce".}
-proc setMotorSettings*(constraint: ptr SliderConstraint_536871871;
-                       settings: ptr MotorSettings_536871661): void {.cdecl,
+proc setMotorSettings*(constraint: ptr SliderConstraint_536871943;
+                       settings: ptr MotorSettings_536871733): void {.cdecl,
     importc: "JPH_SliderConstraint_SetMotorSettings".}
-proc getMotorSettings*(constraint: ptr SliderConstraint_536871871;
-                       result: ptr MotorSettings_536871661): void {.cdecl,
+proc getMotorSettings*(constraint: ptr SliderConstraint_536871943;
+                       result: ptr MotorSettings_536871733): void {.cdecl,
     importc: "JPH_SliderConstraint_GetMotorSettings".}
-proc setMotorState*(constraint: ptr SliderConstraint_536871871;
-                    state: MotorState_536871548): void {.cdecl,
+proc setMotorState*(constraint: ptr SliderConstraint_536871943;
+                    state: MotorState_536871620): void {.cdecl,
     importc: "JPH_SliderConstraint_SetMotorState".}
-proc getMotorState*(constraint: ptr SliderConstraint_536871871): MotorState_536871548 {.
+proc getMotorState*(constraint: ptr SliderConstraint_536871943): MotorState_536871620 {.
     cdecl, importc: "JPH_SliderConstraint_GetMotorState".}
-proc setTargetVelocity*(constraint: ptr SliderConstraint_536871871;
+proc setTargetVelocity*(constraint: ptr SliderConstraint_536871943;
                         velocity: cfloat): void {.cdecl,
     importc: "JPH_SliderConstraint_SetTargetVelocity".}
-proc getTargetVelocity*(constraint: ptr SliderConstraint_536871871): cfloat {.
+proc getTargetVelocity*(constraint: ptr SliderConstraint_536871943): cfloat {.
     cdecl, importc: "JPH_SliderConstraint_GetTargetVelocity".}
-proc setTargetPosition*(constraint: ptr SliderConstraint_536871871;
+proc setTargetPosition*(constraint: ptr SliderConstraint_536871943;
                         position: cfloat): void {.cdecl,
     importc: "JPH_SliderConstraint_SetTargetPosition".}
-proc getTargetPosition*(constraint: ptr SliderConstraint_536871871): cfloat {.
+proc getTargetPosition*(constraint: ptr SliderConstraint_536871943): cfloat {.
     cdecl, importc: "JPH_SliderConstraint_GetTargetPosition".}
-proc setLimits*(constraint: ptr SliderConstraint_536871871; inLimitsMin: cfloat;
+proc setLimits*(constraint: ptr SliderConstraint_536871943; inLimitsMin: cfloat;
                 inLimitsMax: cfloat): void {.cdecl,
     importc: "JPH_SliderConstraint_SetLimits".}
-proc getLimitsMin*(constraint: ptr SliderConstraint_536871871): cfloat {.cdecl,
+proc getLimitsMin*(constraint: ptr SliderConstraint_536871943): cfloat {.cdecl,
     importc: "JPH_SliderConstraint_GetLimitsMin".}
-proc getLimitsMax*(constraint: ptr SliderConstraint_536871871): cfloat {.cdecl,
+proc getLimitsMax*(constraint: ptr SliderConstraint_536871943): cfloat {.cdecl,
     importc: "JPH_SliderConstraint_GetLimitsMax".}
-proc hasLimits*(constraint: ptr SliderConstraint_536871871): bool {.cdecl,
+proc hasLimits*(constraint: ptr SliderConstraint_536871943): bool {.cdecl,
     importc: "JPH_SliderConstraint_HasLimits".}
-proc getLimitsSpringSettings*(constraint: ptr SliderConstraint_536871871;
-                              result: ptr SpringSettings_536871657): void {.
+proc getLimitsSpringSettings*(constraint: ptr SliderConstraint_536871943;
+                              result: ptr SpringSettings_536871729): void {.
     cdecl, importc: "JPH_SliderConstraint_GetLimitsSpringSettings".}
-proc setLimitsSpringSettings*(constraint: ptr SliderConstraint_536871871;
-                              settings: ptr SpringSettings_536871657): void {.
+proc setLimitsSpringSettings*(constraint: ptr SliderConstraint_536871943;
+                              settings: ptr SpringSettings_536871729): void {.
     cdecl, importc: "JPH_SliderConstraint_SetLimitsSpringSettings".}
-proc getTotalLambdaPosition*(constraint: ptr SliderConstraint_536871871;
+proc getTotalLambdaPosition*(constraint: ptr SliderConstraint_536871943;
                              position: array[2'i64, cfloat]): void {.cdecl,
     importc: "JPH_SliderConstraint_GetTotalLambdaPosition".}
-proc getTotalLambdaPositionLimits*(constraint: ptr SliderConstraint_536871871): cfloat {.
+proc getTotalLambdaPositionLimits*(constraint: ptr SliderConstraint_536871943): cfloat {.
     cdecl, importc: "JPH_SliderConstraint_GetTotalLambdaPositionLimits".}
-proc getTotalLambdaRotation*(constraint: ptr SliderConstraint_536871871;
-                             result: ptr Vec3_536871595): void {.cdecl,
+proc getTotalLambdaRotation*(constraint: ptr SliderConstraint_536871943;
+                             result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_SliderConstraint_GetTotalLambdaRotation".}
-proc getTotalLambdaMotor*(constraint: ptr SliderConstraint_536871871): cfloat {.
+proc getTotalLambdaMotor*(constraint: ptr SliderConstraint_536871943): cfloat {.
     cdecl, importc: "JPH_SliderConstraint_GetTotalLambdaMotor".}
 when not declared(coneConstraintSettings_Init):
-  proc coneConstraintSettings_Init*(settings: ptr ConeConstraintSettings_536871923): void {.
+  proc coneConstraintSettings_Init*(settings: ptr ConeConstraintSettings_536871995): void {.
       cdecl, importc: "JPH_ConeConstraintSettings_Init".}
 else:
   static :
     hint("Declaration of " & "coneConstraintSettings_Init" &
         " already exists, not redeclaring")
-when not declared(coneConstraint_Create):
-  proc coneConstraint_Create*(settings: ptr ConeConstraintSettings_536871923;
-                              body1: ptr Body_536871835; body2: ptr Body_536871835): ptr ConeConstraint_536871873 {.
-      cdecl, importc: "JPH_ConeConstraint_Create".}
-else:
-  static :
-    hint("Declaration of " & "coneConstraint_Create" &
-        " already exists, not redeclaring")
-proc getSettings*(constraint: ptr ConeConstraint_536871873;
-                  settings: ptr ConeConstraintSettings_536871923): void {.cdecl,
+proc initConeConstraint*(settings: ptr ConeConstraintSettings_536871995;
+                         body1: ptr Body_536871907; body2: ptr Body_536871907): ptr ConeConstraint_536871945 {.
+    cdecl, importc: "JPH_ConeConstraint_Create".}
+proc getSettings*(constraint: ptr ConeConstraint_536871945;
+                  settings: ptr ConeConstraintSettings_536871995): void {.cdecl,
     importc: "JPH_ConeConstraint_GetSettings".}
-proc setHalfConeAngle*(constraint: ptr ConeConstraint_536871873;
+proc setHalfConeAngle*(constraint: ptr ConeConstraint_536871945;
                        halfConeAngle: cfloat): void {.cdecl,
     importc: "JPH_ConeConstraint_SetHalfConeAngle".}
-proc getCosHalfConeAngle*(constraint: ptr ConeConstraint_536871873): cfloat {.
+proc getCosHalfConeAngle*(constraint: ptr ConeConstraint_536871945): cfloat {.
     cdecl, importc: "JPH_ConeConstraint_GetCosHalfConeAngle".}
-proc getTotalLambdaPosition*(constraint: ptr ConeConstraint_536871873;
-                             result: ptr Vec3_536871595): void {.cdecl,
+proc getTotalLambdaPosition*(constraint: ptr ConeConstraint_536871945;
+                             result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_ConeConstraint_GetTotalLambdaPosition".}
-proc getTotalLambdaRotation*(constraint: ptr ConeConstraint_536871873): cfloat {.
+proc getTotalLambdaRotation*(constraint: ptr ConeConstraint_536871945): cfloat {.
     cdecl, importc: "JPH_ConeConstraint_GetTotalLambdaRotation".}
 when not declared(swingTwistConstraintSettings_Init):
   proc swingTwistConstraintSettings_Init*(
-      settings: ptr SwingTwistConstraintSettings_536871927): void {.cdecl,
+      settings: ptr SwingTwistConstraintSettings_536871999): void {.cdecl,
       importc: "JPH_SwingTwistConstraintSettings_Init".}
 else:
   static :
     hint("Declaration of " & "swingTwistConstraintSettings_Init" &
         " already exists, not redeclaring")
-when not declared(swingTwistConstraint_Create):
-  proc swingTwistConstraint_Create*(settings: ptr SwingTwistConstraintSettings_536871927;
-                                    body1: ptr Body_536871835; body2: ptr Body_536871835): ptr SwingTwistConstraint_536871875 {.
-      cdecl, importc: "JPH_SwingTwistConstraint_Create".}
-else:
-  static :
-    hint("Declaration of " & "swingTwistConstraint_Create" &
-        " already exists, not redeclaring")
-proc getSettings*(constraint: ptr SwingTwistConstraint_536871875;
-                  settings: ptr SwingTwistConstraintSettings_536871927): void {.
+proc initSwingTwistConstraint*(settings: ptr SwingTwistConstraintSettings_536871999;
+                               body1: ptr Body_536871907; body2: ptr Body_536871907): ptr SwingTwistConstraint_536871947 {.
+    cdecl, importc: "JPH_SwingTwistConstraint_Create".}
+proc getSettings*(constraint: ptr SwingTwistConstraint_536871947;
+                  settings: ptr SwingTwistConstraintSettings_536871999): void {.
     cdecl, importc: "JPH_SwingTwistConstraint_GetSettings".}
-proc getNormalHalfConeAngle*(constraint: ptr SwingTwistConstraint_536871875): cfloat {.
+proc getNormalHalfConeAngle*(constraint: ptr SwingTwistConstraint_536871947): cfloat {.
     cdecl, importc: "JPH_SwingTwistConstraint_GetNormalHalfConeAngle".}
-proc getTotalLambdaPosition*(constraint: ptr SwingTwistConstraint_536871875;
-                             result: ptr Vec3_536871595): void {.cdecl,
+proc getTotalLambdaPosition*(constraint: ptr SwingTwistConstraint_536871947;
+                             result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_SwingTwistConstraint_GetTotalLambdaPosition".}
-proc getTotalLambdaTwist*(constraint: ptr SwingTwistConstraint_536871875): cfloat {.
+proc getTotalLambdaTwist*(constraint: ptr SwingTwistConstraint_536871947): cfloat {.
     cdecl, importc: "JPH_SwingTwistConstraint_GetTotalLambdaTwist".}
-proc getTotalLambdaSwingY*(constraint: ptr SwingTwistConstraint_536871875): cfloat {.
+proc getTotalLambdaSwingY*(constraint: ptr SwingTwistConstraint_536871947): cfloat {.
     cdecl, importc: "JPH_SwingTwistConstraint_GetTotalLambdaSwingY".}
-proc getTotalLambdaSwingZ*(constraint: ptr SwingTwistConstraint_536871875): cfloat {.
+proc getTotalLambdaSwingZ*(constraint: ptr SwingTwistConstraint_536871947): cfloat {.
     cdecl, importc: "JPH_SwingTwistConstraint_GetTotalLambdaSwingZ".}
-proc getTotalLambdaMotor*(constraint: ptr SwingTwistConstraint_536871875;
-                          result: ptr Vec3_536871595): void {.cdecl,
+proc getTotalLambdaMotor*(constraint: ptr SwingTwistConstraint_536871947;
+                          result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_SwingTwistConstraint_GetTotalLambdaMotor".}
 when not declared(sixDOFConstraintSettings_Init):
-  proc sixDOFConstraintSettings_Init*(settings: ptr SixDOFConstraintSettings_536871931): void {.
+  proc sixDOFConstraintSettings_Init*(settings: ptr SixDOFConstraintSettings_536872003): void {.
       cdecl, importc: "JPH_SixDOFConstraintSettings_Init".}
 else:
   static :
     hint("Declaration of " & "sixDOFConstraintSettings_Init" &
         " already exists, not redeclaring")
-proc makeFreeAxis*(settings: ptr SixDOFConstraintSettings_536871931;
-                   axis: SixDOFConstraintAxis_536871567): void {.cdecl,
+proc makeFreeAxis*(settings: ptr SixDOFConstraintSettings_536872003;
+                   axis: SixDOFConstraintAxis_536871639): void {.cdecl,
     importc: "JPH_SixDOFConstraintSettings_MakeFreeAxis".}
-proc isFreeAxis*(settings: ptr SixDOFConstraintSettings_536871931;
-                 axis: SixDOFConstraintAxis_536871567): bool {.cdecl,
+proc isFreeAxis*(settings: ptr SixDOFConstraintSettings_536872003;
+                 axis: SixDOFConstraintAxis_536871639): bool {.cdecl,
     importc: "JPH_SixDOFConstraintSettings_IsFreeAxis".}
-proc makeFixedAxis*(settings: ptr SixDOFConstraintSettings_536871931;
-                    axis: SixDOFConstraintAxis_536871567): void {.cdecl,
+proc makeFixedAxis*(settings: ptr SixDOFConstraintSettings_536872003;
+                    axis: SixDOFConstraintAxis_536871639): void {.cdecl,
     importc: "JPH_SixDOFConstraintSettings_MakeFixedAxis".}
-proc isFixedAxis*(settings: ptr SixDOFConstraintSettings_536871931;
-                  axis: SixDOFConstraintAxis_536871567): bool {.cdecl,
+proc isFixedAxis*(settings: ptr SixDOFConstraintSettings_536872003;
+                  axis: SixDOFConstraintAxis_536871639): bool {.cdecl,
     importc: "JPH_SixDOFConstraintSettings_IsFixedAxis".}
-proc setLimitedAxis*(settings: ptr SixDOFConstraintSettings_536871931;
-                     axis: SixDOFConstraintAxis_536871567; min: cfloat;
+proc setLimitedAxis*(settings: ptr SixDOFConstraintSettings_536872003;
+                     axis: SixDOFConstraintAxis_536871639; min: cfloat;
                      max: cfloat): void {.cdecl,
     importc: "JPH_SixDOFConstraintSettings_SetLimitedAxis".}
-when not declared(sixDOFConstraint_Create):
-  proc sixDOFConstraint_Create*(settings: ptr SixDOFConstraintSettings_536871931;
-                                body1: ptr Body_536871835; body2: ptr Body_536871835): ptr SixDOFConstraint_536871877 {.
-      cdecl, importc: "JPH_SixDOFConstraint_Create".}
-else:
-  static :
-    hint("Declaration of " & "sixDOFConstraint_Create" &
-        " already exists, not redeclaring")
-proc getSettings*(constraint: ptr SixDOFConstraint_536871877;
-                  settings: ptr SixDOFConstraintSettings_536871931): void {.
+proc initSixDOFConstraint*(settings: ptr SixDOFConstraintSettings_536872003;
+                           body1: ptr Body_536871907; body2: ptr Body_536871907): ptr SixDOFConstraint_536871949 {.
+    cdecl, importc: "JPH_SixDOFConstraint_Create".}
+proc getSettings*(constraint: ptr SixDOFConstraint_536871949;
+                  settings: ptr SixDOFConstraintSettings_536872003): void {.
     cdecl, importc: "JPH_SixDOFConstraint_GetSettings".}
-proc getLimitsMin*(constraint: ptr SixDOFConstraint_536871877;
-                   axis: SixDOFConstraintAxis_536871567): cfloat {.cdecl,
+proc getLimitsMin*(constraint: ptr SixDOFConstraint_536871949;
+                   axis: SixDOFConstraintAxis_536871639): cfloat {.cdecl,
     importc: "JPH_SixDOFConstraint_GetLimitsMin".}
-proc getLimitsMax*(constraint: ptr SixDOFConstraint_536871877;
-                   axis: SixDOFConstraintAxis_536871567): cfloat {.cdecl,
+proc getLimitsMax*(constraint: ptr SixDOFConstraint_536871949;
+                   axis: SixDOFConstraintAxis_536871639): cfloat {.cdecl,
     importc: "JPH_SixDOFConstraint_GetLimitsMax".}
-proc getTotalLambdaPosition*(constraint: ptr SixDOFConstraint_536871877;
-                             result: ptr Vec3_536871595): void {.cdecl,
+proc getTotalLambdaPosition*(constraint: ptr SixDOFConstraint_536871949;
+                             result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_SixDOFConstraint_GetTotalLambdaPosition".}
-proc getTotalLambdaRotation*(constraint: ptr SixDOFConstraint_536871877;
-                             result: ptr Vec3_536871595): void {.cdecl,
+proc getTotalLambdaRotation*(constraint: ptr SixDOFConstraint_536871949;
+                             result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_SixDOFConstraint_GetTotalLambdaRotation".}
-proc getTotalLambdaMotorTranslation*(constraint: ptr SixDOFConstraint_536871877;
-                                     result: ptr Vec3_536871595): void {.cdecl,
+proc getTotalLambdaMotorTranslation*(constraint: ptr SixDOFConstraint_536871949;
+                                     result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_SixDOFConstraint_GetTotalLambdaMotorTranslation".}
-proc getTotalLambdaMotorRotation*(constraint: ptr SixDOFConstraint_536871877;
-                                  result: ptr Vec3_536871595): void {.cdecl,
+proc getTotalLambdaMotorRotation*(constraint: ptr SixDOFConstraint_536871949;
+                                  result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_SixDOFConstraint_GetTotalLambdaMotorRotation".}
 when not declared(gearConstraintSettings_Init):
-  proc gearConstraintSettings_Init*(settings: ptr GearConstraintSettings_536871935): void {.
+  proc gearConstraintSettings_Init*(settings: ptr GearConstraintSettings_536872007): void {.
       cdecl, importc: "JPH_GearConstraintSettings_Init".}
 else:
   static :
     hint("Declaration of " & "gearConstraintSettings_Init" &
         " already exists, not redeclaring")
-when not declared(gearConstraint_Create):
-  proc gearConstraint_Create*(settings: ptr GearConstraintSettings_536871935;
-                              body1: ptr Body_536871835; body2: ptr Body_536871835): ptr GearConstraint_536871879 {.
-      cdecl, importc: "JPH_GearConstraint_Create".}
-else:
-  static :
-    hint("Declaration of " & "gearConstraint_Create" &
-        " already exists, not redeclaring")
-proc getSettings*(constraint: ptr GearConstraint_536871879;
-                  settings: ptr GearConstraintSettings_536871935): void {.cdecl,
+proc initGearConstraint*(settings: ptr GearConstraintSettings_536872007;
+                         body1: ptr Body_536871907; body2: ptr Body_536871907): ptr GearConstraint_536871951 {.
+    cdecl, importc: "JPH_GearConstraint_Create".}
+proc getSettings*(constraint: ptr GearConstraint_536871951;
+                  settings: ptr GearConstraintSettings_536872007): void {.cdecl,
     importc: "JPH_GearConstraint_GetSettings".}
-proc setConstraints*(constraint: ptr GearConstraint_536871879;
-                     gear1: ptr Constraint_536871859; gear2: ptr Constraint_536871859): void {.
+proc setConstraints*(constraint: ptr GearConstraint_536871951;
+                     gear1: ptr Constraint_536871931; gear2: ptr Constraint_536871931): void {.
     cdecl, importc: "JPH_GearConstraint_SetConstraints".}
-proc getTotalLambda*(constraint: ptr GearConstraint_536871879): cfloat {.cdecl,
+proc getTotalLambda*(constraint: ptr GearConstraint_536871951): cfloat {.cdecl,
     importc: "JPH_GearConstraint_GetTotalLambda".}
-proc destroyBody*(interface_arg: ptr BodyInterface_536871825; bodyID: BodyID_536871464): void {.
+proc destroyBody*(interface_arg: ptr BodyInterface_536871897; bodyID: BodyID_536871536): void {.
     cdecl, importc: "JPH_BodyInterface_DestroyBody".}
-proc createAndAddBody*(interface_arg: ptr BodyInterface_536871825;
-                       settings: ptr BodyCreationSettings_536871821;
-                       activationMode: Activation_536871492): BodyID_536871464 {.
+proc createAndAddBody*(interface_arg: ptr BodyInterface_536871897;
+                       settings: ptr BodyCreationSettings_536871893;
+                       activationMode: Activation_536871564): BodyID_536871536 {.
     cdecl, importc: "JPH_BodyInterface_CreateAndAddBody".}
-proc createBody*(interface_arg: ptr BodyInterface_536871825;
-                 settings: ptr BodyCreationSettings_536871821): ptr Body_536871835 {.
+proc createBody*(interface_arg: ptr BodyInterface_536871897;
+                 settings: ptr BodyCreationSettings_536871893): ptr Body_536871907 {.
     cdecl, importc: "JPH_BodyInterface_CreateBody".}
-proc createBodyWithID*(interface_arg: ptr BodyInterface_536871825;
-                       bodyID: BodyID_536871464;
-                       settings: ptr BodyCreationSettings_536871821): ptr Body_536871835 {.
+proc createBodyWithID*(interface_arg: ptr BodyInterface_536871897;
+                       bodyID: BodyID_536871536;
+                       settings: ptr BodyCreationSettings_536871893): ptr Body_536871907 {.
     cdecl, importc: "JPH_BodyInterface_CreateBodyWithID".}
-proc createBodyWithoutID*(interface_arg: ptr BodyInterface_536871825;
-                          settings: ptr BodyCreationSettings_536871821): ptr Body_536871835 {.
+proc createBodyWithoutID*(interface_arg: ptr BodyInterface_536871897;
+                          settings: ptr BodyCreationSettings_536871893): ptr Body_536871907 {.
     cdecl, importc: "JPH_BodyInterface_CreateBodyWithoutID".}
-proc destroyBodyWithoutID*(interface_arg: ptr BodyInterface_536871825;
-                           body: ptr Body_536871835): void {.cdecl,
+proc destroyBodyWithoutID*(interface_arg: ptr BodyInterface_536871897;
+                           body: ptr Body_536871907): void {.cdecl,
     importc: "JPH_BodyInterface_DestroyBodyWithoutID".}
-proc assignBodyID*(interface_arg: ptr BodyInterface_536871825; body: ptr Body_536871835): bool {.
+proc assignBodyID*(interface_arg: ptr BodyInterface_536871897; body: ptr Body_536871907): bool {.
     cdecl, importc: "JPH_BodyInterface_AssignBodyID".}
-proc assignBodyID2*(interface_arg: ptr BodyInterface_536871825; body: ptr Body_536871835;
-                    bodyID: BodyID_536871464): bool {.cdecl,
+proc assignBodyID2*(interface_arg: ptr BodyInterface_536871897; body: ptr Body_536871907;
+                    bodyID: BodyID_536871536): bool {.cdecl,
     importc: "JPH_BodyInterface_AssignBodyID2".}
-proc unassignBodyID*(interface_arg: ptr BodyInterface_536871825; bodyID: BodyID_536871464): ptr Body_536871835 {.
+proc unassignBodyID*(interface_arg: ptr BodyInterface_536871897; bodyID: BodyID_536871536): ptr Body_536871907 {.
     cdecl, importc: "JPH_BodyInterface_UnassignBodyID".}
-proc createSoftBody*(interface_arg: ptr BodyInterface_536871825;
-                     settings: ptr SoftBodyCreationSettings_536871823): ptr Body_536871835 {.
+proc createSoftBody*(interface_arg: ptr BodyInterface_536871897;
+                     settings: ptr SoftBodyCreationSettings_536871895): ptr Body_536871907 {.
     cdecl, importc: "JPH_BodyInterface_CreateSoftBody".}
-proc createSoftBodyWithID*(interface_arg: ptr BodyInterface_536871825;
-                           bodyID: BodyID_536871464;
-                           settings: ptr SoftBodyCreationSettings_536871823): ptr Body_536871835 {.
+proc createSoftBodyWithID*(interface_arg: ptr BodyInterface_536871897;
+                           bodyID: BodyID_536871536;
+                           settings: ptr SoftBodyCreationSettings_536871895): ptr Body_536871907 {.
     cdecl, importc: "JPH_BodyInterface_CreateSoftBodyWithID".}
-proc createSoftBodyWithoutID*(interface_arg: ptr BodyInterface_536871825;
-                              settings: ptr SoftBodyCreationSettings_536871823): ptr Body_536871835 {.
+proc createSoftBodyWithoutID*(interface_arg: ptr BodyInterface_536871897;
+                              settings: ptr SoftBodyCreationSettings_536871895): ptr Body_536871907 {.
     cdecl, importc: "JPH_BodyInterface_CreateSoftBodyWithoutID".}
-proc createAndAddSoftBody*(interface_arg: ptr BodyInterface_536871825;
-                           settings: ptr SoftBodyCreationSettings_536871823;
-                           activationMode: Activation_536871492): BodyID_536871464 {.
+proc createAndAddSoftBody*(interface_arg: ptr BodyInterface_536871897;
+                           settings: ptr SoftBodyCreationSettings_536871895;
+                           activationMode: Activation_536871564): BodyID_536871536 {.
     cdecl, importc: "JPH_BodyInterface_CreateAndAddSoftBody".}
-proc addBody*(interface_arg: ptr BodyInterface_536871825; bodyID: BodyID_536871464;
-              activationMode: Activation_536871492): void {.cdecl,
+proc addBody*(interface_arg: ptr BodyInterface_536871897; bodyID: BodyID_536871536;
+              activationMode: Activation_536871564): void {.cdecl,
     importc: "JPH_BodyInterface_AddBody".}
-proc removeBody*(interface_arg: ptr BodyInterface_536871825; bodyID: BodyID_536871464): void {.
+proc removeBody*(interface_arg: ptr BodyInterface_536871897; bodyID: BodyID_536871536): void {.
     cdecl, importc: "JPH_BodyInterface_RemoveBody".}
-proc removeAndDestroyBody*(interface_arg: ptr BodyInterface_536871825;
-                           bodyID: BodyID_536871464): void {.cdecl,
+proc removeAndDestroyBody*(interface_arg: ptr BodyInterface_536871897;
+                           bodyID: BodyID_536871536): void {.cdecl,
     importc: "JPH_BodyInterface_RemoveAndDestroyBody".}
-proc isActive*(interface_arg: ptr BodyInterface_536871825; bodyID: BodyID_536871464): bool {.
+proc isActive*(interface_arg: ptr BodyInterface_536871897; bodyID: BodyID_536871536): bool {.
     cdecl, importc: "JPH_BodyInterface_IsActive".}
-proc isAdded*(interface_arg: ptr BodyInterface_536871825; bodyID: BodyID_536871464): bool {.
+proc isAdded*(interface_arg: ptr BodyInterface_536871897; bodyID: BodyID_536871536): bool {.
     cdecl, importc: "JPH_BodyInterface_IsAdded".}
-proc getBodyType*(interface_arg: ptr BodyInterface_536871825; bodyID: BodyID_536871464): BodyType_536871484 {.
+proc getBodyType*(interface_arg: ptr BodyInterface_536871897; bodyID: BodyID_536871536): BodyType_536871556 {.
     cdecl, importc: "JPH_BodyInterface_GetBodyType".}
-proc setLinearVelocity*(interface_arg: ptr BodyInterface_536871825;
-                        bodyID: BodyID_536871464; velocity: ptr Vec3_536871595): void {.
+proc setLinearVelocity*(interface_arg: ptr BodyInterface_536871897;
+                        bodyID: BodyID_536871536; velocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_BodyInterface_SetLinearVelocity".}
-proc getLinearVelocity*(interface_arg: ptr BodyInterface_536871825;
-                        bodyID: BodyID_536871464; velocity: ptr Vec3_536871595): void {.
+proc getLinearVelocity*(interface_arg: ptr BodyInterface_536871897;
+                        bodyID: BodyID_536871536; velocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_BodyInterface_GetLinearVelocity".}
-proc getCenterOfMassPosition*(interface_arg: ptr BodyInterface_536871825;
-                              bodyID: BodyID_536871464; position: ptr RVec3_536871613): void {.
+proc getCenterOfMassPosition*(interface_arg: ptr BodyInterface_536871897;
+                              bodyID: BodyID_536871536; position: ptr RVec3_536871685): void {.
     cdecl, importc: "JPH_BodyInterface_GetCenterOfMassPosition".}
-proc getMotionType*(interface_arg: ptr BodyInterface_536871825; bodyID: BodyID_536871464): MotionType_536871488 {.
+proc getMotionType*(interface_arg: ptr BodyInterface_536871897; bodyID: BodyID_536871536): MotionType_536871560 {.
     cdecl, importc: "JPH_BodyInterface_GetMotionType".}
-proc setMotionType*(interface_arg: ptr BodyInterface_536871825; bodyID: BodyID_536871464;
-                    motionType: MotionType_536871488; activationMode: Activation_536871492): void {.
+proc setMotionType*(interface_arg: ptr BodyInterface_536871897; bodyID: BodyID_536871536;
+                    motionType: MotionType_536871560; activationMode: Activation_536871564): void {.
     cdecl, importc: "JPH_BodyInterface_SetMotionType".}
-proc getRestitution*(interface_arg: ptr BodyInterface_536871825; bodyID: BodyID_536871464): cfloat {.
+proc getRestitution*(interface_arg: ptr BodyInterface_536871897; bodyID: BodyID_536871536): cfloat {.
     cdecl, importc: "JPH_BodyInterface_GetRestitution".}
-proc setRestitution*(interface_arg: ptr BodyInterface_536871825; bodyID: BodyID_536871464;
+proc setRestitution*(interface_arg: ptr BodyInterface_536871897; bodyID: BodyID_536871536;
                      restitution: cfloat): void {.cdecl,
     importc: "JPH_BodyInterface_SetRestitution".}
-proc getFriction*(interface_arg: ptr BodyInterface_536871825; bodyID: BodyID_536871464): cfloat {.
+proc getFriction*(interface_arg: ptr BodyInterface_536871897; bodyID: BodyID_536871536): cfloat {.
     cdecl, importc: "JPH_BodyInterface_GetFriction".}
-proc setFriction*(interface_arg: ptr BodyInterface_536871825; bodyID: BodyID_536871464;
+proc setFriction*(interface_arg: ptr BodyInterface_536871897; bodyID: BodyID_536871536;
                   friction: cfloat): void {.cdecl,
     importc: "JPH_BodyInterface_SetFriction".}
-proc setPosition*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464;
-                  position: ptr RVec3_536871613; activationMode: Activation_536871492): void {.
+proc setPosition*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536;
+                  position: ptr RVec3_536871685; activationMode: Activation_536871564): void {.
     cdecl, importc: "JPH_BodyInterface_SetPosition".}
-proc getPosition*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464;
-                  result: ptr RVec3_536871613): void {.cdecl,
+proc getPosition*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536;
+                  result: ptr RVec3_536871685): void {.cdecl,
     importc: "JPH_BodyInterface_GetPosition".}
-proc setRotation*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464;
-                  rotation: ptr Quat_536871603; activationMode: Activation_536871492): void {.
+proc setRotation*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536;
+                  rotation: ptr Quat_536871675; activationMode: Activation_536871564): void {.
     cdecl, importc: "JPH_BodyInterface_SetRotation".}
-proc getRotation*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464;
-                  result: ptr Quat_536871603): void {.cdecl,
+proc getRotation*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536;
+                  result: ptr Quat_536871675): void {.cdecl,
     importc: "JPH_BodyInterface_GetRotation".}
-proc setPositionAndRotation*(interface_arg: ptr BodyInterface_536871825;
-                             bodyId: BodyID_536871464; position: ptr RVec3_536871613;
-                             rotation: ptr Quat_536871603;
-                             activationMode: Activation_536871492): void {.
+proc setPositionAndRotation*(interface_arg: ptr BodyInterface_536871897;
+                             bodyId: BodyID_536871536; position: ptr RVec3_536871685;
+                             rotation: ptr Quat_536871675;
+                             activationMode: Activation_536871564): void {.
     cdecl, importc: "JPH_BodyInterface_SetPositionAndRotation".}
-proc setPositionAndRotationWhenChanged*(interface_arg: ptr BodyInterface_536871825;
-                                        bodyId: BodyID_536871464;
-                                        position: ptr RVec3_536871613;
-                                        rotation: ptr Quat_536871603;
-                                        activationMode: Activation_536871492): void {.
+proc setPositionAndRotationWhenChanged*(interface_arg: ptr BodyInterface_536871897;
+                                        bodyId: BodyID_536871536;
+                                        position: ptr RVec3_536871685;
+                                        rotation: ptr Quat_536871675;
+                                        activationMode: Activation_536871564): void {.
     cdecl, importc: "JPH_BodyInterface_SetPositionAndRotationWhenChanged".}
-proc getPositionAndRotation*(interface_arg: ptr BodyInterface_536871825;
-                             bodyId: BodyID_536871464; position: ptr RVec3_536871613;
-                             rotation: ptr Quat_536871603): void {.cdecl,
+proc getPositionAndRotation*(interface_arg: ptr BodyInterface_536871897;
+                             bodyId: BodyID_536871536; position: ptr RVec3_536871685;
+                             rotation: ptr Quat_536871675): void {.cdecl,
     importc: "JPH_BodyInterface_GetPositionAndRotation".}
-proc setPositionRotationAndVelocity*(interface_arg: ptr BodyInterface_536871825;
-                                     bodyId: BodyID_536871464;
-                                     position: ptr RVec3_536871613;
-                                     rotation: ptr Quat_536871603;
-                                     linearVelocity: ptr Vec3_536871595;
-                                     angularVelocity: ptr Vec3_536871595): void {.
+proc setPositionRotationAndVelocity*(interface_arg: ptr BodyInterface_536871897;
+                                     bodyId: BodyID_536871536;
+                                     position: ptr RVec3_536871685;
+                                     rotation: ptr Quat_536871675;
+                                     linearVelocity: ptr Vec3_536871667;
+                                     angularVelocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_BodyInterface_SetPositionRotationAndVelocity".}
-proc getShape*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464): ptr Shape_536871779 {.
+proc getShape*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536): ptr Shape_536871851 {.
     cdecl, importc: "JPH_BodyInterface_GetShape".}
-proc setShape*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464;
-               shape: ptr Shape_536871779; updateMassProperties: bool;
-               activationMode: Activation_536871492): void {.cdecl,
+proc setShape*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536;
+               shape: ptr Shape_536871851; updateMassProperties: bool;
+               activationMode: Activation_536871564): void {.cdecl,
     importc: "JPH_BodyInterface_SetShape".}
-proc notifyShapeChanged*(interface_arg: ptr BodyInterface_536871825;
-                         bodyId: BodyID_536871464;
-                         previousCenterOfMass: ptr Vec3_536871595;
-                         updateMassProperties: bool; activationMode: Activation_536871492): void {.
+proc notifyShapeChanged*(interface_arg: ptr BodyInterface_536871897;
+                         bodyId: BodyID_536871536;
+                         previousCenterOfMass: ptr Vec3_536871667;
+                         updateMassProperties: bool; activationMode: Activation_536871564): void {.
     cdecl, importc: "JPH_BodyInterface_NotifyShapeChanged".}
-proc activateBody*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464): void {.
+proc activateBody*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536): void {.
     cdecl, importc: "JPH_BodyInterface_ActivateBody".}
-proc deactivateBody*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464): void {.
+proc deactivateBody*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536): void {.
     cdecl, importc: "JPH_BodyInterface_DeactivateBody".}
-proc getObjectLayer*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464): ObjectLayer_536871468 {.
+proc getObjectLayer*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536): ObjectLayer_536871540 {.
     cdecl, importc: "JPH_BodyInterface_GetObjectLayer".}
-proc setObjectLayer*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464;
-                     layer: ObjectLayer_536871468): void {.cdecl,
+proc setObjectLayer*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536;
+                     layer: ObjectLayer_536871540): void {.cdecl,
     importc: "JPH_BodyInterface_SetObjectLayer".}
-proc getWorldTransform*(interface_arg: ptr BodyInterface_536871825;
-                        bodyId: BodyID_536871464; result: ptr RMatrix4x4_536871615): void {.
+proc getWorldTransform*(interface_arg: ptr BodyInterface_536871897;
+                        bodyId: BodyID_536871536; result: ptr RMatrix4x4_536871687): void {.
     cdecl, importc: "JPH_BodyInterface_GetWorldTransform".}
-proc getCenterOfMassTransform*(interface_arg: ptr BodyInterface_536871825;
-                               bodyId: BodyID_536871464; result: ptr RMatrix4x4_536871615): void {.
+proc getCenterOfMassTransform*(interface_arg: ptr BodyInterface_536871897;
+                               bodyId: BodyID_536871536; result: ptr RMatrix4x4_536871687): void {.
     cdecl, importc: "JPH_BodyInterface_GetCenterOfMassTransform".}
-proc moveKinematic*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464;
-                    targetPosition: ptr RVec3_536871613;
-                    targetRotation: ptr Quat_536871603; deltaTime: cfloat): void {.
+proc moveKinematic*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536;
+                    targetPosition: ptr RVec3_536871685;
+                    targetRotation: ptr Quat_536871675; deltaTime: cfloat): void {.
     cdecl, importc: "JPH_BodyInterface_MoveKinematic".}
-proc applyBuoyancyImpulse*(interface_arg: ptr BodyInterface_536871825;
-                           bodyId: BodyID_536871464; surfacePosition: ptr RVec3_536871613;
-                           surfaceNormal: ptr Vec3_536871595; buoyancy: cfloat;
+proc applyBuoyancyImpulse*(interface_arg: ptr BodyInterface_536871897;
+                           bodyId: BodyID_536871536; surfacePosition: ptr RVec3_536871685;
+                           surfaceNormal: ptr Vec3_536871667; buoyancy: cfloat;
                            linearDrag: cfloat; angularDrag: cfloat;
-                           fluidVelocity: ptr Vec3_536871595; gravity: ptr Vec3_536871595;
+                           fluidVelocity: ptr Vec3_536871667; gravity: ptr Vec3_536871667;
                            deltaTime: cfloat): bool {.cdecl,
     importc: "JPH_BodyInterface_ApplyBuoyancyImpulse".}
-proc setLinearAndAngularVelocity*(interface_arg: ptr BodyInterface_536871825;
-                                  bodyId: BodyID_536871464;
-                                  linearVelocity: ptr Vec3_536871595;
-                                  angularVelocity: ptr Vec3_536871595): void {.
+proc setLinearAndAngularVelocity*(interface_arg: ptr BodyInterface_536871897;
+                                  bodyId: BodyID_536871536;
+                                  linearVelocity: ptr Vec3_536871667;
+                                  angularVelocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_BodyInterface_SetLinearAndAngularVelocity".}
-proc getLinearAndAngularVelocity*(interface_arg: ptr BodyInterface_536871825;
-                                  bodyId: BodyID_536871464;
-                                  linearVelocity: ptr Vec3_536871595;
-                                  angularVelocity: ptr Vec3_536871595): void {.
+proc getLinearAndAngularVelocity*(interface_arg: ptr BodyInterface_536871897;
+                                  bodyId: BodyID_536871536;
+                                  linearVelocity: ptr Vec3_536871667;
+                                  angularVelocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_BodyInterface_GetLinearAndAngularVelocity".}
-proc addLinearVelocity*(interface_arg: ptr BodyInterface_536871825;
-                        bodyId: BodyID_536871464; linearVelocity: ptr Vec3_536871595): void {.
+proc addLinearVelocity*(interface_arg: ptr BodyInterface_536871897;
+                        bodyId: BodyID_536871536; linearVelocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_BodyInterface_AddLinearVelocity".}
-proc addLinearAndAngularVelocity*(interface_arg: ptr BodyInterface_536871825;
-                                  bodyId: BodyID_536871464;
-                                  linearVelocity: ptr Vec3_536871595;
-                                  angularVelocity: ptr Vec3_536871595): void {.
+proc addLinearAndAngularVelocity*(interface_arg: ptr BodyInterface_536871897;
+                                  bodyId: BodyID_536871536;
+                                  linearVelocity: ptr Vec3_536871667;
+                                  angularVelocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_BodyInterface_AddLinearAndAngularVelocity".}
-proc setAngularVelocity*(interface_arg: ptr BodyInterface_536871825;
-                         bodyId: BodyID_536871464; angularVelocity: ptr Vec3_536871595): void {.
+proc setAngularVelocity*(interface_arg: ptr BodyInterface_536871897;
+                         bodyId: BodyID_536871536; angularVelocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_BodyInterface_SetAngularVelocity".}
-proc getAngularVelocity*(interface_arg: ptr BodyInterface_536871825;
-                         bodyId: BodyID_536871464; angularVelocity: ptr Vec3_536871595): void {.
+proc getAngularVelocity*(interface_arg: ptr BodyInterface_536871897;
+                         bodyId: BodyID_536871536; angularVelocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_BodyInterface_GetAngularVelocity".}
-proc getPointVelocity*(interface_arg: ptr BodyInterface_536871825;
-                       bodyId: BodyID_536871464; point: ptr RVec3_536871613;
-                       velocity: ptr Vec3_536871595): void {.cdecl,
+proc getPointVelocity*(interface_arg: ptr BodyInterface_536871897;
+                       bodyId: BodyID_536871536; point: ptr RVec3_536871685;
+                       velocity: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_BodyInterface_GetPointVelocity".}
-proc addForce*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464;
-               force: ptr Vec3_536871595): void {.cdecl,
+proc addForce*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536;
+               force: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_BodyInterface_AddForce".}
-proc addForce2*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464;
-                force: ptr Vec3_536871595; point: ptr RVec3_536871613): void {.
+proc addForce2*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536;
+                force: ptr Vec3_536871667; point: ptr RVec3_536871685): void {.
     cdecl, importc: "JPH_BodyInterface_AddForce2".}
-proc addTorque*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464;
-                torque: ptr Vec3_536871595): void {.cdecl,
+proc addTorque*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536;
+                torque: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_BodyInterface_AddTorque".}
-proc addForceAndTorque*(interface_arg: ptr BodyInterface_536871825;
-                        bodyId: BodyID_536871464; force: ptr Vec3_536871595;
-                        torque: ptr Vec3_536871595): void {.cdecl,
+proc addForceAndTorque*(interface_arg: ptr BodyInterface_536871897;
+                        bodyId: BodyID_536871536; force: ptr Vec3_536871667;
+                        torque: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_BodyInterface_AddForceAndTorque".}
-proc addImpulse*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464;
-                 impulse: ptr Vec3_536871595): void {.cdecl,
+proc addImpulse*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536;
+                 impulse: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_BodyInterface_AddImpulse".}
-proc addImpulse2*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464;
-                  impulse: ptr Vec3_536871595; point: ptr RVec3_536871613): void {.
+proc addImpulse2*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536;
+                  impulse: ptr Vec3_536871667; point: ptr RVec3_536871685): void {.
     cdecl, importc: "JPH_BodyInterface_AddImpulse2".}
-proc addAngularImpulse*(interface_arg: ptr BodyInterface_536871825;
-                        bodyId: BodyID_536871464; angularImpulse: ptr Vec3_536871595): void {.
+proc addAngularImpulse*(interface_arg: ptr BodyInterface_536871897;
+                        bodyId: BodyID_536871536; angularImpulse: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_BodyInterface_AddAngularImpulse".}
-proc setMotionQuality*(interface_arg: ptr BodyInterface_536871825;
-                       bodyId: BodyID_536871464; quality: MotionQuality_536871520): void {.
+proc setMotionQuality*(interface_arg: ptr BodyInterface_536871897;
+                       bodyId: BodyID_536871536; quality: MotionQuality_536871592): void {.
     cdecl, importc: "JPH_BodyInterface_SetMotionQuality".}
-proc getMotionQuality*(interface_arg: ptr BodyInterface_536871825;
-                       bodyId: BodyID_536871464): MotionQuality_536871520 {.
+proc getMotionQuality*(interface_arg: ptr BodyInterface_536871897;
+                       bodyId: BodyID_536871536): MotionQuality_536871592 {.
     cdecl, importc: "JPH_BodyInterface_GetMotionQuality".}
-proc getInverseInertia*(interface_arg: ptr BodyInterface_536871825;
-                        bodyId: BodyID_536871464; result: ptr Matrix4x4_536871611): void {.
+proc getInverseInertia*(interface_arg: ptr BodyInterface_536871897;
+                        bodyId: BodyID_536871536; result: ptr Matrix4x4_536871683): void {.
     cdecl, importc: "JPH_BodyInterface_GetInverseInertia".}
-proc setGravityFactor*(interface_arg: ptr BodyInterface_536871825;
-                       bodyId: BodyID_536871464; value: cfloat): void {.cdecl,
+proc setGravityFactor*(interface_arg: ptr BodyInterface_536871897;
+                       bodyId: BodyID_536871536; value: cfloat): void {.cdecl,
     importc: "JPH_BodyInterface_SetGravityFactor".}
-proc getGravityFactor*(interface_arg: ptr BodyInterface_536871825;
-                       bodyId: BodyID_536871464): cfloat {.cdecl,
+proc getGravityFactor*(interface_arg: ptr BodyInterface_536871897;
+                       bodyId: BodyID_536871536): cfloat {.cdecl,
     importc: "JPH_BodyInterface_GetGravityFactor".}
-proc setUseManifoldReduction*(interface_arg: ptr BodyInterface_536871825;
-                              bodyId: BodyID_536871464; value: bool): void {.
+proc setUseManifoldReduction*(interface_arg: ptr BodyInterface_536871897;
+                              bodyId: BodyID_536871536; value: bool): void {.
     cdecl, importc: "JPH_BodyInterface_SetUseManifoldReduction".}
-proc getUseManifoldReduction*(interface_arg: ptr BodyInterface_536871825;
-                              bodyId: BodyID_536871464): bool {.cdecl,
+proc getUseManifoldReduction*(interface_arg: ptr BodyInterface_536871897;
+                              bodyId: BodyID_536871536): bool {.cdecl,
     importc: "JPH_BodyInterface_GetUseManifoldReduction".}
-proc setUserData*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464;
+proc setUserData*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536;
                   inUserData: uint64): void {.cdecl,
     importc: "JPH_BodyInterface_SetUserData".}
-proc getUserData*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464): uint64 {.
+proc getUserData*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536): uint64 {.
     cdecl, importc: "JPH_BodyInterface_GetUserData".}
-proc getMaterial*(interface_arg: ptr BodyInterface_536871825; bodyId: BodyID_536871464;
-                  subShapeID: SubShapeID_536871466): ptr PhysicsMaterial_536871737 {.
+proc getMaterial*(interface_arg: ptr BodyInterface_536871897; bodyId: BodyID_536871536;
+                  subShapeID: SubShapeID_536871538): ptr PhysicsMaterial_536871809 {.
     cdecl, importc: "JPH_BodyInterface_GetMaterial".}
-proc invalidateContactCache*(interface_arg: ptr BodyInterface_536871825;
-                             bodyId: BodyID_536871464): void {.cdecl,
+proc invalidateContactCache*(interface_arg: ptr BodyInterface_536871897;
+                             bodyId: BodyID_536871536): void {.cdecl,
     importc: "JPH_BodyInterface_InvalidateContactCache".}
-proc lockRead*(lockInterface: ptr BodyLockInterface_536871827; bodyID: BodyID_536871464;
-               outLock: ptr BodyLockRead_536871939): void {.cdecl,
+proc lockRead*(lockInterface: ptr BodyLockInterface_536871899; bodyID: BodyID_536871536;
+               outLock: ptr BodyLockRead_536872011): void {.cdecl,
     importc: "JPH_BodyLockInterface_LockRead".}
-proc unlockRead*(lockInterface: ptr BodyLockInterface_536871827;
-                 ioLock: ptr BodyLockRead_536871939): void {.cdecl,
+proc unlockRead*(lockInterface: ptr BodyLockInterface_536871899;
+                 ioLock: ptr BodyLockRead_536872011): void {.cdecl,
     importc: "JPH_BodyLockInterface_UnlockRead".}
-proc lockWrite*(lockInterface: ptr BodyLockInterface_536871827; bodyID: BodyID_536871464;
-                outLock: ptr BodyLockWrite_536871943): void {.cdecl,
+proc lockWrite*(lockInterface: ptr BodyLockInterface_536871899; bodyID: BodyID_536871536;
+                outLock: ptr BodyLockWrite_536872015): void {.cdecl,
     importc: "JPH_BodyLockInterface_LockWrite".}
-proc unlockWrite*(lockInterface: ptr BodyLockInterface_536871827;
-                  ioLock: ptr BodyLockWrite_536871943): void {.cdecl,
+proc unlockWrite*(lockInterface: ptr BodyLockInterface_536871899;
+                  ioLock: ptr BodyLockWrite_536872015): void {.cdecl,
     importc: "JPH_BodyLockInterface_UnlockWrite".}
-proc lockMultiRead*(lockInterface: ptr BodyLockInterface_536871827;
-                    bodyIDs: ptr BodyID_536871464; count: uint32): ptr BodyLockMultiRead_536871945 {.
+proc lockMultiRead*(lockInterface: ptr BodyLockInterface_536871899;
+                    bodyIDs: ptr BodyID_536871536; count: uint32): ptr BodyLockMultiRead_536872017 {.
     cdecl, importc: "JPH_BodyLockInterface_LockMultiRead".}
 when not declared(bodyLockMultiRead_Destroy):
-  proc bodyLockMultiRead_Destroy*(ioLock: ptr BodyLockMultiRead_536871945): void {.
+  proc bodyLockMultiRead_Destroy*(ioLock: ptr BodyLockMultiRead_536872017): void {.
       cdecl, importc: "JPH_BodyLockMultiRead_Destroy".}
 else:
   static :
     hint("Declaration of " & "bodyLockMultiRead_Destroy" &
         " already exists, not redeclaring")
-proc getBody*(ioLock: ptr BodyLockMultiRead_536871945; bodyIndex: uint32): ptr Body_536871835 {.
+proc getBody*(ioLock: ptr BodyLockMultiRead_536872017; bodyIndex: uint32): ptr Body_536871907 {.
     cdecl, importc: "JPH_BodyLockMultiRead_GetBody".}
-proc lockMultiWrite*(lockInterface: ptr BodyLockInterface_536871827;
-                     bodyIDs: ptr BodyID_536871464; count: uint32): ptr BodyLockMultiWrite_536871947 {.
+proc lockMultiWrite*(lockInterface: ptr BodyLockInterface_536871899;
+                     bodyIDs: ptr BodyID_536871536; count: uint32): ptr BodyLockMultiWrite_536872019 {.
     cdecl, importc: "JPH_BodyLockInterface_LockMultiWrite".}
 when not declared(bodyLockMultiWrite_Destroy):
-  proc bodyLockMultiWrite_Destroy*(ioLock: ptr BodyLockMultiWrite_536871947): void {.
+  proc bodyLockMultiWrite_Destroy*(ioLock: ptr BodyLockMultiWrite_536872019): void {.
       cdecl, importc: "JPH_BodyLockMultiWrite_Destroy".}
 else:
   static :
     hint("Declaration of " & "bodyLockMultiWrite_Destroy" &
         " already exists, not redeclaring")
-proc getBody*(ioLock: ptr BodyLockMultiWrite_536871947; bodyIndex: uint32): ptr Body_536871835 {.
+proc getBody*(ioLock: ptr BodyLockMultiWrite_536872019; bodyIndex: uint32): ptr Body_536871907 {.
     cdecl, importc: "JPH_BodyLockMultiWrite_GetBody".}
-proc getAllowedDOFs*(properties: ptr MotionProperties_536871833): AllowedDOFs_536871528 {.
+proc getAllowedDOFs*(properties: ptr MotionProperties_536871905): AllowedDOFs_536871600 {.
     cdecl, importc: "JPH_MotionProperties_GetAllowedDOFs".}
-proc setLinearDamping*(properties: ptr MotionProperties_536871833;
+proc setLinearDamping*(properties: ptr MotionProperties_536871905;
                        damping: cfloat): void {.cdecl,
     importc: "JPH_MotionProperties_SetLinearDamping".}
-proc getLinearDamping*(properties: ptr MotionProperties_536871833): cfloat {.
+proc getLinearDamping*(properties: ptr MotionProperties_536871905): cfloat {.
     cdecl, importc: "JPH_MotionProperties_GetLinearDamping".}
-proc setAngularDamping*(properties: ptr MotionProperties_536871833;
+proc setAngularDamping*(properties: ptr MotionProperties_536871905;
                         damping: cfloat): void {.cdecl,
     importc: "JPH_MotionProperties_SetAngularDamping".}
-proc getAngularDamping*(properties: ptr MotionProperties_536871833): cfloat {.
+proc getAngularDamping*(properties: ptr MotionProperties_536871905): cfloat {.
     cdecl, importc: "JPH_MotionProperties_GetAngularDamping".}
-proc setMassProperties*(properties: ptr MotionProperties_536871833;
-                        allowedDOFs: AllowedDOFs_536871528;
-                        massProperties: ptr MassProperties_536871637): void {.
+proc setMassProperties*(properties: ptr MotionProperties_536871905;
+                        allowedDOFs: AllowedDOFs_536871600;
+                        massProperties: ptr MassProperties_536871709): void {.
     cdecl, importc: "JPH_MotionProperties_SetMassProperties".}
-proc getInverseMassUnchecked*(properties: ptr MotionProperties_536871833): cfloat {.
+proc getInverseMassUnchecked*(properties: ptr MotionProperties_536871905): cfloat {.
     cdecl, importc: "JPH_MotionProperties_GetInverseMassUnchecked".}
-proc setInverseMass*(properties: ptr MotionProperties_536871833;
+proc setInverseMass*(properties: ptr MotionProperties_536871905;
                      inverseMass: cfloat): void {.cdecl,
     importc: "JPH_MotionProperties_SetInverseMass".}
-proc getInverseInertiaDiagonal*(properties: ptr MotionProperties_536871833;
-                                result: ptr Vec3_536871595): void {.cdecl,
+proc getInverseInertiaDiagonal*(properties: ptr MotionProperties_536871905;
+                                result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_MotionProperties_GetInverseInertiaDiagonal".}
-proc getInertiaRotation*(properties: ptr MotionProperties_536871833;
-                         result: ptr Quat_536871603): void {.cdecl,
+proc getInertiaRotation*(properties: ptr MotionProperties_536871905;
+                         result: ptr Quat_536871675): void {.cdecl,
     importc: "JPH_MotionProperties_GetInertiaRotation".}
-proc setInverseInertia*(properties: ptr MotionProperties_536871833;
-                        diagonal: ptr Vec3_536871595; rot: ptr Quat_536871603): void {.
+proc setInverseInertia*(properties: ptr MotionProperties_536871905;
+                        diagonal: ptr Vec3_536871667; rot: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_MotionProperties_SetInverseInertia".}
-proc scaleToMass*(properties: ptr MotionProperties_536871833; mass: cfloat): void {.
+proc scaleToMass*(properties: ptr MotionProperties_536871905; mass: cfloat): void {.
     cdecl, importc: "JPH_MotionProperties_ScaleToMass".}
 when not declared(getPointOnRay):
-  proc getPointOnRay*(origin: ptr Vec3_536871595; direction: ptr Vec3_536871595;
-                      fraction: cfloat; result: ptr Vec3_536871595): void {.
+  proc getPointOnRay*(origin: ptr Vec3_536871667; direction: ptr Vec3_536871667;
+                      fraction: cfloat; result: ptr Vec3_536871667): void {.
       cdecl, importc: "JPH_RayCast_GetPointOnRay".}
 else:
   static :
     hint("Declaration of " & "getPointOnRay" &
         " already exists, not redeclaring")
 when not declared(getPointOnRay_proc):
-  proc getPointOnRay_proc*(origin: ptr RVec3_536871613; direction: ptr Vec3_536871595;
-                           fraction: cfloat; result: ptr RVec3_536871613): void {.
+  proc getPointOnRay_proc*(origin: ptr RVec3_536871685; direction: ptr Vec3_536871667;
+                           fraction: cfloat; result: ptr RVec3_536871685): void {.
       cdecl, importc: "JPH_RRayCast_GetPointOnRay".}
 else:
   static :
     hint("Declaration of " & "getPointOnRay_proc" &
         " already exists, not redeclaring")
-proc decomposePrincipalMomentsOfInertia*(properties: ptr MassProperties_536871637;
-    rotation: ptr Matrix4x4_536871611; diagonal: ptr Vec3_536871595): void {.
+proc decomposePrincipalMomentsOfInertia*(properties: ptr MassProperties_536871709;
+    rotation: ptr Matrix4x4_536871683; diagonal: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_MassProperties_DecomposePrincipalMomentsOfInertia".}
-proc scaleToMass*(properties: ptr MassProperties_536871637; mass: cfloat): void {.
+proc scaleToMass*(properties: ptr MassProperties_536871709; mass: cfloat): void {.
     cdecl, importc: "JPH_MassProperties_ScaleToMass".}
-proc getEquivalentSolidBoxSize*(mass: cfloat; inertiaDiagonal: ptr Vec3_536871595;
-                                result: ptr Vec3_536871595): void {.cdecl,
+proc getEquivalentSolidBoxSize*(mass: cfloat; inertiaDiagonal: ptr Vec3_536871667;
+                                result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_MassProperties_GetEquivalentSolidBoxSize".}
 when not declared(collideShapeSettings_Init):
-  proc collideShapeSettings_Init*(settings: ptr CollideShapeSettings_536871645): void {.
+  proc collideShapeSettings_Init*(settings: ptr CollideShapeSettings_536871717): void {.
       cdecl, importc: "JPH_CollideShapeSettings_Init".}
 else:
   static :
     hint("Declaration of " & "collideShapeSettings_Init" &
         " already exists, not redeclaring")
 when not declared(shapeCastSettings_Init):
-  proc shapeCastSettings_Init*(settings: ptr ShapeCastSettings_536871649): void {.
+  proc shapeCastSettings_Init*(settings: ptr ShapeCastSettings_536871721): void {.
       cdecl, importc: "JPH_ShapeCastSettings_Init".}
 else:
   static :
     hint("Declaration of " & "shapeCastSettings_Init" &
         " already exists, not redeclaring")
-proc castRay*(query: ptr BroadPhaseQuery_536871829; origin: ptr Vec3_536871595;
-              direction: ptr Vec3_536871595;
-              callback: RayCastBodyCollectorCallback_536871709;
+proc castRay*(query: ptr BroadPhaseQuery_536871901; origin: ptr Vec3_536871667;
+              direction: ptr Vec3_536871667;
+              callback: RayCastBodyCollectorCallback_536871781;
               userData: pointer;
-              broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871725;
-              objectLayerFilter: ptr ObjectLayerFilter_536871727): bool {.cdecl,
+              broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871797;
+              objectLayerFilter: ptr ObjectLayerFilter_536871799): bool {.cdecl,
     importc: "JPH_BroadPhaseQuery_CastRay".}
-proc castRay2*(query: ptr BroadPhaseQuery_536871829; origin: ptr Vec3_536871595;
-               direction: ptr Vec3_536871595;
-               collectorType: CollisionCollectorType_536871559;
-               callback: RayCastBodyResultCallback_536871697; userData: pointer;
-               broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871725;
-               objectLayerFilter: ptr ObjectLayerFilter_536871727): bool {.
+proc castRay2*(query: ptr BroadPhaseQuery_536871901; origin: ptr Vec3_536871667;
+               direction: ptr Vec3_536871667;
+               collectorType: CollisionCollectorType_536871631;
+               callback: RayCastBodyResultCallback_536871769; userData: pointer;
+               broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871797;
+               objectLayerFilter: ptr ObjectLayerFilter_536871799): bool {.
     cdecl, importc: "JPH_BroadPhaseQuery_CastRay2".}
-proc collideAABox*(query: ptr BroadPhaseQuery_536871829; box: ptr AABox_536871621;
-                   callback: CollideShapeBodyCollectorCallback_536871711;
+proc collideAABox*(query: ptr BroadPhaseQuery_536871901; box: ptr AABox_536871693;
+                   callback: CollideShapeBodyCollectorCallback_536871783;
                    userData: pointer;
-                   broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871725;
-                   objectLayerFilter: ptr ObjectLayerFilter_536871727): bool {.
+                   broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871797;
+                   objectLayerFilter: ptr ObjectLayerFilter_536871799): bool {.
     cdecl, importc: "JPH_BroadPhaseQuery_CollideAABox".}
-proc collideSphere*(query: ptr BroadPhaseQuery_536871829; center: ptr Vec3_536871595;
-                    radius: cfloat; callback: CollideShapeBodyCollectorCallback_536871711;
+proc collideSphere*(query: ptr BroadPhaseQuery_536871901; center: ptr Vec3_536871667;
+                    radius: cfloat; callback: CollideShapeBodyCollectorCallback_536871783;
                     userData: pointer;
-                    broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871725;
-                    objectLayerFilter: ptr ObjectLayerFilter_536871727): bool {.
+                    broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871797;
+                    objectLayerFilter: ptr ObjectLayerFilter_536871799): bool {.
     cdecl, importc: "JPH_BroadPhaseQuery_CollideSphere".}
-proc collidePoint*(query: ptr BroadPhaseQuery_536871829; point: ptr Vec3_536871595;
-                   callback: CollideShapeBodyCollectorCallback_536871711;
+proc collidePoint*(query: ptr BroadPhaseQuery_536871901; point: ptr Vec3_536871667;
+                   callback: CollideShapeBodyCollectorCallback_536871783;
                    userData: pointer;
-                   broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871725;
-                   objectLayerFilter: ptr ObjectLayerFilter_536871727): bool {.
+                   broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871797;
+                   objectLayerFilter: ptr ObjectLayerFilter_536871799): bool {.
     cdecl, importc: "JPH_BroadPhaseQuery_CollidePoint".}
-proc castRay*(query: ptr NarrowPhaseQuery_536871831; origin: ptr RVec3_536871613;
-              direction: ptr Vec3_536871595; hit: ptr RayCastResult_536871673;
-              broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871725;
-              objectLayerFilter: ptr ObjectLayerFilter_536871727;
-              bodyFilter: ptr BodyFilter_536871729): bool {.cdecl,
+proc castRay*(query: ptr NarrowPhaseQuery_536871903; origin: ptr RVec3_536871685;
+              direction: ptr Vec3_536871667; hit: ptr RayCastResult_536871745;
+              broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871797;
+              objectLayerFilter: ptr ObjectLayerFilter_536871799;
+              bodyFilter: ptr BodyFilter_536871801): bool {.cdecl,
     importc: "JPH_NarrowPhaseQuery_CastRay".}
-proc castRay2*(query: ptr NarrowPhaseQuery_536871831; origin: ptr RVec3_536871613;
-               direction: ptr Vec3_536871595;
-               rayCastSettings: ptr RayCastSettings_536871653;
-               callback: CastRayCollectorCallback_536871707; userData: pointer;
-               broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871725;
-               objectLayerFilter: ptr ObjectLayerFilter_536871727;
-               bodyFilter: ptr BodyFilter_536871729;
-               shapeFilter: ptr ShapeFilter_536871731): bool {.cdecl,
+proc castRay2*(query: ptr NarrowPhaseQuery_536871903; origin: ptr RVec3_536871685;
+               direction: ptr Vec3_536871667;
+               rayCastSettings: ptr RayCastSettings_536871725;
+               callback: CastRayCollectorCallback_536871779; userData: pointer;
+               broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871797;
+               objectLayerFilter: ptr ObjectLayerFilter_536871799;
+               bodyFilter: ptr BodyFilter_536871801;
+               shapeFilter: ptr ShapeFilter_536871803): bool {.cdecl,
     importc: "JPH_NarrowPhaseQuery_CastRay2".}
-proc castRay3*(query: ptr NarrowPhaseQuery_536871831; origin: ptr RVec3_536871613;
-               direction: ptr Vec3_536871595;
-               rayCastSettings: ptr RayCastSettings_536871653;
-               collectorType: CollisionCollectorType_536871559;
-               callback: CastRayResultCallback_536871695; userData: pointer;
-               broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871725;
-               objectLayerFilter: ptr ObjectLayerFilter_536871727;
-               bodyFilter: ptr BodyFilter_536871729;
-               shapeFilter: ptr ShapeFilter_536871731): bool {.cdecl,
+proc castRay3*(query: ptr NarrowPhaseQuery_536871903; origin: ptr RVec3_536871685;
+               direction: ptr Vec3_536871667;
+               rayCastSettings: ptr RayCastSettings_536871725;
+               collectorType: CollisionCollectorType_536871631;
+               callback: CastRayResultCallback_536871767; userData: pointer;
+               broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871797;
+               objectLayerFilter: ptr ObjectLayerFilter_536871799;
+               bodyFilter: ptr BodyFilter_536871801;
+               shapeFilter: ptr ShapeFilter_536871803): bool {.cdecl,
     importc: "JPH_NarrowPhaseQuery_CastRay3".}
-proc collidePoint*(query: ptr NarrowPhaseQuery_536871831; point: ptr RVec3_536871613;
-                   callback: CollidePointCollectorCallback_536871713;
+proc collidePoint*(query: ptr NarrowPhaseQuery_536871903; point: ptr RVec3_536871685;
+                   callback: CollidePointCollectorCallback_536871785;
                    userData: pointer;
-                   broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871725;
-                   objectLayerFilter: ptr ObjectLayerFilter_536871727;
-                   bodyFilter: ptr BodyFilter_536871729;
-                   shapeFilter: ptr ShapeFilter_536871731): bool {.cdecl,
+                   broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871797;
+                   objectLayerFilter: ptr ObjectLayerFilter_536871799;
+                   bodyFilter: ptr BodyFilter_536871801;
+                   shapeFilter: ptr ShapeFilter_536871803): bool {.cdecl,
     importc: "JPH_NarrowPhaseQuery_CollidePoint".}
-proc collidePoint2*(query: ptr NarrowPhaseQuery_536871831; point: ptr RVec3_536871613;
-                    collectorType: CollisionCollectorType_536871559;
-                    callback: CollidePointResultCallback_536871701;
+proc collidePoint2*(query: ptr NarrowPhaseQuery_536871903; point: ptr RVec3_536871685;
+                    collectorType: CollisionCollectorType_536871631;
+                    callback: CollidePointResultCallback_536871773;
                     userData: pointer;
-                    broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871725;
-                    objectLayerFilter: ptr ObjectLayerFilter_536871727;
-                    bodyFilter: ptr BodyFilter_536871729;
-                    shapeFilter: ptr ShapeFilter_536871731): bool {.cdecl,
+                    broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871797;
+                    objectLayerFilter: ptr ObjectLayerFilter_536871799;
+                    bodyFilter: ptr BodyFilter_536871801;
+                    shapeFilter: ptr ShapeFilter_536871803): bool {.cdecl,
     importc: "JPH_NarrowPhaseQuery_CollidePoint2".}
-proc collideShape*(query: ptr NarrowPhaseQuery_536871831; shape: ptr Shape_536871779;
-                   scale: ptr Vec3_536871595;
-                   centerOfMassTransform: ptr RMatrix4x4_536871615;
-                   settings: ptr CollideShapeSettings_536871645;
-                   baseOffset: ptr RVec3_536871613;
-                   callback: CollideShapeCollectorCallback_536871715;
+proc collideShape*(query: ptr NarrowPhaseQuery_536871903; shape: ptr Shape_536871851;
+                   scale: ptr Vec3_536871667;
+                   centerOfMassTransform: ptr RMatrix4x4_536871687;
+                   settings: ptr CollideShapeSettings_536871717;
+                   baseOffset: ptr RVec3_536871685;
+                   callback: CollideShapeCollectorCallback_536871787;
                    userData: pointer;
-                   broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871725;
-                   objectLayerFilter: ptr ObjectLayerFilter_536871727;
-                   bodyFilter: ptr BodyFilter_536871729;
-                   shapeFilter: ptr ShapeFilter_536871731): bool {.cdecl,
+                   broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871797;
+                   objectLayerFilter: ptr ObjectLayerFilter_536871799;
+                   bodyFilter: ptr BodyFilter_536871801;
+                   shapeFilter: ptr ShapeFilter_536871803): bool {.cdecl,
     importc: "JPH_NarrowPhaseQuery_CollideShape".}
-proc collideShape2*(query: ptr NarrowPhaseQuery_536871831; shape: ptr Shape_536871779;
-                    scale: ptr Vec3_536871595;
-                    centerOfMassTransform: ptr RMatrix4x4_536871615;
-                    settings: ptr CollideShapeSettings_536871645;
-                    baseOffset: ptr RVec3_536871613;
-                    collectorType: CollisionCollectorType_536871559;
-                    callback: CollideShapeResultCallback_536871703;
+proc collideShape2*(query: ptr NarrowPhaseQuery_536871903; shape: ptr Shape_536871851;
+                    scale: ptr Vec3_536871667;
+                    centerOfMassTransform: ptr RMatrix4x4_536871687;
+                    settings: ptr CollideShapeSettings_536871717;
+                    baseOffset: ptr RVec3_536871685;
+                    collectorType: CollisionCollectorType_536871631;
+                    callback: CollideShapeResultCallback_536871775;
                     userData: pointer;
-                    broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871725;
-                    objectLayerFilter: ptr ObjectLayerFilter_536871727;
-                    bodyFilter: ptr BodyFilter_536871729;
-                    shapeFilter: ptr ShapeFilter_536871731): bool {.cdecl,
+                    broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871797;
+                    objectLayerFilter: ptr ObjectLayerFilter_536871799;
+                    bodyFilter: ptr BodyFilter_536871801;
+                    shapeFilter: ptr ShapeFilter_536871803): bool {.cdecl,
     importc: "JPH_NarrowPhaseQuery_CollideShape2".}
-proc castShape*(query: ptr NarrowPhaseQuery_536871831; shape: ptr Shape_536871779;
-                worldTransform: ptr RMatrix4x4_536871615; direction: ptr Vec3_536871595;
-                settings: ptr ShapeCastSettings_536871649;
-                baseOffset: ptr RVec3_536871613;
-                callback: CastShapeCollectorCallback_536871717;
+proc castShape*(query: ptr NarrowPhaseQuery_536871903; shape: ptr Shape_536871851;
+                worldTransform: ptr RMatrix4x4_536871687; direction: ptr Vec3_536871667;
+                settings: ptr ShapeCastSettings_536871721;
+                baseOffset: ptr RVec3_536871685;
+                callback: CastShapeCollectorCallback_536871789;
                 userData: pointer;
-                broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871725;
-                objectLayerFilter: ptr ObjectLayerFilter_536871727;
-                bodyFilter: ptr BodyFilter_536871729;
-                shapeFilter: ptr ShapeFilter_536871731): bool {.cdecl,
+                broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871797;
+                objectLayerFilter: ptr ObjectLayerFilter_536871799;
+                bodyFilter: ptr BodyFilter_536871801;
+                shapeFilter: ptr ShapeFilter_536871803): bool {.cdecl,
     importc: "JPH_NarrowPhaseQuery_CastShape".}
-proc castShape2*(query: ptr NarrowPhaseQuery_536871831; shape: ptr Shape_536871779;
-                 worldTransform: ptr RMatrix4x4_536871615; direction: ptr Vec3_536871595;
-                 settings: ptr ShapeCastSettings_536871649;
-                 baseOffset: ptr RVec3_536871613;
-                 collectorType: CollisionCollectorType_536871559;
-                 callback: CastShapeResultCallback_536871705; userData: pointer;
-                 broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871725;
-                 objectLayerFilter: ptr ObjectLayerFilter_536871727;
-                 bodyFilter: ptr BodyFilter_536871729;
-                 shapeFilter: ptr ShapeFilter_536871731): bool {.cdecl,
+proc castShape2*(query: ptr NarrowPhaseQuery_536871903; shape: ptr Shape_536871851;
+                 worldTransform: ptr RMatrix4x4_536871687; direction: ptr Vec3_536871667;
+                 settings: ptr ShapeCastSettings_536871721;
+                 baseOffset: ptr RVec3_536871685;
+                 collectorType: CollisionCollectorType_536871631;
+                 callback: CastShapeResultCallback_536871777; userData: pointer;
+                 broadPhaseLayerFilter: ptr BroadPhaseLayerFilter_536871797;
+                 objectLayerFilter: ptr ObjectLayerFilter_536871799;
+                 bodyFilter: ptr BodyFilter_536871801;
+                 shapeFilter: ptr ShapeFilter_536871803): bool {.cdecl,
     importc: "JPH_NarrowPhaseQuery_CastShape2".}
-proc getID*(body: ptr Body_536871835): BodyID_536871464 {.cdecl,
+proc getID*(body: ptr Body_536871907): BodyID_536871536 {.cdecl,
     importc: "JPH_Body_GetID".}
-proc getBodyType*(body: ptr Body_536871835): BodyType_536871484 {.cdecl,
+proc getBodyType*(body: ptr Body_536871907): BodyType_536871556 {.cdecl,
     importc: "JPH_Body_GetBodyType".}
-proc isRigidBody*(body: ptr Body_536871835): bool {.cdecl,
+proc isRigidBody*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_IsRigidBody".}
-proc isSoftBody*(body: ptr Body_536871835): bool {.cdecl,
+proc isSoftBody*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_IsSoftBody".}
-proc isActive*(body: ptr Body_536871835): bool {.cdecl,
+proc isActive*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_IsActive".}
-proc isStatic*(body: ptr Body_536871835): bool {.cdecl,
+proc isStatic*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_IsStatic".}
-proc isKinematic*(body: ptr Body_536871835): bool {.cdecl,
+proc isKinematic*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_IsKinematic".}
-proc isDynamic*(body: ptr Body_536871835): bool {.cdecl,
+proc isDynamic*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_IsDynamic".}
-proc canBeKinematicOrDynamic*(body: ptr Body_536871835): bool {.cdecl,
+proc canBeKinematicOrDynamic*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_CanBeKinematicOrDynamic".}
-proc setIsSensor*(body: ptr Body_536871835; value: bool): void {.cdecl,
+proc setIsSensor*(body: ptr Body_536871907; value: bool): void {.cdecl,
     importc: "JPH_Body_SetIsSensor".}
-proc isSensor*(body: ptr Body_536871835): bool {.cdecl,
+proc isSensor*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_IsSensor".}
-proc setCollideKinematicVsNonDynamic*(body: ptr Body_536871835; value: bool): void {.
+proc setCollideKinematicVsNonDynamic*(body: ptr Body_536871907; value: bool): void {.
     cdecl, importc: "JPH_Body_SetCollideKinematicVsNonDynamic".}
-proc getCollideKinematicVsNonDynamic*(body: ptr Body_536871835): bool {.cdecl,
+proc getCollideKinematicVsNonDynamic*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_GetCollideKinematicVsNonDynamic".}
-proc setUseManifoldReduction*(body: ptr Body_536871835; value: bool): void {.
+proc setUseManifoldReduction*(body: ptr Body_536871907; value: bool): void {.
     cdecl, importc: "JPH_Body_SetUseManifoldReduction".}
-proc getUseManifoldReduction*(body: ptr Body_536871835): bool {.cdecl,
+proc getUseManifoldReduction*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_GetUseManifoldReduction".}
-proc getUseManifoldReductionWithBody*(body: ptr Body_536871835; other: ptr Body_536871835): bool {.
+proc getUseManifoldReductionWithBody*(body: ptr Body_536871907; other: ptr Body_536871907): bool {.
     cdecl, importc: "JPH_Body_GetUseManifoldReductionWithBody".}
-proc setApplyGyroscopicForce*(body: ptr Body_536871835; value: bool): void {.
+proc setApplyGyroscopicForce*(body: ptr Body_536871907; value: bool): void {.
     cdecl, importc: "JPH_Body_SetApplyGyroscopicForce".}
-proc getApplyGyroscopicForce*(body: ptr Body_536871835): bool {.cdecl,
+proc getApplyGyroscopicForce*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_GetApplyGyroscopicForce".}
-proc setEnhancedInternalEdgeRemoval*(body: ptr Body_536871835; value: bool): void {.
+proc setEnhancedInternalEdgeRemoval*(body: ptr Body_536871907; value: bool): void {.
     cdecl, importc: "JPH_Body_SetEnhancedInternalEdgeRemoval".}
-proc getEnhancedInternalEdgeRemoval*(body: ptr Body_536871835): bool {.cdecl,
+proc getEnhancedInternalEdgeRemoval*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_GetEnhancedInternalEdgeRemoval".}
-proc getEnhancedInternalEdgeRemovalWithBody*(body: ptr Body_536871835;
-    other: ptr Body_536871835): bool {.cdecl, importc: "JPH_Body_GetEnhancedInternalEdgeRemovalWithBody".}
-proc getMotionType*(body: ptr Body_536871835): MotionType_536871488 {.cdecl,
+proc getEnhancedInternalEdgeRemovalWithBody*(body: ptr Body_536871907;
+    other: ptr Body_536871907): bool {.cdecl, importc: "JPH_Body_GetEnhancedInternalEdgeRemovalWithBody".}
+proc getMotionType*(body: ptr Body_536871907): MotionType_536871560 {.cdecl,
     importc: "JPH_Body_GetMotionType".}
-proc setMotionType*(body: ptr Body_536871835; motionType: MotionType_536871488): void {.
+proc setMotionType*(body: ptr Body_536871907; motionType: MotionType_536871560): void {.
     cdecl, importc: "JPH_Body_SetMotionType".}
-proc getBroadPhaseLayer*(body: ptr Body_536871835): BroadPhaseLayer_536871470 {.
+proc getBroadPhaseLayer*(body: ptr Body_536871907): BroadPhaseLayer_536871542 {.
     cdecl, importc: "JPH_Body_GetBroadPhaseLayer".}
-proc getObjectLayer*(body: ptr Body_536871835): ObjectLayer_536871468 {.cdecl,
+proc getObjectLayer*(body: ptr Body_536871907): ObjectLayer_536871540 {.cdecl,
     importc: "JPH_Body_GetObjectLayer".}
-proc getAllowSleeping*(body: ptr Body_536871835): bool {.cdecl,
+proc getAllowSleeping*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_GetAllowSleeping".}
-proc setAllowSleeping*(body: ptr Body_536871835; allowSleeping: bool): void {.
+proc setAllowSleeping*(body: ptr Body_536871907; allowSleeping: bool): void {.
     cdecl, importc: "JPH_Body_SetAllowSleeping".}
-proc resetSleepTimer*(body: ptr Body_536871835): void {.cdecl,
+proc resetSleepTimer*(body: ptr Body_536871907): void {.cdecl,
     importc: "JPH_Body_ResetSleepTimer".}
-proc getFriction*(body: ptr Body_536871835): cfloat {.cdecl,
+proc getFriction*(body: ptr Body_536871907): cfloat {.cdecl,
     importc: "JPH_Body_GetFriction".}
-proc setFriction*(body: ptr Body_536871835; friction: cfloat): void {.cdecl,
+proc setFriction*(body: ptr Body_536871907; friction: cfloat): void {.cdecl,
     importc: "JPH_Body_SetFriction".}
-proc getRestitution*(body: ptr Body_536871835): cfloat {.cdecl,
+proc getRestitution*(body: ptr Body_536871907): cfloat {.cdecl,
     importc: "JPH_Body_GetRestitution".}
-proc setRestitution*(body: ptr Body_536871835; restitution: cfloat): void {.
+proc setRestitution*(body: ptr Body_536871907; restitution: cfloat): void {.
     cdecl, importc: "JPH_Body_SetRestitution".}
-proc getLinearVelocity*(body: ptr Body_536871835; velocity: ptr Vec3_536871595): void {.
+proc getLinearVelocity*(body: ptr Body_536871907; velocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Body_GetLinearVelocity".}
-proc setLinearVelocity*(body: ptr Body_536871835; velocity: ptr Vec3_536871595): void {.
+proc setLinearVelocity*(body: ptr Body_536871907; velocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Body_SetLinearVelocity".}
-proc setLinearVelocityClamped*(body: ptr Body_536871835; velocity: ptr Vec3_536871595): void {.
+proc setLinearVelocityClamped*(body: ptr Body_536871907; velocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Body_SetLinearVelocityClamped".}
-proc getAngularVelocity*(body: ptr Body_536871835; velocity: ptr Vec3_536871595): void {.
+proc getAngularVelocity*(body: ptr Body_536871907; velocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Body_GetAngularVelocity".}
-proc setAngularVelocity*(body: ptr Body_536871835; velocity: ptr Vec3_536871595): void {.
+proc setAngularVelocity*(body: ptr Body_536871907; velocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Body_SetAngularVelocity".}
-proc setAngularVelocityClamped*(body: ptr Body_536871835; velocity: ptr Vec3_536871595): void {.
+proc setAngularVelocityClamped*(body: ptr Body_536871907; velocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Body_SetAngularVelocityClamped".}
-proc getPointVelocityCOM*(body: ptr Body_536871835;
-                          pointRelativeToCOM: ptr Vec3_536871595;
-                          velocity: ptr Vec3_536871595): void {.cdecl,
+proc getPointVelocityCOM*(body: ptr Body_536871907;
+                          pointRelativeToCOM: ptr Vec3_536871667;
+                          velocity: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_Body_GetPointVelocityCOM".}
-proc getPointVelocity*(body: ptr Body_536871835; point: ptr RVec3_536871613;
-                       velocity: ptr Vec3_536871595): void {.cdecl,
+proc getPointVelocity*(body: ptr Body_536871907; point: ptr RVec3_536871685;
+                       velocity: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_Body_GetPointVelocity".}
-proc addForce*(body: ptr Body_536871835; force: ptr Vec3_536871595): void {.
+proc addForce*(body: ptr Body_536871907; force: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Body_AddForce".}
-proc addForceAtPosition*(body: ptr Body_536871835; force: ptr Vec3_536871595;
-                         position: ptr RVec3_536871613): void {.cdecl,
+proc addForceAtPosition*(body: ptr Body_536871907; force: ptr Vec3_536871667;
+                         position: ptr RVec3_536871685): void {.cdecl,
     importc: "JPH_Body_AddForceAtPosition".}
-proc addTorque*(body: ptr Body_536871835; force: ptr Vec3_536871595): void {.
+proc addTorque*(body: ptr Body_536871907; force: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Body_AddTorque".}
-proc getAccumulatedForce*(body: ptr Body_536871835; force: ptr Vec3_536871595): void {.
+proc getAccumulatedForce*(body: ptr Body_536871907; force: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Body_GetAccumulatedForce".}
-proc getAccumulatedTorque*(body: ptr Body_536871835; force: ptr Vec3_536871595): void {.
+proc getAccumulatedTorque*(body: ptr Body_536871907; force: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Body_GetAccumulatedTorque".}
-proc resetForce*(body: ptr Body_536871835): void {.cdecl,
+proc resetForce*(body: ptr Body_536871907): void {.cdecl,
     importc: "JPH_Body_ResetForce".}
-proc resetTorque*(body: ptr Body_536871835): void {.cdecl,
+proc resetTorque*(body: ptr Body_536871907): void {.cdecl,
     importc: "JPH_Body_ResetTorque".}
-proc resetMotion*(body: ptr Body_536871835): void {.cdecl,
+proc resetMotion*(body: ptr Body_536871907): void {.cdecl,
     importc: "JPH_Body_ResetMotion".}
-proc getInverseInertia*(body: ptr Body_536871835; result: ptr Matrix4x4_536871611): void {.
+proc getInverseInertia*(body: ptr Body_536871907; result: ptr Matrix4x4_536871683): void {.
     cdecl, importc: "JPH_Body_GetInverseInertia".}
-proc addImpulse*(body: ptr Body_536871835; impulse: ptr Vec3_536871595): void {.
+proc addImpulse*(body: ptr Body_536871907; impulse: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Body_AddImpulse".}
-proc addImpulseAtPosition*(body: ptr Body_536871835; impulse: ptr Vec3_536871595;
-                           position: ptr RVec3_536871613): void {.cdecl,
+proc addImpulseAtPosition*(body: ptr Body_536871907; impulse: ptr Vec3_536871667;
+                           position: ptr RVec3_536871685): void {.cdecl,
     importc: "JPH_Body_AddImpulseAtPosition".}
-proc addAngularImpulse*(body: ptr Body_536871835; angularImpulse: ptr Vec3_536871595): void {.
+proc addAngularImpulse*(body: ptr Body_536871907; angularImpulse: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Body_AddAngularImpulse".}
-proc moveKinematic*(body: ptr Body_536871835; targetPosition: ptr RVec3_536871613;
-                    targetRotation: ptr Quat_536871603; deltaTime: cfloat): void {.
+proc moveKinematic*(body: ptr Body_536871907; targetPosition: ptr RVec3_536871685;
+                    targetRotation: ptr Quat_536871675; deltaTime: cfloat): void {.
     cdecl, importc: "JPH_Body_MoveKinematic".}
-proc applyBuoyancyImpulse*(body: ptr Body_536871835; surfacePosition: ptr RVec3_536871613;
-                           surfaceNormal: ptr Vec3_536871595; buoyancy: cfloat;
+proc applyBuoyancyImpulse*(body: ptr Body_536871907; surfacePosition: ptr RVec3_536871685;
+                           surfaceNormal: ptr Vec3_536871667; buoyancy: cfloat;
                            linearDrag: cfloat; angularDrag: cfloat;
-                           fluidVelocity: ptr Vec3_536871595; gravity: ptr Vec3_536871595;
+                           fluidVelocity: ptr Vec3_536871667; gravity: ptr Vec3_536871667;
                            deltaTime: cfloat): bool {.cdecl,
     importc: "JPH_Body_ApplyBuoyancyImpulse".}
-proc isInBroadPhase*(body: ptr Body_536871835): bool {.cdecl,
+proc isInBroadPhase*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_IsInBroadPhase".}
-proc isCollisionCacheInvalid*(body: ptr Body_536871835): bool {.cdecl,
+proc isCollisionCacheInvalid*(body: ptr Body_536871907): bool {.cdecl,
     importc: "JPH_Body_IsCollisionCacheInvalid".}
-proc getShape*(body: ptr Body_536871835): ptr Shape_536871779 {.cdecl,
+proc getShape*(body: ptr Body_536871907): ptr Shape_536871851 {.cdecl,
     importc: "JPH_Body_GetShape".}
-proc getPosition*(body: ptr Body_536871835; result: ptr RVec3_536871613): void {.
+proc getPosition*(body: ptr Body_536871907; result: ptr RVec3_536871685): void {.
     cdecl, importc: "JPH_Body_GetPosition".}
-proc getRotation*(body: ptr Body_536871835; result: ptr Quat_536871603): void {.
+proc getRotation*(body: ptr Body_536871907; result: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_Body_GetRotation".}
-proc getWorldTransform*(body: ptr Body_536871835; result: ptr RMatrix4x4_536871615): void {.
+proc getWorldTransform*(body: ptr Body_536871907; result: ptr RMatrix4x4_536871687): void {.
     cdecl, importc: "JPH_Body_GetWorldTransform".}
-proc getCenterOfMassPosition*(body: ptr Body_536871835; result: ptr RVec3_536871613): void {.
+proc getCenterOfMassPosition*(body: ptr Body_536871907; result: ptr RVec3_536871685): void {.
     cdecl, importc: "JPH_Body_GetCenterOfMassPosition".}
-proc getCenterOfMassTransform*(body: ptr Body_536871835; result: ptr RMatrix4x4_536871615): void {.
+proc getCenterOfMassTransform*(body: ptr Body_536871907; result: ptr RMatrix4x4_536871687): void {.
     cdecl, importc: "JPH_Body_GetCenterOfMassTransform".}
-proc getInverseCenterOfMassTransform*(body: ptr Body_536871835;
-                                      result: ptr RMatrix4x4_536871615): void {.
+proc getInverseCenterOfMassTransform*(body: ptr Body_536871907;
+                                      result: ptr RMatrix4x4_536871687): void {.
     cdecl, importc: "JPH_Body_GetInverseCenterOfMassTransform".}
-proc getWorldSpaceBounds*(body: ptr Body_536871835; result: ptr AABox_536871621): void {.
+proc getWorldSpaceBounds*(body: ptr Body_536871907; result: ptr AABox_536871693): void {.
     cdecl, importc: "JPH_Body_GetWorldSpaceBounds".}
-proc getWorldSpaceSurfaceNormal*(body: ptr Body_536871835;
-                                 subShapeID: SubShapeID_536871466;
-                                 position: ptr RVec3_536871613; normal: ptr Vec3_536871595): void {.
+proc getWorldSpaceSurfaceNormal*(body: ptr Body_536871907;
+                                 subShapeID: SubShapeID_536871538;
+                                 position: ptr RVec3_536871685; normal: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Body_GetWorldSpaceSurfaceNormal".}
-proc getMotionProperties*(body: ptr Body_536871835): ptr MotionProperties_536871833 {.
+proc getMotionProperties*(body: ptr Body_536871907): ptr MotionProperties_536871905 {.
     cdecl, importc: "JPH_Body_GetMotionProperties".}
-proc getMotionPropertiesUnchecked*(body: ptr Body_536871835): ptr MotionProperties_536871833 {.
+proc getMotionPropertiesUnchecked*(body: ptr Body_536871907): ptr MotionProperties_536871905 {.
     cdecl, importc: "JPH_Body_GetMotionPropertiesUnchecked".}
-proc setUserData*(body: ptr Body_536871835; userData: uint64): void {.cdecl,
+proc setUserData*(body: ptr Body_536871907; userData: uint64): void {.cdecl,
     importc: "JPH_Body_SetUserData".}
-proc getUserData*(body: ptr Body_536871835): uint64 {.cdecl,
+proc getUserData*(body: ptr Body_536871907): uint64 {.cdecl,
     importc: "JPH_Body_GetUserData".}
-proc getFixedToWorldBody*(): ptr Body_536871835 {.cdecl,
+proc getFixedToWorldBody*(): ptr Body_536871907 {.cdecl,
     importc: "JPH_Body_GetFixedToWorldBody".}
-proc setProcs*(procs: ptr BroadPhaseLayerFilter_Procs_536872003): void {.cdecl,
+proc setProcs*(procs: ptr BroadPhaseLayerFilter_Procs_536872075): void {.cdecl,
     importc: "JPH_BroadPhaseLayerFilter_SetProcs".}
-when not declared(broadPhaseLayerFilter_Create):
-  proc broadPhaseLayerFilter_Create*(userData: pointer): ptr BroadPhaseLayerFilter_536871725 {.
-      cdecl, importc: "JPH_BroadPhaseLayerFilter_Create".}
-else:
-  static :
-    hint("Declaration of " & "broadPhaseLayerFilter_Create" &
-        " already exists, not redeclaring")
+proc initBroadPhaseLayerFilter*(userData: pointer): ptr BroadPhaseLayerFilter_536871797 {.
+    cdecl, importc: "JPH_BroadPhaseLayerFilter_Create".}
 when not declared(broadPhaseLayerFilter_Destroy):
-  proc broadPhaseLayerFilter_Destroy*(filter: ptr BroadPhaseLayerFilter_536871725): void {.
+  proc broadPhaseLayerFilter_Destroy*(filter: ptr BroadPhaseLayerFilter_536871797): void {.
       cdecl, importc: "JPH_BroadPhaseLayerFilter_Destroy".}
 else:
   static :
     hint("Declaration of " & "broadPhaseLayerFilter_Destroy" &
         " already exists, not redeclaring")
-proc setProcs*(procs: ptr ObjectLayerFilter_Procs_536872007): void {.cdecl,
+proc setProcs*(procs: ptr ObjectLayerFilter_Procs_536872079): void {.cdecl,
     importc: "JPH_ObjectLayerFilter_SetProcs".}
-when not declared(objectLayerFilter_Create):
-  proc objectLayerFilter_Create*(userData: pointer): ptr ObjectLayerFilter_536871727 {.
-      cdecl, importc: "JPH_ObjectLayerFilter_Create".}
-else:
-  static :
-    hint("Declaration of " & "objectLayerFilter_Create" &
-        " already exists, not redeclaring")
+proc initObjectLayerFilter*(userData: pointer): ptr ObjectLayerFilter_536871799 {.
+    cdecl, importc: "JPH_ObjectLayerFilter_Create".}
 when not declared(objectLayerFilter_Destroy):
-  proc objectLayerFilter_Destroy*(filter: ptr ObjectLayerFilter_536871727): void {.
+  proc objectLayerFilter_Destroy*(filter: ptr ObjectLayerFilter_536871799): void {.
       cdecl, importc: "JPH_ObjectLayerFilter_Destroy".}
 else:
   static :
     hint("Declaration of " & "objectLayerFilter_Destroy" &
         " already exists, not redeclaring")
-proc setProcs*(procs: ptr BodyFilter_Procs_536872011): void {.cdecl,
+proc setProcs*(procs: ptr BodyFilter_Procs_536872083): void {.cdecl,
     importc: "JPH_BodyFilter_SetProcs".}
-when not declared(bodyFilter_Create):
-  proc bodyFilter_Create*(userData: pointer): ptr BodyFilter_536871729 {.cdecl,
-      importc: "JPH_BodyFilter_Create".}
-else:
-  static :
-    hint("Declaration of " & "bodyFilter_Create" &
-        " already exists, not redeclaring")
+proc initBodyFilter*(userData: pointer): ptr BodyFilter_536871801 {.cdecl,
+    importc: "JPH_BodyFilter_Create".}
 when not declared(bodyFilter_Destroy):
-  proc bodyFilter_Destroy*(filter: ptr BodyFilter_536871729): void {.cdecl,
+  proc bodyFilter_Destroy*(filter: ptr BodyFilter_536871801): void {.cdecl,
       importc: "JPH_BodyFilter_Destroy".}
 else:
   static :
     hint("Declaration of " & "bodyFilter_Destroy" &
         " already exists, not redeclaring")
-proc setProcs*(procs: ptr ShapeFilter_Procs_536872015): void {.cdecl,
+proc setProcs*(procs: ptr ShapeFilter_Procs_536872087): void {.cdecl,
     importc: "JPH_ShapeFilter_SetProcs".}
-when not declared(shapeFilter_Create):
-  proc shapeFilter_Create*(userData: pointer): ptr ShapeFilter_536871731 {.
-      cdecl, importc: "JPH_ShapeFilter_Create".}
-else:
-  static :
-    hint("Declaration of " & "shapeFilter_Create" &
-        " already exists, not redeclaring")
+proc initShapeFilter*(userData: pointer): ptr ShapeFilter_536871803 {.cdecl,
+    importc: "JPH_ShapeFilter_Create".}
 when not declared(shapeFilter_Destroy):
-  proc shapeFilter_Destroy*(filter: ptr ShapeFilter_536871731): void {.cdecl,
+  proc shapeFilter_Destroy*(filter: ptr ShapeFilter_536871803): void {.cdecl,
       importc: "JPH_ShapeFilter_Destroy".}
 else:
   static :
     hint("Declaration of " & "shapeFilter_Destroy" &
         " already exists, not redeclaring")
-proc getBodyID2*(filter: ptr ShapeFilter_536871731): BodyID_536871464 {.cdecl,
+proc getBodyID2*(filter: ptr ShapeFilter_536871803): BodyID_536871536 {.cdecl,
     importc: "JPH_ShapeFilter_GetBodyID2".}
-proc setBodyID2*(filter: ptr ShapeFilter_536871731; id: BodyID_536871464): void {.
+proc setBodyID2*(filter: ptr ShapeFilter_536871803; id: BodyID_536871536): void {.
     cdecl, importc: "JPH_ShapeFilter_SetBodyID2".}
-proc setProcs*(procs: ptr SimShapeFilter_Procs_536872019): void {.cdecl,
+proc setProcs*(procs: ptr SimShapeFilter_Procs_536872091): void {.cdecl,
     importc: "JPH_SimShapeFilter_SetProcs".}
-when not declared(simShapeFilter_Create):
-  proc simShapeFilter_Create*(userData: pointer): ptr SimShapeFilter_536871733 {.
-      cdecl, importc: "JPH_SimShapeFilter_Create".}
-else:
-  static :
-    hint("Declaration of " & "simShapeFilter_Create" &
-        " already exists, not redeclaring")
+proc initSimShapeFilter*(userData: pointer): ptr SimShapeFilter_536871805 {.
+    cdecl, importc: "JPH_SimShapeFilter_Create".}
 when not declared(simShapeFilter_Destroy):
-  proc simShapeFilter_Destroy*(filter: ptr SimShapeFilter_536871733): void {.
+  proc simShapeFilter_Destroy*(filter: ptr SimShapeFilter_536871805): void {.
       cdecl, importc: "JPH_SimShapeFilter_Destroy".}
 else:
   static :
     hint("Declaration of " & "simShapeFilter_Destroy" &
         " already exists, not redeclaring")
-proc setProcs*(procs: ptr ContactListener_Procs_536872023): void {.cdecl,
+proc setProcs*(procs: ptr ContactListener_Procs_536872095): void {.cdecl,
     importc: "JPH_ContactListener_SetProcs".}
-when not declared(contactListener_Create):
-  proc contactListener_Create*(userData: pointer): ptr ContactListener_536871837 {.
-      cdecl, importc: "JPH_ContactListener_Create".}
-else:
-  static :
-    hint("Declaration of " & "contactListener_Create" &
-        " already exists, not redeclaring")
+proc initContactListener*(userData: pointer): ptr ContactListener_536871909 {.
+    cdecl, importc: "JPH_ContactListener_Create".}
 when not declared(contactListener_Destroy):
-  proc contactListener_Destroy*(listener: ptr ContactListener_536871837): void {.
+  proc contactListener_Destroy*(listener: ptr ContactListener_536871909): void {.
       cdecl, importc: "JPH_ContactListener_Destroy".}
 else:
   static :
     hint("Declaration of " & "contactListener_Destroy" &
         " already exists, not redeclaring")
-proc setProcs*(procs: ptr BodyActivationListener_Procs_536872027): void {.cdecl,
+proc setProcs*(procs: ptr BodyActivationListener_Procs_536872099): void {.cdecl,
     importc: "JPH_BodyActivationListener_SetProcs".}
-when not declared(bodyActivationListener_Create):
-  proc bodyActivationListener_Create*(userData: pointer): ptr BodyActivationListener_536871851 {.
-      cdecl, importc: "JPH_BodyActivationListener_Create".}
-else:
-  static :
-    hint("Declaration of " & "bodyActivationListener_Create" &
-        " already exists, not redeclaring")
+proc initBodyActivationListener*(userData: pointer): ptr BodyActivationListener_536871923 {.
+    cdecl, importc: "JPH_BodyActivationListener_Create".}
 when not declared(bodyActivationListener_Destroy):
-  proc bodyActivationListener_Destroy*(listener: ptr BodyActivationListener_536871851): void {.
+  proc bodyActivationListener_Destroy*(listener: ptr BodyActivationListener_536871923): void {.
       cdecl, importc: "JPH_BodyActivationListener_Destroy".}
 else:
   static :
     hint("Declaration of " & "bodyActivationListener_Destroy" &
         " already exists, not redeclaring")
-proc setProcs*(procs: ptr BodyDrawFilter_Procs_536872031): void {.cdecl,
+proc setProcs*(procs: ptr BodyDrawFilter_Procs_536872103): void {.cdecl,
     importc: "JPH_BodyDrawFilter_SetProcs".}
-when not declared(bodyDrawFilter_Create):
-  proc bodyDrawFilter_Create*(userData: pointer): ptr BodyDrawFilter_536871853 {.
-      cdecl, importc: "JPH_BodyDrawFilter_Create".}
-else:
-  static :
-    hint("Declaration of " & "bodyDrawFilter_Create" &
-        " already exists, not redeclaring")
+proc initBodyDrawFilter*(userData: pointer): ptr BodyDrawFilter_536871925 {.
+    cdecl, importc: "JPH_BodyDrawFilter_Create".}
 when not declared(bodyDrawFilter_Destroy):
-  proc bodyDrawFilter_Destroy*(filter: ptr BodyDrawFilter_536871853): void {.
+  proc bodyDrawFilter_Destroy*(filter: ptr BodyDrawFilter_536871925): void {.
       cdecl, importc: "JPH_BodyDrawFilter_Destroy".}
 else:
   static :
     hint("Declaration of " & "bodyDrawFilter_Destroy" &
         " already exists, not redeclaring")
-proc getWorldSpaceNormal*(manifold: ptr ContactManifold_536871839;
-                          result: ptr Vec3_536871595): void {.cdecl,
+proc getWorldSpaceNormal*(manifold: ptr ContactManifold_536871911;
+                          result: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_ContactManifold_GetWorldSpaceNormal".}
-proc getPenetrationDepth*(manifold: ptr ContactManifold_536871839): cfloat {.
+proc getPenetrationDepth*(manifold: ptr ContactManifold_536871911): cfloat {.
     cdecl, importc: "JPH_ContactManifold_GetPenetrationDepth".}
-proc getSubShapeID1*(manifold: ptr ContactManifold_536871839): SubShapeID_536871466 {.
+proc getSubShapeID1*(manifold: ptr ContactManifold_536871911): SubShapeID_536871538 {.
     cdecl, importc: "JPH_ContactManifold_GetSubShapeID1".}
-proc getSubShapeID2*(manifold: ptr ContactManifold_536871839): SubShapeID_536871466 {.
+proc getSubShapeID2*(manifold: ptr ContactManifold_536871911): SubShapeID_536871538 {.
     cdecl, importc: "JPH_ContactManifold_GetSubShapeID2".}
-proc getPointCount*(manifold: ptr ContactManifold_536871839): uint32 {.cdecl,
+proc getPointCount*(manifold: ptr ContactManifold_536871911): uint32 {.cdecl,
     importc: "JPH_ContactManifold_GetPointCount".}
-proc getWorldSpaceContactPointOn1*(manifold: ptr ContactManifold_536871839;
-                                   index: uint32; result: ptr RVec3_536871613): void {.
+proc getWorldSpaceContactPointOn1*(manifold: ptr ContactManifold_536871911;
+                                   index: uint32; result: ptr RVec3_536871685): void {.
     cdecl, importc: "JPH_ContactManifold_GetWorldSpaceContactPointOn1".}
-proc getWorldSpaceContactPointOn2*(manifold: ptr ContactManifold_536871839;
-                                   index: uint32; result: ptr RVec3_536871613): void {.
+proc getWorldSpaceContactPointOn2*(manifold: ptr ContactManifold_536871911;
+                                   index: uint32; result: ptr RVec3_536871685): void {.
     cdecl, importc: "JPH_ContactManifold_GetWorldSpaceContactPointOn2".}
-proc getFriction*(settings: ptr ContactSettings_536871841): cfloat {.cdecl,
+proc getFriction*(settings: ptr ContactSettings_536871913): cfloat {.cdecl,
     importc: "JPH_ContactSettings_GetFriction".}
-proc setFriction*(settings: ptr ContactSettings_536871841; friction: cfloat): void {.
+proc setFriction*(settings: ptr ContactSettings_536871913; friction: cfloat): void {.
     cdecl, importc: "JPH_ContactSettings_SetFriction".}
-proc getRestitution*(settings: ptr ContactSettings_536871841): cfloat {.cdecl,
+proc getRestitution*(settings: ptr ContactSettings_536871913): cfloat {.cdecl,
     importc: "JPH_ContactSettings_GetRestitution".}
-proc setRestitution*(settings: ptr ContactSettings_536871841;
+proc setRestitution*(settings: ptr ContactSettings_536871913;
                      restitution: cfloat): void {.cdecl,
     importc: "JPH_ContactSettings_SetRestitution".}
-proc getInvMassScale1*(settings: ptr ContactSettings_536871841): cfloat {.cdecl,
+proc getInvMassScale1*(settings: ptr ContactSettings_536871913): cfloat {.cdecl,
     importc: "JPH_ContactSettings_GetInvMassScale1".}
-proc setInvMassScale1*(settings: ptr ContactSettings_536871841; scale: cfloat): void {.
+proc setInvMassScale1*(settings: ptr ContactSettings_536871913; scale: cfloat): void {.
     cdecl, importc: "JPH_ContactSettings_SetInvMassScale1".}
-proc getInvInertiaScale1*(settings: ptr ContactSettings_536871841): cfloat {.
+proc getInvInertiaScale1*(settings: ptr ContactSettings_536871913): cfloat {.
     cdecl, importc: "JPH_ContactSettings_GetInvInertiaScale1".}
-proc setInvInertiaScale1*(settings: ptr ContactSettings_536871841; scale: cfloat): void {.
+proc setInvInertiaScale1*(settings: ptr ContactSettings_536871913; scale: cfloat): void {.
     cdecl, importc: "JPH_ContactSettings_SetInvInertiaScale1".}
-proc getInvMassScale2*(settings: ptr ContactSettings_536871841): cfloat {.cdecl,
+proc getInvMassScale2*(settings: ptr ContactSettings_536871913): cfloat {.cdecl,
     importc: "JPH_ContactSettings_GetInvMassScale2".}
-proc setInvMassScale2*(settings: ptr ContactSettings_536871841; scale: cfloat): void {.
+proc setInvMassScale2*(settings: ptr ContactSettings_536871913; scale: cfloat): void {.
     cdecl, importc: "JPH_ContactSettings_SetInvMassScale2".}
-proc getInvInertiaScale2*(settings: ptr ContactSettings_536871841): cfloat {.
+proc getInvInertiaScale2*(settings: ptr ContactSettings_536871913): cfloat {.
     cdecl, importc: "JPH_ContactSettings_GetInvInertiaScale2".}
-proc setInvInertiaScale2*(settings: ptr ContactSettings_536871841; scale: cfloat): void {.
+proc setInvInertiaScale2*(settings: ptr ContactSettings_536871913; scale: cfloat): void {.
     cdecl, importc: "JPH_ContactSettings_SetInvInertiaScale2".}
-proc getIsSensor*(settings: ptr ContactSettings_536871841): bool {.cdecl,
+proc getIsSensor*(settings: ptr ContactSettings_536871913): bool {.cdecl,
     importc: "JPH_ContactSettings_GetIsSensor".}
-proc setIsSensor*(settings: ptr ContactSettings_536871841; sensor: bool): void {.
+proc setIsSensor*(settings: ptr ContactSettings_536871913; sensor: bool): void {.
     cdecl, importc: "JPH_ContactSettings_SetIsSensor".}
-proc getRelativeLinearSurfaceVelocity*(settings: ptr ContactSettings_536871841;
-                                       result: ptr Vec3_536871595): void {.
+proc getRelativeLinearSurfaceVelocity*(settings: ptr ContactSettings_536871913;
+                                       result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_ContactSettings_GetRelativeLinearSurfaceVelocity".}
-proc setRelativeLinearSurfaceVelocity*(settings: ptr ContactSettings_536871841;
-                                       velocity: ptr Vec3_536871595): void {.
+proc setRelativeLinearSurfaceVelocity*(settings: ptr ContactSettings_536871913;
+                                       velocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_ContactSettings_SetRelativeLinearSurfaceVelocity".}
-proc getRelativeAngularSurfaceVelocity*(settings: ptr ContactSettings_536871841;
-                                        result: ptr Vec3_536871595): void {.
+proc getRelativeAngularSurfaceVelocity*(settings: ptr ContactSettings_536871913;
+                                        result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_ContactSettings_GetRelativeAngularSurfaceVelocity".}
-proc setRelativeAngularSurfaceVelocity*(settings: ptr ContactSettings_536871841;
-                                        velocity: ptr Vec3_536871595): void {.
+proc setRelativeAngularSurfaceVelocity*(settings: ptr ContactSettings_536871913;
+                                        velocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_ContactSettings_SetRelativeAngularSurfaceVelocity".}
 when not declared(characterBase_Destroy):
-  proc characterBase_Destroy*(character: ptr CharacterBase_536871881): void {.
+  proc characterBase_Destroy*(character: ptr CharacterBase_536871953): void {.
       cdecl, importc: "JPH_CharacterBase_Destroy".}
 else:
   static :
     hint("Declaration of " & "characterBase_Destroy" &
         " already exists, not redeclaring")
-proc getCosMaxSlopeAngle*(character: ptr CharacterBase_536871881): cfloat {.
+proc getCosMaxSlopeAngle*(character: ptr CharacterBase_536871953): cfloat {.
     cdecl, importc: "JPH_CharacterBase_GetCosMaxSlopeAngle".}
-proc setMaxSlopeAngle*(character: ptr CharacterBase_536871881;
+proc setMaxSlopeAngle*(character: ptr CharacterBase_536871953;
                        maxSlopeAngle: cfloat): void {.cdecl,
     importc: "JPH_CharacterBase_SetMaxSlopeAngle".}
-proc getUp*(character: ptr CharacterBase_536871881; result: ptr Vec3_536871595): void {.
+proc getUp*(character: ptr CharacterBase_536871953; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_CharacterBase_GetUp".}
-proc setUp*(character: ptr CharacterBase_536871881; value: ptr Vec3_536871595): void {.
+proc setUp*(character: ptr CharacterBase_536871953; value: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_CharacterBase_SetUp".}
-proc isSlopeTooSteep*(character: ptr CharacterBase_536871881; value: ptr Vec3_536871595): bool {.
+proc isSlopeTooSteep*(character: ptr CharacterBase_536871953; value: ptr Vec3_536871667): bool {.
     cdecl, importc: "JPH_CharacterBase_IsSlopeTooSteep".}
-proc getShape*(character: ptr CharacterBase_536871881): ptr Shape_536871779 {.
+proc getShape*(character: ptr CharacterBase_536871953): ptr Shape_536871851 {.
     cdecl, importc: "JPH_CharacterBase_GetShape".}
-proc getGroundState*(character: ptr CharacterBase_536871881): GroundState_536871532 {.
+proc getGroundState*(character: ptr CharacterBase_536871953): GroundState_536871604 {.
     cdecl, importc: "JPH_CharacterBase_GetGroundState".}
-proc isSupported*(character: ptr CharacterBase_536871881): bool {.cdecl,
+proc isSupported*(character: ptr CharacterBase_536871953): bool {.cdecl,
     importc: "JPH_CharacterBase_IsSupported".}
-proc getGroundPosition*(character: ptr CharacterBase_536871881;
-                        position: ptr RVec3_536871613): void {.cdecl,
+proc getGroundPosition*(character: ptr CharacterBase_536871953;
+                        position: ptr RVec3_536871685): void {.cdecl,
     importc: "JPH_CharacterBase_GetGroundPosition".}
-proc getGroundNormal*(character: ptr CharacterBase_536871881; normal: ptr Vec3_536871595): void {.
+proc getGroundNormal*(character: ptr CharacterBase_536871953; normal: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_CharacterBase_GetGroundNormal".}
-proc getGroundVelocity*(character: ptr CharacterBase_536871881;
-                        velocity: ptr Vec3_536871595): void {.cdecl,
+proc getGroundVelocity*(character: ptr CharacterBase_536871953;
+                        velocity: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_CharacterBase_GetGroundVelocity".}
-proc getGroundMaterial*(character: ptr CharacterBase_536871881): ptr PhysicsMaterial_536871737 {.
+proc getGroundMaterial*(character: ptr CharacterBase_536871953): ptr PhysicsMaterial_536871809 {.
     cdecl, importc: "JPH_CharacterBase_GetGroundMaterial".}
-proc getGroundBodyId*(character: ptr CharacterBase_536871881): BodyID_536871464 {.
+proc getGroundBodyId*(character: ptr CharacterBase_536871953): BodyID_536871536 {.
     cdecl, importc: "JPH_CharacterBase_GetGroundBodyId".}
-proc getGroundSubShapeId*(character: ptr CharacterBase_536871881): SubShapeID_536871466 {.
+proc getGroundSubShapeId*(character: ptr CharacterBase_536871953): SubShapeID_536871538 {.
     cdecl, importc: "JPH_CharacterBase_GetGroundSubShapeId".}
-proc getGroundUserData*(character: ptr CharacterBase_536871881): uint64 {.cdecl,
+proc getGroundUserData*(character: ptr CharacterBase_536871953): uint64 {.cdecl,
     importc: "JPH_CharacterBase_GetGroundUserData".}
 when not declared(characterSettings_Init):
-  proc characterSettings_Init*(settings: ptr CharacterSettings_536871959): void {.
+  proc characterSettings_Init*(settings: ptr CharacterSettings_536872031): void {.
       cdecl, importc: "JPH_CharacterSettings_Init".}
 else:
   static :
     hint("Declaration of " & "characterSettings_Init" &
         " already exists, not redeclaring")
-when not declared(character_Create):
-  proc character_Create*(settings: ptr CharacterSettings_536871959;
-                         position: ptr RVec3_536871613; rotation: ptr Quat_536871603;
-                         userData: uint64; system: ptr PhysicsSystem_536871735): ptr Character_536871883 {.
-      cdecl, importc: "JPH_Character_Create".}
-else:
-  static :
-    hint("Declaration of " & "character_Create" &
-        " already exists, not redeclaring")
-proc addToPhysicsSystem*(character: ptr Character_536871883;
-                         activationMode: Activation_536871492; lockBodies: bool): void {.
+proc initCharacter*(settings: ptr CharacterSettings_536872031;
+                    position: ptr RVec3_536871685; rotation: ptr Quat_536871675;
+                    userData: uint64; system: ptr PhysicsSystem_536871807): ptr Character_536871955 {.
+    cdecl, importc: "JPH_Character_Create".}
+proc addToPhysicsSystem*(character: ptr Character_536871955;
+                         activationMode: Activation_536871564; lockBodies: bool): void {.
     cdecl, importc: "JPH_Character_AddToPhysicsSystem".}
-proc removeFromPhysicsSystem*(character: ptr Character_536871883;
+proc removeFromPhysicsSystem*(character: ptr Character_536871955;
                               lockBodies: bool): void {.cdecl,
     importc: "JPH_Character_RemoveFromPhysicsSystem".}
-proc activate*(character: ptr Character_536871883; lockBodies: bool): void {.
+proc activate*(character: ptr Character_536871955; lockBodies: bool): void {.
     cdecl, importc: "JPH_Character_Activate".}
-proc postSimulation*(character: ptr Character_536871883;
+proc postSimulation*(character: ptr Character_536871955;
                      maxSeparationDistance: cfloat; lockBodies: bool): void {.
     cdecl, importc: "JPH_Character_PostSimulation".}
-proc setLinearAndAngularVelocity*(character: ptr Character_536871883;
-                                  linearVelocity: ptr Vec3_536871595;
-                                  angularVelocity: ptr Vec3_536871595;
+proc setLinearAndAngularVelocity*(character: ptr Character_536871955;
+                                  linearVelocity: ptr Vec3_536871667;
+                                  angularVelocity: ptr Vec3_536871667;
                                   lockBodies: bool): void {.cdecl,
     importc: "JPH_Character_SetLinearAndAngularVelocity".}
-proc getLinearVelocity*(character: ptr Character_536871883; result: ptr Vec3_536871595): void {.
+proc getLinearVelocity*(character: ptr Character_536871955; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_Character_GetLinearVelocity".}
-proc setLinearVelocity*(character: ptr Character_536871883; value: ptr Vec3_536871595;
+proc setLinearVelocity*(character: ptr Character_536871955; value: ptr Vec3_536871667;
                         lockBodies: bool): void {.cdecl,
     importc: "JPH_Character_SetLinearVelocity".}
-proc addLinearVelocity*(character: ptr Character_536871883; value: ptr Vec3_536871595;
+proc addLinearVelocity*(character: ptr Character_536871955; value: ptr Vec3_536871667;
                         lockBodies: bool): void {.cdecl,
     importc: "JPH_Character_AddLinearVelocity".}
-proc addImpulse*(character: ptr Character_536871883; value: ptr Vec3_536871595;
+proc addImpulse*(character: ptr Character_536871955; value: ptr Vec3_536871667;
                  lockBodies: bool): void {.cdecl,
     importc: "JPH_Character_AddImpulse".}
-proc getBodyID*(character: ptr Character_536871883): BodyID_536871464 {.cdecl,
+proc getBodyID*(character: ptr Character_536871955): BodyID_536871536 {.cdecl,
     importc: "JPH_Character_GetBodyID".}
-proc getPositionAndRotation*(character: ptr Character_536871883;
-                             position: ptr RVec3_536871613; rotation: ptr Quat_536871603;
+proc getPositionAndRotation*(character: ptr Character_536871955;
+                             position: ptr RVec3_536871685; rotation: ptr Quat_536871675;
                              lockBodies: bool): void {.cdecl,
     importc: "JPH_Character_GetPositionAndRotation".}
-proc setPositionAndRotation*(character: ptr Character_536871883;
-                             position: ptr RVec3_536871613; rotation: ptr Quat_536871603;
-                             activationMode: Activation_536871492;
+proc setPositionAndRotation*(character: ptr Character_536871955;
+                             position: ptr RVec3_536871685; rotation: ptr Quat_536871675;
+                             activationMode: Activation_536871564;
                              lockBodies: bool): void {.cdecl,
     importc: "JPH_Character_SetPositionAndRotation".}
-proc getPosition*(character: ptr Character_536871883; position: ptr RVec3_536871613;
+proc getPosition*(character: ptr Character_536871955; position: ptr RVec3_536871685;
                   lockBodies: bool): void {.cdecl,
     importc: "JPH_Character_GetPosition".}
-proc setPosition*(character: ptr Character_536871883; position: ptr RVec3_536871613;
-                  activationMode: Activation_536871492; lockBodies: bool): void {.
+proc setPosition*(character: ptr Character_536871955; position: ptr RVec3_536871685;
+                  activationMode: Activation_536871564; lockBodies: bool): void {.
     cdecl, importc: "JPH_Character_SetPosition".}
-proc getRotation*(character: ptr Character_536871883; rotation: ptr Quat_536871603;
+proc getRotation*(character: ptr Character_536871955; rotation: ptr Quat_536871675;
                   lockBodies: bool): void {.cdecl,
     importc: "JPH_Character_GetRotation".}
-proc setRotation*(character: ptr Character_536871883; rotation: ptr Quat_536871603;
-                  activationMode: Activation_536871492; lockBodies: bool): void {.
+proc setRotation*(character: ptr Character_536871955; rotation: ptr Quat_536871675;
+                  activationMode: Activation_536871564; lockBodies: bool): void {.
     cdecl, importc: "JPH_Character_SetRotation".}
-proc getCenterOfMassPosition*(character: ptr Character_536871883;
-                              result: ptr RVec3_536871613; lockBodies: bool): void {.
+proc getCenterOfMassPosition*(character: ptr Character_536871955;
+                              result: ptr RVec3_536871685; lockBodies: bool): void {.
     cdecl, importc: "JPH_Character_GetCenterOfMassPosition".}
-proc getWorldTransform*(character: ptr Character_536871883;
-                        result: ptr RMatrix4x4_536871615; lockBodies: bool): void {.
+proc getWorldTransform*(character: ptr Character_536871955;
+                        result: ptr RMatrix4x4_536871687; lockBodies: bool): void {.
     cdecl, importc: "JPH_Character_GetWorldTransform".}
-proc getLayer*(character: ptr Character_536871883): ObjectLayer_536871468 {.
+proc getLayer*(character: ptr Character_536871955): ObjectLayer_536871540 {.
     cdecl, importc: "JPH_Character_GetLayer".}
-proc setLayer*(character: ptr Character_536871883; value: ObjectLayer_536871468;
+proc setLayer*(character: ptr Character_536871955; value: ObjectLayer_536871540;
                lockBodies: bool): void {.cdecl,
     importc: "JPH_Character_SetLayer".}
-proc setShape*(character: ptr Character_536871883; shape: ptr Shape_536871779;
+proc setShape*(character: ptr Character_536871955; shape: ptr Shape_536871851;
                maxPenetrationDepth: cfloat; lockBodies: bool): void {.cdecl,
     importc: "JPH_Character_SetShape".}
 when not declared(characterVirtualSettings_Init):
-  proc characterVirtualSettings_Init*(settings: ptr CharacterVirtualSettings_536871963): void {.
+  proc characterVirtualSettings_Init*(settings: ptr CharacterVirtualSettings_536872035): void {.
       cdecl, importc: "JPH_CharacterVirtualSettings_Init".}
 else:
   static :
     hint("Declaration of " & "characterVirtualSettings_Init" &
         " already exists, not redeclaring")
-when not declared(characterVirtual_Create):
-  proc characterVirtual_Create*(settings: ptr CharacterVirtualSettings_536871963;
-                                position: ptr RVec3_536871613;
-                                rotation: ptr Quat_536871603; userData: uint64;
-                                system: ptr PhysicsSystem_536871735): ptr CharacterVirtual_536871885 {.
-      cdecl, importc: "JPH_CharacterVirtual_Create".}
-else:
-  static :
-    hint("Declaration of " & "characterVirtual_Create" &
-        " already exists, not redeclaring")
-proc getID*(character: ptr CharacterVirtual_536871885): CharacterID_536871476 {.
+proc initCharacterVirtual*(settings: ptr CharacterVirtualSettings_536872035;
+                           position: ptr RVec3_536871685; rotation: ptr Quat_536871675;
+                           userData: uint64; system: ptr PhysicsSystem_536871807): ptr CharacterVirtual_536871957 {.
+    cdecl, importc: "JPH_CharacterVirtual_Create".}
+proc getID*(character: ptr CharacterVirtual_536871957): CharacterID_536871548 {.
     cdecl, importc: "JPH_CharacterVirtual_GetID".}
-proc setListener*(character: ptr CharacterVirtual_536871885;
-                  listener: ptr CharacterContactListener_536871887): void {.
+proc setListener*(character: ptr CharacterVirtual_536871957;
+                  listener: ptr CharacterContactListener_536871959): void {.
     cdecl, importc: "JPH_CharacterVirtual_SetListener".}
-proc setCharacterVsCharacterCollision*(character: ptr CharacterVirtual_536871885;
-    characterVsCharacterCollision: ptr CharacterVsCharacterCollision_536871889): void {.
+proc setCharacterVsCharacterCollision*(character: ptr CharacterVirtual_536871957;
+    characterVsCharacterCollision: ptr CharacterVsCharacterCollision_536871961): void {.
     cdecl, importc: "JPH_CharacterVirtual_SetCharacterVsCharacterCollision".}
-proc getLinearVelocity*(character: ptr CharacterVirtual_536871885;
-                        velocity: ptr Vec3_536871595): void {.cdecl,
+proc getLinearVelocity*(character: ptr CharacterVirtual_536871957;
+                        velocity: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_CharacterVirtual_GetLinearVelocity".}
-proc setLinearVelocity*(character: ptr CharacterVirtual_536871885;
-                        velocity: ptr Vec3_536871595): void {.cdecl,
+proc setLinearVelocity*(character: ptr CharacterVirtual_536871957;
+                        velocity: ptr Vec3_536871667): void {.cdecl,
     importc: "JPH_CharacterVirtual_SetLinearVelocity".}
-proc getPosition*(character: ptr CharacterVirtual_536871885; position: ptr RVec3_536871613): void {.
+proc getPosition*(character: ptr CharacterVirtual_536871957; position: ptr RVec3_536871685): void {.
     cdecl, importc: "JPH_CharacterVirtual_GetPosition".}
-proc setPosition*(character: ptr CharacterVirtual_536871885; position: ptr RVec3_536871613): void {.
+proc setPosition*(character: ptr CharacterVirtual_536871957; position: ptr RVec3_536871685): void {.
     cdecl, importc: "JPH_CharacterVirtual_SetPosition".}
-proc getRotation*(character: ptr CharacterVirtual_536871885; rotation: ptr Quat_536871603): void {.
+proc getRotation*(character: ptr CharacterVirtual_536871957; rotation: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_CharacterVirtual_GetRotation".}
-proc setRotation*(character: ptr CharacterVirtual_536871885; rotation: ptr Quat_536871603): void {.
+proc setRotation*(character: ptr CharacterVirtual_536871957; rotation: ptr Quat_536871675): void {.
     cdecl, importc: "JPH_CharacterVirtual_SetRotation".}
-proc getWorldTransform*(character: ptr CharacterVirtual_536871885;
-                        result: ptr RMatrix4x4_536871615): void {.cdecl,
+proc getWorldTransform*(character: ptr CharacterVirtual_536871957;
+                        result: ptr RMatrix4x4_536871687): void {.cdecl,
     importc: "JPH_CharacterVirtual_GetWorldTransform".}
-proc getCenterOfMassTransform*(character: ptr CharacterVirtual_536871885;
-                               result: ptr RMatrix4x4_536871615): void {.cdecl,
+proc getCenterOfMassTransform*(character: ptr CharacterVirtual_536871957;
+                               result: ptr RMatrix4x4_536871687): void {.cdecl,
     importc: "JPH_CharacterVirtual_GetCenterOfMassTransform".}
-proc getMass*(character: ptr CharacterVirtual_536871885): cfloat {.cdecl,
+proc getMass*(character: ptr CharacterVirtual_536871957): cfloat {.cdecl,
     importc: "JPH_CharacterVirtual_GetMass".}
-proc setMass*(character: ptr CharacterVirtual_536871885; value: cfloat): void {.
+proc setMass*(character: ptr CharacterVirtual_536871957; value: cfloat): void {.
     cdecl, importc: "JPH_CharacterVirtual_SetMass".}
-proc getMaxStrength*(character: ptr CharacterVirtual_536871885): cfloat {.cdecl,
+proc getMaxStrength*(character: ptr CharacterVirtual_536871957): cfloat {.cdecl,
     importc: "JPH_CharacterVirtual_GetMaxStrength".}
-proc setMaxStrength*(character: ptr CharacterVirtual_536871885; value: cfloat): void {.
+proc setMaxStrength*(character: ptr CharacterVirtual_536871957; value: cfloat): void {.
     cdecl, importc: "JPH_CharacterVirtual_SetMaxStrength".}
-proc getPenetrationRecoverySpeed*(character: ptr CharacterVirtual_536871885): cfloat {.
+proc getPenetrationRecoverySpeed*(character: ptr CharacterVirtual_536871957): cfloat {.
     cdecl, importc: "JPH_CharacterVirtual_GetPenetrationRecoverySpeed".}
-proc setPenetrationRecoverySpeed*(character: ptr CharacterVirtual_536871885;
+proc setPenetrationRecoverySpeed*(character: ptr CharacterVirtual_536871957;
                                   value: cfloat): void {.cdecl,
     importc: "JPH_CharacterVirtual_SetPenetrationRecoverySpeed".}
-proc getEnhancedInternalEdgeRemoval*(character: ptr CharacterVirtual_536871885): bool {.
+proc getEnhancedInternalEdgeRemoval*(character: ptr CharacterVirtual_536871957): bool {.
     cdecl, importc: "JPH_CharacterVirtual_GetEnhancedInternalEdgeRemoval".}
-proc setEnhancedInternalEdgeRemoval*(character: ptr CharacterVirtual_536871885;
+proc setEnhancedInternalEdgeRemoval*(character: ptr CharacterVirtual_536871957;
                                      value: bool): void {.cdecl,
     importc: "JPH_CharacterVirtual_SetEnhancedInternalEdgeRemoval".}
-proc getCharacterPadding*(character: ptr CharacterVirtual_536871885): cfloat {.
+proc getCharacterPadding*(character: ptr CharacterVirtual_536871957): cfloat {.
     cdecl, importc: "JPH_CharacterVirtual_GetCharacterPadding".}
-proc getMaxNumHits*(character: ptr CharacterVirtual_536871885): uint32 {.cdecl,
+proc getMaxNumHits*(character: ptr CharacterVirtual_536871957): uint32 {.cdecl,
     importc: "JPH_CharacterVirtual_GetMaxNumHits".}
-proc setMaxNumHits*(character: ptr CharacterVirtual_536871885; value: uint32): void {.
+proc setMaxNumHits*(character: ptr CharacterVirtual_536871957; value: uint32): void {.
     cdecl, importc: "JPH_CharacterVirtual_SetMaxNumHits".}
-proc getHitReductionCosMaxAngle*(character: ptr CharacterVirtual_536871885): cfloat {.
+proc getHitReductionCosMaxAngle*(character: ptr CharacterVirtual_536871957): cfloat {.
     cdecl, importc: "JPH_CharacterVirtual_GetHitReductionCosMaxAngle".}
-proc setHitReductionCosMaxAngle*(character: ptr CharacterVirtual_536871885;
+proc setHitReductionCosMaxAngle*(character: ptr CharacterVirtual_536871957;
                                  value: cfloat): void {.cdecl,
     importc: "JPH_CharacterVirtual_SetHitReductionCosMaxAngle".}
-proc getMaxHitsExceeded*(character: ptr CharacterVirtual_536871885): bool {.
+proc getMaxHitsExceeded*(character: ptr CharacterVirtual_536871957): bool {.
     cdecl, importc: "JPH_CharacterVirtual_GetMaxHitsExceeded".}
-proc getShapeOffset*(character: ptr CharacterVirtual_536871885; result: ptr Vec3_536871595): void {.
+proc getShapeOffset*(character: ptr CharacterVirtual_536871957; result: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_CharacterVirtual_GetShapeOffset".}
-proc setShapeOffset*(character: ptr CharacterVirtual_536871885; value: ptr Vec3_536871595): void {.
+proc setShapeOffset*(character: ptr CharacterVirtual_536871957; value: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_CharacterVirtual_SetShapeOffset".}
-proc getUserData*(character: ptr CharacterVirtual_536871885): uint64 {.cdecl,
+proc getUserData*(character: ptr CharacterVirtual_536871957): uint64 {.cdecl,
     importc: "JPH_CharacterVirtual_GetUserData".}
-proc setUserData*(character: ptr CharacterVirtual_536871885; value: uint64): void {.
+proc setUserData*(character: ptr CharacterVirtual_536871957; value: uint64): void {.
     cdecl, importc: "JPH_CharacterVirtual_SetUserData".}
-proc getInnerBodyID*(character: ptr CharacterVirtual_536871885): BodyID_536871464 {.
+proc getInnerBodyID*(character: ptr CharacterVirtual_536871957): BodyID_536871536 {.
     cdecl, importc: "JPH_CharacterVirtual_GetInnerBodyID".}
-proc cancelVelocityTowardsSteepSlopes*(character: ptr CharacterVirtual_536871885;
-                                       desiredVelocity: ptr Vec3_536871595;
-                                       velocity: ptr Vec3_536871595): void {.
+proc cancelVelocityTowardsSteepSlopes*(character: ptr CharacterVirtual_536871957;
+                                       desiredVelocity: ptr Vec3_536871667;
+                                       velocity: ptr Vec3_536871667): void {.
     cdecl, importc: "JPH_CharacterVirtual_CancelVelocityTowardsSteepSlopes".}
-proc startTrackingContactChanges*(character: ptr CharacterVirtual_536871885): void {.
+proc startTrackingContactChanges*(character: ptr CharacterVirtual_536871957): void {.
     cdecl, importc: "JPH_CharacterVirtual_StartTrackingContactChanges".}
-proc finishTrackingContactChanges*(character: ptr CharacterVirtual_536871885): void {.
+proc finishTrackingContactChanges*(character: ptr CharacterVirtual_536871957): void {.
     cdecl, importc: "JPH_CharacterVirtual_FinishTrackingContactChanges".}
-proc update*(character: ptr CharacterVirtual_536871885; deltaTime: cfloat;
-             layer: ObjectLayer_536871468; system: ptr PhysicsSystem_536871735;
-             bodyFilter: ptr BodyFilter_536871729; shapeFilter: ptr ShapeFilter_536871731): void {.
+proc update*(character: ptr CharacterVirtual_536871957; deltaTime: cfloat;
+             layer: ObjectLayer_536871540; system: ptr PhysicsSystem_536871807;
+             bodyFilter: ptr BodyFilter_536871801; shapeFilter: ptr ShapeFilter_536871803): void {.
     cdecl, importc: "JPH_CharacterVirtual_Update".}
-proc extendedUpdate*(character: ptr CharacterVirtual_536871885;
-                     deltaTime: cfloat; settings: ptr ExtendedUpdateSettings_536871951;
-                     layer: ObjectLayer_536871468; system: ptr PhysicsSystem_536871735;
-                     bodyFilter: ptr BodyFilter_536871729;
-                     shapeFilter: ptr ShapeFilter_536871731): void {.cdecl,
+proc extendedUpdate*(character: ptr CharacterVirtual_536871957;
+                     deltaTime: cfloat; settings: ptr ExtendedUpdateSettings_536872023;
+                     layer: ObjectLayer_536871540; system: ptr PhysicsSystem_536871807;
+                     bodyFilter: ptr BodyFilter_536871801;
+                     shapeFilter: ptr ShapeFilter_536871803): void {.cdecl,
     importc: "JPH_CharacterVirtual_ExtendedUpdate".}
-proc refreshContacts*(character: ptr CharacterVirtual_536871885;
-                      layer: ObjectLayer_536871468; system: ptr PhysicsSystem_536871735;
-                      bodyFilter: ptr BodyFilter_536871729;
-                      shapeFilter: ptr ShapeFilter_536871731): void {.cdecl,
+proc refreshContacts*(character: ptr CharacterVirtual_536871957;
+                      layer: ObjectLayer_536871540; system: ptr PhysicsSystem_536871807;
+                      bodyFilter: ptr BodyFilter_536871801;
+                      shapeFilter: ptr ShapeFilter_536871803): void {.cdecl,
     importc: "JPH_CharacterVirtual_RefreshContacts".}
-proc canWalkStairs*(character: ptr CharacterVirtual_536871885;
-                    linearVelocity: ptr Vec3_536871595): bool {.cdecl,
+proc canWalkStairs*(character: ptr CharacterVirtual_536871957;
+                    linearVelocity: ptr Vec3_536871667): bool {.cdecl,
     importc: "JPH_CharacterVirtual_CanWalkStairs".}
-proc walkStairs*(character: ptr CharacterVirtual_536871885; deltaTime: cfloat;
-                 stepUp: ptr Vec3_536871595; stepForward: ptr Vec3_536871595;
-                 stepForwardTest: ptr Vec3_536871595; stepDownExtra: ptr Vec3_536871595;
-                 layer: ObjectLayer_536871468; system: ptr PhysicsSystem_536871735;
-                 bodyFilter: ptr BodyFilter_536871729;
-                 shapeFilter: ptr ShapeFilter_536871731): bool {.cdecl,
+proc walkStairs*(character: ptr CharacterVirtual_536871957; deltaTime: cfloat;
+                 stepUp: ptr Vec3_536871667; stepForward: ptr Vec3_536871667;
+                 stepForwardTest: ptr Vec3_536871667; stepDownExtra: ptr Vec3_536871667;
+                 layer: ObjectLayer_536871540; system: ptr PhysicsSystem_536871807;
+                 bodyFilter: ptr BodyFilter_536871801;
+                 shapeFilter: ptr ShapeFilter_536871803): bool {.cdecl,
     importc: "JPH_CharacterVirtual_WalkStairs".}
-proc stickToFloor*(character: ptr CharacterVirtual_536871885;
-                   stepDown: ptr Vec3_536871595; layer: ObjectLayer_536871468;
-                   system: ptr PhysicsSystem_536871735;
-                   bodyFilter: ptr BodyFilter_536871729;
-                   shapeFilter: ptr ShapeFilter_536871731): bool {.cdecl,
+proc stickToFloor*(character: ptr CharacterVirtual_536871957;
+                   stepDown: ptr Vec3_536871667; layer: ObjectLayer_536871540;
+                   system: ptr PhysicsSystem_536871807;
+                   bodyFilter: ptr BodyFilter_536871801;
+                   shapeFilter: ptr ShapeFilter_536871803): bool {.cdecl,
     importc: "JPH_CharacterVirtual_StickToFloor".}
-proc updateGroundVelocity*(character: ptr CharacterVirtual_536871885): void {.
+proc updateGroundVelocity*(character: ptr CharacterVirtual_536871957): void {.
     cdecl, importc: "JPH_CharacterVirtual_UpdateGroundVelocity".}
-proc setShape*(character: ptr CharacterVirtual_536871885; shape: ptr Shape_536871779;
-               maxPenetrationDepth: cfloat; layer: ObjectLayer_536871468;
-               system: ptr PhysicsSystem_536871735; bodyFilter: ptr BodyFilter_536871729;
-               shapeFilter: ptr ShapeFilter_536871731): bool {.cdecl,
+proc setShape*(character: ptr CharacterVirtual_536871957; shape: ptr Shape_536871851;
+               maxPenetrationDepth: cfloat; layer: ObjectLayer_536871540;
+               system: ptr PhysicsSystem_536871807; bodyFilter: ptr BodyFilter_536871801;
+               shapeFilter: ptr ShapeFilter_536871803): bool {.cdecl,
     importc: "JPH_CharacterVirtual_SetShape".}
-proc setInnerBodyShape*(character: ptr CharacterVirtual_536871885;
-                        shape: ptr Shape_536871779): void {.cdecl,
+proc setInnerBodyShape*(character: ptr CharacterVirtual_536871957;
+                        shape: ptr Shape_536871851): void {.cdecl,
     importc: "JPH_CharacterVirtual_SetInnerBodyShape".}
-proc getNumActiveContacts*(character: ptr CharacterVirtual_536871885): uint32 {.
+proc getNumActiveContacts*(character: ptr CharacterVirtual_536871957): uint32 {.
     cdecl, importc: "JPH_CharacterVirtual_GetNumActiveContacts".}
-proc getActiveContact*(character: ptr CharacterVirtual_536871885; index: uint32;
-                       result: ptr CharacterVirtualContact_536871971): void {.
+proc getActiveContact*(character: ptr CharacterVirtual_536871957; index: uint32;
+                       result: ptr CharacterVirtualContact_536872043): void {.
     cdecl, importc: "JPH_CharacterVirtual_GetActiveContact".}
-proc hasCollidedWithBody*(character: ptr CharacterVirtual_536871885;
-                          body: BodyID_536871464): bool {.cdecl,
+proc hasCollidedWithBody*(character: ptr CharacterVirtual_536871957;
+                          body: BodyID_536871536): bool {.cdecl,
     importc: "JPH_CharacterVirtual_HasCollidedWithBody".}
-proc hasCollidedWith*(character: ptr CharacterVirtual_536871885;
-                      other: CharacterID_536871476): bool {.cdecl,
+proc hasCollidedWith*(character: ptr CharacterVirtual_536871957;
+                      other: CharacterID_536871548): bool {.cdecl,
     importc: "JPH_CharacterVirtual_HasCollidedWith".}
-proc hasCollidedWithCharacter*(character: ptr CharacterVirtual_536871885;
-                               other: ptr CharacterVirtual_536871885): bool {.
+proc hasCollidedWithCharacter*(character: ptr CharacterVirtual_536871957;
+                               other: ptr CharacterVirtual_536871957): bool {.
     cdecl, importc: "JPH_CharacterVirtual_HasCollidedWithCharacter".}
-proc setProcs*(procs: ptr CharacterContactListener_Procs_536872035): void {.
+proc setProcs*(procs: ptr CharacterContactListener_Procs_536872107): void {.
     cdecl, importc: "JPH_CharacterContactListener_SetProcs".}
-when not declared(characterContactListener_Create):
-  proc characterContactListener_Create*(userData: pointer): ptr CharacterContactListener_536871887 {.
-      cdecl, importc: "JPH_CharacterContactListener_Create".}
-else:
-  static :
-    hint("Declaration of " & "characterContactListener_Create" &
-        " already exists, not redeclaring")
+proc initCharacterContactListener*(userData: pointer): ptr CharacterContactListener_536871959 {.
+    cdecl, importc: "JPH_CharacterContactListener_Create".}
 when not declared(characterContactListener_Destroy):
-  proc characterContactListener_Destroy*(listener: ptr CharacterContactListener_536871887): void {.
+  proc characterContactListener_Destroy*(listener: ptr CharacterContactListener_536871959): void {.
       cdecl, importc: "JPH_CharacterContactListener_Destroy".}
 else:
   static :
     hint("Declaration of " & "characterContactListener_Destroy" &
         " already exists, not redeclaring")
-proc setProcs*(procs: ptr CharacterVsCharacterCollision_Procs_536872039): void {.
+proc setProcs*(procs: ptr CharacterVsCharacterCollision_Procs_536872111): void {.
     cdecl, importc: "JPH_CharacterVsCharacterCollision_SetProcs".}
-when not declared(characterVsCharacterCollision_Create):
-  proc characterVsCharacterCollision_Create*(userData: pointer): ptr CharacterVsCharacterCollision_536871889 {.
-      cdecl, importc: "JPH_CharacterVsCharacterCollision_Create".}
-else:
-  static :
-    hint("Declaration of " & "characterVsCharacterCollision_Create" &
-        " already exists, not redeclaring")
-proc createSimple*(): ptr CharacterVsCharacterCollision_536871889 {.cdecl,
+proc initCharacterVsCharacterCollision*(userData: pointer): ptr CharacterVsCharacterCollision_536871961 {.
+    cdecl, importc: "JPH_CharacterVsCharacterCollision_Create".}
+proc createSimple*(): ptr CharacterVsCharacterCollision_536871961 {.cdecl,
     importc: "JPH_CharacterVsCharacterCollision_CreateSimple".}
-proc addCharacter*(characterVsCharacter: ptr CharacterVsCharacterCollision_536871889;
-                   character: ptr CharacterVirtual_536871885): void {.cdecl,
+proc addCharacter*(characterVsCharacter: ptr CharacterVsCharacterCollision_536871961;
+                   character: ptr CharacterVirtual_536871957): void {.cdecl,
     importc: "JPH_CharacterVsCharacterCollisionSimple_AddCharacter".}
-proc removeCharacter*(characterVsCharacter: ptr CharacterVsCharacterCollision_536871889;
-                      character: ptr CharacterVirtual_536871885): void {.cdecl,
+proc removeCharacter*(characterVsCharacter: ptr CharacterVsCharacterCollision_536871961;
+                      character: ptr CharacterVirtual_536871957): void {.cdecl,
     importc: "JPH_CharacterVsCharacterCollisionSimple_RemoveCharacter".}
 when not declared(characterVsCharacterCollision_Destroy):
   proc characterVsCharacterCollision_Destroy*(
-      listener: ptr CharacterVsCharacterCollision_536871889): void {.cdecl,
+      listener: ptr CharacterVsCharacterCollision_536871961): void {.cdecl,
       importc: "JPH_CharacterVsCharacterCollision_Destroy".}
 else:
   static :
     hint("Declaration of " & "characterVsCharacterCollision_Destroy" &
         " already exists, not redeclaring")
-proc collideShapeVsShape*(shape1: ptr Shape_536871779; shape2: ptr Shape_536871779;
-                          scale1: ptr Vec3_536871595; scale2: ptr Vec3_536871595;
-                          centerOfMassTransform1: ptr Matrix4x4_536871611;
-                          centerOfMassTransform2: ptr Matrix4x4_536871611;
-                          collideShapeSettings: ptr CollideShapeSettings_536871645;
-                          callback: CollideShapeCollectorCallback_536871715;
-                          userData: pointer; shapeFilter: ptr ShapeFilter_536871731): bool {.
+proc collideShapeVsShape*(shape1: ptr Shape_536871851; shape2: ptr Shape_536871851;
+                          scale1: ptr Vec3_536871667; scale2: ptr Vec3_536871667;
+                          centerOfMassTransform1: ptr Matrix4x4_536871683;
+                          centerOfMassTransform2: ptr Matrix4x4_536871683;
+                          collideShapeSettings: ptr CollideShapeSettings_536871717;
+                          callback: CollideShapeCollectorCallback_536871787;
+                          userData: pointer; shapeFilter: ptr ShapeFilter_536871803): bool {.
     cdecl, importc: "JPH_CollisionDispatch_CollideShapeVsShape".}
-proc castShapeVsShapeLocalSpace*(direction: ptr Vec3_536871595;
-                                 shape1: ptr Shape_536871779; shape2: ptr Shape_536871779;
-                                 scale1InShape2LocalSpace: ptr Vec3_536871595;
-                                 scale2: ptr Vec3_536871595;
-    centerOfMassTransform1InShape2LocalSpace: ptr Matrix4x4_536871611;
-                                 centerOfMassWorldTransform2: ptr Matrix4x4_536871611;
-                                 shapeCastSettings: ptr ShapeCastSettings_536871649;
-                                 callback: CastShapeCollectorCallback_536871717;
-                                 userData: pointer; shapeFilter: ptr ShapeFilter_536871731): bool {.
+proc castShapeVsShapeLocalSpace*(direction: ptr Vec3_536871667;
+                                 shape1: ptr Shape_536871851; shape2: ptr Shape_536871851;
+                                 scale1InShape2LocalSpace: ptr Vec3_536871667;
+                                 scale2: ptr Vec3_536871667;
+    centerOfMassTransform1InShape2LocalSpace: ptr Matrix4x4_536871683;
+                                 centerOfMassWorldTransform2: ptr Matrix4x4_536871683;
+                                 shapeCastSettings: ptr ShapeCastSettings_536871721;
+                                 callback: CastShapeCollectorCallback_536871789;
+                                 userData: pointer; shapeFilter: ptr ShapeFilter_536871803): bool {.
     cdecl, importc: "JPH_CollisionDispatch_CastShapeVsShapeLocalSpace".}
-proc castShapeVsShapeWorldSpace*(direction: ptr Vec3_536871595;
-                                 shape1: ptr Shape_536871779; shape2: ptr Shape_536871779;
-                                 scale1: ptr Vec3_536871595; inScale2: ptr Vec3_536871595;
-                                 centerOfMassWorldTransform1: ptr Matrix4x4_536871611;
-                                 centerOfMassWorldTransform2: ptr Matrix4x4_536871611;
-                                 shapeCastSettings: ptr ShapeCastSettings_536871649;
-                                 callback: CastShapeCollectorCallback_536871717;
-                                 userData: pointer; shapeFilter: ptr ShapeFilter_536871731): bool {.
+proc castShapeVsShapeWorldSpace*(direction: ptr Vec3_536871667;
+                                 shape1: ptr Shape_536871851; shape2: ptr Shape_536871851;
+                                 scale1: ptr Vec3_536871667; inScale2: ptr Vec3_536871667;
+                                 centerOfMassWorldTransform1: ptr Matrix4x4_536871683;
+                                 centerOfMassWorldTransform2: ptr Matrix4x4_536871683;
+                                 shapeCastSettings: ptr ShapeCastSettings_536871721;
+                                 callback: CastShapeCollectorCallback_536871789;
+                                 userData: pointer; shapeFilter: ptr ShapeFilter_536871803): bool {.
     cdecl, importc: "JPH_CollisionDispatch_CastShapeVsShapeWorldSpace".}
-proc setProcs*(procs: ptr DebugRenderer_Procs_536872043): void {.cdecl,
+proc setProcs*(procs: ptr DebugRenderer_Procs_536872115): void {.cdecl,
     importc: "JPH_DebugRenderer_SetProcs".}
-when not declared(debugRenderer_Create):
-  proc debugRenderer_Create*(userData: pointer): ptr DebugRenderer_536871857 {.
-      cdecl, importc: "JPH_DebugRenderer_Create".}
-else:
-  static :
-    hint("Declaration of " & "debugRenderer_Create" &
-        " already exists, not redeclaring")
+proc initDebugRenderer*(userData: pointer): ptr DebugRenderer_536871929 {.cdecl,
+    importc: "JPH_DebugRenderer_Create".}
 when not declared(debugRenderer_Destroy):
-  proc debugRenderer_Destroy*(renderer: ptr DebugRenderer_536871857): void {.
+  proc debugRenderer_Destroy*(renderer: ptr DebugRenderer_536871929): void {.
       cdecl, importc: "JPH_DebugRenderer_Destroy".}
 else:
   static :
     hint("Declaration of " & "debugRenderer_Destroy" &
         " already exists, not redeclaring")
-proc nextFrame*(renderer: ptr DebugRenderer_536871857): void {.cdecl,
+proc nextFrame*(renderer: ptr DebugRenderer_536871929): void {.cdecl,
     importc: "JPH_DebugRenderer_NextFrame".}
-proc drawLine*(renderer: ptr DebugRenderer_536871857; from_arg: ptr RVec3_536871613;
-               to: ptr RVec3_536871613; color: Color_536871617): void {.cdecl,
+proc drawLine*(renderer: ptr DebugRenderer_536871929; from_arg: ptr RVec3_536871685;
+               to: ptr RVec3_536871685; color: Color_536871689): void {.cdecl,
     importc: "JPH_DebugRenderer_DrawLine".}
-proc drawWireBox*(renderer: ptr DebugRenderer_536871857; box: ptr AABox_536871621;
-                  color: Color_536871617): void {.cdecl,
+proc drawWireBox*(renderer: ptr DebugRenderer_536871929; box: ptr AABox_536871693;
+                  color: Color_536871689): void {.cdecl,
     importc: "JPH_DebugRenderer_DrawWireBox".}
-proc drawWireBox2*(renderer: ptr DebugRenderer_536871857;
-                   matrix: ptr RMatrix4x4_536871615; box: ptr AABox_536871621;
-                   color: Color_536871617): void {.cdecl,
+proc drawWireBox2*(renderer: ptr DebugRenderer_536871929;
+                   matrix: ptr RMatrix4x4_536871687; box: ptr AABox_536871693;
+                   color: Color_536871689): void {.cdecl,
     importc: "JPH_DebugRenderer_DrawWireBox2".}
-proc drawMarker*(renderer: ptr DebugRenderer_536871857; position: ptr RVec3_536871613;
-                 color: Color_536871617; size: cfloat): void {.cdecl,
+proc drawMarker*(renderer: ptr DebugRenderer_536871929; position: ptr RVec3_536871685;
+                 color: Color_536871689; size: cfloat): void {.cdecl,
     importc: "JPH_DebugRenderer_DrawMarker".}
-proc drawArrow*(renderer: ptr DebugRenderer_536871857; from_arg: ptr RVec3_536871613;
-                to: ptr RVec3_536871613; color: Color_536871617; size: cfloat): void {.
+proc drawArrow*(renderer: ptr DebugRenderer_536871929; from_arg: ptr RVec3_536871685;
+                to: ptr RVec3_536871685; color: Color_536871689; size: cfloat): void {.
     cdecl, importc: "JPH_DebugRenderer_DrawArrow".}
-proc drawCoordinateSystem*(renderer: ptr DebugRenderer_536871857;
-                           matrix: ptr RMatrix4x4_536871615; size: cfloat): void {.
+proc drawCoordinateSystem*(renderer: ptr DebugRenderer_536871929;
+                           matrix: ptr RMatrix4x4_536871687; size: cfloat): void {.
     cdecl, importc: "JPH_DebugRenderer_DrawCoordinateSystem".}
-proc drawPlane*(renderer: ptr DebugRenderer_536871857; point: ptr RVec3_536871613;
-                normal: ptr Vec3_536871595; color: Color_536871617; size: cfloat): void {.
+proc drawPlane*(renderer: ptr DebugRenderer_536871929; point: ptr RVec3_536871685;
+                normal: ptr Vec3_536871667; color: Color_536871689; size: cfloat): void {.
     cdecl, importc: "JPH_DebugRenderer_DrawPlane".}
-proc drawWireTriangle*(renderer: ptr DebugRenderer_536871857; v1: ptr RVec3_536871613;
-                       v2: ptr RVec3_536871613; v3: ptr RVec3_536871613;
-                       color: Color_536871617): void {.cdecl,
+proc drawWireTriangle*(renderer: ptr DebugRenderer_536871929; v1: ptr RVec3_536871685;
+                       v2: ptr RVec3_536871685; v3: ptr RVec3_536871685;
+                       color: Color_536871689): void {.cdecl,
     importc: "JPH_DebugRenderer_DrawWireTriangle".}
-proc drawWireSphere*(renderer: ptr DebugRenderer_536871857; center: ptr RVec3_536871613;
-                     radius: cfloat; color: Color_536871617; level: cint): void {.
+proc drawWireSphere*(renderer: ptr DebugRenderer_536871929; center: ptr RVec3_536871685;
+                     radius: cfloat; color: Color_536871689; level: cint): void {.
     cdecl, importc: "JPH_DebugRenderer_DrawWireSphere".}
-proc drawWireUnitSphere*(renderer: ptr DebugRenderer_536871857;
-                         matrix: ptr RMatrix4x4_536871615; color: Color_536871617;
+proc drawWireUnitSphere*(renderer: ptr DebugRenderer_536871929;
+                         matrix: ptr RMatrix4x4_536871687; color: Color_536871689;
                          level: cint): void {.cdecl,
     importc: "JPH_DebugRenderer_DrawWireUnitSphere".}
-when not declared(skeleton_Create):
-  proc skeleton_Create*(): ptr Skeleton_536871891 {.cdecl,
-      importc: "JPH_Skeleton_Create".}
-else:
-  static :
-    hint("Declaration of " & "skeleton_Create" &
-        " already exists, not redeclaring")
+proc initSkeleton*(): ptr Skeleton_536871963 {.cdecl,
+    importc: "JPH_Skeleton_Create".}
 when not declared(skeleton_Destroy):
-  proc skeleton_Destroy*(skeleton: ptr Skeleton_536871891): void {.cdecl,
+  proc skeleton_Destroy*(skeleton: ptr Skeleton_536871963): void {.cdecl,
       importc: "JPH_Skeleton_Destroy".}
 else:
   static :
     hint("Declaration of " & "skeleton_Destroy" &
         " already exists, not redeclaring")
-proc addJoint*(skeleton: ptr Skeleton_536871891; name: cstring): uint32 {.cdecl,
+proc addJoint*(skeleton: ptr Skeleton_536871963; name: cstring): uint32 {.cdecl,
     importc: "JPH_Skeleton_AddJoint".}
-proc addJoint2*(skeleton: ptr Skeleton_536871891; name: cstring;
+proc addJoint2*(skeleton: ptr Skeleton_536871963; name: cstring;
                 parentIndex: cint): uint32 {.cdecl,
     importc: "JPH_Skeleton_AddJoint2".}
-proc addJoint3*(skeleton: ptr Skeleton_536871891; name: cstring;
+proc addJoint3*(skeleton: ptr Skeleton_536871963; name: cstring;
                 parentName: cstring): uint32 {.cdecl,
     importc: "JPH_Skeleton_AddJoint3".}
-proc getJointCount*(skeleton: ptr Skeleton_536871891): cint {.cdecl,
+proc getJointCount*(skeleton: ptr Skeleton_536871963): cint {.cdecl,
     importc: "JPH_Skeleton_GetJointCount".}
-proc getJoint*(skeleton: ptr Skeleton_536871891; index: cint;
-               joint: ptr SkeletonJoint_536872047): void {.cdecl,
+proc getJoint*(skeleton: ptr Skeleton_536871963; index: cint;
+               joint: ptr SkeletonJoint_536872119): void {.cdecl,
     importc: "JPH_Skeleton_GetJoint".}
-proc getJointIndex*(skeleton: ptr Skeleton_536871891; name: cstring): cint {.
+proc getJointIndex*(skeleton: ptr Skeleton_536871963; name: cstring): cint {.
     cdecl, importc: "JPH_Skeleton_GetJointIndex".}
-proc calculateParentJointIndices*(skeleton: ptr Skeleton_536871891): void {.
+proc calculateParentJointIndices*(skeleton: ptr Skeleton_536871963): void {.
     cdecl, importc: "JPH_Skeleton_CalculateParentJointIndices".}
-proc areJointsCorrectlyOrdered*(skeleton: ptr Skeleton_536871891): bool {.cdecl,
+proc areJointsCorrectlyOrdered*(skeleton: ptr Skeleton_536871963): bool {.cdecl,
     importc: "JPH_Skeleton_AreJointsCorrectlyOrdered".}
-when not declared(ragdollSettings_Create):
-  proc ragdollSettings_Create*(): ptr RagdollSettings_536871893 {.cdecl,
-      importc: "JPH_RagdollSettings_Create".}
-else:
-  static :
-    hint("Declaration of " & "ragdollSettings_Create" &
-        " already exists, not redeclaring")
+proc initRagdollSettings*(): ptr RagdollSettings_536871965 {.cdecl,
+    importc: "JPH_RagdollSettings_Create".}
 when not declared(ragdollSettings_Destroy):
-  proc ragdollSettings_Destroy*(settings: ptr RagdollSettings_536871893): void {.
+  proc ragdollSettings_Destroy*(settings: ptr RagdollSettings_536871965): void {.
       cdecl, importc: "JPH_RagdollSettings_Destroy".}
 else:
   static :
     hint("Declaration of " & "ragdollSettings_Destroy" &
         " already exists, not redeclaring")
-proc getSkeleton*(character: ptr RagdollSettings_536871893): ptr Skeleton_536871891 {.
+proc getSkeleton*(character: ptr RagdollSettings_536871965): ptr Skeleton_536871963 {.
     cdecl, importc: "JPH_RagdollSettings_GetSkeleton".}
-proc setSkeleton*(character: ptr RagdollSettings_536871893;
-                  skeleton: ptr Skeleton_536871891): void {.cdecl,
+proc setSkeleton*(character: ptr RagdollSettings_536871965;
+                  skeleton: ptr Skeleton_536871963): void {.cdecl,
     importc: "JPH_RagdollSettings_SetSkeleton".}
-proc stabilize*(settings: ptr RagdollSettings_536871893): bool {.cdecl,
+proc stabilize*(settings: ptr RagdollSettings_536871965): bool {.cdecl,
     importc: "JPH_RagdollSettings_Stabilize".}
-proc disableParentChildCollisions*(settings: ptr RagdollSettings_536871893;
-                                   jointMatrices: ptr Matrix4x4_536871611;
+proc disableParentChildCollisions*(settings: ptr RagdollSettings_536871965;
+                                   jointMatrices: ptr Matrix4x4_536871683;
                                    minSeparationDistance: cfloat): void {.cdecl,
     importc: "JPH_RagdollSettings_DisableParentChildCollisions".}
-proc calculateBodyIndexToConstraintIndex*(settings: ptr RagdollSettings_536871893): void {.
+proc calculateBodyIndexToConstraintIndex*(settings: ptr RagdollSettings_536871965): void {.
     cdecl, importc: "JPH_RagdollSettings_CalculateBodyIndexToConstraintIndex".}
-proc getConstraintIndexForBodyIndex*(settings: ptr RagdollSettings_536871893;
+proc getConstraintIndexForBodyIndex*(settings: ptr RagdollSettings_536871965;
                                      bodyIndex: cint): cint {.cdecl,
     importc: "JPH_RagdollSettings_GetConstraintIndexForBodyIndex".}
-proc calculateConstraintIndexToBodyIdxPair*(settings: ptr RagdollSettings_536871893): void {.
+proc calculateConstraintIndexToBodyIdxPair*(settings: ptr RagdollSettings_536871965): void {.
     cdecl, importc: "JPH_RagdollSettings_CalculateConstraintIndexToBodyIdxPair".}
-proc createRagdoll*(settings: ptr RagdollSettings_536871893;
-                    system: ptr PhysicsSystem_536871735;
-                    collisionGroup: CollisionGroupID_536871472; userData: uint64): ptr Ragdoll_536871895 {.
+proc createRagdoll*(settings: ptr RagdollSettings_536871965;
+                    system: ptr PhysicsSystem_536871807;
+                    collisionGroup: CollisionGroupID_536871544; userData: uint64): ptr Ragdoll_536871967 {.
     cdecl, importc: "JPH_RagdollSettings_CreateRagdoll".}
 when not declared(ragdoll_Destroy):
-  proc ragdoll_Destroy*(ragdoll: ptr Ragdoll_536871895): void {.cdecl,
+  proc ragdoll_Destroy*(ragdoll: ptr Ragdoll_536871967): void {.cdecl,
       importc: "JPH_Ragdoll_Destroy".}
 else:
   static :
     hint("Declaration of " & "ragdoll_Destroy" &
         " already exists, not redeclaring")
-proc addToPhysicsSystem*(ragdoll: ptr Ragdoll_536871895;
-                         activationMode: Activation_536871492; lockBodies: bool): void {.
+proc addToPhysicsSystem*(ragdoll: ptr Ragdoll_536871967;
+                         activationMode: Activation_536871564; lockBodies: bool): void {.
     cdecl, importc: "JPH_Ragdoll_AddToPhysicsSystem".}
-proc removeFromPhysicsSystem*(ragdoll: ptr Ragdoll_536871895; lockBodies: bool): void {.
+proc removeFromPhysicsSystem*(ragdoll: ptr Ragdoll_536871967; lockBodies: bool): void {.
     cdecl, importc: "JPH_Ragdoll_RemoveFromPhysicsSystem".}
-proc activate*(ragdoll: ptr Ragdoll_536871895; lockBodies: bool): void {.cdecl,
+proc activate*(ragdoll: ptr Ragdoll_536871967; lockBodies: bool): void {.cdecl,
     importc: "JPH_Ragdoll_Activate".}
-proc isActive*(ragdoll: ptr Ragdoll_536871895; lockBodies: bool): bool {.cdecl,
+proc isActive*(ragdoll: ptr Ragdoll_536871967; lockBodies: bool): bool {.cdecl,
     importc: "JPH_Ragdoll_IsActive".}
-proc resetWarmStart*(ragdoll: ptr Ragdoll_536871895): void {.cdecl,
+proc resetWarmStart*(ragdoll: ptr Ragdoll_536871967): void {.cdecl,
     importc: "JPH_Ragdoll_ResetWarmStart".}
 when not declared(estimateCollisionResponse):
-  proc estimateCollisionResponse*(body1: ptr Body_536871835; body2: ptr Body_536871835;
-                                  manifold: ptr ContactManifold_536871839;
+  proc estimateCollisionResponse*(body1: ptr Body_536871907; body2: ptr Body_536871907;
+                                  manifold: ptr ContactManifold_536871911;
                                   combinedFriction: cfloat;
                                   combinedRestitution: cfloat;
                                   minVelocityForRestitution: cfloat;
                                   numIterations: uint32;
-                                  result: ptr CollisionEstimationResult_536871849): void {.
+                                  result: ptr CollisionEstimationResult_536871921): void {.
       cdecl, importc: "JPH_EstimateCollisionResponse".}
 else:
   static :

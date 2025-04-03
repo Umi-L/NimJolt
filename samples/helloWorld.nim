@@ -23,17 +23,17 @@ proc main() =
     setTraceHandler(traceImpl)
     # SetAssertFailureHandler(AssertFailureFunc handler)
 
-    let jobSystem = jobSystemThreadPool_Create(nil)
+    let jobSystem = initJobSystemThreadPool(nil)
 
-    let objectLayerPairFilterTable = objectLayerPairFilterTable_Create(2)
+    let objectLayerPairFilterTable = initObjectLayerPairFilterTable(2)
     objectLayerPairFilterTable.enableCollision(NON_MOVING, MOVING)
     objectLayerPairFilterTable.enableCollision(MOVING, NON_MOVING)
 
-    let broadPhaseLayerInterfaceTable = broadPhaseLayerInterfaceTable_Create(2, 2)
+    let broadPhaseLayerInterfaceTable = initBroadPhaseLayerInterfaceTable(2, 2)
     broadPhaseLayerInterfaceTable.mapObjectToBroadPhaseLayer(NON_MOVING, BROAD_PHASE_NON_MOVING)
     broadPhaseLayerInterfaceTable.mapObjectToBroadPhaseLayer(MOVING, BROAD_PHASE_MOVING)
 
-    let objectVsBroadPhaseLayerFilter = objectVsBroadPhaseLayerFilterTable_Create(broadPhaseLayerInterfaceTable, 2, objectLayerPairFilterTable, 2)
+    let objectVsBroadPhaseLayerFilter = initObjectVsBroadPhaseLayerFilterTable(broadPhaseLayerInterfaceTable, 2, objectLayerPairFilterTable, 2)
 
     var settings: PhysicsSystemSettings
     settings.maxBodies = 65536
@@ -44,23 +44,23 @@ proc main() =
     settings.objectLayerPairFilter = objectLayerPairFilterTable
     settings.objectVsBroadPhaseLayerFilter = objectVsBroadPhaseLayerFilter
 
-    let system = physicsSystem_Create(addr settings)
+    let system = initPhysicsSystem(addr settings)
     let bodyInterface = system.getBodyInterface()
 
     var floorId: BodyID
     block:
         let boxHalfExtents: Vec3 = Vec3(x: 100.0, y: 1.0, z: 100.0)
-        let floorShape = boxShape_Create(addr boxHalfExtents, DEFAULT_CONVEX_RADIUS)
+        let floorShape = initBoxShape(addr boxHalfExtents, DEFAULT_CONVEX_RADIUS)
         let floorPosition = Vec3(x: 0.0, y: -1.0, z: 0.0)
-        let floorSettings = bodyCreationSettings_Create3(cast[ptr Shape](floorShape), addr floorPosition, nil, MotionType_Static, NON_MOVING)
+        let floorSettings = initBodyCreationSettings(cast[ptr Shape](floorShape), addr floorPosition, nil, MotionType_Static, NON_MOVING)
         floorId = bodyInterface.createAndAddBody(floorSettings, Activation_DontActivate)
         bodyCreationSettings_Destroy(floorSettings)
 
     var sphereId: BodyID
     block:
-        let sphereShape = sphereShape_Create(50.0)
+        let sphereShape = initSphereShape(50.0)
         let spherePosition = Vec3(x: 0.0, y: 2.0, z: 0.0)
-        let sphereSettings = bodyCreationSettings_Create3(cast[ptr Shape](sphereShape), addr spherePosition, nil, MotionType_Dynamic, MOVING)
+        let sphereSettings = initBodyCreationSettings(cast[ptr Shape](sphereShape), addr spherePosition, nil, MotionType_Dynamic, MOVING)
         sphereId = bodyInterface.createAndAddBody(sphereSettings, Activation_Activate)
         bodyCreationSettings_Destroy(sphereSettings)
 
@@ -75,9 +75,9 @@ proc main() =
             cCharacterRadiusCrouching = 0.3
             cInnerShapeFraction = 0.9
 
-        let capsuleShape = capsuleShape_Create(0.5 * cCharacterHeightStanding, cCharacterRadiusStanding)
+        let capsuleShape = initCapsuleShape(0.5 * cCharacterHeightStanding, cCharacterRadiusStanding)
         let position = Vec3(x: 0, y: 0.5 * cCharacterHeightStanding + cCharacterRadiusStanding, z: 0)
-        let mStandingShape = rotatedTranslatedShape_Create(addr position, nil, cast[ptr Shape](capsuleShape))
+        let mStandingShape = initRotatedTranslatedShape(addr position, nil, cast[ptr Shape](capsuleShape))
 
         var characterSettings: CharacterVirtualSettings
         characterVirtualSettings_Init(addr characterSettings)
@@ -85,7 +85,7 @@ proc main() =
         characterSettings.base.supportingVolume = Plane(normal: Vec3(x: 0, y: 1, z: 0), distance: -cCharacterRadiusStanding)
         const characterVirtualPosition = RVec3(x: -5.0, y: 0, z: 3.0)
 
-        let mAnimatedCharacterVirtual = characterVirtual_Create(addr characterSettings, addr characterVirtualPosition, nil, 0, system)
+        let mAnimatedCharacterVirtual = initCharacterVirtual(addr characterSettings, addr characterVirtualPosition, nil, 0, system)
 
     var jointSettings: SixDOFConstraintSettings
     sixDOFConstraintSettings_Init(addr jointSettings)

@@ -10,10 +10,15 @@ const exclusions = @[
     "Inversed"
 ]
 
+const initPostfixes = @[
+    "_Init"
+]
+
 const createPostfixes = @[
     "_Create",
     "_Create3",
-    "_Init"
+    "_Create2",
+    "_Create4"
 ]
 
 const destroyPostfixes = @[
@@ -26,13 +31,19 @@ proc endsWithAny(s: string, suffixes: seq[string]): bool =
             return true
     return false
 
+proc getEndsWithAny(s: string, suffixes: seq[string]): string =
+    for suffix in suffixes:
+        if s.endsWith(suffix):
+            return suffix
+    return ""
+
 # Remove the `JPH_` prefix since Nim doesn't struggle as much with collisions as C
 proc renameCb(name: string, kind: string, partof: string, overloading: var bool): string =
     var newName = name
     newName = name.replace("JPH_", "")
 
     if kind == "proc":
-        if not newName.endsWithAny(createPostfixes) and not newName.endsWithAny(destroyPostfixes) and newName.contains("_"):
+        if not newName.endsWithAny(createPostfixes) and not newName.endsWithAny(initPostfixes) and not newName.endsWithAny(destroyPostfixes) and newName.contains("_"):
             # take everything past last underscore
             let parts = newName.split('_')
             if parts.len > 0:
@@ -40,6 +51,17 @@ proc renameCb(name: string, kind: string, partof: string, overloading: var bool)
 
             if not (newName in exclusions):
                 overloading = true
+
+        if newName.endsWithAny(createPostfixes):
+            # remove _Create from end of name
+            newName = newName[0 .. ^(getEndsWithAny(newName, createPostfixes).len+1)]
+
+            # add init to the start of the name
+            newName = "init" & newName
+
+            echo "Renaming ", name, " to ", newName
+
+            overloading = true
 
         # remove first letter capitalization
         newName = newName[0].toLowerAscii() & newName[1 .. ^1]

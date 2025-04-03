@@ -23,17 +23,17 @@ if not init():
 setTraceHandler(traceImpl)
 # SetAssertFailureHandler(AssertFailureFunc handler)
 
-let jobSystem = jobSystemThreadPool_Create(nil)
+let jobSystem = initJobSystemThreadPool(nil)
 
-let objectLayerPairFilterTable = objectLayerPairFilterTable_Create(2)
+let objectLayerPairFilterTable = initObjectLayerPairFilterTable(2)
 objectLayerPairFilterTable.enableCollision(NON_MOVING, MOVING)
 objectLayerPairFilterTable.enableCollision(MOVING, NON_MOVING)
 
-let broadPhaseLayerInterfaceTable = broadPhaseLayerInterfaceTable_Create(2, 2)
+let broadPhaseLayerInterfaceTable = initBroadPhaseLayerInterfaceTable(2, 2)
 broadPhaseLayerInterfaceTable.mapObjectToBroadPhaseLayer(NON_MOVING, BROAD_PHASE_NON_MOVING)
 broadPhaseLayerInterfaceTable.mapObjectToBroadPhaseLayer(MOVING, BROAD_PHASE_MOVING)
 
-let objectVsBroadPhaseLayerFilter = objectVsBroadPhaseLayerFilterTable_Create(broadPhaseLayerInterfaceTable, 2, objectLayerPairFilterTable, 2)
+let objectVsBroadPhaseLayerFilter = initObjectVsBroadPhaseLayerFilterTable(broadPhaseLayerInterfaceTable, 2, objectLayerPairFilterTable, 2)
 
 var settings: PhysicsSystemSettings
 settings.maxBodies = 65536
@@ -44,7 +44,7 @@ settings.broadPhaseLayerInterface = broadPhaseLayerInterfaceTable
 settings.objectLayerPairFilter = objectLayerPairFilterTable
 settings.objectVsBroadPhaseLayerFilter = objectVsBroadPhaseLayerFilter
 
-let system = physicsSystem_Create(addr settings)
+let system = initPhysicsSystem(addr settings)
 let bodyInterface = system.getBodyInterface()
 
 # var gravity = Vec3(x: 0.0, y: 9.81, z: 0.0)
@@ -53,17 +53,17 @@ let bodyInterface = system.getBodyInterface()
 var floorId: BodyID
 block:
     let boxHalfExtents: Vec3 = Vec3(x: 100.0, y: 1.0, z: 100.0)
-    let floorShape = boxShape_Create(addr boxHalfExtents, DEFAULT_CONVEX_RADIUS)
+    let floorShape = initBoxShape(addr boxHalfExtents, DEFAULT_CONVEX_RADIUS)
     let floorPosition = Vec3(x: 0.0, y: -50.0, z: 0.0)
-    let floorSettings = bodyCreationSettings_Create3(cast[ptr Shape](floorShape), addr floorPosition, nil, MotionType_Static, NON_MOVING)
+    let floorSettings = initBodyCreationSettings(cast[ptr Shape](floorShape), addr floorPosition, nil, MotionType_Static, NON_MOVING)
     floorId = bodyInterface.createAndAddBody(floorSettings, Activation_DontActivate)
     bodyCreationSettings_Destroy(floorSettings)
 
 var sphereId: BodyID
 block:
-    let sphereShape = sphereShape_Create(10.0)
+    let sphereShape = initSphereShape(10.0)
     let spherePosition = Vec3(x: 0.0, y: 0.0, z: 0.0)
-    let sphereSettings = bodyCreationSettings_Create3(cast[ptr Shape](sphereShape), addr spherePosition, nil, MotionType_Dynamic, MOVING)
+    let sphereSettings = initBodyCreationSettings(cast[ptr Shape](sphereShape), addr spherePosition, nil, MotionType_Dynamic, MOVING)
     sphereId = bodyInterface.createAndAddBody(sphereSettings, Activation_Activate)
     bodyCreationSettings_Destroy(sphereSettings)
 
