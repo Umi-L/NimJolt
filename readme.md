@@ -34,6 +34,8 @@ if (NOT ("${CMAKE_SYSTEM_NAME}" STREQUAL "Windows"))
 endif()
 ```
 
+for multi-threaded usage you will need to modify the build script to add -pthread to the compiler flags, an example is [this](CMAKLISTS_TO_USE.txt)
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request. The library is not tested in linux and is a direct wrapper for the JoltC bindings.
