@@ -47,8 +47,8 @@ settings.objectVsBroadPhaseLayerFilter = objectVsBroadPhaseLayerFilter
 let system = initPhysicsSystem(addr settings)
 let bodyInterface = system.getBodyInterface()
 
-# var gravity = Vec3(x: 0.0, y: 9.81, z: 0.0)
-# PhysicsSystem_SetGravity(system, addr gravity)
+var gravity = Vec3(x: 0.0, y: -9.81, z: 0.0)
+system.setGravity(addr gravity)
 
 var floorId: BodyID
 block:
@@ -66,9 +66,6 @@ block:
     let sphereSettings = initBodyCreationSettings(cast[ptr Shape](sphereShape), addr spherePosition, nil, MotionType_Dynamic, MOVING)
     sphereId = bodyInterface.createAndAddBody(sphereSettings, Activation_Activate)
     bodyCreationSettings_Destroy(sphereSettings)
-
-let sphereLinearVelocity = Vec3(x: 0.0, y: -5.0, z: 0.0)
-bodyInterface.setLinearVelocity(sphereId, addr sphereLinearVelocity)
 
 system.optimizeBroadPhase()
 

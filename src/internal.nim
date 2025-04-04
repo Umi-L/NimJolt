@@ -1,5 +1,6 @@
 import os
 import strutils
+import tables
 
 const exclusions = @[
     "Zero",
@@ -25,6 +26,11 @@ const destroyPostfixes = @[
     "_Destroy"
 ]
 
+# table of overrides
+const overrides = {
+    "JPH_DrawSettings_InitDefault": "initDefaultDrawSettings",
+}.toTable()
+
 proc endsWithAny(s: string, suffixes: seq[string]): bool =
     for suffix in suffixes:
         if s.endsWith(suffix):
@@ -39,6 +45,13 @@ proc getEndsWithAny(s: string, suffixes: seq[string]): string =
 
 # Remove the `JPH_` prefix since Nim doesn't struggle as much with collisions as C
 proc renameCb(name: string, kind: string, partof: string, overloading: var bool): string =
+
+
+    # check if name is in the overrides table
+    if name in overrides:
+        # return the override name
+        return overrides[name]
+
     var newName = name
     newName = name.replace("JPH_", "")
 
