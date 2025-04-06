@@ -10,13 +10,17 @@ When building with windows you must include the joltc.dll in the same directory 
 
 more examples can be found in the [samples](samples) directory.
 
-you may also need to set extra linker flags to link the library correctly. ie:
+you may also need to set extra linker flags to link the library correctly (on web). ie:
 
 ```nims
 --passL: "-s ALLOW_MEMORY_GROWTH"
 --passL: "-s STACK_SIZE=1048576"
 --passL: "-s INITIAL_MEMORY=134217728"
 ```
+
+## Samples
+
+Most samples require [naylib](https://github.com/planetis-m/naylib) for graphics.
 
 ## Building from Scratch
 
