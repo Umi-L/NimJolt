@@ -2,7 +2,6 @@ import ../src/nimjolt
 import raylib
 import random
 import math
-import strutils
 
 
 proc traceImpl(message: cstring) {.cdecl.} =
@@ -63,6 +62,13 @@ proc intColorToRaylibColor(color: nimjolt.Color): raylib.Color =
 
     return raylib.Color(r: uint8(r), g: uint8(g), b: uint8(b), a: 255)
 
+proc raylibColorToIntColor(color: raylib.Color): nimjolt.Color =
+        # Convert raylib.Color to nimjolt.Color (uint32)
+        # Shift and combine RGB channels
+        result = (uint32(color.r) shl 16) or
+                 (uint32(color.g) shl 8) or
+                 uint32(color.b)
+
 proc DrawLine*(a0: pointer; a1: ptr RVec3; a2: ptr RVec3; a3: nimjolt.Color): void {.cdecl.} =
     let lineStart = cast[ptr Vec3](a1)
     let lineEnd = cast[ptr Vec3](a2)
@@ -95,13 +101,50 @@ var gravity = Vec3(x: 0.0, y: -9.81, z: 0.0)
 system.setGravity(addr gravity)
 
 var floorId: BodyID
-block:
-    let boxHalfExtents: Vec3 = Vec3(x: 10.0, y: 1.0, z: 10.0)
-    let floorShape = initBoxShape(addr boxHalfExtents, DEFAULT_CONVEX_RADIUS)
-    let floorPosition = Vec3(x: 0.0, y: -2.0, z: 0.0)
-    let floorSettings = initBodyCreationSettings(cast[ptr Shape](floorShape), addr floorPosition, nil, MotionType_Static, NON_MOVING)
-    floorId = bodyInterface.createAndAddBody(floorSettings, Activation_DontActivate)
-    bodyCreationSettings_Destroy(floorSettings)
+var triangles = newSeq[Triangle]()
+
+# Create regular grid of triangles
+for x in -10 ..< 10:
+    for z in -10 ..< 10:
+        let x1 = 1.0 * float(x)
+        let z1 = 1.0 * float(z)
+        let x2 = x1 + 1.0
+        let z2 = z1 + 1.0
+
+        # Add random height variations for each vertex
+        let y1 = rand(2.0) - 1.0
+        let y2 = rand(2.0) - 1.0
+        let y3 = rand(2.0) - 1.0
+        let y4 = rand(2.0) - 1.0
+
+        let v1 = Vec3(x: x1, y: y1, z: z1)
+        let v2 = Vec3(x: x2, y: y2, z: z1)
+        let v3 = Vec3(x: x1, y: y3, z: z2)
+        let v4 = Vec3(x: x2, y: y4, z: z2)
+
+        # Calculate material index based on distance from origin
+        let centerPos = Vec3(x: (v1.x + v2.x + v3.x + v4.x) / 4.0,
+                            y: (v1.y + v2.y + v3.y + v4.y) / 4.0,
+                            z: (v1.z + v2.z + v3.z + v4.z) / 4.0)
+
+        # Add triangles
+        triangles.add(Triangle(v1: v1, v2: v3, v3: v4, materialIndex: 0))
+        triangles.add(Triangle(v1: v1, v2: v4, v3: v2, materialIndex: 0))
+
+# Create mesh shape settings
+let meshSettings = initMeshShapeSettings(addr triangles[0], triangles.len.cuint)
+meshSettings.sanitize()
+let meshShape = meshSettings.createShape()
+
+# check if meshShape is nil
+if meshShape == nil:
+    echo("Failed to create mesh shape")
+    quit()
+
+# Create floor body
+let position = Vec3(x: 0, y: 0, z: 0)
+let floorSettings = initBodyCreationSettings(cast[ptr Shape](meshShape), addr position, nil, MotionType_Static, NON_MOVING)
+floorId = bodyInterface.createAndAddBody(floorSettings, Activation_DontActivate)
 
 type ShapeType = enum
     Sphere, Box, Capsule, Cylinder
@@ -191,16 +234,13 @@ camera.projection = Perspective
 var spawnTimer = 0.0
 var spawnTime = 2.0
 proc update() {.cdecl.} =
-    var floorPosition: RVec3
-    bodyInterface.getCenterOfMassPosition(floorId, addr floorPosition)
-
     spawnTimer += getFrameTime()
     if spawnTimer >= spawnTime:
         spawnTimer = 0.0
         # spawn a random shape at a random position above the floor
         let x = rand(10.0)-5.0
         let z = rand(10.9)-5.0
-        createRandomShape(Vec3(x: x, y: floorPosition.y + 10, z: z))
+        createRandomShape(Vec3(x: x, y: -2 + 10, z: z))
 
     beginDrawing()
     clearBackground(BLACK)
@@ -238,9 +278,9 @@ proc update() {.cdecl.} =
             of ShapeType.Cylinder:
                 drawModel(cylinderModel, Vector3(x: position.x, y: position.y, z: position.z), raylibAxis, raylibAngle, Vector3(x: 1, y: 1, z: 1), shape.color)
 
-    drawCube(Vector3(x: floorPosition.x, y: floorPosition.y, z: floorPosition.z), 20.0f, 2.0f, 20.0f, Green)
+    # drawCube(Vector3(x: floorPosition.x, y: floorPosition.y, z: floorPosition.z), 20.0f, 2.0f, 20.0f, Green)
 
-    # system.drawBodies(addr drawSettings, debugRenderer, nil)
+    system.drawBodies(addr drawSettings, debugRenderer, nil)
 
     endMode3D()
 
