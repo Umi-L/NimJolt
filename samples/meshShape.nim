@@ -85,6 +85,23 @@ proc DrawText3D*(a0: pointer; a1: ptr RVec3; a2: cstring; a3: nimjolt.Color; a4:
     # let color = raylib.Color(r: a3.r, g: a3.g, b: a3.b, a: a3.a)
     # drawText(a2, Vector3(x: position.x, y: position.y, z: position.z), a4, Blue)
 
+proc raylibMeshToMeshShapeSettings(mesh: Mesh, materialIndex: uint32): ptr MeshShapeSettings =
+    var triangles = newSeq[Triangle]()
+
+    for i in countup(0, mesh.triangleCount-1, 1):
+        let index = mesh.indices[i]
+
+        let rv1 = mesh.vertices[index[0].int]
+        let rv2 = mesh.vertices[index[1].int]
+        let rv3 = mesh.vertices[index[2].int]
+
+        let v1 = Vec3(x: rv1.x, y: rv1.y, z: rv1.z)
+        let v2 = Vec3(x: rv2.x, y: rv2.y, z: rv2.z)
+        let v3 = Vec3(x: rv3.x, y: rv3.y, z: rv3.z)
+
+        triangles.add(Triangle(v1: v1, v2: v2, v3: v3, materialIndex: materialIndex))
+
+    return initMeshShapeSettings(addr triangles[0], triangles.len.cuint)
 
 var debugRendererProcs: DebugRenderer_Procs = DebugRenderer_Procs(
     DrawLine: DrawLine,
@@ -100,51 +117,52 @@ initDefaultDrawSettings(addr drawSettings)
 var gravity = Vec3(x: 0.0, y: -9.81, z: 0.0)
 system.setGravity(addr gravity)
 
-var floorId: BodyID
-var triangles = newSeq[Triangle]()
+# var floorId: BodyID
+# block:
+#     var triangles = newSeq[Triangle]()
 
-# Create regular grid of triangles
-for x in -10 ..< 10:
-    for z in -10 ..< 10:
-        let x1 = 1.0 * float(x)
-        let z1 = 1.0 * float(z)
-        let x2 = x1 + 1.0
-        let z2 = z1 + 1.0
+#     # Create regular grid of triangles
+#     for x in -10 ..< 10:
+#         for z in -10 ..< 10:
+#             let x1 = 1.0 * float(x)
+#             let z1 = 1.0 * float(z)
+#             let x2 = x1 + 1.0
+#             let z2 = z1 + 1.0
 
-        # Add random height variations for each vertex
-        let y1 = rand(2.0) - 1.0
-        let y2 = rand(2.0) - 1.0
-        let y3 = rand(2.0) - 1.0
-        let y4 = rand(2.0) - 1.0
+#             # Add random height variations for each vertex
+#             let y1 = rand(2.0) - 1.0
+#             let y2 = rand(2.0) - 1.0
+#             let y3 = rand(2.0) - 1.0
+#             let y4 = rand(2.0) - 1.0
 
-        let v1 = Vec3(x: x1, y: y1, z: z1)
-        let v2 = Vec3(x: x2, y: y2, z: z1)
-        let v3 = Vec3(x: x1, y: y3, z: z2)
-        let v4 = Vec3(x: x2, y: y4, z: z2)
+#             let v1 = Vec3(x: x1, y: y1, z: z1)
+#             let v2 = Vec3(x: x2, y: y2, z: z1)
+#             let v3 = Vec3(x: x1, y: y3, z: z2)
+#             let v4 = Vec3(x: x2, y: y4, z: z2)
 
-        # Calculate material index based on distance from origin
-        let centerPos = Vec3(x: (v1.x + v2.x + v3.x + v4.x) / 4.0,
-                            y: (v1.y + v2.y + v3.y + v4.y) / 4.0,
-                            z: (v1.z + v2.z + v3.z + v4.z) / 4.0)
+#             # Calculate material index based on distance from origin
+#             let centerPos = Vec3(x: (v1.x + v2.x + v3.x + v4.x) / 4.0,
+#                                 y: (v1.y + v2.y + v3.y + v4.y) / 4.0,
+#                                 z: (v1.z + v2.z + v3.z + v4.z) / 4.0)
 
-        # Add triangles
-        triangles.add(Triangle(v1: v1, v2: v3, v3: v4, materialIndex: 0))
-        triangles.add(Triangle(v1: v1, v2: v4, v3: v2, materialIndex: 0))
+#             # Add triangles
+#             triangles.add(Triangle(v1: v1, v2: v3, v3: v4, materialIndex: 0))
+#             triangles.add(Triangle(v1: v1, v2: v4, v3: v2, materialIndex: 0))
 
-# Create mesh shape settings
-let meshSettings = initMeshShapeSettings(addr triangles[0], triangles.len.cuint)
-meshSettings.sanitize()
-let meshShape = meshSettings.createShape()
+#     # Create mesh shape settings
+#     let meshSettings = initMeshShapeSettings(addr triangles[0], triangles.len.cuint)
+#     meshSettings.sanitize()
+#     let meshShape = meshSettings.createShape()
 
-# check if meshShape is nil
-if meshShape == nil:
-    echo("Failed to create mesh shape")
-    quit()
+#     # check if meshShape is nil
+#     if meshShape == nil:
+#         echo("Failed to create mesh shape")
+#         quit()
 
-# Create floor body
-let position = Vec3(x: 0, y: 0, z: 0)
-let floorSettings = initBodyCreationSettings(cast[ptr Shape](meshShape), addr position, nil, MotionType_Static, NON_MOVING)
-floorId = bodyInterface.createAndAddBody(floorSettings, Activation_DontActivate)
+#     # Create floor body
+#     let position = Vec3(x: 0, y: 0, z: 0)
+#     let floorSettings = initBodyCreationSettings(cast[ptr Shape](meshShape), addr position, nil, MotionType_Static, NON_MOVING)
+#     floorId = bodyInterface.createAndAddBody(floorSettings, Activation_DontActivate)
 
 type ShapeType = enum
     Sphere, Box, Capsule, Cylinder
@@ -164,8 +182,8 @@ proc createRandomShape(position: Vec3) =
     var shapeType: ShapeType
     var rotation: Quat
 
-    # let randomRotation = Vec3(x: rand(2*PI), y: rand(2*PI), z: rand(2*PI))
-    let randomRotation = Vec3(x: 0, y: rand(2*PI), z: 0)
+    let randomRotation = Vec3(x: rand(2*PI), y: rand(2*PI), z: rand(2*PI))
+    # let randomRotation = Vec3(x: 0, y: rand(2*PI), z: 0)
     fromEulerAngles(addr randomRotation, addr rotation)
 
     # switch from 0-3 for shape type
@@ -224,6 +242,37 @@ let cylinderModel = loadModel("./assets/cyl.glb")
 
 let capsuleModel = loadModel("./assets/cap.glb")
 
+let cupModel = loadModel("./assets/cup.glb")
+var donutModel = loadModel("./assets/donut.glb")
+
+var testerId: BodyID
+block:
+    var meshShapeSettings = raylibMeshToMeshShapeSettings(cupModel.meshes[0], 0)
+    meshShapeSettings.sanitize()
+    let meshShape = meshShapeSettings.createShape()
+
+    if meshShape == nil:
+        echo "Failed to create mesh shape"
+        quit()
+
+    let position = Vec3(x: 0, y: 0, z: 0)
+    let bodyCreationSettings = initBodyCreationSettings(cast[ptr Shape](meshShape), addr position, nil, MotionType_Static, NON_MOVING)
+    testerId = bodyInterface.createAndAddBody(bodyCreationSettings, Activation_DontActivate)
+
+var donutId: BodyID
+block:
+    var meshShapeSettings = raylibMeshToMeshShapeSettings(donutModel.meshes[0], 0)
+    meshShapeSettings.sanitize()
+    let meshShape = meshShapeSettings.createShape()
+
+    if meshShape == nil:
+        echo "Failed to create mesh shape"
+        quit()
+
+    let position = Vec3(x: 0, y: 2, z: 0)
+    let bodyCreationSettings = initBodyCreationSettings(cast[ptr Shape](meshShape), addr position, nil, MotionType_Static, NON_MOVING)
+    donutId = bodyInterface.createAndAddBody(bodyCreationSettings, Activation_DontActivate)
+
 var camera = Camera3D()
 camera.position = Vector3(x: 10, y: 4.0, z: 10.0)
 camera.target = Vector3(x: 0.0, y: -2, z: 0.0)
@@ -280,7 +329,15 @@ proc update() {.cdecl.} =
 
     # drawCube(Vector3(x: floorPosition.x, y: floorPosition.y, z: floorPosition.z), 20.0f, 2.0f, 20.0f, Green)
 
-    system.drawBodies(addr drawSettings, debugRenderer, nil)
+    # system.drawBodies(addr drawSettings, debugRenderer, nil)
+
+    drawModel(cupModel, Vector3(x: 0, y: 0, z: 0), 1.0, White)
+    drawModel(donutModel, Vector3(x: 0, y: 2, z: 0), 1.0, Blue)
+
+    # for i in countup(0, cupModel.meshes[0].triangleCount, 3):
+    #     drawPoint3D(cupModel.meshes[0].vertices[i], Red)
+    #     drawPoint3D(cupModel.meshes[0].vertices[i+1], Red)
+    #     drawPoint3D(cupModel.meshes[0].vertices[i+2], Red)
 
     endMode3D()
 
@@ -291,7 +348,7 @@ proc update() {.cdecl.} =
     discard system.update(getFrameTime(), cCollisionSteps, jobSystem)
 
 proc cleanup() {.cdecl.} =
-    bodyInterface.removeAndDestroyBody(floorId)
+    # bodyInterface.removeAndDestroyBody(floorId)
 
     for shape in shapes:
         bodyInterface.removeAndDestroyBody(shape.id)
