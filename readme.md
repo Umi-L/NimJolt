@@ -18,10 +18,6 @@ you may also need to set extra linker flags to link the library correctly (on we
 --passL: "-s INITIAL_MEMORY=134217728"
 ```
 
-## Samples
-
-Most samples require [naylib](https://github.com/planetis-m/naylib) for graphics.
-
 ## Building from Scratch
 
 To build from scratch you will need to manually recreate the library files. (ie. [Jolt.lib](src/Jolt.lib) [joltc.dll](src/joltc.dll) [joltc.lib](src/joltc.lib) [joltc.pdb](src/joltc.pdb) [libJolt.a](src/libJolt.a) [libjoltc.a](src/libjoltc.a)). You can do this by following the instructions in the JoltC repository. (emscripten requires a few extra steps and changing how the library is built).
@@ -41,6 +37,8 @@ endif()
 for multi-threaded usage you will need to modify the build script to add -pthread to the compiler flags, an example is [this](CMAKLISTS_TO_USE.txt)
 
 ## Samples
+
+Most samples require [naylib](https://github.com/planetis-m/naylib) for graphics.
 
 All samples can be found in the [samples](samples) directory.
 To compile to a desktop binary use `nim c helloWorld.nim` for instance. For emscripten use `nim c -d:emscripten helloWorld.nim`.
